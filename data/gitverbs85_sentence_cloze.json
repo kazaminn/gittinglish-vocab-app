@@ -1,0 +1,5399 @@
+[
+  {
+    "id": "gitverbs85_001_scloze_1",
+    "sentenceId": "gitverbs85_001",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "add",
+          "pos": "verb",
+          "meaning": "既にある集合に要素を加える",
+          "target": true,
+          "category": "addition"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best verb to fill in the blank.",
+    "stem": "We need to ___ TypeScript support to the existing project before the next sprint.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "create"
+      },
+      {
+        "id": "b",
+        "text": "add"
+      },
+      {
+        "id": "c",
+        "text": "introduce"
+      },
+      {
+        "id": "d",
+        "text": "implement"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "既存のプロジェクトに機能を「加える」最も汎用的な動詞。createは無から作る場合。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_002_scloze_1",
+    "sentenceId": "gitverbs85_002",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "create",
+          "pos": "verb",
+          "meaning": "存在しなかったものを新たに生み出す",
+          "target": true,
+          "category": "addition"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best verb to fill in the blank.",
+    "stem": "The team decided to ___ a shared utility library from scratch for date formatting.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "add"
+      },
+      {
+        "id": "b",
+        "text": "set up"
+      },
+      {
+        "id": "c",
+        "text": "create"
+      },
+      {
+        "id": "d",
+        "text": "integrate"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "存在しなかったものを新たに生み出す場合はcreate。from scratchがヒント。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_003_scloze_1",
+    "sentenceId": "gitverbs85_003",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "introduce",
+          "pos": "verb",
+          "meaning": "初めて導入する",
+          "target": true,
+          "category": "addition"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best verb to fill in the blank.",
+    "stem": "This PR ___ a retry mechanism for all external API calls. We've never had one before.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "adds"
+      },
+      {
+        "id": "b",
+        "text": "implements"
+      },
+      {
+        "id": "c",
+        "text": "introduces"
+      },
+      {
+        "id": "d",
+        "text": "enables"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "コードベースに「初めて」持ち込む新しいパターンにはintroduce。\"never had one before\"がヒント。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_004_scloze_1",
+    "sentenceId": "gitverbs85_004",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "implement",
+          "pos": "verb",
+          "meaning": "設計・計画されたものを実際に動くようにする",
+          "target": true,
+          "category": "addition"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best verb to fill in the blank.",
+    "stem": "The spec was approved last week. Let's ___ the password reset flow this sprint.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "create"
+      },
+      {
+        "id": "b",
+        "text": "introduce"
+      },
+      {
+        "id": "c",
+        "text": "implement"
+      },
+      {
+        "id": "d",
+        "text": "set up"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "仕様が定義済みの機能を実コードに落とす場合はimplement。「設計→実装」の関係。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_005_scloze_1",
+    "sentenceId": "gitverbs85_005",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "phrasal_verb",
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "set up",
+          "pos": "verb",
+          "meaning": "使える状態にする準備・構築",
+          "target": true,
+          "category": "addition"
+        }
+      ],
+      "phrases": [
+        {
+          "text": "set up",
+          "type": "phrasal_verb"
+        }
+      ]
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 2,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best verb to fill in the blank.",
+    "stem": "Before we start coding, we need to ___ the CI pipeline and linter config.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "implement"
+      },
+      {
+        "id": "b",
+        "text": "create"
+      },
+      {
+        "id": "c",
+        "text": "set up"
+      },
+      {
+        "id": "d",
+        "text": "bootstrap"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "開発環境・CI/CDなどインフラ寄りの初期構築にはset up。",
+      "relatedGrammar": [
+        "phrasal_verb",
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_006_scloze_1",
+    "sentenceId": "gitverbs85_006",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "integrate",
+          "pos": "verb",
+          "meaning": "異なるものを統合して一体にする",
+          "target": true,
+          "category": "addition"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best verb to fill in the blank.",
+    "stem": "We're going to ___ Stripe as our payment gateway next quarter.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "add"
+      },
+      {
+        "id": "b",
+        "text": "wire up"
+      },
+      {
+        "id": "c",
+        "text": "enable"
+      },
+      {
+        "id": "d",
+        "text": "integrate"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "外部サービスをコードベースに深く繋ぎ込む場合はintegrate。addより統合度が高い。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_007_scloze_1",
+    "sentenceId": "gitverbs85_007",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "enable",
+          "pos": "verb",
+          "meaning": "可能にする、有効化する",
+          "target": true,
+          "category": "addition"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best verb to fill in the blank.",
+    "stem": "The feature already exists in the codebase. We just need to ___ it via the admin panel.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "implement"
+      },
+      {
+        "id": "b",
+        "text": "create"
+      },
+      {
+        "id": "c",
+        "text": "enable"
+      },
+      {
+        "id": "d",
+        "text": "introduce"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "既に存在する機能のスイッチを入れる場合はenable。新規作成ではない。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_008_scloze_1",
+    "sentenceId": "gitverbs85_008",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "phrasal_verb",
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "wire up",
+          "pos": "verb",
+          "meaning": "配線する。比喩的に部品同士を接続する",
+          "target": true,
+          "category": "addition"
+        }
+      ],
+      "phrases": [
+        {
+          "text": "wire up",
+          "type": "phrasal_verb"
+        }
+      ]
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 2,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best verb to fill in the blank.",
+    "stem": "Can you ___ the form state to the submit handler? The button does nothing right now.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "integrate"
+      },
+      {
+        "id": "b",
+        "text": "wire up"
+      },
+      {
+        "id": "c",
+        "text": "set up"
+      },
+      {
+        "id": "d",
+        "text": "implement"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "既存のコンポーネント同士を繋ぐカジュアルな表現。UIとハンドラーの接続。",
+      "relatedGrammar": [
+        "phrasal_verb",
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_009_scloze_1",
+    "sentenceId": "gitverbs85_009",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "scaffold",
+          "pos": "verb",
+          "meaning": "足場を組む",
+          "target": true,
+          "category": "addition"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best verb to fill in the blank.",
+    "stem": "I'll ___ the new microservice with a basic folder structure and config files first.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "create"
+      },
+      {
+        "id": "b",
+        "text": "bootstrap"
+      },
+      {
+        "id": "c",
+        "text": "scaffold"
+      },
+      {
+        "id": "d",
+        "text": "set up"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "中身を埋める前の骨組み・雛形を作る場合はscaffold。createより構造寄り。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_010_scloze_1",
+    "sentenceId": "gitverbs85_010",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "bootstrap",
+          "pos": "verb",
+          "meaning": "最小限のリソースで立ち上げる",
+          "target": true,
+          "category": "addition"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best verb to fill in the blank.",
+    "stem": "The CLI tool can ___ a new project with dependency injection and seed data in one command.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "scaffold"
+      },
+      {
+        "id": "b",
+        "text": "set up"
+      },
+      {
+        "id": "c",
+        "text": "bootstrap"
+      },
+      {
+        "id": "d",
+        "text": "create"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "アプリを起動可能な状態にする初期化処理はbootstrap。scaffoldより実動作に近い。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_011_scloze_1",
+    "sentenceId": "gitverbs85_011",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "remove",
+          "pos": "verb",
+          "meaning": "ある場所から何かを取り去る",
+          "target": true,
+          "category": "removal"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best verb to fill in the blank.",
+    "stem": "Please ___ the unused CSS classes from the header component.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "delete"
+      },
+      {
+        "id": "b",
+        "text": "strip"
+      },
+      {
+        "id": "c",
+        "text": "remove"
+      },
+      {
+        "id": "d",
+        "text": "drop"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "コードの一部を取り除く最も汎用的な動詞。deleteはファイル単位の消去。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_012_scloze_1",
+    "sentenceId": "gitverbs85_012",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "delete",
+          "pos": "verb",
+          "meaning": "記録・保存されたものを消去する",
+          "target": true,
+          "category": "removal"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best verb to fill in the blank.",
+    "stem": "We should ___ the old migration files that are no longer needed.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "remove"
+      },
+      {
+        "id": "b",
+        "text": "strip"
+      },
+      {
+        "id": "c",
+        "text": "drop"
+      },
+      {
+        "id": "d",
+        "text": "delete"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "ファイルなど「名前付きの独立した実体」を丸ごと消す場合はdelete。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_013_scloze_1",
+    "sentenceId": "gitverbs85_013",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "drop",
+          "pos": "verb",
+          "meaning": "落とす、やめる",
+          "target": true,
+          "category": "removal"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best verb to fill in the blank.",
+    "stem": "The changelog says we will ___ support for Node.js 16 in the next major release.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "remove"
+      },
+      {
+        "id": "b",
+        "text": "delete"
+      },
+      {
+        "id": "c",
+        "text": "deprecate"
+      },
+      {
+        "id": "d",
+        "text": "drop"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "サポートやプラットフォーム対応を宣言的に「切り捨てる」場合はdrop。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_014_scloze_1",
+    "sentenceId": "gitverbs85_014",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "phrasal_verb",
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "clean up",
+          "pos": "verb",
+          "meaning": "散らかったものを片付ける",
+          "target": true,
+          "category": "removal"
+        }
+      ],
+      "phrases": [
+        {
+          "text": "clean up",
+          "type": "phrasal_verb"
+        }
+      ]
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 2,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best verb to fill in the blank.",
+    "stem": "I spent the afternoon ___ up dead code and unused imports across the project.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "stripping"
+      },
+      {
+        "id": "b",
+        "text": "cleaning"
+      },
+      {
+        "id": "c",
+        "text": "removing"
+      },
+      {
+        "id": "d",
+        "text": "deleting"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "clean upは散らかったコードの整理。機能変更を伴わない衛生管理。",
+      "relatedGrammar": [
+        "phrasal_verb",
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_015_scloze_1",
+    "sentenceId": "gitverbs85_015",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "deprecate",
+          "pos": "verb",
+          "meaning": "非推奨とする（まだ消さない）",
+          "target": true,
+          "category": "removal"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best verb to fill in the blank.",
+    "stem": "We should ___ the old API endpoint and add a console.warn, but don't remove it yet.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "drop"
+      },
+      {
+        "id": "b",
+        "text": "strip"
+      },
+      {
+        "id": "c",
+        "text": "delete"
+      },
+      {
+        "id": "d",
+        "text": "deprecate"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "まだ動く状態で残しつつ「使うな」と宣言するのがdeprecate。removeの予告編。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_016_scloze_1",
+    "sentenceId": "gitverbs85_016",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "strip",
+          "pos": "verb",
+          "meaning": "覆いや層を剥がす",
+          "target": true,
+          "category": "removal"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best verb to fill in the blank.",
+    "stem": "Make sure to ___ all debug flags from the production build before release.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "clean up"
+      },
+      {
+        "id": "b",
+        "text": "remove"
+      },
+      {
+        "id": "c",
+        "text": "strip"
+      },
+      {
+        "id": "d",
+        "text": "delete"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "本来不要なものを剥ぎ取る場合はstrip。デバッグ用コードの除去に最適。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_017_scloze_1",
+    "sentenceId": "gitverbs85_017",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "fix",
+          "pos": "verb",
+          "meaning": "壊れたものを直す",
+          "target": true,
+          "category": "correction"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best verb to fill in the blank.",
+    "stem": "This commit ___ the race condition that caused duplicate entries in the database.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "resolves"
+      },
+      {
+        "id": "b",
+        "text": "patches"
+      },
+      {
+        "id": "c",
+        "text": "fixes"
+      },
+      {
+        "id": "d",
+        "text": "corrects"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "バグ修正の最も汎用的な動詞。迷ったらfix。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_018_scloze_1",
+    "sentenceId": "gitverbs85_018",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "resolve",
+          "pos": "verb",
+          "meaning": "問題や対立を解決に導く",
+          "target": true,
+          "category": "correction"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best verb to fill in the blank.",
+    "stem": "After two hours of debugging, we finally ___ the circular dependency between the auth and user modules.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "fixed"
+      },
+      {
+        "id": "b",
+        "text": "patched"
+      },
+      {
+        "id": "c",
+        "text": "corrected"
+      },
+      {
+        "id": "d",
+        "text": "resolved"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "複数の要因が絡む問題を解きほぐした場合はresolve。判断を伴う解決。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_019_scloze_1",
+    "sentenceId": "gitverbs85_019",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "correct",
+          "pos": "verb",
+          "meaning": "間違いを正す",
+          "target": true,
+          "category": "correction"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best verb to fill in the blank.",
+    "stem": "Someone ___ the API endpoint URL in the docs. It was pointing to staging instead of production.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "fixed"
+      },
+      {
+        "id": "b",
+        "text": "addressed"
+      },
+      {
+        "id": "c",
+        "text": "corrected"
+      },
+      {
+        "id": "d",
+        "text": "patched"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "事実誤認・書き間違いの修正にはcorrect。ロジックの問題ではなく記述の誤り。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_020_scloze_1",
+    "sentenceId": "gitverbs85_020",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "patch",
+          "pos": "verb",
+          "meaning": "穴や弱い箇所を塞ぐ",
+          "target": true,
+          "category": "correction"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best verb to fill in the blank.",
+    "stem": "We need to ___ this XSS vulnerability before the security audit next week.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "fix"
+      },
+      {
+        "id": "b",
+        "text": "address"
+      },
+      {
+        "id": "c",
+        "text": "patch"
+      },
+      {
+        "id": "d",
+        "text": "resolve"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "応急的・局所的なセキュリティ修正にはpatch。「今塞がないとまずい」ニュアンス。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_001_scloze_1",
+    "sentenceId": "gitverbs85_001",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "add",
+          "pos": "verb",
+          "meaning": "既にある集合に要素を加える",
+          "target": true,
+          "category": "addition"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best verb to fill in the blank.",
+    "stem": "This PR ___ the review comments on error handling that Lisa left last week.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "fixes"
+      },
+      {
+        "id": "b",
+        "text": "patches"
+      },
+      {
+        "id": "c",
+        "text": "resolves"
+      },
+      {
+        "id": "d",
+        "text": "addresses"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "レビューコメントやフィードバックに「対応する」場合はaddress。外部インプットが暗黙にある。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_022_scloze_1",
+    "sentenceId": "gitverbs85_022",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "recover",
+          "pos": "verb",
+          "meaning": "困難な状態から回復する",
+          "target": true,
+          "category": "correction"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best verb to fill in the blank.",
+    "stem": "The team managed to ___ the lost configuration files after the failed database migration.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "revert"
+      },
+      {
+        "id": "b",
+        "text": "fix"
+      },
+      {
+        "id": "c",
+        "text": "recover"
+      },
+      {
+        "id": "d",
+        "text": "resolve"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "事故で失われたデータ・設定を復旧する場合はrecover。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_023_scloze_1",
+    "sentenceId": "gitverbs85_023",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "revert",
+          "pos": "verb",
+          "meaning": "以前の状態に戻す",
+          "target": true,
+          "category": "correction"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best verb to fill in the blank.",
+    "stem": "The caching layer caused unexpected errors, so we decided to ___ the commit that introduced it.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "recover"
+      },
+      {
+        "id": "b",
+        "text": "fix"
+      },
+      {
+        "id": "c",
+        "text": "revert"
+      },
+      {
+        "id": "d",
+        "text": "resolve"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "意図的にコミットを取り消して元に戻す場合はrevert。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_024_scloze_1",
+    "sentenceId": "gitverbs85_024",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "update",
+          "pos": "verb",
+          "meaning": "より新しい状態にする",
+          "target": true,
+          "category": "modification"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best verb to fill in the blank.",
+    "stem": "Please ___ the README with the new API endpoints we added this sprint.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "change"
+      },
+      {
+        "id": "b",
+        "text": "update"
+      },
+      {
+        "id": "c",
+        "text": "replace"
+      },
+      {
+        "id": "d",
+        "text": "adjust"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "内容を最新の状態にする場合はupdate。「古い→新しい」の時間軸。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_025_scloze_1",
+    "sentenceId": "gitverbs85_025",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "change",
+          "pos": "verb",
+          "meaning": "何かを異なる状態にする",
+          "target": true,
+          "category": "modification"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best verb to fill in the blank.",
+    "stem": "After some discussion, we decided to ___ the default timeout from 10 seconds to 30 seconds.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "update"
+      },
+      {
+        "id": "b",
+        "text": "adjust"
+      },
+      {
+        "id": "c",
+        "text": "change"
+      },
+      {
+        "id": "d",
+        "text": "tweak"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "設計判断に基づく意図的な変更にはchange。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_026_scloze_1",
+    "sentenceId": "gitverbs85_026",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "replace",
+          "pos": "verb",
+          "meaning": "古いものの場所に新しいものを置く",
+          "target": true,
+          "category": "modification"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best verb to fill in the blank.",
+    "stem": "We're planning to ___ Axios with the native fetch API across the project.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "swap"
+      },
+      {
+        "id": "b",
+        "text": "switch"
+      },
+      {
+        "id": "c",
+        "text": "change"
+      },
+      {
+        "id": "d",
+        "text": "replace"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "AをBに入れ替える（同じ役割）場合はreplace。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_027_scloze_1",
+    "sentenceId": "gitverbs85_027",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "swap",
+          "pos": "verb",
+          "meaning": "交換する",
+          "target": true,
+          "category": "modification"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best verb to fill in the blank.",
+    "stem": "Let's ___ the icon library to Lucide. It's a drop-in replacement.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "replace"
+      },
+      {
+        "id": "b",
+        "text": "swap"
+      },
+      {
+        "id": "c",
+        "text": "convert"
+      },
+      {
+        "id": "d",
+        "text": "switch"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "ほぼ等価なものの小規模入れ替えにはswap。drop-in replacementがヒント。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_028_scloze_1",
+    "sentenceId": "gitverbs85_028",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "convert",
+          "pos": "verb",
+          "meaning": "形式や性質を変換する",
+          "target": true,
+          "category": "modification"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best verb to fill in the blank.",
+    "stem": "This PR ___ all class components to functional components with hooks.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "replaces"
+      },
+      {
+        "id": "b",
+        "text": "migrates"
+      },
+      {
+        "id": "c",
+        "text": "switches"
+      },
+      {
+        "id": "d",
+        "text": "converts"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "同じ機能を別の形式・パラダイムで書き直す場合はconvert。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_029_scloze_1",
+    "sentenceId": "gitverbs85_029",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "migrate",
+          "pos": "verb",
+          "meaning": "ある場所から別の場所へ移動する",
+          "target": true,
+          "category": "modification"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best verb to fill in the blank.",
+    "stem": "We need to ___ the entire database from MySQL to PostgreSQL, including all user data.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "convert"
+      },
+      {
+        "id": "b",
+        "text": "switch"
+      },
+      {
+        "id": "c",
+        "text": "migrate"
+      },
+      {
+        "id": "d",
+        "text": "replace"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "データを伴う大規模な移行にはmigrate。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_030_scloze_1",
+    "sentenceId": "gitverbs85_030",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "switch",
+          "pos": "verb",
+          "meaning": "一方からもう一方に切り替える",
+          "target": true,
+          "category": "modification"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best verb to fill in the blank.",
+    "stem": "The team decided to ___ from npm to pnpm for faster installs.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "replace"
+      },
+      {
+        "id": "b",
+        "text": "migrate"
+      },
+      {
+        "id": "c",
+        "text": "convert"
+      },
+      {
+        "id": "d",
+        "text": "switch"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "「どちらも選べた中でこちらを選んだ」切り替えにはswitch。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_031_scloze_1",
+    "sentenceId": "gitverbs85_031",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "adjust",
+          "pos": "verb",
+          "meaning": "微調整する",
+          "target": true,
+          "category": "modification"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best verb to fill in the blank.",
+    "stem": "Could you ___ the spacing between the navigation items? It's a bit too tight.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "change"
+      },
+      {
+        "id": "b",
+        "text": "tweak"
+      },
+      {
+        "id": "c",
+        "text": "adjust"
+      },
+      {
+        "id": "d",
+        "text": "fix"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "小さな値の変更・微調整にはadjust。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_032_scloze_1",
+    "sentenceId": "gitverbs85_032",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "tweak",
+          "pos": "verb",
+          "meaning": "さらに小さい微調整をする",
+          "target": true,
+          "category": "modification"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best verb to fill in the blank.",
+    "stem": "I just need to ___ the button hover color slightly. Everything else looks good.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "adjust"
+      },
+      {
+        "id": "b",
+        "text": "change"
+      },
+      {
+        "id": "c",
+        "text": "tweak"
+      },
+      {
+        "id": "d",
+        "text": "fix"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "adjustよりさらに細かい仕上げの微調整にはtweak。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_033_scloze_1",
+    "sentenceId": "gitverbs85_033",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "rename",
+          "pos": "verb",
+          "meaning": "新しい名前をつける",
+          "target": true,
+          "category": "modification"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best verb to fill in the blank.",
+    "stem": "Let's ___ the variable from `userData` to `userProfile` to better reflect its contents.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "change"
+      },
+      {
+        "id": "b",
+        "text": "update"
+      },
+      {
+        "id": "c",
+        "text": "convert"
+      },
+      {
+        "id": "d",
+        "text": "rename"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "変数名やファイル名だけの変更で機能は変えない場合はrename。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_034_scloze_1",
+    "sentenceId": "gitverbs85_034",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "move",
+          "pos": "verb",
+          "meaning": "位置を変える",
+          "target": true,
+          "category": "modification"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best verb to fill in the blank.",
+    "stem": "We should ___ the auth helpers from `utils/` to `lib/auth/` for better organization.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "rename"
+      },
+      {
+        "id": "b",
+        "text": "reorganize"
+      },
+      {
+        "id": "c",
+        "text": "move"
+      },
+      {
+        "id": "d",
+        "text": "migrate"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "ファイルや定義を別の場所に移す場合はmove。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_035_scloze_1",
+    "sentenceId": "gitverbs85_035",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "bump",
+          "pos": "verb",
+          "meaning": "ぶつける（転じて、ひとつ上げる）",
+          "target": true,
+          "category": "modification"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best verb to fill in the blank.",
+    "stem": "Time to ___ the version number to 2.1.0 for the next release.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "update"
+      },
+      {
+        "id": "b",
+        "text": "change"
+      },
+      {
+        "id": "c",
+        "text": "bump"
+      },
+      {
+        "id": "d",
+        "text": "adjust"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "バージョン番号を上げる場合はbump。semver文脈で専用的に使われる。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_036_scloze_1",
+    "sentenceId": "gitverbs85_036",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "rewrite",
+          "pos": "verb",
+          "meaning": "書き直す",
+          "target": true,
+          "category": "modification"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best verb to fill in the blank.",
+    "stem": "The auth module is beyond saving. Let's just ___ it from scratch with better architecture.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "refactor"
+      },
+      {
+        "id": "b",
+        "text": "rewrite"
+      },
+      {
+        "id": "c",
+        "text": "convert"
+      },
+      {
+        "id": "d",
+        "text": "replace"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "既存コードを捨てて最初から書き直す場合はrewrite。refactorは動く状態を保ったまま改善する。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_037_scloze_1",
+    "sentenceId": "gitverbs85_037",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "refactor",
+          "pos": "verb",
+          "meaning": "外部の振る舞いを変えずにコード構造を改善する",
+          "target": true,
+          "category": "restructuring"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best verb to fill in the blank.",
+    "stem": "This PR ___ the authentication module into smaller, testable functions.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "splits"
+      },
+      {
+        "id": "b",
+        "text": "refactors"
+      },
+      {
+        "id": "c",
+        "text": "reorganizes"
+      },
+      {
+        "id": "d",
+        "text": "simplifies"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "外部の振る舞いを変えずにコード構造を改善する場合はrefactor。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_038_scloze_1",
+    "sentenceId": "gitverbs85_038",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "extract",
+          "pos": "verb",
+          "meaning": "取り出す、抽出する",
+          "target": true,
+          "category": "restructuring"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best verb to fill in the blank.",
+    "stem": "I ___ the date formatting logic into a shared utility so all components can reuse it.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "refactored"
+      },
+      {
+        "id": "b",
+        "text": "split"
+      },
+      {
+        "id": "c",
+        "text": "extracted"
+      },
+      {
+        "id": "d",
+        "text": "decoupled"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "既存コードから共通部分を切り出して独立させる場合はextract。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_039_scloze_1",
+    "sentenceId": "gitverbs85_039",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "inline",
+          "pos": "verb",
+          "meaning": "本体に組み込む",
+          "target": true,
+          "category": "restructuring"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best verb to fill in the blank.",
+    "stem": "This helper is only used once. Let's ___ it back into the calling function.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "merge"
+      },
+      {
+        "id": "b",
+        "text": "consolidate"
+      },
+      {
+        "id": "c",
+        "text": "flatten"
+      },
+      {
+        "id": "d",
+        "text": "inline"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "過剰に分離されたものを呼び出し元に戻す場合はinline。extractの逆。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_040_scloze_1",
+    "sentenceId": "gitverbs85_040",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "flatten",
+          "pos": "verb",
+          "meaning": "平らにする",
+          "target": true,
+          "category": "restructuring"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best verb to fill in the blank.",
+    "stem": "We should ___ the nested callback chain using async/await and early returns.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "simplify"
+      },
+      {
+        "id": "b",
+        "text": "flatten"
+      },
+      {
+        "id": "c",
+        "text": "refactor"
+      },
+      {
+        "id": "d",
+        "text": "inline"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "ネストを浅くする場合はflatten。「深い→浅い」のベクトル。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_041_scloze_1",
+    "sentenceId": "gitverbs85_041",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "split",
+          "pos": "verb",
+          "meaning": "分割する",
+          "target": true,
+          "category": "restructuring"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best verb to fill in the blank.",
+    "stem": "The component file is over 2,000 lines. We need to ___ it into smaller subcomponents.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "extract"
+      },
+      {
+        "id": "b",
+        "text": "refactor"
+      },
+      {
+        "id": "c",
+        "text": "split"
+      },
+      {
+        "id": "d",
+        "text": "decouple"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "大きなファイルを複数に分ける場合はsplit。全体を分割する。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_042_scloze_1",
+    "sentenceId": "gitverbs85_042",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "merge",
+          "pos": "verb",
+          "meaning": "一つに統合する",
+          "target": true,
+          "category": "restructuring"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best verb to fill in the blank.",
+    "stem": "These two config files have a lot of overlap. Let's ___ them into one.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "consolidate"
+      },
+      {
+        "id": "b",
+        "text": "merge"
+      },
+      {
+        "id": "c",
+        "text": "normalize"
+      },
+      {
+        "id": "d",
+        "text": "inline"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "2つのものを1つにまとめる場合はmerge。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_043_scloze_1",
+    "sentenceId": "gitverbs85_043",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "reorganize",
+          "pos": "verb",
+          "meaning": "新しい配置に整理し直す",
+          "target": true,
+          "category": "restructuring"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best verb to fill in the blank.",
+    "stem": "We should ___ the test files so they sit alongside the source files they test.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "move"
+      },
+      {
+        "id": "b",
+        "text": "refactor"
+      },
+      {
+        "id": "c",
+        "text": "reorganize"
+      },
+      {
+        "id": "d",
+        "text": "merge"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "ファイルやディレクトリの配置を全体的に変更する場合はreorganize。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_044_scloze_1",
+    "sentenceId": "gitverbs85_044",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "decouple",
+          "pos": "verb",
+          "meaning": "結合していたものを切り離す",
+          "target": true,
+          "category": "restructuring"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best verb to fill in the blank.",
+    "stem": "The auth logic is tightly coupled to the UI. We need to ___ them so we can test independently.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "split"
+      },
+      {
+        "id": "b",
+        "text": "extract"
+      },
+      {
+        "id": "c",
+        "text": "decouple"
+      },
+      {
+        "id": "d",
+        "text": "separate"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "密結合のモジュール間の依存を論理的に切り離す場合はdecouple。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_045_scloze_1",
+    "sentenceId": "gitverbs85_045",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "consolidate",
+          "pos": "verb",
+          "meaning": "散在する部品を一箇所にまとめる",
+          "target": true,
+          "category": "restructuring"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best verb to fill in the blank.",
+    "stem": "Error handling is scattered across ten different files. Let's ___ it all into a single middleware.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "merge"
+      },
+      {
+        "id": "b",
+        "text": "consolidate"
+      },
+      {
+        "id": "c",
+        "text": "normalize"
+      },
+      {
+        "id": "d",
+        "text": "refactor"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "各所に散らばった同種の処理を一元化する場合はconsolidate。「散在→集約」。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_046_scloze_1",
+    "sentenceId": "gitverbs85_046",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "normalize",
+          "pos": "verb",
+          "meaning": "標準化する、統一する",
+          "target": true,
+          "category": "restructuring"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best verb to fill in the blank.",
+    "stem": "The API responses use different formats for error objects. We need to ___ them across all endpoints.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "consolidate"
+      },
+      {
+        "id": "b",
+        "text": "standardize"
+      },
+      {
+        "id": "c",
+        "text": "normalize"
+      },
+      {
+        "id": "d",
+        "text": "merge"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "バラバラだった形式やデータ構造を統一する場合はnormalize。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_047_scloze_1",
+    "sentenceId": "gitverbs85_047",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "simplify",
+          "pos": "verb",
+          "meaning": "より簡単にする",
+          "target": true,
+          "category": "restructuring"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best verb to fill in the blank.",
+    "stem": "The permission check logic has too many nested ternaries. Let's ___ it with a lookup table.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "flatten"
+      },
+      {
+        "id": "b",
+        "text": "refactor"
+      },
+      {
+        "id": "c",
+        "text": "simplify"
+      },
+      {
+        "id": "d",
+        "text": "normalize"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "複雑すぎるロジックをより単純にする場合はsimplify。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_048_scloze_1",
+    "sentenceId": "gitverbs85_048",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "wrap",
+          "pos": "verb",
+          "meaning": "包む",
+          "target": true,
+          "category": "restructuring"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best verb to fill in the blank.",
+    "stem": "We should ___ all fetch calls with a shared error-handling function.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "extract"
+      },
+      {
+        "id": "b",
+        "text": "wrap"
+      },
+      {
+        "id": "c",
+        "text": "merge"
+      },
+      {
+        "id": "d",
+        "text": "consolidate"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "既存の処理を薄いラッパーで包んで共通化する場合はwrap。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_049_scloze_1",
+    "sentenceId": "gitverbs85_049",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "optimize",
+          "pos": "verb",
+          "meaning": "最も効果的にする",
+          "target": true,
+          "category": "optimization"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best verb to fill in the blank.",
+    "stem": "We need to ___ the database query by adding proper indexes.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "improve"
+      },
+      {
+        "id": "b",
+        "text": "speed up"
+      },
+      {
+        "id": "c",
+        "text": "optimize"
+      },
+      {
+        "id": "d",
+        "text": "reduce"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "パフォーマンス改善の最も汎用的な動詞。計測可能な数値改善。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_050_scloze_1",
+    "sentenceId": "gitverbs85_050",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "improve",
+          "pos": "verb",
+          "meaning": "より良くする",
+          "target": true,
+          "category": "optimization"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best verb to fill in the blank.",
+    "stem": "This PR ___ keyboard navigation in the dropdown component.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "optimizes"
+      },
+      {
+        "id": "b",
+        "text": "enhances"
+      },
+      {
+        "id": "c",
+        "text": "improves"
+      },
+      {
+        "id": "d",
+        "text": "fixes"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "数値で測れない全般的な品質向上にはimprove。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_051_scloze_1",
+    "sentenceId": "gitverbs85_051",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "phrasal_verb",
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "speed up",
+          "pos": "verb",
+          "meaning": "速くする",
+          "target": true,
+          "category": "optimization"
+        }
+      ],
+      "phrases": [
+        {
+          "text": "speed up",
+          "type": "phrasal_verb"
+        }
+      ]
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 2,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best verb to fill in the blank.",
+    "stem": "We can ___ the CI pipeline by caching node_modules between runs.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "optimize"
+      },
+      {
+        "id": "b",
+        "text": "improve"
+      },
+      {
+        "id": "c",
+        "text": "reduce"
+      },
+      {
+        "id": "d",
+        "text": "speed up"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "実行速度の改善に限定する場合はspeed up。",
+      "relatedGrammar": [
+        "phrasal_verb",
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_052_scloze_1",
+    "sentenceId": "gitverbs85_052",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "cache",
+          "pos": "verb",
+          "meaning": "将来の高速アクセスのためにデータを保存する",
+          "target": true,
+          "category": "optimization"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best verb to fill in the blank.",
+    "stem": "Let's ___ the API responses so we don't hit the server on every page load.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "defer"
+      },
+      {
+        "id": "b",
+        "text": "throttle"
+      },
+      {
+        "id": "c",
+        "text": "reduce"
+      },
+      {
+        "id": "d",
+        "text": "cache"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "将来の高速アクセスのためにデータを保存する場合はcache。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_053_scloze_1",
+    "sentenceId": "gitverbs85_053",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "phrasal_verb",
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "lazy-load",
+          "pos": "verb",
+          "meaning": "必要になるまで読み込みを遅らせる",
+          "target": true,
+          "category": "optimization"
+        }
+      ],
+      "phrases": [
+        {
+          "text": "lazy-load",
+          "type": "phrasal_verb"
+        }
+      ]
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 2,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best verb to fill in the blank.",
+    "stem": "We should ___ the chart library so it only loads when the user opens the analytics tab.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "defer"
+      },
+      {
+        "id": "b",
+        "text": "lazy-load"
+      },
+      {
+        "id": "c",
+        "text": "cache"
+      },
+      {
+        "id": "d",
+        "text": "reduce"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "コンポーネントやライブラリを必要になるまで読み込まない場合はlazy-load。",
+      "relatedGrammar": [
+        "phrasal_verb",
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_054_scloze_1",
+    "sentenceId": "gitverbs85_054",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "defer",
+          "pos": "verb",
+          "meaning": "後回しにする",
+          "target": true,
+          "category": "optimization"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best verb to fill in the blank.",
+    "stem": "Let's ___ the analytics initialization until after the page has fully hydrated.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "lazy-load"
+      },
+      {
+        "id": "b",
+        "text": "throttle"
+      },
+      {
+        "id": "c",
+        "text": "defer"
+      },
+      {
+        "id": "d",
+        "text": "cache"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "処理の実行タイミングを後回しにする場合はdefer。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_055_scloze_1",
+    "sentenceId": "gitverbs85_055",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "reduce",
+          "pos": "verb",
+          "meaning": "減らす",
+          "target": true,
+          "category": "optimization"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best verb to fill in the blank.",
+    "stem": "We managed to ___ the bundle size by 40% by removing unused polyfills.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "optimize"
+      },
+      {
+        "id": "b",
+        "text": "speed up"
+      },
+      {
+        "id": "c",
+        "text": "reduce"
+      },
+      {
+        "id": "d",
+        "text": "simplify"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "サイズや回数など「数値を下げる」ことが目的の場合はreduce。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_056_scloze_1",
+    "sentenceId": "gitverbs85_056",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "throttle",
+          "pos": "verb",
+          "meaning": "速度を制限する",
+          "target": true,
+          "category": "optimization"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best verb to fill in the blank.",
+    "stem": "We should ___ the scroll event handler to fire at most once every 16 milliseconds.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "defer"
+      },
+      {
+        "id": "b",
+        "text": "reduce"
+      },
+      {
+        "id": "c",
+        "text": "cache"
+      },
+      {
+        "id": "d",
+        "text": "throttle"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "イベント発火の頻度を一定間隔に制限する場合はthrottle。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_057_scloze_1",
+    "sentenceId": "gitverbs85_057",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "debounce",
+          "pos": "verb",
+          "meaning": "入力が止まるまで実行を遅らせる",
+          "target": true,
+          "category": "optimization"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best verb to fill in the blank.",
+    "stem": "Let's ___ the search input so the API call only fires after the user stops typing for 300ms.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "throttle"
+      },
+      {
+        "id": "b",
+        "text": "defer"
+      },
+      {
+        "id": "c",
+        "text": "debounce"
+      },
+      {
+        "id": "d",
+        "text": "cache"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "入力が止まってから実行する場合はdebounce。throttleは一定間隔、debounceは入力停止後。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_058_scloze_1",
+    "sentenceId": "gitverbs85_058",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "validate",
+          "pos": "verb",
+          "meaning": "基準に照らして正しいか確認する",
+          "target": true,
+          "category": "safety"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best verb to fill in the blank.",
+    "stem": "We need to ___ the request body against the zod schema before processing it.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "verify"
+      },
+      {
+        "id": "b",
+        "text": "sanitize"
+      },
+      {
+        "id": "c",
+        "text": "validate"
+      },
+      {
+        "id": "d",
+        "text": "guard"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "入力値がスキーマに照らして正しいかチェックする場合はvalidate。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_059_scloze_1",
+    "sentenceId": "gitverbs85_059",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "sanitize",
+          "pos": "verb",
+          "meaning": "消毒する、無害化する",
+          "target": true,
+          "category": "safety"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best verb to fill in the blank.",
+    "stem": "Make sure to ___ all user input to prevent SQL injection attacks.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "validate"
+      },
+      {
+        "id": "b",
+        "text": "guard"
+      },
+      {
+        "id": "c",
+        "text": "restrict"
+      },
+      {
+        "id": "d",
+        "text": "sanitize"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "ユーザー入力から危険な要素を除去する場合はsanitize。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_060_scloze_1",
+    "sentenceId": "gitverbs85_060",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "guard",
+          "pos": "verb",
+          "meaning": "見張って守る",
+          "target": true,
+          "category": "safety"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best verb to fill in the blank.",
+    "stem": "Please add a null check to ___ against undefined values in the user lookup.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "prevent"
+      },
+      {
+        "id": "b",
+        "text": "handle"
+      },
+      {
+        "id": "c",
+        "text": "guard"
+      },
+      {
+        "id": "d",
+        "text": "ensure"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "防御条件（ガード節）を追加する場合はguard。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_061_scloze_1",
+    "sentenceId": "gitverbs85_061",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "handle",
+          "pos": "verb",
+          "meaning": "状況や問題に対処する",
+          "target": true,
+          "category": "safety"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best verb to fill in the blank.",
+    "stem": "This PR adds a try-catch block to ___ the timeout error during file uploads.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "prevent"
+      },
+      {
+        "id": "b",
+        "text": "guard"
+      },
+      {
+        "id": "c",
+        "text": "fix"
+      },
+      {
+        "id": "d",
+        "text": "handle"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "例外やエラーへの対処コードを追加する場合はhandle。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_062_scloze_1",
+    "sentenceId": "gitverbs85_062",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "prevent",
+          "pos": "verb",
+          "meaning": "何かが起きるのを防ぐ",
+          "target": true,
+          "category": "safety"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best verb to fill in the blank.",
+    "stem": "We added a loading state to ___ users from clicking the submit button twice.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "handle"
+      },
+      {
+        "id": "b",
+        "text": "guard"
+      },
+      {
+        "id": "c",
+        "text": "prevent"
+      },
+      {
+        "id": "d",
+        "text": "restrict"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "問題が起きる前に止める場合はprevent。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_063_scloze_1",
+    "sentenceId": "gitverbs85_063",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "ensure",
+          "pos": "verb",
+          "meaning": "確実にする",
+          "target": true,
+          "category": "safety"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best verb to fill in the blank.",
+    "stem": "We need to ___ that the database connection is alive before executing any query.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "guard"
+      },
+      {
+        "id": "b",
+        "text": "validate"
+      },
+      {
+        "id": "c",
+        "text": "verify"
+      },
+      {
+        "id": "d",
+        "text": "ensure"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "前提条件を確実に満たす場合はensure。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_064_scloze_1",
+    "sentenceId": "gitverbs85_064",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "enforce",
+          "pos": "verb",
+          "meaning": "法やルールの遵守を強制する",
+          "target": true,
+          "category": "safety"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best verb to fill in the blank.",
+    "stem": "The linter will ___ a consistent naming convention across the entire codebase.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "ensure"
+      },
+      {
+        "id": "b",
+        "text": "validate"
+      },
+      {
+        "id": "c",
+        "text": "enforce"
+      },
+      {
+        "id": "d",
+        "text": "restrict"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "ルールの遵守をコードで強制する場合はenforce。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_065_scloze_1",
+    "sentenceId": "gitverbs85_065",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "restrict",
+          "pos": "verb",
+          "meaning": "制限をかける",
+          "target": true,
+          "category": "safety"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best verb to fill in the blank.",
+    "stem": "We should ___ file uploads to image types only for the avatar feature.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "enforce"
+      },
+      {
+        "id": "b",
+        "text": "validate"
+      },
+      {
+        "id": "c",
+        "text": "prevent"
+      },
+      {
+        "id": "d",
+        "text": "restrict"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "操作範囲やアクセスを制限する場合はrestrict。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_066_scloze_1",
+    "sentenceId": "gitverbs85_066",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "phrasal_verb",
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "fall back to",
+          "pos": "verb",
+          "meaning": "第一の手段が失敗した時に代替を使う",
+          "target": true,
+          "category": "safety"
+        }
+      ],
+      "phrases": [
+        {
+          "text": "fall back to",
+          "type": "phrasal_verb"
+        }
+      ]
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 2,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best verb to fill in the blank.",
+    "stem": "If the primary CDN is down, the app should ___ the local asset cache.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "recover"
+      },
+      {
+        "id": "b",
+        "text": "handle"
+      },
+      {
+        "id": "c",
+        "text": "switch to"
+      },
+      {
+        "id": "d",
+        "text": "fall back to"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "主要手段が失敗した時の代替を使う場合はfall back to。",
+      "relatedGrammar": [
+        "phrasal_verb",
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_067_scloze_1",
+    "sentenceId": "gitverbs85_067",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "suppress",
+          "pos": "verb",
+          "meaning": "抑制する、表に出さないようにする",
+          "target": true,
+          "category": "safety"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best verb to fill in the blank.",
+    "stem": "These deprecation warnings are expected in our test suite. Let's ___ them so they don't clutter the output.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "handle"
+      },
+      {
+        "id": "b",
+        "text": "remove"
+      },
+      {
+        "id": "c",
+        "text": "suppress"
+      },
+      {
+        "id": "d",
+        "text": "prevent"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "警告やログ出力を意図的に抑制する場合はsuppress。removeは消す、suppressは黙らせる。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_068_scloze_1",
+    "sentenceId": "gitverbs85_068",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "extend",
+          "pos": "verb",
+          "meaning": "拡張する、延長する",
+          "target": true,
+          "category": "extension"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best verb to fill in the blank.",
+    "stem": "We should ___ the BaseError class with custom error codes for better debugging.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "enhance"
+      },
+      {
+        "id": "b",
+        "text": "expand"
+      },
+      {
+        "id": "c",
+        "text": "extend"
+      },
+      {
+        "id": "d",
+        "text": "support"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "既存のクラスやインターフェースを拡張する場合はextend。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_069_scloze_1",
+    "sentenceId": "gitverbs85_069",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "enhance",
+          "pos": "verb",
+          "meaning": "質・価値・範囲を高める",
+          "target": true,
+          "category": "extension"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best verb to fill in the blank.",
+    "stem": "This PR ___ the search feature with autocomplete suggestions.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "improves"
+      },
+      {
+        "id": "b",
+        "text": "extends"
+      },
+      {
+        "id": "c",
+        "text": "expands"
+      },
+      {
+        "id": "d",
+        "text": "enhances"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "既存機能に付加価値を乗せる場合はenhance。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_070_scloze_1",
+    "sentenceId": "gitverbs85_070",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "expand",
+          "pos": "verb",
+          "meaning": "拡大する",
+          "target": true,
+          "category": "extension"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best verb to fill in the blank.",
+    "stem": "We want to ___ locale support to include Korean and Thai in the next release.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "extend"
+      },
+      {
+        "id": "b",
+        "text": "enhance"
+      },
+      {
+        "id": "c",
+        "text": "add"
+      },
+      {
+        "id": "d",
+        "text": "expand"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "対応範囲を水平方向に広げる場合はexpand。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_071_scloze_1",
+    "sentenceId": "gitverbs85_071",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "support",
+          "pos": "verb",
+          "meaning": "支える、対応する",
+          "target": true,
+          "category": "extension"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best verb to fill in the blank.",
+    "stem": "The image uploader now ___ WebP format in addition to PNG and JPEG.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "adds"
+      },
+      {
+        "id": "b",
+        "text": "supports"
+      },
+      {
+        "id": "c",
+        "text": "enables"
+      },
+      {
+        "id": "d",
+        "text": "extends"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "既存機能が新しい入力形式を受け入れられるようにする場合はsupport。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_072_scloze_1",
+    "sentenceId": "gitverbs85_072",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "expose",
+          "pos": "verb",
+          "meaning": "見える・使える状態にする",
+          "target": true,
+          "category": "extension"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best verb to fill in the blank.",
+    "stem": "Let's ___ the retry count as a configurable option so users can adjust it.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "extend"
+      },
+      {
+        "id": "b",
+        "text": "support"
+      },
+      {
+        "id": "c",
+        "text": "expose"
+      },
+      {
+        "id": "d",
+        "text": "enable"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "内部の設定値を外部から利用可能にする場合はexpose。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_073_scloze_1",
+    "sentenceId": "gitverbs85_073",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "release",
+          "pos": "verb",
+          "meaning": "公開する",
+          "target": true,
+          "category": "release"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best verb to fill in the blank.",
+    "stem": "We're ready to ___ version 3.0.0 with the new dashboard feature.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "deploy"
+      },
+      {
+        "id": "b",
+        "text": "ship"
+      },
+      {
+        "id": "c",
+        "text": "release"
+      },
+      {
+        "id": "d",
+        "text": "publish"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "バージョンを公開宣言する場合はrelease。deployはサーバーへの配置。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_074_scloze_1",
+    "sentenceId": "gitverbs85_074",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "deploy",
+          "pos": "verb",
+          "meaning": "配置する（軍事用語から）",
+          "target": true,
+          "category": "release"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best verb to fill in the blank.",
+    "stem": "The hotfix has been tested. Let's ___ it to production immediately.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "release"
+      },
+      {
+        "id": "b",
+        "text": "push"
+      },
+      {
+        "id": "c",
+        "text": "ship"
+      },
+      {
+        "id": "d",
+        "text": "deploy"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "コードを本番環境に配置する場合はdeploy。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_075_scloze_1",
+    "sentenceId": "gitverbs85_075",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "pin",
+          "pos": "verb",
+          "meaning": "ピンで留める",
+          "target": true,
+          "category": "release"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best verb to fill in the blank.",
+    "stem": "Please ___ the Node.js version to 20.11.0 in the CI config to avoid inconsistencies.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "lock"
+      },
+      {
+        "id": "b",
+        "text": "fix"
+      },
+      {
+        "id": "c",
+        "text": "pin"
+      },
+      {
+        "id": "d",
+        "text": "set"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "特定のバージョンに固定する場合はpin。lockは全体のロックファイル固定。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_076_scloze_1",
+    "sentenceId": "gitverbs85_076",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "lock",
+          "pos": "verb",
+          "meaning": "しっかり固定する",
+          "target": true,
+          "category": "release"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best verb to fill in the blank.",
+    "stem": "Make sure to ___ all dependencies with the lockfile before deploying.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "pin"
+      },
+      {
+        "id": "b",
+        "text": "fix"
+      },
+      {
+        "id": "c",
+        "text": "freeze"
+      },
+      {
+        "id": "d",
+        "text": "lock"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "依存関係全体をロックファイルで固定する場合はlock。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_077_scloze_1",
+    "sentenceId": "gitverbs85_077",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "automate",
+          "pos": "verb",
+          "meaning": "自動化する",
+          "target": true,
+          "category": "release"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best verb to fill in the blank.",
+    "stem": "We should ___ the changelog generation so it runs on every tagged commit.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "set up"
+      },
+      {
+        "id": "b",
+        "text": "deploy"
+      },
+      {
+        "id": "c",
+        "text": "automate"
+      },
+      {
+        "id": "d",
+        "text": "implement"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "手動作業をスクリプトやCIで自動化する場合はautomate。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_078_scloze_1",
+    "sentenceId": "gitverbs85_078",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "document",
+          "pos": "verb",
+          "meaning": "書面で記録する",
+          "target": true,
+          "category": "documentation"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best verb to fill in the blank.",
+    "stem": "Please ___ the environment variable requirements in the README.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "describe"
+      },
+      {
+        "id": "b",
+        "text": "clarify"
+      },
+      {
+        "id": "c",
+        "text": "annotate"
+      },
+      {
+        "id": "d",
+        "text": "document"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "README等に説明を書き足す場合はdocument。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_079_scloze_1",
+    "sentenceId": "gitverbs85_079",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "clarify",
+          "pos": "verb",
+          "meaning": "わかりにくいものを明確にする",
+          "target": true,
+          "category": "documentation"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best verb to fill in the blank.",
+    "stem": "The error message is confusing. Can you ___ what \"invalid token\" actually means?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "document"
+      },
+      {
+        "id": "b",
+        "text": "describe"
+      },
+      {
+        "id": "c",
+        "text": "clarify"
+      },
+      {
+        "id": "d",
+        "text": "annotate"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "既にある表現をわかりやすくする場合はclarify。伝わり方が変わる。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_080_scloze_1",
+    "sentenceId": "gitverbs85_080",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "describe",
+          "pos": "verb",
+          "meaning": "言葉で説明する",
+          "target": true,
+          "category": "documentation"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best verb to fill in the blank.",
+    "stem": "Could you ___ each config option in the `.env.example` file so new developers know what they do?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "document"
+      },
+      {
+        "id": "b",
+        "text": "clarify"
+      },
+      {
+        "id": "c",
+        "text": "annotate"
+      },
+      {
+        "id": "d",
+        "text": "describe"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "特定の対象に説明文をつける場合はdescribe。documentよりも粒度が小さい。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_081_scloze_1",
+    "sentenceId": "gitverbs85_081",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "annotate",
+          "pos": "verb",
+          "meaning": "注釈を付ける",
+          "target": true,
+          "category": "documentation"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best verb to fill in the blank.",
+    "stem": "Please ___ that complex regex with a comment explaining what it matches.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "document"
+      },
+      {
+        "id": "b",
+        "text": "describe"
+      },
+      {
+        "id": "c",
+        "text": "clarify"
+      },
+      {
+        "id": "d",
+        "text": "annotate"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "コードの横に注釈を付ける場合はannotate。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_082_scloze_1",
+    "sentenceId": "gitverbs85_082",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "cover",
+          "pos": "verb",
+          "meaning": "対象を扱う、カバーする",
+          "target": true,
+          "category": "documentation"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best verb to fill in the blank.",
+    "stem": "We need to ___ the edge cases in the date parser with additional unit tests.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "verify"
+      },
+      {
+        "id": "b",
+        "text": "validate"
+      },
+      {
+        "id": "c",
+        "text": "cover"
+      },
+      {
+        "id": "d",
+        "text": "test"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "テストカバレッジを追加する場合はcover。「テストの網で覆う」。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_083_scloze_1",
+    "sentenceId": "gitverbs85_083",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "verify",
+          "pos": "verb",
+          "meaning": "正しいことを確かめる",
+          "target": true,
+          "category": "documentation"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best verb to fill in the blank.",
+    "stem": "Can you add an assertion to ___ that the response schema matches our TypeScript types?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "cover"
+      },
+      {
+        "id": "b",
+        "text": "validate"
+      },
+      {
+        "id": "c",
+        "text": "ensure"
+      },
+      {
+        "id": "d",
+        "text": "verify"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "テスト内の検証を強化する場合はverify。coverは範囲拡大、verifyは精度向上。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_084_scloze_1",
+    "sentenceId": "gitverbs85_084",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "stub",
+          "pos": "verb",
+          "meaning": "切り株、控え（転じて、仮実装）",
+          "target": true,
+          "category": "documentation"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best verb to fill in the blank.",
+    "stem": "Let's ___ the external payment API with a mock that returns predefined responses.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "replace"
+      },
+      {
+        "id": "b",
+        "text": "wrap"
+      },
+      {
+        "id": "c",
+        "text": "stub"
+      },
+      {
+        "id": "d",
+        "text": "cover"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "テスト用に最低限の応答を返す仮実装を作る場合はstub。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_085_scloze_1",
+    "sentenceId": "gitverbs85_085",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "log",
+          "pos": "verb",
+          "meaning": "記録する",
+          "target": true,
+          "category": "documentation"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best verb to fill in the blank.",
+    "stem": "We should ___ all failed authentication attempts for the security audit trail.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "document"
+      },
+      {
+        "id": "b",
+        "text": "annotate"
+      },
+      {
+        "id": "c",
+        "text": "record"
+      },
+      {
+        "id": "d",
+        "text": "log"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "機械が吐く記録（ログ出力）を仕込む場合はlog。documentは人間が読む文書。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  }
+]

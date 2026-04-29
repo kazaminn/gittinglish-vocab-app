@@ -1,0 +1,5399 @@
+[
+  {
+    "id": "gitverbs85_001_m2w_1",
+    "sentenceId": "gitverbs85_001",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "add",
+          "pos": "verb",
+          "meaning": "既にある集合に要素を加える",
+          "target": true,
+          "category": "addition"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 既にある集合に要素を加える?",
+    "stem": "既にある集合に要素を加える",
+    "choices": [
+      {
+        "id": "a",
+        "text": "wire up"
+      },
+      {
+        "id": "b",
+        "text": "enable"
+      },
+      {
+        "id": "c",
+        "text": "create"
+      },
+      {
+        "id": "d",
+        "text": "add"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'add': 既にある集合に要素を加える",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_002_m2w_1",
+    "sentenceId": "gitverbs85_002",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "create",
+          "pos": "verb",
+          "meaning": "存在しなかったものを新たに生み出す",
+          "target": true,
+          "category": "addition"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 存在しなかったものを新たに生み出す?",
+    "stem": "存在しなかったものを新たに生み出す",
+    "choices": [
+      {
+        "id": "a",
+        "text": "create"
+      },
+      {
+        "id": "b",
+        "text": "bootstrap"
+      },
+      {
+        "id": "c",
+        "text": "integrate"
+      },
+      {
+        "id": "d",
+        "text": "set up"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "a"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'create': 存在しなかったものを新たに生み出す",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_003_m2w_1",
+    "sentenceId": "gitverbs85_003",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "introduce",
+          "pos": "verb",
+          "meaning": "初めて導入する",
+          "target": true,
+          "category": "addition"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 初めて導入する?",
+    "stem": "初めて導入する",
+    "choices": [
+      {
+        "id": "a",
+        "text": "wire up"
+      },
+      {
+        "id": "b",
+        "text": "introduce"
+      },
+      {
+        "id": "c",
+        "text": "enable"
+      },
+      {
+        "id": "d",
+        "text": "create"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'introduce': 初めて導入する",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_004_m2w_1",
+    "sentenceId": "gitverbs85_004",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "implement",
+          "pos": "verb",
+          "meaning": "設計・計画されたものを実際に動くようにする",
+          "target": true,
+          "category": "addition"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 設計・計画されたものを実際に動くようにする?",
+    "stem": "設計・計画されたものを実際に動くようにする",
+    "choices": [
+      {
+        "id": "a",
+        "text": "enable"
+      },
+      {
+        "id": "b",
+        "text": "integrate"
+      },
+      {
+        "id": "c",
+        "text": "implement"
+      },
+      {
+        "id": "d",
+        "text": "wire up"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'implement': 設計・計画されたものを実際に動くようにする",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_005_m2w_1",
+    "sentenceId": "gitverbs85_005",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "phrasal_verb",
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "set up",
+          "pos": "verb",
+          "meaning": "使える状態にする準備・構築",
+          "target": true,
+          "category": "addition"
+        }
+      ],
+      "phrases": [
+        {
+          "text": "set up",
+          "type": "phrasal_verb"
+        }
+      ]
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 2,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 使える状態にする準備・構築?",
+    "stem": "使える状態にする準備・構築",
+    "choices": [
+      {
+        "id": "a",
+        "text": "wire up"
+      },
+      {
+        "id": "b",
+        "text": "set up"
+      },
+      {
+        "id": "c",
+        "text": "bootstrap"
+      },
+      {
+        "id": "d",
+        "text": "create"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'set up': 使える状態にする準備・構築",
+      "relatedGrammar": [
+        "phrasal_verb",
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_006_m2w_1",
+    "sentenceId": "gitverbs85_006",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "integrate",
+          "pos": "verb",
+          "meaning": "異なるものを統合して一体にする",
+          "target": true,
+          "category": "addition"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 異なるものを統合して一体にする?",
+    "stem": "異なるものを統合して一体にする",
+    "choices": [
+      {
+        "id": "a",
+        "text": "integrate"
+      },
+      {
+        "id": "b",
+        "text": "enable"
+      },
+      {
+        "id": "c",
+        "text": "introduce"
+      },
+      {
+        "id": "d",
+        "text": "set up"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "a"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'integrate': 異なるものを統合して一体にする",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_007_m2w_1",
+    "sentenceId": "gitverbs85_007",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "enable",
+          "pos": "verb",
+          "meaning": "可能にする、有効化する",
+          "target": true,
+          "category": "addition"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 可能にする、有効化する?",
+    "stem": "可能にする、有効化する",
+    "choices": [
+      {
+        "id": "a",
+        "text": "introduce"
+      },
+      {
+        "id": "b",
+        "text": "add"
+      },
+      {
+        "id": "c",
+        "text": "enable"
+      },
+      {
+        "id": "d",
+        "text": "scaffold"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'enable': 可能にする、有効化する",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_008_m2w_1",
+    "sentenceId": "gitverbs85_008",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "phrasal_verb",
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "wire up",
+          "pos": "verb",
+          "meaning": "配線する。比喩的に部品同士を接続する",
+          "target": true,
+          "category": "addition"
+        }
+      ],
+      "phrases": [
+        {
+          "text": "wire up",
+          "type": "phrasal_verb"
+        }
+      ]
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 2,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 配線する。比喩的に部品同士を接続する?",
+    "stem": "配線する。比喩的に部品同士を接続する",
+    "choices": [
+      {
+        "id": "a",
+        "text": "wire up"
+      },
+      {
+        "id": "b",
+        "text": "integrate"
+      },
+      {
+        "id": "c",
+        "text": "add"
+      },
+      {
+        "id": "d",
+        "text": "bootstrap"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "a"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'wire up': 配線する。比喩的に部品同士を接続する",
+      "relatedGrammar": [
+        "phrasal_verb",
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_009_m2w_1",
+    "sentenceId": "gitverbs85_009",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "scaffold",
+          "pos": "verb",
+          "meaning": "足場を組む",
+          "target": true,
+          "category": "addition"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 足場を組む?",
+    "stem": "足場を組む",
+    "choices": [
+      {
+        "id": "a",
+        "text": "create"
+      },
+      {
+        "id": "b",
+        "text": "scaffold"
+      },
+      {
+        "id": "c",
+        "text": "add"
+      },
+      {
+        "id": "d",
+        "text": "integrate"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'scaffold': 足場を組む",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_010_m2w_1",
+    "sentenceId": "gitverbs85_010",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "bootstrap",
+          "pos": "verb",
+          "meaning": "最小限のリソースで立ち上げる",
+          "target": true,
+          "category": "addition"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 最小限のリソースで立ち上げる?",
+    "stem": "最小限のリソースで立ち上げる",
+    "choices": [
+      {
+        "id": "a",
+        "text": "wire up"
+      },
+      {
+        "id": "b",
+        "text": "bootstrap"
+      },
+      {
+        "id": "c",
+        "text": "set up"
+      },
+      {
+        "id": "d",
+        "text": "integrate"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'bootstrap': 最小限のリソースで立ち上げる",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_011_m2w_1",
+    "sentenceId": "gitverbs85_011",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "remove",
+          "pos": "verb",
+          "meaning": "ある場所から何かを取り去る",
+          "target": true,
+          "category": "removal"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: ある場所から何かを取り去る?",
+    "stem": "ある場所から何かを取り去る",
+    "choices": [
+      {
+        "id": "a",
+        "text": "drop"
+      },
+      {
+        "id": "b",
+        "text": "strip"
+      },
+      {
+        "id": "c",
+        "text": "clean up"
+      },
+      {
+        "id": "d",
+        "text": "remove"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'remove': ある場所から何かを取り去る",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_012_m2w_1",
+    "sentenceId": "gitverbs85_012",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "delete",
+          "pos": "verb",
+          "meaning": "記録・保存されたものを消去する",
+          "target": true,
+          "category": "removal"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 記録・保存されたものを消去する?",
+    "stem": "記録・保存されたものを消去する",
+    "choices": [
+      {
+        "id": "a",
+        "text": "drop"
+      },
+      {
+        "id": "b",
+        "text": "delete"
+      },
+      {
+        "id": "c",
+        "text": "clean up"
+      },
+      {
+        "id": "d",
+        "text": "remove"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'delete': 記録・保存されたものを消去する",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_013_m2w_1",
+    "sentenceId": "gitverbs85_013",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "drop",
+          "pos": "verb",
+          "meaning": "落とす、やめる",
+          "target": true,
+          "category": "removal"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 落とす、やめる?",
+    "stem": "落とす、やめる",
+    "choices": [
+      {
+        "id": "a",
+        "text": "strip"
+      },
+      {
+        "id": "b",
+        "text": "drop"
+      },
+      {
+        "id": "c",
+        "text": "clean up"
+      },
+      {
+        "id": "d",
+        "text": "delete"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'drop': 落とす、やめる",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_014_m2w_1",
+    "sentenceId": "gitverbs85_014",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "phrasal_verb",
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "clean up",
+          "pos": "verb",
+          "meaning": "散らかったものを片付ける",
+          "target": true,
+          "category": "removal"
+        }
+      ],
+      "phrases": [
+        {
+          "text": "clean up",
+          "type": "phrasal_verb"
+        }
+      ]
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 2,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 散らかったものを片付ける?",
+    "stem": "散らかったものを片付ける",
+    "choices": [
+      {
+        "id": "a",
+        "text": "remove"
+      },
+      {
+        "id": "b",
+        "text": "delete"
+      },
+      {
+        "id": "c",
+        "text": "strip"
+      },
+      {
+        "id": "d",
+        "text": "clean up"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'clean up': 散らかったものを片付ける",
+      "relatedGrammar": [
+        "phrasal_verb",
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_015_m2w_1",
+    "sentenceId": "gitverbs85_015",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "deprecate",
+          "pos": "verb",
+          "meaning": "非推奨とする（まだ消さない）",
+          "target": true,
+          "category": "removal"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 非推奨とする（まだ消さない）?",
+    "stem": "非推奨とする（まだ消さない）",
+    "choices": [
+      {
+        "id": "a",
+        "text": "strip"
+      },
+      {
+        "id": "b",
+        "text": "clean up"
+      },
+      {
+        "id": "c",
+        "text": "deprecate"
+      },
+      {
+        "id": "d",
+        "text": "remove"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'deprecate': 非推奨とする（まだ消さない）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_016_m2w_1",
+    "sentenceId": "gitverbs85_016",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "strip",
+          "pos": "verb",
+          "meaning": "覆いや層を剥がす",
+          "target": true,
+          "category": "removal"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 覆いや層を剥がす?",
+    "stem": "覆いや層を剥がす",
+    "choices": [
+      {
+        "id": "a",
+        "text": "deprecate"
+      },
+      {
+        "id": "b",
+        "text": "remove"
+      },
+      {
+        "id": "c",
+        "text": "drop"
+      },
+      {
+        "id": "d",
+        "text": "strip"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'strip': 覆いや層を剥がす",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_017_m2w_1",
+    "sentenceId": "gitverbs85_017",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "fix",
+          "pos": "verb",
+          "meaning": "壊れたものを直す",
+          "target": true,
+          "category": "correction"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 壊れたものを直す?",
+    "stem": "壊れたものを直す",
+    "choices": [
+      {
+        "id": "a",
+        "text": "address"
+      },
+      {
+        "id": "b",
+        "text": "correct"
+      },
+      {
+        "id": "c",
+        "text": "fix"
+      },
+      {
+        "id": "d",
+        "text": "revert"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'fix': 壊れたものを直す",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_018_m2w_1",
+    "sentenceId": "gitverbs85_018",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "resolve",
+          "pos": "verb",
+          "meaning": "問題や対立を解決に導く",
+          "target": true,
+          "category": "correction"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 問題や対立を解決に導く?",
+    "stem": "問題や対立を解決に導く",
+    "choices": [
+      {
+        "id": "a",
+        "text": "address"
+      },
+      {
+        "id": "b",
+        "text": "resolve"
+      },
+      {
+        "id": "c",
+        "text": "patch"
+      },
+      {
+        "id": "d",
+        "text": "fix"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'resolve': 問題や対立を解決に導く",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_019_m2w_1",
+    "sentenceId": "gitverbs85_019",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "correct",
+          "pos": "verb",
+          "meaning": "間違いを正す",
+          "target": true,
+          "category": "correction"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 間違いを正す?",
+    "stem": "間違いを正す",
+    "choices": [
+      {
+        "id": "a",
+        "text": "correct"
+      },
+      {
+        "id": "b",
+        "text": "fix"
+      },
+      {
+        "id": "c",
+        "text": "patch"
+      },
+      {
+        "id": "d",
+        "text": "revert"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "a"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'correct': 間違いを正す",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_020_m2w_1",
+    "sentenceId": "gitverbs85_020",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "patch",
+          "pos": "verb",
+          "meaning": "穴や弱い箇所を塞ぐ",
+          "target": true,
+          "category": "correction"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 穴や弱い箇所を塞ぐ?",
+    "stem": "穴や弱い箇所を塞ぐ",
+    "choices": [
+      {
+        "id": "a",
+        "text": "resolve"
+      },
+      {
+        "id": "b",
+        "text": "recover"
+      },
+      {
+        "id": "c",
+        "text": "correct"
+      },
+      {
+        "id": "d",
+        "text": "patch"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'patch': 穴や弱い箇所を塞ぐ",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_021_m2w_1",
+    "sentenceId": "gitverbs85_021",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "address",
+          "pos": "verb",
+          "meaning": "問題に取り組む、対処する",
+          "target": true,
+          "category": "correction"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 問題に取り組む、対処する?",
+    "stem": "問題に取り組む、対処する",
+    "choices": [
+      {
+        "id": "a",
+        "text": "resolve"
+      },
+      {
+        "id": "b",
+        "text": "address"
+      },
+      {
+        "id": "c",
+        "text": "fix"
+      },
+      {
+        "id": "d",
+        "text": "revert"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'address': 問題に取り組む、対処する",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_022_m2w_1",
+    "sentenceId": "gitverbs85_022",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "recover",
+          "pos": "verb",
+          "meaning": "困難な状態から回復する",
+          "target": true,
+          "category": "correction"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 困難な状態から回復する?",
+    "stem": "困難な状態から回復する",
+    "choices": [
+      {
+        "id": "a",
+        "text": "recover"
+      },
+      {
+        "id": "b",
+        "text": "correct"
+      },
+      {
+        "id": "c",
+        "text": "address"
+      },
+      {
+        "id": "d",
+        "text": "resolve"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "a"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'recover': 困難な状態から回復する",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_023_m2w_1",
+    "sentenceId": "gitverbs85_023",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "revert",
+          "pos": "verb",
+          "meaning": "以前の状態に戻す",
+          "target": true,
+          "category": "correction"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 以前の状態に戻す?",
+    "stem": "以前の状態に戻す",
+    "choices": [
+      {
+        "id": "a",
+        "text": "patch"
+      },
+      {
+        "id": "b",
+        "text": "address"
+      },
+      {
+        "id": "c",
+        "text": "revert"
+      },
+      {
+        "id": "d",
+        "text": "resolve"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'revert': 以前の状態に戻す",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_024_m2w_1",
+    "sentenceId": "gitverbs85_024",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "update",
+          "pos": "verb",
+          "meaning": "より新しい状態にする",
+          "target": true,
+          "category": "modification"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: より新しい状態にする?",
+    "stem": "より新しい状態にする",
+    "choices": [
+      {
+        "id": "a",
+        "text": "rewrite"
+      },
+      {
+        "id": "b",
+        "text": "rename"
+      },
+      {
+        "id": "c",
+        "text": "change"
+      },
+      {
+        "id": "d",
+        "text": "update"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'update': より新しい状態にする",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_025_m2w_1",
+    "sentenceId": "gitverbs85_025",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "change",
+          "pos": "verb",
+          "meaning": "何かを異なる状態にする",
+          "target": true,
+          "category": "modification"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 何かを異なる状態にする?",
+    "stem": "何かを異なる状態にする",
+    "choices": [
+      {
+        "id": "a",
+        "text": "change"
+      },
+      {
+        "id": "b",
+        "text": "adjust"
+      },
+      {
+        "id": "c",
+        "text": "rewrite"
+      },
+      {
+        "id": "d",
+        "text": "replace"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "a"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'change': 何かを異なる状態にする",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_026_m2w_1",
+    "sentenceId": "gitverbs85_026",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "replace",
+          "pos": "verb",
+          "meaning": "古いものの場所に新しいものを置く",
+          "target": true,
+          "category": "modification"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 古いものの場所に新しいものを置く?",
+    "stem": "古いものの場所に新しいものを置く",
+    "choices": [
+      {
+        "id": "a",
+        "text": "switch"
+      },
+      {
+        "id": "b",
+        "text": "change"
+      },
+      {
+        "id": "c",
+        "text": "update"
+      },
+      {
+        "id": "d",
+        "text": "replace"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'replace': 古いものの場所に新しいものを置く",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_027_m2w_1",
+    "sentenceId": "gitverbs85_027",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "swap",
+          "pos": "verb",
+          "meaning": "交換する",
+          "target": true,
+          "category": "modification"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 交換する?",
+    "stem": "交換する",
+    "choices": [
+      {
+        "id": "a",
+        "text": "swap"
+      },
+      {
+        "id": "b",
+        "text": "migrate"
+      },
+      {
+        "id": "c",
+        "text": "change"
+      },
+      {
+        "id": "d",
+        "text": "tweak"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "a"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'swap': 交換する",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_028_m2w_1",
+    "sentenceId": "gitverbs85_028",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "convert",
+          "pos": "verb",
+          "meaning": "形式や性質を変換する",
+          "target": true,
+          "category": "modification"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 形式や性質を変換する?",
+    "stem": "形式や性質を変換する",
+    "choices": [
+      {
+        "id": "a",
+        "text": "bump"
+      },
+      {
+        "id": "b",
+        "text": "rename"
+      },
+      {
+        "id": "c",
+        "text": "rewrite"
+      },
+      {
+        "id": "d",
+        "text": "convert"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'convert': 形式や性質を変換する",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_029_m2w_1",
+    "sentenceId": "gitverbs85_029",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "migrate",
+          "pos": "verb",
+          "meaning": "ある場所から別の場所へ移動する",
+          "target": true,
+          "category": "modification"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: ある場所から別の場所へ移動する?",
+    "stem": "ある場所から別の場所へ移動する",
+    "choices": [
+      {
+        "id": "a",
+        "text": "switch"
+      },
+      {
+        "id": "b",
+        "text": "migrate"
+      },
+      {
+        "id": "c",
+        "text": "bump"
+      },
+      {
+        "id": "d",
+        "text": "rename"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'migrate': ある場所から別の場所へ移動する",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_030_m2w_1",
+    "sentenceId": "gitverbs85_030",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "switch",
+          "pos": "verb",
+          "meaning": "一方からもう一方に切り替える",
+          "target": true,
+          "category": "modification"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 一方からもう一方に切り替える?",
+    "stem": "一方からもう一方に切り替える",
+    "choices": [
+      {
+        "id": "a",
+        "text": "switch"
+      },
+      {
+        "id": "b",
+        "text": "bump"
+      },
+      {
+        "id": "c",
+        "text": "update"
+      },
+      {
+        "id": "d",
+        "text": "replace"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "a"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'switch': 一方からもう一方に切り替える",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_031_m2w_1",
+    "sentenceId": "gitverbs85_031",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "adjust",
+          "pos": "verb",
+          "meaning": "微調整する",
+          "target": true,
+          "category": "modification"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 微調整する?",
+    "stem": "微調整する",
+    "choices": [
+      {
+        "id": "a",
+        "text": "rewrite"
+      },
+      {
+        "id": "b",
+        "text": "switch"
+      },
+      {
+        "id": "c",
+        "text": "adjust"
+      },
+      {
+        "id": "d",
+        "text": "move"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'adjust': 微調整する",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_032_m2w_1",
+    "sentenceId": "gitverbs85_032",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "tweak",
+          "pos": "verb",
+          "meaning": "さらに小さい微調整をする",
+          "target": true,
+          "category": "modification"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: さらに小さい微調整をする?",
+    "stem": "さらに小さい微調整をする",
+    "choices": [
+      {
+        "id": "a",
+        "text": "bump"
+      },
+      {
+        "id": "b",
+        "text": "switch"
+      },
+      {
+        "id": "c",
+        "text": "tweak"
+      },
+      {
+        "id": "d",
+        "text": "replace"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'tweak': さらに小さい微調整をする",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_033_m2w_1",
+    "sentenceId": "gitverbs85_033",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "rename",
+          "pos": "verb",
+          "meaning": "新しい名前をつける",
+          "target": true,
+          "category": "modification"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 新しい名前をつける?",
+    "stem": "新しい名前をつける",
+    "choices": [
+      {
+        "id": "a",
+        "text": "rename"
+      },
+      {
+        "id": "b",
+        "text": "migrate"
+      },
+      {
+        "id": "c",
+        "text": "adjust"
+      },
+      {
+        "id": "d",
+        "text": "switch"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "a"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'rename': 新しい名前をつける",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_034_m2w_1",
+    "sentenceId": "gitverbs85_034",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "move",
+          "pos": "verb",
+          "meaning": "位置を変える",
+          "target": true,
+          "category": "modification"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 位置を変える?",
+    "stem": "位置を変える",
+    "choices": [
+      {
+        "id": "a",
+        "text": "migrate"
+      },
+      {
+        "id": "b",
+        "text": "adjust"
+      },
+      {
+        "id": "c",
+        "text": "move"
+      },
+      {
+        "id": "d",
+        "text": "swap"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'move': 位置を変える",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_035_m2w_1",
+    "sentenceId": "gitverbs85_035",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "bump",
+          "pos": "verb",
+          "meaning": "ぶつける（転じて、ひとつ上げる）",
+          "target": true,
+          "category": "modification"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: ぶつける（転じて、ひとつ上げる）?",
+    "stem": "ぶつける（転じて、ひとつ上げる）",
+    "choices": [
+      {
+        "id": "a",
+        "text": "adjust"
+      },
+      {
+        "id": "b",
+        "text": "convert"
+      },
+      {
+        "id": "c",
+        "text": "migrate"
+      },
+      {
+        "id": "d",
+        "text": "bump"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'bump': ぶつける（転じて、ひとつ上げる）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_036_m2w_1",
+    "sentenceId": "gitverbs85_036",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "rewrite",
+          "pos": "verb",
+          "meaning": "書き直す",
+          "target": true,
+          "category": "modification"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 書き直す?",
+    "stem": "書き直す",
+    "choices": [
+      {
+        "id": "a",
+        "text": "replace"
+      },
+      {
+        "id": "b",
+        "text": "convert"
+      },
+      {
+        "id": "c",
+        "text": "change"
+      },
+      {
+        "id": "d",
+        "text": "rewrite"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'rewrite': 書き直す",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_037_m2w_1",
+    "sentenceId": "gitverbs85_037",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "refactor",
+          "pos": "verb",
+          "meaning": "外部の振る舞いを変えずにコード構造を改善する",
+          "target": true,
+          "category": "restructuring"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 外部の振る舞いを変えずにコード構造を改善する?",
+    "stem": "外部の振る舞いを変えずにコード構造を改善する",
+    "choices": [
+      {
+        "id": "a",
+        "text": "refactor"
+      },
+      {
+        "id": "b",
+        "text": "extract"
+      },
+      {
+        "id": "c",
+        "text": "split"
+      },
+      {
+        "id": "d",
+        "text": "normalize"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "a"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'refactor': 外部の振る舞いを変えずにコード構造を改善する",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_038_m2w_1",
+    "sentenceId": "gitverbs85_038",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "extract",
+          "pos": "verb",
+          "meaning": "取り出す、抽出する",
+          "target": true,
+          "category": "restructuring"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 取り出す、抽出する?",
+    "stem": "取り出す、抽出する",
+    "choices": [
+      {
+        "id": "a",
+        "text": "flatten"
+      },
+      {
+        "id": "b",
+        "text": "extract"
+      },
+      {
+        "id": "c",
+        "text": "refactor"
+      },
+      {
+        "id": "d",
+        "text": "merge"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'extract': 取り出す、抽出する",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_039_m2w_1",
+    "sentenceId": "gitverbs85_039",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "inline",
+          "pos": "verb",
+          "meaning": "本体に組み込む",
+          "target": true,
+          "category": "restructuring"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 本体に組み込む?",
+    "stem": "本体に組み込む",
+    "choices": [
+      {
+        "id": "a",
+        "text": "simplify"
+      },
+      {
+        "id": "b",
+        "text": "consolidate"
+      },
+      {
+        "id": "c",
+        "text": "normalize"
+      },
+      {
+        "id": "d",
+        "text": "inline"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'inline': 本体に組み込む",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_040_m2w_1",
+    "sentenceId": "gitverbs85_040",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "flatten",
+          "pos": "verb",
+          "meaning": "平らにする",
+          "target": true,
+          "category": "restructuring"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 平らにする?",
+    "stem": "平らにする",
+    "choices": [
+      {
+        "id": "a",
+        "text": "flatten"
+      },
+      {
+        "id": "b",
+        "text": "consolidate"
+      },
+      {
+        "id": "c",
+        "text": "extract"
+      },
+      {
+        "id": "d",
+        "text": "split"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "a"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'flatten': 平らにする",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_041_m2w_1",
+    "sentenceId": "gitverbs85_041",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "split",
+          "pos": "verb",
+          "meaning": "分割する",
+          "target": true,
+          "category": "restructuring"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 分割する?",
+    "stem": "分割する",
+    "choices": [
+      {
+        "id": "a",
+        "text": "flatten"
+      },
+      {
+        "id": "b",
+        "text": "decouple"
+      },
+      {
+        "id": "c",
+        "text": "split"
+      },
+      {
+        "id": "d",
+        "text": "inline"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'split': 分割する",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_042_m2w_1",
+    "sentenceId": "gitverbs85_042",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "merge",
+          "pos": "verb",
+          "meaning": "一つに統合する",
+          "target": true,
+          "category": "restructuring"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 一つに統合する?",
+    "stem": "一つに統合する",
+    "choices": [
+      {
+        "id": "a",
+        "text": "simplify"
+      },
+      {
+        "id": "b",
+        "text": "decouple"
+      },
+      {
+        "id": "c",
+        "text": "inline"
+      },
+      {
+        "id": "d",
+        "text": "merge"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'merge': 一つに統合する",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_043_m2w_1",
+    "sentenceId": "gitverbs85_043",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "reorganize",
+          "pos": "verb",
+          "meaning": "新しい配置に整理し直す",
+          "target": true,
+          "category": "restructuring"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 新しい配置に整理し直す?",
+    "stem": "新しい配置に整理し直す",
+    "choices": [
+      {
+        "id": "a",
+        "text": "normalize"
+      },
+      {
+        "id": "b",
+        "text": "inline"
+      },
+      {
+        "id": "c",
+        "text": "consolidate"
+      },
+      {
+        "id": "d",
+        "text": "reorganize"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'reorganize': 新しい配置に整理し直す",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_044_m2w_1",
+    "sentenceId": "gitverbs85_044",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "decouple",
+          "pos": "verb",
+          "meaning": "結合していたものを切り離す",
+          "target": true,
+          "category": "restructuring"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 結合していたものを切り離す?",
+    "stem": "結合していたものを切り離す",
+    "choices": [
+      {
+        "id": "a",
+        "text": "simplify"
+      },
+      {
+        "id": "b",
+        "text": "refactor"
+      },
+      {
+        "id": "c",
+        "text": "flatten"
+      },
+      {
+        "id": "d",
+        "text": "decouple"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'decouple': 結合していたものを切り離す",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_045_m2w_1",
+    "sentenceId": "gitverbs85_045",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "consolidate",
+          "pos": "verb",
+          "meaning": "散在する部品を一箇所にまとめる",
+          "target": true,
+          "category": "restructuring"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 散在する部品を一箇所にまとめる?",
+    "stem": "散在する部品を一箇所にまとめる",
+    "choices": [
+      {
+        "id": "a",
+        "text": "normalize"
+      },
+      {
+        "id": "b",
+        "text": "consolidate"
+      },
+      {
+        "id": "c",
+        "text": "wrap"
+      },
+      {
+        "id": "d",
+        "text": "inline"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'consolidate': 散在する部品を一箇所にまとめる",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_046_m2w_1",
+    "sentenceId": "gitverbs85_046",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "normalize",
+          "pos": "verb",
+          "meaning": "標準化する、統一する",
+          "target": true,
+          "category": "restructuring"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 標準化する、統一する?",
+    "stem": "標準化する、統一する",
+    "choices": [
+      {
+        "id": "a",
+        "text": "simplify"
+      },
+      {
+        "id": "b",
+        "text": "decouple"
+      },
+      {
+        "id": "c",
+        "text": "wrap"
+      },
+      {
+        "id": "d",
+        "text": "normalize"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'normalize': 標準化する、統一する",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_047_m2w_1",
+    "sentenceId": "gitverbs85_047",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "simplify",
+          "pos": "verb",
+          "meaning": "より簡単にする",
+          "target": true,
+          "category": "restructuring"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: より簡単にする?",
+    "stem": "より簡単にする",
+    "choices": [
+      {
+        "id": "a",
+        "text": "decouple"
+      },
+      {
+        "id": "b",
+        "text": "consolidate"
+      },
+      {
+        "id": "c",
+        "text": "split"
+      },
+      {
+        "id": "d",
+        "text": "simplify"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'simplify': より簡単にする",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_048_m2w_1",
+    "sentenceId": "gitverbs85_048",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "wrap",
+          "pos": "verb",
+          "meaning": "包む",
+          "target": true,
+          "category": "restructuring"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 包む?",
+    "stem": "包む",
+    "choices": [
+      {
+        "id": "a",
+        "text": "decouple"
+      },
+      {
+        "id": "b",
+        "text": "refactor"
+      },
+      {
+        "id": "c",
+        "text": "flatten"
+      },
+      {
+        "id": "d",
+        "text": "wrap"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'wrap': 包む",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_049_m2w_1",
+    "sentenceId": "gitverbs85_049",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "optimize",
+          "pos": "verb",
+          "meaning": "最も効果的にする",
+          "target": true,
+          "category": "optimization"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 最も効果的にする?",
+    "stem": "最も効果的にする",
+    "choices": [
+      {
+        "id": "a",
+        "text": "speed up"
+      },
+      {
+        "id": "b",
+        "text": "optimize"
+      },
+      {
+        "id": "c",
+        "text": "throttle"
+      },
+      {
+        "id": "d",
+        "text": "reduce"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'optimize': 最も効果的にする",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_050_m2w_1",
+    "sentenceId": "gitverbs85_050",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "improve",
+          "pos": "verb",
+          "meaning": "より良くする",
+          "target": true,
+          "category": "optimization"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: より良くする?",
+    "stem": "より良くする",
+    "choices": [
+      {
+        "id": "a",
+        "text": "defer"
+      },
+      {
+        "id": "b",
+        "text": "reduce"
+      },
+      {
+        "id": "c",
+        "text": "debounce"
+      },
+      {
+        "id": "d",
+        "text": "improve"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'improve': より良くする",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_051_m2w_1",
+    "sentenceId": "gitverbs85_051",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "phrasal_verb",
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "speed up",
+          "pos": "verb",
+          "meaning": "速くする",
+          "target": true,
+          "category": "optimization"
+        }
+      ],
+      "phrases": [
+        {
+          "text": "speed up",
+          "type": "phrasal_verb"
+        }
+      ]
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 2,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 速くする?",
+    "stem": "速くする",
+    "choices": [
+      {
+        "id": "a",
+        "text": "improve"
+      },
+      {
+        "id": "b",
+        "text": "reduce"
+      },
+      {
+        "id": "c",
+        "text": "speed up"
+      },
+      {
+        "id": "d",
+        "text": "cache"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'speed up': 速くする",
+      "relatedGrammar": [
+        "phrasal_verb",
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_052_m2w_1",
+    "sentenceId": "gitverbs85_052",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "cache",
+          "pos": "verb",
+          "meaning": "将来の高速アクセスのためにデータを保存する",
+          "target": true,
+          "category": "optimization"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 将来の高速アクセスのためにデータを保存する?",
+    "stem": "将来の高速アクセスのためにデータを保存する",
+    "choices": [
+      {
+        "id": "a",
+        "text": "lazy-load"
+      },
+      {
+        "id": "b",
+        "text": "debounce"
+      },
+      {
+        "id": "c",
+        "text": "cache"
+      },
+      {
+        "id": "d",
+        "text": "reduce"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'cache': 将来の高速アクセスのためにデータを保存する",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_053_m2w_1",
+    "sentenceId": "gitverbs85_053",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "phrasal_verb",
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "lazy-load",
+          "pos": "verb",
+          "meaning": "必要になるまで読み込みを遅らせる",
+          "target": true,
+          "category": "optimization"
+        }
+      ],
+      "phrases": [
+        {
+          "text": "lazy-load",
+          "type": "phrasal_verb"
+        }
+      ]
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 2,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 必要になるまで読み込みを遅らせる?",
+    "stem": "必要になるまで読み込みを遅らせる",
+    "choices": [
+      {
+        "id": "a",
+        "text": "lazy-load"
+      },
+      {
+        "id": "b",
+        "text": "throttle"
+      },
+      {
+        "id": "c",
+        "text": "optimize"
+      },
+      {
+        "id": "d",
+        "text": "cache"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "a"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'lazy-load': 必要になるまで読み込みを遅らせる",
+      "relatedGrammar": [
+        "phrasal_verb",
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_054_m2w_1",
+    "sentenceId": "gitverbs85_054",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "defer",
+          "pos": "verb",
+          "meaning": "後回しにする",
+          "target": true,
+          "category": "optimization"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 後回しにする?",
+    "stem": "後回しにする",
+    "choices": [
+      {
+        "id": "a",
+        "text": "speed up"
+      },
+      {
+        "id": "b",
+        "text": "optimize"
+      },
+      {
+        "id": "c",
+        "text": "defer"
+      },
+      {
+        "id": "d",
+        "text": "improve"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'defer': 後回しにする",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_055_m2w_1",
+    "sentenceId": "gitverbs85_055",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "reduce",
+          "pos": "verb",
+          "meaning": "減らす",
+          "target": true,
+          "category": "optimization"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 減らす?",
+    "stem": "減らす",
+    "choices": [
+      {
+        "id": "a",
+        "text": "debounce"
+      },
+      {
+        "id": "b",
+        "text": "reduce"
+      },
+      {
+        "id": "c",
+        "text": "defer"
+      },
+      {
+        "id": "d",
+        "text": "optimize"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'reduce': 減らす",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_056_m2w_1",
+    "sentenceId": "gitverbs85_056",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "throttle",
+          "pos": "verb",
+          "meaning": "速度を制限する",
+          "target": true,
+          "category": "optimization"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 速度を制限する?",
+    "stem": "速度を制限する",
+    "choices": [
+      {
+        "id": "a",
+        "text": "defer"
+      },
+      {
+        "id": "b",
+        "text": "improve"
+      },
+      {
+        "id": "c",
+        "text": "speed up"
+      },
+      {
+        "id": "d",
+        "text": "throttle"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'throttle': 速度を制限する",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_057_m2w_1",
+    "sentenceId": "gitverbs85_057",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "debounce",
+          "pos": "verb",
+          "meaning": "入力が止まるまで実行を遅らせる",
+          "target": true,
+          "category": "optimization"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 入力が止まるまで実行を遅らせる?",
+    "stem": "入力が止まるまで実行を遅らせる",
+    "choices": [
+      {
+        "id": "a",
+        "text": "debounce"
+      },
+      {
+        "id": "b",
+        "text": "speed up"
+      },
+      {
+        "id": "c",
+        "text": "improve"
+      },
+      {
+        "id": "d",
+        "text": "throttle"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "a"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'debounce': 入力が止まるまで実行を遅らせる",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_058_m2w_1",
+    "sentenceId": "gitverbs85_058",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "validate",
+          "pos": "verb",
+          "meaning": "基準に照らして正しいか確認する",
+          "target": true,
+          "category": "safety"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 基準に照らして正しいか確認する?",
+    "stem": "基準に照らして正しいか確認する",
+    "choices": [
+      {
+        "id": "a",
+        "text": "enforce"
+      },
+      {
+        "id": "b",
+        "text": "ensure"
+      },
+      {
+        "id": "c",
+        "text": "validate"
+      },
+      {
+        "id": "d",
+        "text": "guard"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'validate': 基準に照らして正しいか確認する",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_059_m2w_1",
+    "sentenceId": "gitverbs85_059",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "sanitize",
+          "pos": "verb",
+          "meaning": "消毒する、無害化する",
+          "target": true,
+          "category": "safety"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 消毒する、無害化する?",
+    "stem": "消毒する、無害化する",
+    "choices": [
+      {
+        "id": "a",
+        "text": "sanitize"
+      },
+      {
+        "id": "b",
+        "text": "prevent"
+      },
+      {
+        "id": "c",
+        "text": "validate"
+      },
+      {
+        "id": "d",
+        "text": "handle"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "a"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'sanitize': 消毒する、無害化する",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_060_m2w_1",
+    "sentenceId": "gitverbs85_060",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "guard",
+          "pos": "verb",
+          "meaning": "見張って守る",
+          "target": true,
+          "category": "safety"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 見張って守る?",
+    "stem": "見張って守る",
+    "choices": [
+      {
+        "id": "a",
+        "text": "guard"
+      },
+      {
+        "id": "b",
+        "text": "prevent"
+      },
+      {
+        "id": "c",
+        "text": "ensure"
+      },
+      {
+        "id": "d",
+        "text": "sanitize"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "a"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'guard': 見張って守る",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_061_m2w_1",
+    "sentenceId": "gitverbs85_061",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "handle",
+          "pos": "verb",
+          "meaning": "状況や問題に対処する",
+          "target": true,
+          "category": "safety"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 状況や問題に対処する?",
+    "stem": "状況や問題に対処する",
+    "choices": [
+      {
+        "id": "a",
+        "text": "fall back to"
+      },
+      {
+        "id": "b",
+        "text": "handle"
+      },
+      {
+        "id": "c",
+        "text": "prevent"
+      },
+      {
+        "id": "d",
+        "text": "restrict"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'handle': 状況や問題に対処する",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_062_m2w_1",
+    "sentenceId": "gitverbs85_062",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "prevent",
+          "pos": "verb",
+          "meaning": "何かが起きるのを防ぐ",
+          "target": true,
+          "category": "safety"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 何かが起きるのを防ぐ?",
+    "stem": "何かが起きるのを防ぐ",
+    "choices": [
+      {
+        "id": "a",
+        "text": "fall back to"
+      },
+      {
+        "id": "b",
+        "text": "handle"
+      },
+      {
+        "id": "c",
+        "text": "prevent"
+      },
+      {
+        "id": "d",
+        "text": "suppress"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'prevent': 何かが起きるのを防ぐ",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_063_m2w_1",
+    "sentenceId": "gitverbs85_063",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "ensure",
+          "pos": "verb",
+          "meaning": "確実にする",
+          "target": true,
+          "category": "safety"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 確実にする?",
+    "stem": "確実にする",
+    "choices": [
+      {
+        "id": "a",
+        "text": "enforce"
+      },
+      {
+        "id": "b",
+        "text": "validate"
+      },
+      {
+        "id": "c",
+        "text": "ensure"
+      },
+      {
+        "id": "d",
+        "text": "suppress"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'ensure': 確実にする",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_064_m2w_1",
+    "sentenceId": "gitverbs85_064",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "enforce",
+          "pos": "verb",
+          "meaning": "法やルールの遵守を強制する",
+          "target": true,
+          "category": "safety"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 法やルールの遵守を強制する?",
+    "stem": "法やルールの遵守を強制する",
+    "choices": [
+      {
+        "id": "a",
+        "text": "restrict"
+      },
+      {
+        "id": "b",
+        "text": "handle"
+      },
+      {
+        "id": "c",
+        "text": "enforce"
+      },
+      {
+        "id": "d",
+        "text": "fall back to"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'enforce': 法やルールの遵守を強制する",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_065_m2w_1",
+    "sentenceId": "gitverbs85_065",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "restrict",
+          "pos": "verb",
+          "meaning": "制限をかける",
+          "target": true,
+          "category": "safety"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 制限をかける?",
+    "stem": "制限をかける",
+    "choices": [
+      {
+        "id": "a",
+        "text": "enforce"
+      },
+      {
+        "id": "b",
+        "text": "prevent"
+      },
+      {
+        "id": "c",
+        "text": "restrict"
+      },
+      {
+        "id": "d",
+        "text": "ensure"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'restrict': 制限をかける",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_066_m2w_1",
+    "sentenceId": "gitverbs85_066",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "phrasal_verb",
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "fall back to",
+          "pos": "verb",
+          "meaning": "第一の手段が失敗した時に代替を使う",
+          "target": true,
+          "category": "safety"
+        }
+      ],
+      "phrases": [
+        {
+          "text": "fall back to",
+          "type": "phrasal_verb"
+        }
+      ]
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 2,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 第一の手段が失敗した時に代替を使う?",
+    "stem": "第一の手段が失敗した時に代替を使う",
+    "choices": [
+      {
+        "id": "a",
+        "text": "fall back to"
+      },
+      {
+        "id": "b",
+        "text": "validate"
+      },
+      {
+        "id": "c",
+        "text": "suppress"
+      },
+      {
+        "id": "d",
+        "text": "ensure"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "a"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'fall back to': 第一の手段が失敗した時に代替を使う",
+      "relatedGrammar": [
+        "phrasal_verb",
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_067_m2w_1",
+    "sentenceId": "gitverbs85_067",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "suppress",
+          "pos": "verb",
+          "meaning": "抑制する、表に出さないようにする",
+          "target": true,
+          "category": "safety"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 抑制する、表に出さないようにする?",
+    "stem": "抑制する、表に出さないようにする",
+    "choices": [
+      {
+        "id": "a",
+        "text": "restrict"
+      },
+      {
+        "id": "b",
+        "text": "suppress"
+      },
+      {
+        "id": "c",
+        "text": "validate"
+      },
+      {
+        "id": "d",
+        "text": "ensure"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'suppress': 抑制する、表に出さないようにする",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_068_m2w_1",
+    "sentenceId": "gitverbs85_068",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "extend",
+          "pos": "verb",
+          "meaning": "拡張する、延長する",
+          "target": true,
+          "category": "extension"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 拡張する、延長する?",
+    "stem": "拡張する、延長する",
+    "choices": [
+      {
+        "id": "a",
+        "text": "extend"
+      },
+      {
+        "id": "b",
+        "text": "expose"
+      },
+      {
+        "id": "c",
+        "text": "expand"
+      },
+      {
+        "id": "d",
+        "text": "support"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "a"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'extend': 拡張する、延長する",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_069_m2w_1",
+    "sentenceId": "gitverbs85_069",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "enhance",
+          "pos": "verb",
+          "meaning": "質・価値・範囲を高める",
+          "target": true,
+          "category": "extension"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 質・価値・範囲を高める?",
+    "stem": "質・価値・範囲を高める",
+    "choices": [
+      {
+        "id": "a",
+        "text": "enhance"
+      },
+      {
+        "id": "b",
+        "text": "extend"
+      },
+      {
+        "id": "c",
+        "text": "expose"
+      },
+      {
+        "id": "d",
+        "text": "support"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "a"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'enhance': 質・価値・範囲を高める",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_070_m2w_1",
+    "sentenceId": "gitverbs85_070",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "expand",
+          "pos": "verb",
+          "meaning": "拡大する",
+          "target": true,
+          "category": "extension"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 拡大する?",
+    "stem": "拡大する",
+    "choices": [
+      {
+        "id": "a",
+        "text": "expand"
+      },
+      {
+        "id": "b",
+        "text": "support"
+      },
+      {
+        "id": "c",
+        "text": "expose"
+      },
+      {
+        "id": "d",
+        "text": "enhance"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "a"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'expand': 拡大する",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_071_m2w_1",
+    "sentenceId": "gitverbs85_071",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "support",
+          "pos": "verb",
+          "meaning": "支える、対応する",
+          "target": true,
+          "category": "extension"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 支える、対応する?",
+    "stem": "支える、対応する",
+    "choices": [
+      {
+        "id": "a",
+        "text": "expand"
+      },
+      {
+        "id": "b",
+        "text": "expose"
+      },
+      {
+        "id": "c",
+        "text": "support"
+      },
+      {
+        "id": "d",
+        "text": "extend"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'support': 支える、対応する",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_072_m2w_1",
+    "sentenceId": "gitverbs85_072",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "expose",
+          "pos": "verb",
+          "meaning": "見える・使える状態にする",
+          "target": true,
+          "category": "extension"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 見える・使える状態にする?",
+    "stem": "見える・使える状態にする",
+    "choices": [
+      {
+        "id": "a",
+        "text": "extend"
+      },
+      {
+        "id": "b",
+        "text": "enhance"
+      },
+      {
+        "id": "c",
+        "text": "expose"
+      },
+      {
+        "id": "d",
+        "text": "support"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'expose': 見える・使える状態にする",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_073_m2w_1",
+    "sentenceId": "gitverbs85_073",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "release",
+          "pos": "verb",
+          "meaning": "公開する",
+          "target": true,
+          "category": "release"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 公開する?",
+    "stem": "公開する",
+    "choices": [
+      {
+        "id": "a",
+        "text": "deploy"
+      },
+      {
+        "id": "b",
+        "text": "release"
+      },
+      {
+        "id": "c",
+        "text": "automate"
+      },
+      {
+        "id": "d",
+        "text": "pin"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'release': 公開する",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_074_m2w_1",
+    "sentenceId": "gitverbs85_074",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "deploy",
+          "pos": "verb",
+          "meaning": "配置する（軍事用語から）",
+          "target": true,
+          "category": "release"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 配置する（軍事用語から）?",
+    "stem": "配置する（軍事用語から）",
+    "choices": [
+      {
+        "id": "a",
+        "text": "pin"
+      },
+      {
+        "id": "b",
+        "text": "automate"
+      },
+      {
+        "id": "c",
+        "text": "deploy"
+      },
+      {
+        "id": "d",
+        "text": "lock"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'deploy': 配置する（軍事用語から）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_075_m2w_1",
+    "sentenceId": "gitverbs85_075",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "pin",
+          "pos": "verb",
+          "meaning": "ピンで留める",
+          "target": true,
+          "category": "release"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: ピンで留める?",
+    "stem": "ピンで留める",
+    "choices": [
+      {
+        "id": "a",
+        "text": "lock"
+      },
+      {
+        "id": "b",
+        "text": "deploy"
+      },
+      {
+        "id": "c",
+        "text": "pin"
+      },
+      {
+        "id": "d",
+        "text": "automate"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'pin': ピンで留める",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_076_m2w_1",
+    "sentenceId": "gitverbs85_076",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "lock",
+          "pos": "verb",
+          "meaning": "しっかり固定する",
+          "target": true,
+          "category": "release"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: しっかり固定する?",
+    "stem": "しっかり固定する",
+    "choices": [
+      {
+        "id": "a",
+        "text": "pin"
+      },
+      {
+        "id": "b",
+        "text": "release"
+      },
+      {
+        "id": "c",
+        "text": "automate"
+      },
+      {
+        "id": "d",
+        "text": "lock"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'lock': しっかり固定する",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_077_m2w_1",
+    "sentenceId": "gitverbs85_077",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "automate",
+          "pos": "verb",
+          "meaning": "自動化する",
+          "target": true,
+          "category": "release"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 自動化する?",
+    "stem": "自動化する",
+    "choices": [
+      {
+        "id": "a",
+        "text": "automate"
+      },
+      {
+        "id": "b",
+        "text": "lock"
+      },
+      {
+        "id": "c",
+        "text": "pin"
+      },
+      {
+        "id": "d",
+        "text": "deploy"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "a"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'automate': 自動化する",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_078_m2w_1",
+    "sentenceId": "gitverbs85_078",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "document",
+          "pos": "verb",
+          "meaning": "書面で記録する",
+          "target": true,
+          "category": "documentation"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 書面で記録する?",
+    "stem": "書面で記録する",
+    "choices": [
+      {
+        "id": "a",
+        "text": "stub"
+      },
+      {
+        "id": "b",
+        "text": "document"
+      },
+      {
+        "id": "c",
+        "text": "cover"
+      },
+      {
+        "id": "d",
+        "text": "log"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'document': 書面で記録する",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_079_m2w_1",
+    "sentenceId": "gitverbs85_079",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "clarify",
+          "pos": "verb",
+          "meaning": "わかりにくいものを明確にする",
+          "target": true,
+          "category": "documentation"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: わかりにくいものを明確にする?",
+    "stem": "わかりにくいものを明確にする",
+    "choices": [
+      {
+        "id": "a",
+        "text": "describe"
+      },
+      {
+        "id": "b",
+        "text": "cover"
+      },
+      {
+        "id": "c",
+        "text": "stub"
+      },
+      {
+        "id": "d",
+        "text": "clarify"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'clarify': わかりにくいものを明確にする",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_080_m2w_1",
+    "sentenceId": "gitverbs85_080",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "describe",
+          "pos": "verb",
+          "meaning": "言葉で説明する",
+          "target": true,
+          "category": "documentation"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 言葉で説明する?",
+    "stem": "言葉で説明する",
+    "choices": [
+      {
+        "id": "a",
+        "text": "verify"
+      },
+      {
+        "id": "b",
+        "text": "describe"
+      },
+      {
+        "id": "c",
+        "text": "clarify"
+      },
+      {
+        "id": "d",
+        "text": "cover"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'describe': 言葉で説明する",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_081_m2w_1",
+    "sentenceId": "gitverbs85_081",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "annotate",
+          "pos": "verb",
+          "meaning": "注釈を付ける",
+          "target": true,
+          "category": "documentation"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 注釈を付ける?",
+    "stem": "注釈を付ける",
+    "choices": [
+      {
+        "id": "a",
+        "text": "stub"
+      },
+      {
+        "id": "b",
+        "text": "annotate"
+      },
+      {
+        "id": "c",
+        "text": "document"
+      },
+      {
+        "id": "d",
+        "text": "cover"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'annotate': 注釈を付ける",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_082_m2w_1",
+    "sentenceId": "gitverbs85_082",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "cover",
+          "pos": "verb",
+          "meaning": "対象を扱う、カバーする",
+          "target": true,
+          "category": "documentation"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 対象を扱う、カバーする?",
+    "stem": "対象を扱う、カバーする",
+    "choices": [
+      {
+        "id": "a",
+        "text": "document"
+      },
+      {
+        "id": "b",
+        "text": "describe"
+      },
+      {
+        "id": "c",
+        "text": "cover"
+      },
+      {
+        "id": "d",
+        "text": "clarify"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'cover': 対象を扱う、カバーする",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_083_m2w_1",
+    "sentenceId": "gitverbs85_083",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "verify",
+          "pos": "verb",
+          "meaning": "正しいことを確かめる",
+          "target": true,
+          "category": "documentation"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 正しいことを確かめる?",
+    "stem": "正しいことを確かめる",
+    "choices": [
+      {
+        "id": "a",
+        "text": "verify"
+      },
+      {
+        "id": "b",
+        "text": "annotate"
+      },
+      {
+        "id": "c",
+        "text": "cover"
+      },
+      {
+        "id": "d",
+        "text": "stub"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "a"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'verify': 正しいことを確かめる",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_084_m2w_1",
+    "sentenceId": "gitverbs85_084",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "stub",
+          "pos": "verb",
+          "meaning": "切り株、控え（転じて、仮実装）",
+          "target": true,
+          "category": "documentation"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 切り株、控え（転じて、仮実装）?",
+    "stem": "切り株、控え（転じて、仮実装）",
+    "choices": [
+      {
+        "id": "a",
+        "text": "document"
+      },
+      {
+        "id": "b",
+        "text": "stub"
+      },
+      {
+        "id": "c",
+        "text": "clarify"
+      },
+      {
+        "id": "d",
+        "text": "verify"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'stub': 切り株、控え（転じて、仮実装）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitverbs85_085_m2w_1",
+    "sentenceId": "gitverbs85_085",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "log",
+          "pos": "verb",
+          "meaning": "記録する",
+          "target": true,
+          "category": "documentation"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 記録する?",
+    "stem": "記録する",
+    "choices": [
+      {
+        "id": "a",
+        "text": "log"
+      },
+      {
+        "id": "b",
+        "text": "clarify"
+      },
+      {
+        "id": "c",
+        "text": "annotate"
+      },
+      {
+        "id": "d",
+        "text": "document"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "a"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'log': 記録する",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  }
+]
