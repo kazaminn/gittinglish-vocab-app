@@ -209,13 +209,16 @@ export function useDrill(): DrillState & DrillActions {
 
   const endSession = useCallback(
     async (persistProgress = false) => {
-      if (persistProgress) {
+      // next() already persists when the last item is answered. Persisting
+      // again on completion returns 409 (session already ended) and breaks
+      // navigation if the caller awaits it.
+      if (persistProgress && !isSessionComplete) {
         await persistSessionResults(results);
       }
 
       resetState();
     },
-    [persistSessionResults, resetState, results]
+    [isSessionComplete, persistSessionResults, resetState, results]
   );
 
   const isBusy = useMemo(
