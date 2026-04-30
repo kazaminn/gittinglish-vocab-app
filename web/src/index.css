@@ -85,6 +85,18 @@ body {
   outline-offset: 2px;
 }
 
+/* --- Cursor for interactive elements --- */
+button:not(:disabled),
+[role='button']:not([aria-disabled='true']),
+[role='menuitem'] {
+  cursor: pointer;
+}
+
+button:disabled,
+[aria-disabled='true'] {
+  cursor: not-allowed;
+}
+
 /* --- Reduced motion --- */
 @media (prefers-reduced-motion: reduce) {
   *,

@@ -52,7 +52,16 @@ export function Layout({ children }: LayoutProps) {
         }}
       >
         <div className="mx-auto flex max-w-(--container-max) items-center justify-between gap-3">
-          <span>gittinglish</span>
+          <button
+            type="button"
+            onClick={() => {
+              void navigate('/');
+            }}
+            className="rounded-sm bg-transparent p-0 text-inherit hover:underline focus-visible:underline"
+            aria-label="Go to home"
+          >
+            gittinglish
+          </button>
           <div className="flex items-center gap-2">
             <ThemeToggle />
             {user && (
@@ -63,7 +72,7 @@ export function Layout({ children }: LayoutProps) {
                   aria-haspopup="menu"
                   aria-expanded={isMenuOpen}
                   onClick={() => setIsMenuOpen((open) => !open)}
-                  className="rounded-sm border px-2 py-1"
+                  className="rounded-sm border px-2 py-1 transition-colors hover:bg-(--bg-interactive-hover)"
                   style={{
                     borderColor: 'var(--border-subtle)',
                     color: 'var(--text-muted)',
@@ -88,7 +97,7 @@ export function Layout({ children }: LayoutProps) {
                         setIsMenuOpen(false);
                         void navigate('/app/settings');
                       }}
-                      className="flex w-full items-center gap-2 rounded-sm px-3 py-2 text-left text-sm"
+                      className="flex w-full items-center gap-2 rounded-sm px-3 py-2 text-left text-sm transition-colors hover:bg-(--bg-interactive-hover)"
                       style={{ color: 'var(--text-primary)' }}
                     >
                       <Settings size={16} aria-hidden="true" />
@@ -100,7 +109,7 @@ export function Layout({ children }: LayoutProps) {
                       onClick={() => {
                         void handleLogout();
                       }}
-                      className="flex w-full items-center gap-2 rounded-sm px-3 py-2 text-left text-sm"
+                      className="flex w-full items-center gap-2 rounded-sm px-3 py-2 text-left text-sm transition-colors hover:bg-(--bg-interactive-hover)"
                       style={{ color: 'var(--text-primary)' }}
                     >
                       <LogOut size={16} aria-hidden="true" />
