@@ -51,7 +51,7 @@ export function Layout({ children }: LayoutProps) {
           color: 'var(--text-secondary)',
         }}
       >
-        <div className="mx-auto flex max-w-[var(--container-max)] items-center justify-between gap-3">
+        <div className="mx-auto flex max-w-(--container-max) items-center justify-between gap-3">
           <span>gittinglish</span>
           <div className="flex items-center gap-2">
             <ThemeToggle />
@@ -86,7 +86,7 @@ export function Layout({ children }: LayoutProps) {
                       role="menuitem"
                       onClick={() => {
                         setIsMenuOpen(false);
-                        void navigate('/settings');
+                        void navigate('/app/settings');
                       }}
                       className="flex w-full items-center gap-2 rounded-sm px-3 py-2 text-left text-sm"
                       style={{ color: 'var(--text-primary)' }}

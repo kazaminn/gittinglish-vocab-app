@@ -13,6 +13,15 @@ import {
   getSectionsForDataset,
   preloadDatasetMode,
 } from './data/problems';
+import { LandingPage } from './features/landing/LandingPage';
+import { LoginPage } from './features/auth/LoginPage';
+import { SignupPage } from './features/auth/SignupPage';
+import { PrivacyPage } from './features/legal/PrivacyPage';
+import { TermsPage } from './features/legal/TermsPage';
+import { useUserStatsQuery } from './features/user/queries';
+import { useAuth } from './hooks/useAuth';
+import { useDrill } from './hooks/useDrill';
+
 const DrillPage = lazy(() =>
   import('./features/drill/DrillPage').then((module) => ({
     default: module.DrillPage,
@@ -38,9 +47,6 @@ const SettingsPage = lazy(() =>
     default: module.SettingsPage,
   }))
 );
-import { useUserStatsQuery } from './features/user/queries';
-import { useAuth } from './hooks/useAuth';
-import { useDrill } from './hooks/useDrill';
 
 interface AppSelection {
   datasetId: DatasetId;
@@ -51,16 +57,15 @@ interface AppSelection {
 
 function ProtectedRoute({ children }: { children: React.ReactNode }) {
   const { isLoading, user } = useAuth();
-
-  if (isLoading) {
-    return null;
-  }
-
-  if (!user) {
-    return <Navigate to="/" replace />;
-  }
-
+  if (isLoading) return null;
+  if (!user) return <Navigate to="/" replace />;
   return <>{children}</>;
+}
+
+function RootRedirect() {
+  const { isLoading, user } = useAuth();
+  if (isLoading) return null;
+  return user ? <Navigate to="/app" replace /> : <LandingPage />;
 }
 
 function createDefaultSelection(datasetId: DatasetId): AppSelection {
@@ -90,12 +95,14 @@ function normalizeSelection(
   };
 }
 
-function App() {
+function VocabAppShell() {
   const navigate = useNavigate();
   const { user } = useAuth();
   const drill = useDrill();
   const statsQuery = useUserStatsQuery(Boolean(user));
-  const [sections, setSections] = useState<Awaited<ReturnType<typeof getSectionsForDataset>>>([]);
+  const [sections, setSections] = useState<
+    Awaited<ReturnType<typeof getSectionsForDataset>>
+  >([]);
   const [previewProblems, setPreviewProblems] = useState<
     Awaited<ReturnType<typeof getPreviewProblems>>
   >([]);
@@ -120,15 +127,15 @@ function App() {
     }),
     [selection.datasetId, selection.drillMode, selection.sectionId]
   );
+
   useEffect(() => {
     if (drill.isSessionComplete) {
-      void navigate('/summary');
+      void navigate('/app/summary');
     }
   }, [drill.isSessionComplete, navigate]);
 
   useEffect(() => {
     let cancelled = false;
-
     void (async () => {
       const [nextSections, nextPreviewProblems, nextProblemCount, nextCurrentProblems] =
         await Promise.all([
@@ -137,15 +144,12 @@ function App() {
           getProblemCount(problemQuery),
           getProblemsForQuery(problemQuery),
         ]);
-
       if (cancelled) return;
-
       setSections(nextSections);
       setPreviewProblems(nextPreviewProblems);
       setProblemCount(nextProblemCount);
       setCurrentProblems(nextCurrentProblems);
     })();
-
     return () => {
       cancelled = true;
     };
@@ -153,18 +157,15 @@ function App() {
 
   useEffect(() => {
     let cancelled = false;
-
     void (async () => {
       const nextSectionLabel = await getSectionLabel(
         selection.datasetId,
         selection.sectionId
       );
-
       if (!cancelled) {
         setSectionLabel(nextSectionLabel);
       }
     })();
-
     return () => {
       cancelled = true;
     };
@@ -184,7 +185,7 @@ function App() {
           normalizedSelection.datasetId,
           getDefaultFlashcardSourceMode(normalizedSelection.datasetId)
         );
-        await navigate('/flashcard');
+        await navigate('/app/flashcard');
         return;
       }
 
@@ -195,7 +196,7 @@ function App() {
         normalizedSelection.sessionSize,
         normalizedSelection.sectionId
       );
-      await navigate('/drill');
+      await navigate('/app/drill');
     })();
   }
 
@@ -207,93 +208,106 @@ function App() {
   }
 
   return (
+    <Routes>
+      <Route
+        path="/"
+        element={
+          <HomePage
+            selection={selection}
+            datasetOptions={getDatasetOptions()}
+            availableModes={availableModes}
+            sections={sections}
+            problemCount={problemCount}
+            previewProblems={previewProblems}
+            stats={statsQuery.data}
+            isStatsLoading={statsQuery.isPending}
+            statsError={statsQuery.error?.message}
+            onSelectionChange={handleSelectionChange}
+            onStartDrill={handleStartDrill}
+          />
+        }
+      />
+      <Route
+        path="drill"
+        element={
+          drill.isActive && drill.currentProblem && drill.currentItem ? (
+            <DrillPage
+              item={drill.currentItem}
+              currentIndex={drill.currentIndex}
+              totalCount={drill.totalCount}
+              lastAnswer={drill.lastAnswer}
+              onAnswer={drill.answer}
+              onNext={drill.next}
+              onExitToHome={() => handleLeaveSession('/app')}
+            />
+          ) : (
+            <Navigate to="/app" replace />
+          )
+        }
+      />
+      <Route
+        path="summary"
+        element={
+          drill.isSessionComplete ? (
+            <SummaryPage
+              results={drill.results}
+              correctCount={drill.correctCount}
+              totalCount={drill.totalCount}
+              drillMode={selection.drillMode}
+              onBackToHome={() => handleLeaveSession('/app')}
+            />
+          ) : (
+            <Navigate to="/app" replace />
+          )
+        }
+      />
+      <Route
+        path="flashcard"
+        element={
+          selection.drillMode === 'flashcard' ? (
+            <FlashcardPage
+              problems={currentProblems}
+              datasetId={selection.datasetId}
+              sectionLabel={sectionLabel}
+              onBackToHome={() => {
+                void navigate('/app');
+              }}
+            />
+          ) : (
+            <Navigate to="/app" replace />
+          )
+        }
+      />
+      <Route
+        path="settings"
+        element={
+          <SettingsPage
+            onBackToHome={() => {
+              void navigate('/app');
+            }}
+          />
+        }
+      />
+      <Route path="*" element={<Navigate to="/app" replace />} />
+    </Routes>
+  );
+}
+
+function App() {
+  return (
     <Layout>
       <Suspense fallback={null}>
         <Routes>
+          <Route path="/" element={<RootRedirect />} />
+          <Route path="/signup" element={<SignupPage />} />
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/privacy" element={<PrivacyPage />} />
+          <Route path="/terms" element={<TermsPage />} />
           <Route
-            path="/"
-            element={
-              <HomePage
-                selection={selection}
-                datasetOptions={getDatasetOptions()}
-                availableModes={availableModes}
-                sections={sections}
-                problemCount={problemCount}
-                previewProblems={previewProblems}
-                stats={statsQuery.data}
-                isStatsLoading={statsQuery.isPending}
-                statsError={statsQuery.error?.message}
-                onSelectionChange={handleSelectionChange}
-                onStartDrill={handleStartDrill}
-              />
-            }
-          />
-          <Route
-            path="/drill"
+            path="/app/*"
             element={
               <ProtectedRoute>
-                {drill.isActive && drill.currentProblem && drill.currentItem ? (
-                  <DrillPage
-                    item={drill.currentItem}
-                    currentIndex={drill.currentIndex}
-                    totalCount={drill.totalCount}
-                    lastAnswer={drill.lastAnswer}
-                    onAnswer={drill.answer}
-                    onNext={drill.next}
-                    onExitToHome={() => handleLeaveSession('/')}
-                  />
-                ) : (
-                  <Navigate to="/" replace />
-                )}
-              </ProtectedRoute>
-            }
-          />
-          <Route
-            path="/summary"
-            element={
-              <ProtectedRoute>
-                {drill.isSessionComplete ? (
-                  <SummaryPage
-                    results={drill.results}
-                    correctCount={drill.correctCount}
-                    totalCount={drill.totalCount}
-                    drillMode={selection.drillMode}
-                    onBackToHome={() => handleLeaveSession('/')}
-                  />
-                ) : (
-                  <Navigate to="/" replace />
-                )}
-              </ProtectedRoute>
-            }
-          />
-          <Route
-            path="/flashcard"
-            element={
-              <ProtectedRoute>
-                {selection.drillMode === 'flashcard' ? (
-                  <FlashcardPage
-                    problems={currentProblems}
-                    datasetId={selection.datasetId}
-                    sectionLabel={sectionLabel}
-                    onBackToHome={() => {
-                      void navigate('/');
-                    }}
-                  />
-                ) : (
-                  <Navigate to="/" replace />
-                )}
-              </ProtectedRoute>
-            }
-          />
-          <Route
-            path="/settings"
-            element={
-              <ProtectedRoute>
-                <SettingsPage
-                  onBackToHome={() => {
-                    void navigate('/');
-                  }}
-                />
+                <VocabAppShell />
               </ProtectedRoute>
             }
           />
