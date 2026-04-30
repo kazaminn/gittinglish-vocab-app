@@ -4,6 +4,7 @@
 
 import { useCallback } from 'react';
 import { authClient, useSession } from '../lib/auth-client.js';
+import { isDevAuthSkipActive, TEST_USER } from '../lib/dev-auth.js';
 
 export interface AuthUser {
   id: string;
@@ -19,22 +20,26 @@ export interface UseAuthResult {
 
 export function useAuth(): UseAuthResult {
   const { data, isPending } = useSession();
+  const skipActive = isDevAuthSkipActive();
 
   const sessionUser = data?.user;
-  const user: AuthUser | undefined = sessionUser
-    ? {
-        id: sessionUser.id,
-        displayName: sessionUser.name ?? sessionUser.username ?? 'User',
-        username: sessionUser.username ?? undefined,
-      }
-    : undefined;
+  const user: AuthUser | undefined = skipActive
+    ? TEST_USER
+    : sessionUser
+      ? {
+          id: sessionUser.id,
+          displayName: sessionUser.name ?? sessionUser.username ?? 'User',
+          username: sessionUser.username ?? undefined,
+        }
+      : undefined;
 
   const signOut = useCallback(async () => {
+    if (skipActive) return;
     await authClient.signOut();
-  }, []);
+  }, [skipActive]);
 
   return {
-    isLoading: isPending,
+    isLoading: skipActive ? false : isPending,
     user,
     signOut,
   };

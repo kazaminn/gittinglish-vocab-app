@@ -3,6 +3,7 @@
 
 import { createMiddleware } from 'hono/factory';
 import { auth } from '../auth/index.js';
+import { isDevAuthSkipActive, TEST_USER } from '../auth/dev-skip.js';
 import { err } from '../utils/response.js';
 
 export type AuthEnv = {
@@ -14,6 +15,14 @@ export type AuthEnv = {
 };
 
 export const authMiddleware = createMiddleware<AuthEnv>(async (c, next) => {
+  if (isDevAuthSkipActive(c.req.raw)) {
+    c.set('userId', TEST_USER.id);
+    c.set('username', TEST_USER.username);
+    c.set('userDisplayName', TEST_USER.name);
+    await next();
+    return;
+  }
+
   const session = await auth.api.getSession({ headers: c.req.raw.headers });
   if (!session?.user) {
     return c.json(err('UNAUTHORIZED', 'No active session'), 401);

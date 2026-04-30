@@ -4,7 +4,8 @@
   "type": "module",
   "scripts": {
     "dev": "tsx watch src/index.ts",
-    "test": "vitest run"
+    "test": "vitest run",
+    "seed:dev": "tsx scripts/seed-testuser.ts"
   },
   "dependencies": {
     "@hono/node-server": "^1.19.11",
