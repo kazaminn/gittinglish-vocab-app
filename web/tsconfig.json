@@ -4,8 +4,9 @@
     "jsx": "react-jsx",
     "lib": ["ES2023", "DOM", "DOM.Iterable"],
     "types": ["vite/client"],
+    "rootDir": "..",
     "outDir": "./dist",
     "noEmit": true
   },
-  "include": ["src", "tests"]
+  "include": ["src", "tests", "../shared/**/*"]
 }
