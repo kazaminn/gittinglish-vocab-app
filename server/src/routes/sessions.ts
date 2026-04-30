@@ -17,7 +17,6 @@ import {
   drillProgress,
   sessionWrites,
   userActivities,
-  users,
 } from '../db/schema.js';
 import { judgeAnswer } from '../logic/judge.js';
 import { calculateSM2, qualityFromCorrectness } from '../logic/sm2.js';
@@ -44,15 +43,10 @@ function formatTokyoDateFromUnixSeconds(unixSeconds: number): string {
   }).format(new Date(unixSeconds * 1000));
 }
 
-async function ensureUser(userId: string, displayName: string | undefined) {
-  const existingUser = await db.select().from(users).where(eq(users.id, userId)).get();
-  if (existingUser) return;
-
-  await db.insert(users).values({
-    id: userId,
-    displayName,
-    createdAt: Math.floor(Date.now() / 1000),
-  });
+// Better Auth 導入後、user 行は signUp/signIn 時に Better Auth が作成済み。
+// 旧 ensureUser は no-op（呼び出し側の互換維持のため関数だけ残す）。
+async function ensureUser(_userId: string, _displayName: string | undefined) {
+  // intentionally empty
 }
 
 function buildJudgeMeta(problem: SessionStartItem['problemDTO'] | ReturnType<typeof getProblemById>) {

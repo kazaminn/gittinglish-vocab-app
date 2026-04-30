@@ -8,13 +8,13 @@ import {
   index,
 } from 'drizzle-orm/sqlite-core';
 
-export const users = sqliteTable('users', {
-  id: text('id').primaryKey(),
-  displayName: text('display_name'),
-  createdAt: integer('created_at')
-    .notNull()
-    .default(sql`(unixepoch())`),
-});
+// Better Auth 用テーブル (user / session / account / verification) は auth-schema から re-export
+export {
+  account,
+  session,
+  user,
+  verification,
+} from './auth-schema.js';
 
 export const sessionWrites = sqliteTable('session_writes', {
   sessionId: text('session_id').primaryKey(),

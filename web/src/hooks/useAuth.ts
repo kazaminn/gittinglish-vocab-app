@@ -1,72 +1,41 @@
-// Phase A: Firebase 削除済み。Phase C で Better Auth (username plugin) ベースに置換予定。
-// 現状はダミー実装で「常にローカルユーザーとしてログイン済み」とする。
+// Better Auth `useSession` をラップして既存コンポーネントに薄いインタフェースを提供する。
+// 旧 Firebase 用の signInAsGuest / signInWithGoogle は廃止。
+// サインインは Signup/Login ページから authClient を直接呼ぶ方針。
 
-import { useCallback, useSyncExternalStore } from 'react';
+import { useCallback } from 'react';
+import { authClient, useSession } from '../lib/auth-client.js';
 
 export interface AuthUser {
   id: string;
   displayName: string;
+  username: string | undefined;
 }
 
-interface AuthSnapshot {
+export interface UseAuthResult {
   isLoading: boolean;
   user: AuthUser | undefined;
-}
-
-interface UseAuthResult extends AuthSnapshot {
-  signInAsGuest: () => Promise<void>;
-  signInWithGoogle: () => Promise<void>;
   signOut: () => Promise<void>;
 }
 
-const FALLBACK_USER: AuthUser = {
-  id: 'local-user',
-  displayName: 'Local User',
-};
-
-let authSnapshot: AuthSnapshot = {
-  isLoading: false,
-  user: FALLBACK_USER,
-};
-
-const listeners = new Set<() => void>();
-
-function emitAuthSnapshot(nextSnapshot: AuthSnapshot) {
-  authSnapshot = nextSnapshot;
-  listeners.forEach((listener) => listener());
-}
-
-function subscribe(listener: () => void) {
-  listeners.add(listener);
-  return () => listeners.delete(listener);
-}
-
-function getSnapshot() {
-  return authSnapshot;
-}
-
 export function useAuth(): UseAuthResult {
-  const snapshot = useSyncExternalStore(subscribe, getSnapshot, getSnapshot);
+  const { data, isPending } = useSession();
 
-  const signInAsGuest = useCallback(async () => {
-    emitAuthSnapshot({ isLoading: false, user: FALLBACK_USER });
-  }, []);
-
-  const signInWithGoogle = useCallback(async () => {
-    emitAuthSnapshot({
-      isLoading: false,
-      user: { id: 'local-google-user', displayName: 'Google User' },
-    });
-  }, []);
+  const sessionUser = data?.user;
+  const user: AuthUser | undefined = sessionUser
+    ? {
+        id: sessionUser.id,
+        displayName: sessionUser.name ?? sessionUser.username ?? 'User',
+        username: sessionUser.username ?? undefined,
+      }
+    : undefined;
 
   const signOut = useCallback(async () => {
-    emitAuthSnapshot({ isLoading: false, user: undefined });
+    await authClient.signOut();
   }, []);
 
   return {
-    ...snapshot,
-    signInAsGuest,
-    signInWithGoogle,
+    isLoading: isPending,
+    user,
     signOut,
   };
 }

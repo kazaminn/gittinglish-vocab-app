@@ -1,21 +1,26 @@
-// Phase A: Firebase Admin 依存を削除済み。Phase C で Better Auth に置換予定。
-// 現状はダミー実装で「常にローカルユーザーで認証成功」とする。
+// Better Auth セッション (cookie) を検証して userId 等を Hono Context に注入する middleware。
+// クライアントは fetch を `credentials: 'include'` で叩くこと。
 
 import { createMiddleware } from 'hono/factory';
+import { auth } from '../auth/index.js';
+import { err } from '../utils/response.js';
 
 export type AuthEnv = {
   Variables: {
     userId: string;
-    userEmail: string | undefined;
+    username: string | undefined;
     userDisplayName: string | undefined;
   };
 };
 
-const FALLBACK_USER_ID = 'local-user';
-
 export const authMiddleware = createMiddleware<AuthEnv>(async (c, next) => {
-  c.set('userId', FALLBACK_USER_ID);
-  c.set('userEmail', undefined);
-  c.set('userDisplayName', 'Local User');
+  const session = await auth.api.getSession({ headers: c.req.raw.headers });
+  if (!session?.user) {
+    return c.json(err('UNAUTHORIZED', 'No active session'), 401);
+  }
+
+  c.set('userId', session.user.id);
+  c.set('username', session.user.username ?? undefined);
+  c.set('userDisplayName', session.user.name ?? undefined);
   await next();
 });

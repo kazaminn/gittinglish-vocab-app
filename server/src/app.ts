@@ -1,5 +1,6 @@
 import { Hono } from 'hono';
 import { cors } from 'hono/cors';
+import { auth } from './auth/index.js';
 import { authMiddleware, type AuthEnv } from './middleware/auth.js';
 import answerRoutes from './routes/answers.js';
 import sessionRoutes from './routes/sessions.js';
@@ -16,12 +17,16 @@ app.use(
     allowedOrigin
       ? {
           origin: allowedOrigin,
+          credentials: true,
           allowMethods: ['GET', 'POST', 'OPTIONS'],
-          allowHeaders: ['Content-Type', 'Authorization'],
+          allowHeaders: ['Content-Type'],
         }
       : undefined
   )
 );
+
+// Better Auth handler (cookie 認証)。/api/auth/sign-up/username, /sign-in/username, /sign-out, /callback/google など
+app.on(['GET', 'POST'], '/api/auth/*', (c) => auth.handler(c.req.raw));
 
 // Public
 app.get('/api/health', (c) =>

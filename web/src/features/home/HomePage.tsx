@@ -120,7 +120,7 @@ export function HomePage({
   onSelectionChange,
   onStartDrill,
 }: HomePageProps) {
-  const { isLoading, signInAsGuest, signInWithGoogle, user } = useAuth();
+  const { user } = useAuth();
   const datasetRefs = useRef<(HTMLButtonElement | null)[]>([]);
   const modeRefs = useRef<(HTMLButtonElement | null)[]>([]);
 
@@ -378,53 +378,19 @@ export function HomePage({
         </div>
       )}
 
-      {user ? (
-        <button
-          type="button"
-          onClick={() => onStartDrill(selection)}
-          className="w-full rounded-sm border px-4 py-3 text-left"
-          style={{
-            background: 'transparent',
-            borderColor: 'var(--border-accent)',
-            color: 'var(--text-accent)',
-          }}
-        >
-          &gt; start
-        </button>
-      ) : (
-        <div className="grid gap-2 md:grid-cols-2">
-          <button
-            type="button"
-            onClick={() => {
-              void signInWithGoogle();
-            }}
-            disabled={isLoading}
-            className="w-full rounded-sm border px-4 py-3 text-left"
-            style={{
-              background: 'transparent',
-              borderColor: 'var(--border-accent)',
-              color: 'var(--text-accent)',
-            }}
-          >
-            &gt; {isLoading ? 'connecting...' : 'sign in with Google'}
-          </button>
-          <button
-            type="button"
-            onClick={() => {
-              void signInAsGuest();
-            }}
-            disabled={isLoading}
-            className="w-full rounded-sm border px-4 py-3 text-left"
-            style={{
-              background: 'transparent',
-              borderColor: 'var(--border-subtle)',
-              color: 'var(--text-primary)',
-            }}
-          >
-            &gt; continue as guest
-          </button>
-        </div>
-      )}
+      <button
+        type="button"
+        onClick={() => onStartDrill(selection)}
+        disabled={!user}
+        className="w-full rounded-sm border px-4 py-3 text-left"
+        style={{
+          background: 'transparent',
+          borderColor: 'var(--border-accent)',
+          color: 'var(--text-accent)',
+        }}
+      >
+        &gt; start
+      </button>
 
       <div className="space-y-2 rounded-sm border px-4 py-4">
         <p className="text-sm" style={{ color: 'var(--text-secondary)' }}>

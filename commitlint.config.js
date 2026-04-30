@@ -45,5 +45,8 @@ export default {
     'type-enum': [0],
     'type-empty': [2, 'never'],
     'type-emoji-vs16-enum': [2, 'always', allAllowedTypes],
+    // 日本語 subject に英語ライブラリ名 (Better Auth など) が混ざると
+    // sentence-case 判定で reject されるため無効化
+    'subject-case': [0],
   },
 };
