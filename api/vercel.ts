@@ -1,4 +1,7 @@
-import { handle } from "@hono/node-server/vercel";
-import app from "../server/src/app.js";
+// Export the Hono app directly so Vercel's native Hono detection runs it via
+// the Web Standard Request/Response path. Wrapping it in @hono/node-server's
+// handle() conflicts with Vercel's automatic JSON body parsing on POST and
+// hangs the function until the 60s timeout (honojs/node-server#306).
+import app from '../server/src/app.js';
 
-export default handle(app);
+export default app;
