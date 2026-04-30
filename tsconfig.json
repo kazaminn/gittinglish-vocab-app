@@ -10,7 +10,6 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noUncheckedIndexedAccess": true,
-    "baseUrl": ".",
     "paths": {
       "@shared/*": ["./shared/*"],
       "@web/*": ["./web/src/*"],
