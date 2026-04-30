@@ -1,12 +1,32 @@
 {
   "name": "gittinglish-vocab-app",
   "version": "1.0.0",
-  "description": "english learning app",
+  "description": "Git英語学習ドリル（公開版・GitVerbs85）",
   "private": true,
+  "type": "module",
   "author": "kazaminn",
   "license": "MIT",
   "packageManager": "pnpm@10.33.1",
-    "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "engines": {
+    "node": "24.x"
+  },
+  "scripts": {
+    "dev:web": "pnpm -C web dev",
+    "dev:api": "pnpm -C server dev",
+    "build": "pnpm -C web build",
+    "test": "pnpm -C server test && pnpm -C web test",
+    "typecheck": "pnpm -C server exec tsc --noEmit && pnpm -C web exec tsc --noEmit",
+    "lint": "pnpm -C web lint:strict",
+    "format": "prettier --write \"**/*.{ts,tsx,js,mjs,cjs}\"",
+    "format:check": "prettier --check \"**/*.{ts,tsx,js,mjs,cjs}\"",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.6.0",
+    "@commitlint/config-conventional": "^19.6.0",
+    "@trivago/prettier-plugin-sort-imports": "^6.0.2",
+    "husky": "^9.1.7",
+    "prettier": "^3.8.1",
+    "prettier-plugin-tailwindcss": "^0.7.2"
   }
 }

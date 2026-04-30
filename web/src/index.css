@@ -1,0 +1,98 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark *));
+
+@theme {
+  /* Tailwind ユーティリティに反映させるトークン */
+  --color-accent: #3f5bf6;
+  --color-hit: #4a9c68;
+  --color-miss: #c36a76;
+  --font-mono:
+    ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas,
+    'DejaVu Sans Mono', monospace;
+
+  /* Container */
+  --container-max: 36rem;
+}
+
+:root {
+  --bg-primary: #f5f7fa;
+  --bg-surface: #ffffff;
+  --bg-elevated: #eef2f6;
+  --bg-interactive: #f8fafc;
+  --bg-interactive-hover: #edf2f7;
+  --bg-selected: #e8eeff;
+  --bg-success: #eaf8ef;
+  --bg-error: #fdeeee;
+
+  --text-primary: #101828;
+  --text-secondary: #243041;
+  --text-muted: #5f6b7a;
+  --text-accent: #3f5bf6;
+  --text-success: #166534;
+  --text-error: #b42318;
+
+  --border-subtle: #d3d9e2;
+  --border-strong: #b4beca;
+  --border-accent: #5f77ff;
+  --border-success: #49a56c;
+  --border-error: #d56767;
+
+  --focus-ring: #4f6bff;
+}
+
+.dark {
+  --bg-primary: #0a0a0b;
+  --bg-surface: #101114;
+  --bg-elevated: #15181d;
+  --bg-interactive: #12161b;
+  --bg-interactive-hover: #1a2027;
+  --bg-selected: #16233d;
+  --bg-success: #102217;
+  --bg-error: #2b1418;
+
+  --text-primary: #f3f5f7;
+  --text-secondary: #d6dbe2;
+  --text-muted: #a3adba;
+  --text-accent: #9aaeff;
+  --text-success: #8ce3ac;
+  --text-error: #ffabab;
+
+  --border-subtle: #2d343d;
+  --border-strong: #47515d;
+  --border-accent: #7f95ff;
+  --border-success: #4a9c68;
+  --border-error: #c36a76;
+
+  --focus-ring: #8ea2ff;
+}
+
+/* --- Base styles --- */
+html {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-mono);
+  scrollbar-gutter: stable;
+}
+
+body {
+  min-height: 100vh;
+}
+
+/* --- Focus visible ring --- */
+*:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 2px;
+}
+
+/* --- Reduced motion --- */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "installCommand": "pnpm install --frozen-lockfile",
+  "buildCommand": "pnpm -C web build",
+  "outputDirectory": "web/dist",
+  "framework": null,
+  "rewrites": [
+    { "source": "/api/(.*)", "destination": "/api/vercel" },
+    { "source": "/((?!.*\\.).*)", "destination": "/index.html" }
+  ],
+  "functions": {
+    "api/vercel.ts": {
+      "memory": 1024,
+      "maxDuration": 60,
+      "runtime": "nodejs24.x",
+      "includeFiles": "{data/**,server/**,shared/**}"
+    }
+  },
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "Strict-Transport-Security", "value": "max-age=63072000; includeSubDomains; preload" },
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "X-Frame-Options", "value": "DENY" }
+      ]
+    }
+  ]
+}
