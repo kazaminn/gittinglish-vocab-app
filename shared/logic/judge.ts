@@ -1,6 +1,6 @@
-import type { GeneratedProblem } from '../domain';
-import type { JudgeResponse, SessionStartItem } from '../dto';
-import { normalizeTextAnswer } from './normalize';
+import type { GeneratedProblem } from '../domain.js';
+import type { JudgeResponse, SessionStartItem } from '../dto.js';
+import { normalizeTextAnswer } from './normalize.js';
 
 export interface JudgeResult {
   isCorrect: boolean;
