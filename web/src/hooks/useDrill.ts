@@ -1,9 +1,9 @@
 import { useCallback, useMemo, useState } from 'react';
 import type { DrillMode, DatasetId, Explanation } from '@shared/domain';
 import type { ProblemDTO, SessionStartItem } from '@shared/dto';
+import { judgeOnClient } from '@shared/logic/judge';
 import {
   useEndSessionMutation,
-  useJudgeAnswerMutation,
   useStartSessionMutation,
 } from '../features/drill/queries';
 import { useAuth } from './useAuth';
@@ -99,7 +99,6 @@ function toEndSessionAnswer(result: AnswerResult) {
 export function useDrill(): DrillState & DrillActions {
   const { user } = useAuth();
   const startSessionMutation = useStartSessionMutation();
-  const judgeAnswerMutation = useJudgeAnswerMutation();
   const endSessionMutation = useEndSessionMutation();
   const [sessionId, setSessionId] = useState<string | undefined>();
   const [startedAt, setStartedAt] = useState<number | undefined>();
@@ -167,11 +166,7 @@ export function useDrill(): DrillState & DrillActions {
         throw new Error('No current problem');
       }
 
-      const judge = await judgeAnswerMutation.mutateAsync({
-        itemId: currentItem.itemId,
-        drillMode: currentItem.drillMode,
-        answer: userInput,
-      });
+      const judge = judgeOnClient(currentItem, userInput);
 
       const result: AnswerResult = {
         problemId: currentItem.itemId,
@@ -190,16 +185,20 @@ export function useDrill(): DrillState & DrillActions {
       setResults((previous) => [...previous, result]);
       return result;
     },
-    [currentItem, currentProblem, judgeAnswerMutation]
+    [currentItem, currentProblem]
   );
 
   const next = useCallback(async () => {
     const nextIndex = currentIndex + 1;
     if (nextIndex >= items.length) {
-      const pendingResults = results;
-      await persistSessionResults(pendingResults);
       setIsSessionComplete(true);
       setLastAnswer(undefined);
+      // Persist in the background so the summary screen renders immediately.
+      // The server is the source of truth for SM-2 / progress; failures are
+      // logged but do not block navigation.
+      void persistSessionResults(results).catch((error) => {
+        console.error('Failed to persist session results', error);
+      });
       return;
     }
 
@@ -222,15 +221,8 @@ export function useDrill(): DrillState & DrillActions {
   );
 
   const isBusy = useMemo(
-    () =>
-      startSessionMutation.isPending ||
-      judgeAnswerMutation.isPending ||
-      endSessionMutation.isPending,
-    [
-      endSessionMutation.isPending,
-      judgeAnswerMutation.isPending,
-      startSessionMutation.isPending,
-    ]
+    () => startSessionMutation.isPending || endSessionMutation.isPending,
+    [endSessionMutation.isPending, startSessionMutation.isPending]
   );
 
   return {
