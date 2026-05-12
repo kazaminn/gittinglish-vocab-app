@@ -14,7 +14,7 @@ afterEach(() => {
 });
 
 describe('calculateSM2', () => {
-  it('初回正解で interval=1, reps=1', () => {
+  it('first correct answer yields interval=1, reps=1', () => {
     const result = calculateSM2({
       quality: 4,
       ease: 2.5,
@@ -26,7 +26,7 @@ describe('calculateSM2', () => {
     expect(result.nextReview).toBe(FAKE_NOW + DAY_MS);
   });
 
-  it('2回目正解で interval=6, reps=2', () => {
+  it('second correct answer yields interval=6, reps=2', () => {
     const result = calculateSM2({
       quality: 4,
       ease: 2.5,
@@ -37,7 +37,7 @@ describe('calculateSM2', () => {
     expect(result.reps).toBe(2);
   });
 
-  it('3回目以降: interval = round(prev * ease)', () => {
+  it('third and later answers use interval = round(prev * ease)', () => {
     const result = calculateSM2({
       quality: 4,
       ease: 2.5,
@@ -48,7 +48,7 @@ describe('calculateSM2', () => {
     expect(result.reps).toBe(3);
   });
 
-  it('不正解で interval=1, reps=0 にリセット', () => {
+  it('incorrect answer resets interval to 1 and reps to 0', () => {
     const result = calculateSM2({
       quality: 1,
       ease: 2.5,
@@ -59,7 +59,7 @@ describe('calculateSM2', () => {
     expect(result.reps).toBe(0);
   });
 
-  it('ease が 1.3 を下回らない', () => {
+  it('ease never drops below 1.3', () => {
     const result = calculateSM2({
       quality: 0,
       ease: 1.3,
@@ -69,7 +69,7 @@ describe('calculateSM2', () => {
     expect(result.ease).toBe(1.3);
   });
 
-  it('quality=5 で ease が上がる', () => {
+  it('quality=5 increases ease', () => {
     const result = calculateSM2({
       quality: 5,
       ease: 2.5,
@@ -79,7 +79,7 @@ describe('calculateSM2', () => {
     expect(result.ease).toBeGreaterThan(2.5);
   });
 
-  it('quality=3 (境界) は正解扱い', () => {
+  it('quality=3 (boundary) counts as correct', () => {
     const result = calculateSM2({
       quality: 3,
       ease: 2.5,
@@ -90,7 +90,7 @@ describe('calculateSM2', () => {
     expect(result.interval).toBe(1);
   });
 
-  it('quality=2 (境界) は不正解扱い', () => {
+  it('quality=2 (boundary) counts as incorrect', () => {
     const result = calculateSM2({
       quality: 2,
       ease: 2.5,
@@ -101,7 +101,7 @@ describe('calculateSM2', () => {
     expect(result.interval).toBe(1);
   });
 
-  it('nextReview = Date.now() + interval * DAY_MS (ミリ秒)', () => {
+  it('nextReview = Date.now() + interval * DAY_MS (in ms)', () => {
     const result = calculateSM2({
       quality: 4,
       ease: 2.5,
@@ -111,7 +111,7 @@ describe('calculateSM2', () => {
     expect(result.nextReview).toBe(FAKE_NOW + result.interval * DAY_MS);
   });
 
-  it('ease は小数第2位に丸められる', () => {
+  it('ease is rounded to two decimal places', () => {
     const result = calculateSM2({
       quality: 4,
       ease: 2.5,

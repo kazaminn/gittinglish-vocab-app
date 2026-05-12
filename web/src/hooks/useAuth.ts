@@ -1,6 +1,3 @@
-// Better Auth `useSession` をラップして既存コンポーネントに薄いインタフェースを提供する。
-// 旧 Firebase 用の signInAsGuest / signInWithGoogle は廃止。
-// サインインは Signup/Login ページから authClient を直接呼ぶ方針。
 import { useCallback } from 'react';
 import { authClient, useSession } from '../lib/auth-client.js';
 import { isDevAuthSkipActive, TEST_USER } from '../lib/dev-auth.js';

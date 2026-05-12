@@ -30,23 +30,19 @@ app.use(
   )
 );
 
-// Better Auth handler (cookie 認証)。/api/auth/sign-up/username, /sign-in/username, /sign-out, /callback/google など
 app.on(['GET', 'POST'], '/api/auth/*', (c) => auth.handler(c.req.raw));
 
-// Public
 app.get('/api/health', (c) =>
   c.json({
     ok: true,
     env: {
       hasTursoUrl: !!process.env.TURSO_URL,
-      // Phase C で Better Auth 環境変数チェックに置換
       hasBetterAuthUrl: !!process.env.BETTER_AUTH_URL,
       hasBetterAuthSecret: !!process.env.BETTER_AUTH_SECRET,
     },
   })
 );
 
-// Protected routes
 app.use('/api/sessions/*', authMiddleware);
 app.use('/api/sessions', authMiddleware);
 app.use('/api/answers/*', authMiddleware);

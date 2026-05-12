@@ -111,7 +111,7 @@ function req(method: string, path: string, body?: unknown) {
   return app.request(`http://localhost/api${path}`, init);
 }
 
-describe('Phase 3 API', () => {
+describe('API', () => {
   beforeAll(async () => {
     await createTables();
   });

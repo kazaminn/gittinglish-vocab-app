@@ -1,17 +1,3 @@
-// Better Auth 初期化。Phase C (この PR) で導入。
-// - emailAndPassword: enabled (verification なし、reset なし)
-// - username plugin: ID + Password 認証の中核
-// - email は表向き保存しない: Better Auth 必須の `user.email` には dummy (`${username}@local.invalid`) を入れる
-// - OAuth (Phase D) で取得した email は HMAC_SHA256 で hash 化して `user.emailHash` に保存
-//
-// 必要な環境変数:
-//   BETTER_AUTH_URL       例: https://gittinglish.kazamitte.com
-//   BETTER_AUTH_SECRET    openssl rand -base64 32 で生成
-//   EMAIL_HASH_SECRET     openssl rand -base64 32 で生成（OAuth Phase D で必須）
-//   GOOGLE_CLIENT_ID      Phase D で必須
-//   GOOGLE_CLIENT_SECRET  Phase D で必須
-//   GITHUB_CLIENT_ID      Phase D で必須
-//   GITHUB_CLIENT_SECRET  Phase D で必須
 import { createHmac } from 'node:crypto';
 import { betterAuth } from 'better-auth';
 import { drizzleAdapter } from 'better-auth/adapters/drizzle';
@@ -19,10 +5,8 @@ import { username } from 'better-auth/plugins';
 import * as authSchema from '../db/auth-schema.js';
 import { db } from '../db/client.js';
 
-// Vercel が自動で注入する host（プロトコル無し）
-//   VERCEL_BRANCH_URL  例: gittinglish-vocab-app-server-git-<branch>.vercel.app（branch 単位で固定）
-//   VERCEL_URL         例: gittinglish-vocab-app-server-<hash>.vercel.app（deployment 単位）
-// 本番カスタムドメインは Vercel の env には現れないので BETTER_AUTH_URL で明示する必要あり。
+// Vercel auto-injects the host (no protocol) per deployment, but the prod
+// custom domain is never present in env — that one must be set explicitly.
 const vercelHost = process.env.VERCEL_BRANCH_URL ?? process.env.VERCEL_URL;
 const vercelURL = vercelHost ? `https://${vercelHost}` : undefined;
 const BETTER_AUTH_URL =
@@ -44,12 +28,10 @@ const hasGoogle =
 const hasGithub =
   !!process.env.GITHUB_CLIENT_ID && !!process.env.GITHUB_CLIENT_SECRET;
 
-// Preview デプロイでは Origin が `*.vercel.app` になるため、本番ドメインに加えて
-// VERCEL_URL / VERCEL_BRANCH_URL も trusted に積む。重複は Set で除去。
+// Preview deployments send Origin as *.vercel.app, so accept the Vercel host
+// in addition to the production domain.
 const trustedOrigins = Array.from(
-  new Set(
-    [BETTER_AUTH_URL, vercelURL].filter((v): v is string => !!v)
-  )
+  new Set([BETTER_AUTH_URL, vercelURL].filter((v): v is string => !!v))
 );
 
 export const auth = betterAuth({
@@ -113,7 +95,8 @@ export const auth = betterAuth({
     user: {
       create: {
         before: async (rawUser) => {
-          // OAuth 経由で実 email が来た場合: emailHash を立てて email を dummy 化
+          // Real emails from OAuth are never stored: hash them into emailHash
+          // and replace user.email with a dummy so plaintext doesn't persist.
           const incoming = rawUser as Record<string, unknown> & {
             email?: string;
             username?: string;

@@ -1,32 +1,28 @@
 import { z } from 'zod';
 
-// ---------------------------------------------------------------------------
-// Grammar (39個)
-// ---------------------------------------------------------------------------
-
 export const GrammarPointSchema = z.enum([
-  // 文型
+  // sentence patterns
   'sv',
   'svc',
   'svo',
   'svoo',
   'svoc',
-  // 時制
+  // tense
   'present',
   'past',
   'present_perfect',
   'future',
-  // 節・句
+  // clauses & phrases
   'relative_clause',
   'relative_adverb',
   'participle_clause',
   'noun_clause_that',
   'noun_clause_wh',
-  // 仮定法
+  // subjunctive
   'subjunctive_present',
   'subjunctive_past',
   'subjunctive_past_perfect',
-  // 構文
+  // syntactic constructions
   'cleft_sentence',
   'inversion',
   'comparison',
@@ -35,23 +31,23 @@ export const GrammarPointSchema = z.enum([
   'existential_there',
   'inanimate_subject',
   'question_exclamation',
-  // 準動詞
+  // verbals
   'gerund',
   'infinitive',
   'participial_adjective',
-  // 品詞・語法
+  // parts of speech & usage
   'modal',
   'conjunction',
   'phrasal_verb',
   'perception',
   'article',
   'preposition',
-  // 文法機能
+  // grammatical functions
   'apposition',
   'ellipsis',
   'parallelism',
   'negation',
-  // 話法
+  // speech
   'reported_speech',
 ]);
 
@@ -62,10 +58,6 @@ export const SupportedGenerationGrammarPointSchema = z.enum([
   'noun_clause_that',
   'cleft_sentence',
 ]);
-
-// ---------------------------------------------------------------------------
-// DrillMode
-// ---------------------------------------------------------------------------
 
 export const DrillModeSchema = z.enum([
   'word_to_meaning',
@@ -78,10 +70,6 @@ export const DrillModeSchema = z.enum([
 ]);
 
 export const DatasetIdSchema = z.enum(['gitverbs85']);
-
-// ---------------------------------------------------------------------------
-// Tags
-// ---------------------------------------------------------------------------
 
 export const PartOfSpeechSchema = z.enum([
   'noun',
@@ -119,10 +107,6 @@ export const ProblemTagsSchema = z.object({
   phrases: z.array(PhraseTagSchema).max(3).optional(),
 });
 
-// ---------------------------------------------------------------------------
-// Problem taxonomy
-// ---------------------------------------------------------------------------
-
 export const PedagogicalKindSchema = z.enum([
   'cloze',
   'reorder',
@@ -141,10 +125,6 @@ export const InteractionTypeSchema = z.enum([
   'transform',
   'identify',
 ]);
-
-// ---------------------------------------------------------------------------
-// AST
-// ---------------------------------------------------------------------------
 
 export const SpanSchema = z
   .object({
@@ -237,10 +217,6 @@ export const SentenceAstSchema = z.object({
     .optional(),
 });
 
-// ---------------------------------------------------------------------------
-// Answer / Choice
-// ---------------------------------------------------------------------------
-
 export const AnswerJudgeTypeSchema = z.enum([
   'exact',
   'normalized',
@@ -283,10 +259,6 @@ export const ConstraintSchema = z.object({
   value: z.string(),
 });
 
-// ---------------------------------------------------------------------------
-// Explanation / Difficulty
-// ---------------------------------------------------------------------------
-
 export const ExplanationSchema = z.object({
   summary: z.string(),
   details: z.array(z.string()).optional(),
@@ -312,10 +284,6 @@ export const DifficultySchema = z.object({
   ]),
   factors: DifficultyFactorsSchema.optional(),
 });
-
-// ---------------------------------------------------------------------------
-// Problem schemas
-// ---------------------------------------------------------------------------
 
 export const BaseProblemSchema = z.object({
   id: z.string().min(1),
@@ -482,10 +450,6 @@ export const GeneratedProblemSchema = z.discriminatedUnion('pedagogicalKind', [
   TranslationProblemSchema,
 ]);
 
-// ---------------------------------------------------------------------------
-// Generation trace / rule
-// ---------------------------------------------------------------------------
-
 export const TransformTypeSchema = z.enum([
   'split',
   'merge',
@@ -521,10 +485,6 @@ export const RawSentenceRecordSchema = z.object({
   phrases: z.array(PhraseTagSchema).optional(),
   annotations: z.unknown().optional(),
 });
-
-// ---------------------------------------------------------------------------
-// API request / response
-// ---------------------------------------------------------------------------
 
 const NonFlashcardDrillModeSchema = z.enum([
   'word_to_meaning',

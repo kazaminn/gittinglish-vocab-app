@@ -49,11 +49,9 @@ function formatTokyoDateFromUnixSeconds(unixSeconds: number): string {
   }).format(new Date(unixSeconds * 1000));
 }
 
-// Better Auth 導入後、user 行は signUp/signIn 時に Better Auth が作成済み。
-// 旧 ensureUser は no-op（呼び出し側の互換維持のため関数だけ残す）。
-async function ensureUser(_userId: string, _displayName: string | undefined) {
-  // intentionally empty
-}
+// No-op: Better Auth provisions the user row during signUp/signIn. Kept as a
+// stub so existing call sites don't need to be rewritten.
+async function ensureUser(_userId: string, _displayName: string | undefined) {}
 
 function buildJudgeMeta(
   problem: SessionStartItem['problemDTO'] | ReturnType<typeof getProblemById>

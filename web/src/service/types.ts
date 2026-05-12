@@ -6,9 +6,7 @@ import {
   type UserSettings,
 } from '@shared/domain';
 
-// ---------------------------------------------------------------------------
 // Auth
-// ---------------------------------------------------------------------------
 
 export interface User {
   id: string;
@@ -22,9 +20,7 @@ export interface AuthService {
   signOut(): Promise<void>;
 }
 
-// ---------------------------------------------------------------------------
 // Progress
-// ---------------------------------------------------------------------------
 
 export interface ProgressService {
   getProgress(userId: string, drillMode: DrillMode): Promise<DrillProgress[]>;
@@ -32,9 +28,7 @@ export interface ProgressService {
   resetProgress(userId: string): Promise<void>;
 }
 
-// ---------------------------------------------------------------------------
 // Session
-// ---------------------------------------------------------------------------
 
 export interface SessionStartParams {
   userId: string;
@@ -53,9 +47,7 @@ export interface SessionService {
   clearSession(userId: string): Promise<void>;
 }
 
-// ---------------------------------------------------------------------------
 // Settings
-// ---------------------------------------------------------------------------
 
 export interface SettingsService {
   getSettings(): Promise<UserSettings>;

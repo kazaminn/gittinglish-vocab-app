@@ -1,7 +1,7 @@
-// Better Auth 標準テーブル + username plugin + カスタム emailHash カラム。
-// 公式 Drizzle adapter (provider: "sqlite") のスキーマ形式に準拠。
-// `pnpm exec better-auth generate` を後で走らせる場合、このファイルが上書きされる可能性があるので
-// その際はカスタムカラム (emailHash, username, displayUsername) を再追加すること。
+// Generated layout for Better Auth's Drizzle sqlite adapter, extended with
+// the username plugin columns and a custom emailHash column. Re-running
+// `better-auth generate` will overwrite this file — re-add emailHash,
+// username, and displayUsername if that happens.
 import { sql } from 'drizzle-orm';
 import { integer, sqliteTable, text } from 'drizzle-orm/sqlite-core';
 
@@ -19,10 +19,9 @@ export const user = sqliteTable('user', {
   updatedAt: integer('updated_at', { mode: 'timestamp' })
     .notNull()
     .default(sql`(unixepoch())`),
-  // username plugin
   username: text('username').unique(),
   displayUsername: text('display_username'),
-  // カスタム: OAuth 取得 email を HMAC_SHA256 化したハッシュ。平文 email は保存しない。
+  // HMAC_SHA256 of the OAuth email; plaintext email is never stored.
   emailHash: text('email_hash'),
 });
 

@@ -1,7 +1,7 @@
-// 旧 Firebase 用の useAuth テスト。Better Auth 移行後（Phase C）に書き直し予定。
-// 現状はスキップ。
+// Placeholder: the old Firebase-era useAuth tests were removed and a
+// Better Auth equivalent has not been written yet.
 import { describe, it } from 'vitest';
 
-describe.skip('useAuth (Better Auth 移行後に書き直し)', () => {
+describe.skip('useAuth (rewrite pending for Better Auth)', () => {
   it.skip('placeholder', () => {});
 });

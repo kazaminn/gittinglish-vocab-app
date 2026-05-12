@@ -1,32 +1,28 @@
 export type ID = string;
 
-// ---------------------------------------------------------------------------
-// Grammar (39個)
-// ---------------------------------------------------------------------------
-
 export type GrammarPoint =
-  // 文型
+  // sentence patterns
   | 'sv'
   | 'svc'
   | 'svo'
   | 'svoo'
   | 'svoc'
-  // 時制
+  // tense
   | 'present'
   | 'past'
   | 'present_perfect'
   | 'future'
-  // 節・句
+  // clauses & phrases
   | 'relative_clause'
   | 'relative_adverb'
   | 'participle_clause'
   | 'noun_clause_that'
   | 'noun_clause_wh'
-  // 仮定法
+  // subjunctive
   | 'subjunctive_present'
   | 'subjunctive_past'
   | 'subjunctive_past_perfect'
-  // 構文
+  // syntactic constructions
   | 'cleft_sentence'
   | 'inversion'
   | 'comparison'
@@ -35,23 +31,23 @@ export type GrammarPoint =
   | 'existential_there'
   | 'inanimate_subject'
   | 'question_exclamation'
-  // 準動詞
+  // verbals
   | 'gerund'
   | 'infinitive'
   | 'participial_adjective'
-  // 品詞・語法
+  // parts of speech & usage
   | 'modal'
   | 'conjunction'
   | 'phrasal_verb'
   | 'perception'
   | 'article'
   | 'preposition'
-  // 文法機能
+  // grammatical functions
   | 'apposition'
   | 'ellipsis'
   | 'parallelism'
   | 'negation'
-  // 話法
+  // speech
   | 'reported_speech';
 
 export type SupportedGenerationGrammarPoint =
@@ -60,10 +56,6 @@ export type SupportedGenerationGrammarPoint =
   | 'subjunctive_past'
   | 'noun_clause_that'
   | 'cleft_sentence';
-
-// ---------------------------------------------------------------------------
-// DrillMode (Phase を置換)
-// ---------------------------------------------------------------------------
 
 export type DrillMode =
   | 'word_to_meaning'
@@ -75,10 +67,6 @@ export type DrillMode =
   | 'flashcard';
 
 export type DatasetId = 'gitverbs85';
-
-// ---------------------------------------------------------------------------
-// Tags (multi-axis)
-// ---------------------------------------------------------------------------
 
 export type PartOfSpeech =
   | 'noun'
@@ -114,10 +102,6 @@ export interface ProblemTags {
   phrases?: PhraseTag[];
 }
 
-// ---------------------------------------------------------------------------
-// Problem taxonomy
-// ---------------------------------------------------------------------------
-
 export type PedagogicalKind =
   | 'cloze'
   | 'reorder'
@@ -134,10 +118,6 @@ export type InteractionType =
   | 'reorder'
   | 'transform'
   | 'identify';
-
-// ---------------------------------------------------------------------------
-// AST
-// ---------------------------------------------------------------------------
 
 export interface Span {
   start: number;
@@ -221,10 +201,6 @@ export interface SentenceAst {
   };
 }
 
-// ---------------------------------------------------------------------------
-// Answer / Choice
-// ---------------------------------------------------------------------------
-
 export type AnswerJudgeType =
   | 'exact'
   | 'normalized'
@@ -255,10 +231,6 @@ export interface Constraint {
   value: string;
 }
 
-// ---------------------------------------------------------------------------
-// Explanation / Difficulty
-// ---------------------------------------------------------------------------
-
 export interface Explanation {
   summary: string;
   details?: string[];
@@ -279,9 +251,7 @@ export interface Difficulty {
   factors?: DifficultyFactors;
 }
 
-// ---------------------------------------------------------------------------
 // Problem types (discriminated union)
-// ---------------------------------------------------------------------------
 
 export interface BaseProblem {
   id: ID;
@@ -386,10 +356,6 @@ export type GeneratedProblem =
   | GrammarLabelProblem
   | TranslationProblem;
 
-// ---------------------------------------------------------------------------
-// Generation trace / rule / pipeline
-// ---------------------------------------------------------------------------
-
 export type TransformType =
   | 'split'
   | 'merge'
@@ -424,10 +390,6 @@ export interface RawSentenceRecord {
   phrases?: PhraseTag[];
   annotations?: unknown;
 }
-
-// ---------------------------------------------------------------------------
-// Session & Drill (MVP)
-// ---------------------------------------------------------------------------
 
 export type SessionStatus = 'active' | 'completed';
 export type Quality = 0 | 1 | 2 | 3 | 4 | 5;
@@ -468,10 +430,6 @@ export interface UserSettings {
   theme: 'light' | 'dark' | 'system';
   sessionSize: number;
 }
-
-// ---------------------------------------------------------------------------
-// Client-side session (IndexedDB / localStorage)
-// ---------------------------------------------------------------------------
 
 export interface LocalAnswer {
   itemId: string;

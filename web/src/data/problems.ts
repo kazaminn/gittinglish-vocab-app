@@ -127,7 +127,6 @@ export function getDefaultModeForDataset(datasetId: DatasetId): DrillMode {
   return DATASET_DEFAULT_MODE[datasetId];
 }
 
-// gitverbs85 は section 分割なし
 export async function getSectionsForDataset(
   _datasetId: DatasetId
 ): Promise<ProblemSection[]> {

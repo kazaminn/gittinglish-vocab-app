@@ -14,10 +14,6 @@ import type {
   Quality,
 } from './domain';
 
-// ---------------------------------------------------------------------------
-// DTO types
-// ---------------------------------------------------------------------------
-
 export interface BaseProblemDTO {
   id: ID;
   pedagogicalKind: PedagogicalKind;
@@ -120,17 +116,9 @@ export type ProblemDTO =
   | GrammarLabelProblemDTO
   | TranslationProblemDTO;
 
-// ---------------------------------------------------------------------------
-// API envelope
-// ---------------------------------------------------------------------------
-
 export type ApiResponse<T> =
   | { ok: true; data: T }
   | { ok: false; error: { code: string; message: string } };
-
-// ---------------------------------------------------------------------------
-// API request / response types
-// ---------------------------------------------------------------------------
 
 // POST /api/sessions/start
 export interface SessionStartRequest {
@@ -215,10 +203,6 @@ export interface UserStatsResponse {
   streakDays: number;
   dueToday: number;
 }
-
-// ---------------------------------------------------------------------------
-// Converter
-// ---------------------------------------------------------------------------
 
 export function toProblemDTO(problem: GeneratedProblem): ProblemDTO {
   const base = {

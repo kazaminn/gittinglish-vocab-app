@@ -65,7 +65,6 @@ export function SummaryPage({
         ))}
       </div>
 
-      {/* Review list (1問ずつ: 問題/自分の回答/正答/解説) */}
       <div className="space-y-3">
         {results.map((item, idx) => (
           <div

@@ -1,3 +1,3 @@
 export * from './domain';
 export * from './dto';
-// schemas は必要な箇所で直接 import（Zod依存を伝播させない）
+// schemas is not re-exported to keep zod out of consumers that only need types.

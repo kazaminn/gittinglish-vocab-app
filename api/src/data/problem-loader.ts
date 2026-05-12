@@ -43,7 +43,6 @@ const DATASET_PROBLEMS: Record<
   },
 };
 
-// gitverbs85 は section 分割なし（公開版データセットでは不要）
 export function getSectionsForDataset(_dataset: DatasetId): ProblemSection[] {
   return [];
 }
