@@ -1,6 +1,6 @@
 {
   "installCommand": "pnpm install --frozen-lockfile",
-  "buildCommand": "pnpm -C web build",
+  "buildCommand": "pnpm -C shared build && pnpm -C web build",
   "outputDirectory": "web/dist",
   "framework": null,
   "rewrites": [
@@ -11,7 +11,7 @@
     "api/vercel.ts": {
       "memory": 1024,
       "maxDuration": 60,
-      "includeFiles": "{data/**,server/**,shared/**}"
+      "includeFiles": "{data/**,shared/dist/**}"
     }
   },
   "headers": [

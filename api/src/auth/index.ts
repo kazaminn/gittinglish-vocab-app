@@ -19,7 +19,14 @@ import { username } from 'better-auth/plugins';
 import * as authSchema from '../db/auth-schema.js';
 import { db } from '../db/client.js';
 
-const BETTER_AUTH_URL = process.env.BETTER_AUTH_URL ?? 'http://localhost:3001';
+// Vercel が自動で注入する host（プロトコル無し）
+//   VERCEL_BRANCH_URL  例: gittinglish-vocab-app-server-git-<branch>.vercel.app（branch 単位で固定）
+//   VERCEL_URL         例: gittinglish-vocab-app-server-<hash>.vercel.app（deployment 単位）
+// 本番カスタムドメインは Vercel の env には現れないので BETTER_AUTH_URL で明示する必要あり。
+const vercelHost = process.env.VERCEL_BRANCH_URL ?? process.env.VERCEL_URL;
+const vercelURL = vercelHost ? `https://${vercelHost}` : undefined;
+const BETTER_AUTH_URL =
+  process.env.BETTER_AUTH_URL ?? vercelURL ?? 'http://localhost:3001';
 const BETTER_AUTH_SECRET =
   process.env.BETTER_AUTH_SECRET ?? 'dev-secret-do-not-use-in-prod';
 const EMAIL_HASH_SECRET =
@@ -37,10 +44,18 @@ const hasGoogle =
 const hasGithub =
   !!process.env.GITHUB_CLIENT_ID && !!process.env.GITHUB_CLIENT_SECRET;
 
+// Preview デプロイでは Origin が `*.vercel.app` になるため、本番ドメインに加えて
+// VERCEL_URL / VERCEL_BRANCH_URL も trusted に積む。重複は Set で除去。
+const trustedOrigins = Array.from(
+  new Set(
+    [BETTER_AUTH_URL, vercelURL].filter((v): v is string => !!v)
+  )
+);
+
 export const auth = betterAuth({
   baseURL: BETTER_AUTH_URL,
   secret: BETTER_AUTH_SECRET,
-  trustedOrigins: [BETTER_AUTH_URL],
+  trustedOrigins,
 
   database: drizzleAdapter(db, {
     provider: 'sqlite',
