@@ -32,10 +32,6 @@ const wordToMeaningProblem = getProblemsForQuery({
   dataset: 'gitverbs85',
   drillMode: 'word_to_meaning',
 })[0]!;
-const wordInputProblem = getProblemsForQuery({
-  dataset: 'gitverbs85',
-  drillMode: 'word_input',
-})[0]!;
 
 async function createTables() {
   await testDb.run(sql`CREATE TABLE IF NOT EXISTS users (
@@ -144,12 +140,9 @@ describe('Phase 3 API', () => {
     ).toBeUndefined();
   });
 
-  it('judges answers by drillMode', async () => {
+  it('judges select answers', async () => {
     if (!('choiceAnswerSpec' in wordToMeaningProblem)) {
       throw new Error('invalid select fixture');
-    }
-    if (!('answerSpec' in wordInputProblem)) {
-      throw new Error('invalid input fixture');
     }
 
     const selectResponse = await req('POST', '/answers/judge', {
@@ -159,14 +152,6 @@ describe('Phase 3 API', () => {
     });
     const selectPayload = await selectResponse.json();
     expect(selectPayload.data.isCorrect).toBe(true);
-
-    const inputResponse = await req('POST', '/answers/judge', {
-      itemId: wordInputProblem.id,
-      drillMode: wordInputProblem.drillMode,
-      answer: `${wordInputProblem.answerSpec.answers[0]}.`,
-    });
-    const inputPayload = await inputResponse.json();
-    expect(inputPayload.data.isCorrect).toBe(true);
   });
 
   it('rejects invalid session start requests', async () => {

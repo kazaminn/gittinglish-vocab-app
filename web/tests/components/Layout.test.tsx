@@ -1,8 +1,16 @@
 import { screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { describe, expect, it } from 'vitest';
+import { describe, expect, it, vi } from 'vitest';
 import { Layout } from '../../src/components/Layout';
 import { renderWithProviders } from '../test-utils';
+
+vi.mock('../../src/hooks/useAuth', () => ({
+  useAuth: () => ({
+    isLoading: false,
+    user: { id: 'u', displayName: 'tester', username: 'tester' },
+    signOut: vi.fn(),
+  }),
+}));
 
 describe('Layout', () => {
   it('opens the user menu from the top-right icon', async () => {

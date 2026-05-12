@@ -10,6 +10,14 @@ import {
 import { HomePage, type HomeSelection } from '../../src/features/home/HomePage';
 import { renderWithProviders } from '../test-utils';
 
+vi.mock('../../src/hooks/useAuth', () => ({
+  useAuth: () => ({
+    isLoading: false,
+    user: { id: 'u', displayName: 'tester', username: 'tester' },
+    signOut: vi.fn(),
+  }),
+}));
+
 function HomeHarness({
   onStartDrill,
 }: {
@@ -59,7 +67,9 @@ describe('HomePage', () => {
     expect(
       screen.getByRole('radio', { name: /sentence cloze/i })
     ).toBeInTheDocument();
-    expect(screen.queryByRole('radio', { name: /word → meaning/i })).toBeNull();
+    expect(
+      screen.getByRole('radio', { name: /word → meaning/i })
+    ).toBeInTheDocument();
   });
 
   it('starts a drill with the current dataset selection', async () => {
