@@ -8,5 +8,5 @@
     "outDir": "./dist",
     "noEmit": true
   },
-  "include": ["src", "tests", "../shared/**/*"]
+  "include": ["src", "tests", "../shared/src/**/*"]
 }

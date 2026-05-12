@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import type { SessionStartItem } from '@shared/dto';
-import { judgeOnClient } from '@shared/logic/judge';
+import { judgeOnClient } from '../../src/lib/judgeOnClient';
 
 const baseExplanation = {
   summary: 'summary',

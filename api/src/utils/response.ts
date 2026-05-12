@@ -1,4 +1,4 @@
-import type { ApiResponse } from '../../../shared/dto.js';
+import type { ApiResponse } from '@gittinglish-vocab-app/shared';
 
 export function ok<T>(data: T): ApiResponse<T> {
   return { ok: true, data };

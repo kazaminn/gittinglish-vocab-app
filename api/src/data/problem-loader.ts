@@ -4,7 +4,7 @@ import type {
   DatasetId,
   DrillMode,
   GeneratedProblem,
-} from '../../../shared/domain.js';
+} from '@gittinglish-vocab-app/shared';
 
 const require = createRequire(import.meta.url);
 

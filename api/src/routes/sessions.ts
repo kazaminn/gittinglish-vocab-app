@@ -4,12 +4,12 @@ import { Hono } from 'hono';
 import type {
   EndSessionResultItem,
   SessionStartItem,
-} from '../../../shared/dto.js';
+} from '@gittinglish-vocab-app/shared';
 import {
   EndSessionRequestSchema,
   SessionStartRequestSchema,
-} from '../../../shared/schemas.js';
-import { toProblemDTO } from '../../../shared/dto.js';
+} from '@gittinglish-vocab-app/shared/schemas';
+import { toProblemDTO } from '@gittinglish-vocab-app/shared';
 import { db } from '../db/client.js';
 import { getProblemById, getProblemsForQuery } from '../data/problem-loader.js';
 import {

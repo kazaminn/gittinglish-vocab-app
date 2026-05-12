@@ -1,7 +1,7 @@
 import { useCallback, useMemo, useState } from 'react';
 import type { DrillMode, DatasetId, Explanation } from '@shared/domain';
 import type { ProblemDTO, SessionStartItem } from '@shared/dto';
-import { judgeOnClient } from '@shared/logic/judge';
+import { judgeOnClient } from '../lib/judgeOnClient';
 import {
   useEndSessionMutation,
   useStartSessionMutation,

@@ -1,4 +1,4 @@
-import type { Quality } from '../../../shared/domain.js';
+import type { Quality } from '@gittinglish-vocab-app/shared';
 
 export interface SM2Input {
   quality: Quality;
