@@ -9,12 +9,7 @@ import {
 } from 'drizzle-orm/sqlite-core';
 
 // Better Auth 用テーブル (user / session / account / verification) は auth-schema から re-export
-export {
-  account,
-  session,
-  user,
-  verification,
-} from './auth-schema.js';
+export { account, session, user, verification } from './auth-schema.js';
 
 export const sessionWrites = sqliteTable('session_writes', {
   sessionId: text('session_id').primaryKey(),

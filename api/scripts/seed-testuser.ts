@@ -4,11 +4,10 @@
 // bypass middleware is the only path that treats this user as authenticated.
 //
 // Run: pnpm -C server seed:dev
-
 import { eq } from 'drizzle-orm';
 import { TEST_USER } from '../src/auth/dev-skip.js';
-import { db } from '../src/db/client.js';
 import { user } from '../src/db/auth-schema.js';
+import { db } from '../src/db/client.js';
 
 const existing = await db
   .select({ id: user.id })

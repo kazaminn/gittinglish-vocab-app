@@ -32,9 +32,15 @@ export function PrivacyPage() {
             <table className="border-border w-full border-collapse border text-xs">
               <thead className="bg-bg-muted">
                 <tr>
-                  <th className="border-border border px-3 py-2 text-left">種類</th>
-                  <th className="border-border border px-3 py-2 text-left">いつ取得</th>
-                  <th className="border-border border px-3 py-2 text-left">何に使う</th>
+                  <th className="border-border border px-3 py-2 text-left">
+                    種類
+                  </th>
+                  <th className="border-border border px-3 py-2 text-left">
+                    いつ取得
+                  </th>
+                  <th className="border-border border px-3 py-2 text-left">
+                    何に使う
+                  </th>
                 </tr>
               </thead>
               <tbody>
@@ -42,19 +48,27 @@ export function PrivacyPage() {
                   <td className="border-border border px-3 py-2">
                     メールアドレス（ハッシュ化）
                   </td>
-                  <td className="border-border border px-3 py-2">OAuth ログイン時</td>
+                  <td className="border-border border px-3 py-2">
+                    OAuth ログイン時
+                  </td>
                   <td className="border-border border px-3 py-2">
                     同じユーザーかどうかの照合
                   </td>
                 </tr>
                 <tr>
                   <td className="border-border border px-3 py-2">表示名</td>
-                  <td className="border-border border px-3 py-2">OAuth ログイン時</td>
+                  <td className="border-border border px-3 py-2">
+                    OAuth ログイン時
+                  </td>
                   <td className="border-border border px-3 py-2">画面表示</td>
                 </tr>
                 <tr>
-                  <td className="border-border border px-3 py-2">学習進捗データ</td>
-                  <td className="border-border border px-3 py-2">ドリル利用時</td>
+                  <td className="border-border border px-3 py-2">
+                    学習進捗データ
+                  </td>
+                  <td className="border-border border px-3 py-2">
+                    ドリル利用時
+                  </td>
                   <td className="border-border border px-3 py-2">
                     進捗の保存・復習スケジュールの計算
                   </td>
@@ -118,7 +132,8 @@ export function PrivacyPage() {
           <h2 className="text-base font-semibold">どのくらい保管するか</h2>
           <p>
             アカウントが存在する間、情報は保管されます。アカウントが不要になったら、
-            <code>contact@kazamitte.com</code> までご連絡ください。停止または削除します。
+            <code>contact@kazamitte.com</code>{' '}
+            までご連絡ください。停止または削除します。
           </p>
         </section>
 

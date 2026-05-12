@@ -2,7 +2,6 @@
 // 公式 Drizzle adapter (provider: "sqlite") のスキーマ形式に準拠。
 // `pnpm exec better-auth generate` を後で走らせる場合、このファイルが上書きされる可能性があるので
 // その際はカスタムカラム (emailHash, username, displayUsername) を再追加すること。
-
 import { sql } from 'drizzle-orm';
 import { integer, sqliteTable, text } from 'drizzle-orm/sqlite-core';
 

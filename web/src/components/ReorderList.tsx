@@ -44,16 +44,19 @@ export function ReorderList({
 
     setSlotIds((prev) => {
       const next = [...prev];
-      const targetIdx = next[activeSlotIdx] === undefined
-        ? activeSlotIdx
-        : next.findIndex((id) => id === undefined);
+      const targetIdx =
+        next[activeSlotIdx] === undefined
+          ? activeSlotIdx
+          : next.findIndex((id) => id === undefined);
       const resolvedIdx = targetIdx >= 0 ? targetIdx : activeSlotIdx;
       next[resolvedIdx] = chunkId;
       return next;
     });
 
     setActiveSlotIdx((prev) => {
-      const nextEmptyIdx = slotIds.findIndex((id, idx) => idx > prev && id === undefined);
+      const nextEmptyIdx = slotIds.findIndex(
+        (id, idx) => idx > prev && id === undefined
+      );
       return nextEmptyIdx >= 0 ? nextEmptyIdx : prev;
     });
   }
@@ -73,7 +76,9 @@ export function ReorderList({
     const slotId = slotIds[slotIdx];
     let background = 'transparent';
     let borderColor =
-      activeSlotIdx === slotIdx ? 'var(--border-accent)' : 'var(--border-subtle)';
+      activeSlotIdx === slotIdx
+        ? 'var(--border-accent)'
+        : 'var(--border-subtle)';
     let textColor = 'var(--text-primary)';
 
     if (slotId && !correctOrder) {
@@ -146,7 +151,10 @@ export function ReorderList({
                 className="min-h-16 rounded-sm border px-4 py-3 text-left"
                 style={getSlotStyle(slotIdx)}
               >
-                <span className="block text-xs" style={{ color: 'var(--text-muted)' }}>
+                <span
+                  className="block text-xs"
+                  style={{ color: 'var(--text-muted)' }}
+                >
                   [{slotIdx + 1}]
                 </span>
                 {slotChunk ? (
@@ -198,7 +206,9 @@ export function ReorderList({
       {!disabled && (
         <button
           type="button"
-          onClick={() => onSubmit(slotIds.filter((id): id is ID => id !== undefined))}
+          onClick={() =>
+            onSubmit(slotIds.filter((id): id is ID => id !== undefined))
+          }
           disabled={!isComplete}
           className="w-full rounded-sm border px-4 py-3 text-left"
           style={{

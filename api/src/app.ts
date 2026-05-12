@@ -13,7 +13,8 @@ const isDev = process.env.NODE_ENV !== 'production';
 // In production CORS_ORIGIN must be set explicitly; in dev fall back to the
 // Vite dev server (5173). credentials:true requires a concrete origin string,
 // not '*', because cookies are part of the auth flow.
-const allowedOrigin = process.env.CORS_ORIGIN ?? (isDev ? 'http://localhost:5173' : undefined);
+const allowedOrigin =
+  process.env.CORS_ORIGIN ?? (isDev ? 'http://localhost:5173' : undefined);
 
 app.use(
   '/api/*',
@@ -62,10 +63,7 @@ app.onError((e, c) => {
     return c.json(err(e.code, e.message), e.status);
   }
 
-  return c.json(
-    err('INTERNAL', 'Internal server error'),
-    500
-  );
+  return c.json(err('INTERNAL', 'Internal server error'), 500);
 });
 
 export default app;

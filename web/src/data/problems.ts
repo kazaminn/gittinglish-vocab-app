@@ -33,7 +33,12 @@ const DATASET_OPTIONS: DatasetOption[] = [
 ];
 
 const DATASET_MODE_MAP: Record<DatasetId, DrillMode[]> = {
-  gitverbs85: ['word_to_meaning', 'meaning_to_word', 'sentence_cloze', 'flashcard'],
+  gitverbs85: [
+    'word_to_meaning',
+    'meaning_to_word',
+    'sentence_cloze',
+    'flashcard',
+  ],
 };
 
 const DATASET_DEFAULT_MODE: Record<DatasetId, DrillMode> = {
@@ -70,10 +75,14 @@ const gitverbsProblemImporters: Record<
 
 const problemsCache = new Map<string, Promise<GeneratedProblem[]>>();
 
-function getRequestedMode(query: ProblemQuery): Exclude<DrillMode, 'flashcard'> {
-  return (query.drillMode === 'flashcard'
-    ? DATASET_FLASHCARD_MODE[query.datasetId]
-    : query.drillMode) as Exclude<DrillMode, 'flashcard'>;
+function getRequestedMode(
+  query: ProblemQuery
+): Exclude<DrillMode, 'flashcard'> {
+  return (
+    query.drillMode === 'flashcard'
+      ? DATASET_FLASHCARD_MODE[query.datasetId]
+      : query.drillMode
+  ) as Exclude<DrillMode, 'flashcard'>;
 }
 
 function getCacheKey(datasetId: DatasetId, key: string) {
@@ -119,7 +128,9 @@ export function getDefaultModeForDataset(datasetId: DatasetId): DrillMode {
 }
 
 // gitverbs85 は section 分割なし
-export async function getSectionsForDataset(_datasetId: DatasetId): Promise<ProblemSection[]> {
+export async function getSectionsForDataset(
+  _datasetId: DatasetId
+): Promise<ProblemSection[]> {
   return [];
 }
 
@@ -130,7 +141,9 @@ export async function getSectionLabel(
   return undefined;
 }
 
-export async function getProblemsForQuery(query: ProblemQuery): Promise<GeneratedProblem[]> {
+export async function getProblemsForQuery(
+  query: ProblemQuery
+): Promise<GeneratedProblem[]> {
   const requestedMode = getRequestedMode(query);
   return loadProblemsForMode(query.datasetId, requestedMode);
 }

@@ -6,10 +6,18 @@ export interface JudgeResult {
   correctAnswer: string;
 }
 
-function joinChunksInOrder(problem: GeneratedProblem, orderedIds: string[]): string {
+function joinChunksInOrder(
+  problem: GeneratedProblem,
+  orderedIds: string[]
+): string {
   if (!('chunks' in problem)) return '';
-  const chunkMap = new Map(problem.chunks.map((chunk) => [chunk.id, chunk.text]));
-  return orderedIds.map((id) => chunkMap.get(id) ?? '').join(' ').trim();
+  const chunkMap = new Map(
+    problem.chunks.map((chunk) => [chunk.id, chunk.text])
+  );
+  return orderedIds
+    .map((id) => chunkMap.get(id) ?? '')
+    .join(' ')
+    .trim();
 }
 
 /**
@@ -50,7 +58,9 @@ export function judgeAnswer(
       .filter(Boolean);
     const isCorrect =
       userOrder.length === problem.correctOrder.length &&
-      userOrder.every((chunkId, index) => chunkId === problem.correctOrder[index]);
+      userOrder.every(
+        (chunkId, index) => chunkId === problem.correctOrder[index]
+      );
     return {
       isCorrect,
       correctAnswer: joinChunksInOrder(problem, problem.correctOrder),

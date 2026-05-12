@@ -59,9 +59,7 @@ export function SettingsPage({ onBackToHome }: SettingsPageProps) {
           type="text"
           value={draft.displayName}
           onChange={(event) =>
-            setDraft(
-              updateSettings(draft, 'displayName', event.target.value)
-            )
+            setDraft(updateSettings(draft, 'displayName', event.target.value))
           }
           className="w-full rounded-sm border px-3 py-2"
           style={{

@@ -5,12 +5,9 @@ import {
   type GeneratedProblem,
 } from '@shared/domain';
 import { type UserStatsResponse } from '@shared/dto';
-import {
-  type DatasetOption,
-  type ProblemSection,
-} from '../../data/problems';
-import { useAuth } from '../../hooks/useAuth';
 import { Shell } from '../../components/Shell';
+import { type DatasetOption, type ProblemSection } from '../../data/problems';
+import { useAuth } from '../../hooks/useAuth';
 
 /* eslint-disable jsx-a11y/prefer-tag-over-role */
 
@@ -402,7 +399,10 @@ export function HomePage({
         </p>
         <ul className="space-y-2 text-sm">
           {previewProblems.map((problem) => (
-            <li key={problem.id} className="border-t pt-2 first:border-t-0 first:pt-0">
+            <li
+              key={problem.id}
+              className="border-t pt-2 first:border-t-0 first:pt-0"
+            >
               <p style={{ color: 'var(--text-primary)' }}>
                 {getPreviewTitle(problem)}
               </p>

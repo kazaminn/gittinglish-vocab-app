@@ -30,7 +30,9 @@ export async function parseJsonBody<T>(
   if (!parsed.success) {
     const issue = parsed.error.issues[0];
     const path = issue ? formatPath(issue.path) : 'body';
-    const message = issue ? `${path}: ${issue.message}` : 'Invalid request body';
+    const message = issue
+      ? `${path}: ${issue.message}`
+      : 'Invalid request body';
     throw badRequest('INVALID_REQUEST', message);
   }
 

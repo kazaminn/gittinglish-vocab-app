@@ -26,9 +26,8 @@ export function tv<TVariants extends VariantGroups>(
     const classes = [...toClassArray(config.base)];
     const variants = config.variants ?? ({} as TVariants);
 
-    for (const variantName of Object.keys(variants) as (
-      keyof TVariants & string
-    )[]) {
+    for (const variantName of Object.keys(variants) as (keyof TVariants &
+      string)[]) {
       const variantMap = variants[variantName];
       if (!variantMap) continue;
 

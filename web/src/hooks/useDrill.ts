@@ -1,11 +1,11 @@
 import { useCallback, useMemo, useState } from 'react';
 import type { DrillMode, DatasetId, Explanation } from '@shared/domain';
 import type { ProblemDTO, SessionStartItem } from '@shared/dto';
-import { judgeOnClient } from '../lib/judgeOnClient';
 import {
   useEndSessionMutation,
   useStartSessionMutation,
 } from '../features/drill/queries';
+import { judgeOnClient } from '../lib/judgeOnClient';
 import { useAuth } from './useAuth';
 
 export interface AnswerResult {
@@ -65,7 +65,10 @@ function getExplanationText(explanation: Explanation): string {
   return explanation.details?.[0] ?? explanation.summary;
 }
 
-function getDisplayedUserAnswer(problem: ProblemDTO, userInput: string): string {
+function getDisplayedUserAnswer(
+  problem: ProblemDTO,
+  userInput: string
+): string {
   if ('choices' in problem.payload) {
     return (
       problem.payload.choices.find((choice) => choice.id === userInput)?.text ??
@@ -226,7 +229,9 @@ export function useDrill(): DrillState & DrillActions {
   );
 
   return {
-    isActive: Boolean(user && sessionId && currentProblem && !isSessionComplete),
+    isActive: Boolean(
+      user && sessionId && currentProblem && !isSessionComplete
+    ),
     isBusy,
     currentItem,
     currentProblem,

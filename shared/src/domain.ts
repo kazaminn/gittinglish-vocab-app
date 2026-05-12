@@ -6,87 +6,87 @@ export type ID = string;
 
 export type GrammarPoint =
   // 文型
-  | "sv"
-  | "svc"
-  | "svo"
-  | "svoo"
-  | "svoc"
+  | 'sv'
+  | 'svc'
+  | 'svo'
+  | 'svoo'
+  | 'svoc'
   // 時制
-  | "present"
-  | "past"
-  | "present_perfect"
-  | "future"
+  | 'present'
+  | 'past'
+  | 'present_perfect'
+  | 'future'
   // 節・句
-  | "relative_clause"
-  | "relative_adverb"
-  | "participle_clause"
-  | "noun_clause_that"
-  | "noun_clause_wh"
+  | 'relative_clause'
+  | 'relative_adverb'
+  | 'participle_clause'
+  | 'noun_clause_that'
+  | 'noun_clause_wh'
   // 仮定法
-  | "subjunctive_present"
-  | "subjunctive_past"
-  | "subjunctive_past_perfect"
+  | 'subjunctive_present'
+  | 'subjunctive_past'
+  | 'subjunctive_past_perfect'
   // 構文
-  | "cleft_sentence"
-  | "inversion"
-  | "comparison"
-  | "passive"
-  | "causative"
-  | "existential_there"
-  | "inanimate_subject"
-  | "question_exclamation"
+  | 'cleft_sentence'
+  | 'inversion'
+  | 'comparison'
+  | 'passive'
+  | 'causative'
+  | 'existential_there'
+  | 'inanimate_subject'
+  | 'question_exclamation'
   // 準動詞
-  | "gerund"
-  | "infinitive"
-  | "participial_adjective"
+  | 'gerund'
+  | 'infinitive'
+  | 'participial_adjective'
   // 品詞・語法
-  | "modal"
-  | "conjunction"
-  | "phrasal_verb"
-  | "perception"
-  | "article"
-  | "preposition"
+  | 'modal'
+  | 'conjunction'
+  | 'phrasal_verb'
+  | 'perception'
+  | 'article'
+  | 'preposition'
   // 文法機能
-  | "apposition"
-  | "ellipsis"
-  | "parallelism"
-  | "negation"
+  | 'apposition'
+  | 'ellipsis'
+  | 'parallelism'
+  | 'negation'
   // 話法
-  | "reported_speech";
+  | 'reported_speech';
 
 export type SupportedGenerationGrammarPoint =
-  | "relative_clause"
-  | "participle_clause"
-  | "subjunctive_past"
-  | "noun_clause_that"
-  | "cleft_sentence";
+  | 'relative_clause'
+  | 'participle_clause'
+  | 'subjunctive_past'
+  | 'noun_clause_that'
+  | 'cleft_sentence';
 
 // ---------------------------------------------------------------------------
 // DrillMode (Phase を置換)
 // ---------------------------------------------------------------------------
 
 export type DrillMode =
-  | "word_to_meaning"
-  | "meaning_to_word"
-  | "word_input"
-  | "sentence_cloze"
-  | "sentence_input"
-  | "reorder"
-  | "flashcard";
+  | 'word_to_meaning'
+  | 'meaning_to_word'
+  | 'word_input'
+  | 'sentence_cloze'
+  | 'sentence_input'
+  | 'reorder'
+  | 'flashcard';
 
-export type DatasetId = "gitverbs85";
+export type DatasetId = 'gitverbs85';
 
 // ---------------------------------------------------------------------------
 // Tags (multi-axis)
 // ---------------------------------------------------------------------------
 
 export type PartOfSpeech =
-  | "noun"
-  | "verb"
-  | "adjective"
-  | "adverb"
-  | "preposition"
-  | "conjunction";
+  | 'noun'
+  | 'verb'
+  | 'adjective'
+  | 'adverb'
+  | 'preposition'
+  | 'conjunction';
 
 export interface VocabularyTag {
   lemma: string;
@@ -98,10 +98,10 @@ export interface VocabularyTag {
 }
 
 export type PhraseType_Tag =
-  | "collocation"
-  | "idiom"
-  | "phrasal_verb"
-  | "compound";
+  | 'collocation'
+  | 'idiom'
+  | 'phrasal_verb'
+  | 'compound';
 
 export interface PhraseTag {
   text: string;
@@ -119,21 +119,21 @@ export interface ProblemTags {
 // ---------------------------------------------------------------------------
 
 export type PedagogicalKind =
-  | "cloze"
-  | "reorder"
-  | "split"
-  | "merge"
-  | "error_correction"
-  | "paraphrase"
-  | "grammar_label"
-  | "translation";
+  | 'cloze'
+  | 'reorder'
+  | 'split'
+  | 'merge'
+  | 'error_correction'
+  | 'paraphrase'
+  | 'grammar_label'
+  | 'translation';
 
 export type InteractionType =
-  | "select"
-  | "input"
-  | "reorder"
-  | "transform"
-  | "identify";
+  | 'select'
+  | 'input'
+  | 'reorder'
+  | 'transform'
+  | 'identify';
 
 // ---------------------------------------------------------------------------
 // AST
@@ -154,14 +154,14 @@ export interface TokenNode {
 }
 
 export type PhraseType =
-  | "subject"
-  | "verb"
-  | "object"
-  | "complement"
-  | "modifier"
-  | "relative_pronoun"
-  | "subordinator"
-  | "focus";
+  | 'subject'
+  | 'verb'
+  | 'object'
+  | 'complement'
+  | 'modifier'
+  | 'relative_pronoun'
+  | 'subordinator'
+  | 'focus';
 
 export interface PhraseNode {
   id: ID;
@@ -172,14 +172,14 @@ export interface PhraseNode {
 }
 
 export type ClauseType =
-  | "main"
-  | "relative"
-  | "participle"
-  | "if_clause"
-  | "result_clause"
-  | "noun_clause"
-  | "cleft_focus"
-  | "cleft_tail";
+  | 'main'
+  | 'relative'
+  | 'participle'
+  | 'if_clause'
+  | 'result_clause'
+  | 'noun_clause'
+  | 'cleft_focus'
+  | 'cleft_tail';
 
 export interface ClauseNode {
   id: ID;
@@ -189,14 +189,14 @@ export interface ClauseNode {
   phrases: PhraseNode[];
 }
 
-export type AstNodeKind = "token" | "phrase" | "clause";
+export type AstNodeKind = 'token' | 'phrase' | 'clause';
 
 export type RelationType =
-  | "modifies"
-  | "refers_to"
-  | "shares_subject_with"
-  | "conditions"
-  | "focuses_on";
+  | 'modifies'
+  | 'refers_to'
+  | 'shares_subject_with'
+  | 'conditions'
+  | 'focuses_on';
 
 export interface RelationEdge {
   id: ID;
@@ -226,11 +226,11 @@ export interface SentenceAst {
 // ---------------------------------------------------------------------------
 
 export type AnswerJudgeType =
-  | "exact"
-  | "normalized"
-  | "unordered"
-  | "partial"
-  | "contains";
+  | 'exact'
+  | 'normalized'
+  | 'unordered'
+  | 'partial'
+  | 'contains';
 
 export interface AnswerSpec {
   judgeType: AnswerJudgeType;
@@ -246,12 +246,12 @@ export interface Choice {
 }
 
 export interface ChoiceAnswerSpec {
-  mode: "single" | "multiple";
+  mode: 'single' | 'multiple';
   correctChoiceIds: ID[];
 }
 
 export interface Constraint {
-  type: "must_use" | "forbid" | "structure";
+  type: 'must_use' | 'forbid' | 'structure';
   value: string;
 }
 
@@ -300,16 +300,16 @@ export interface BaseProblem {
 }
 
 export interface ClozeMcqProblem extends BaseProblem {
-  pedagogicalKind: "cloze";
-  interactionType: "select";
+  pedagogicalKind: 'cloze';
+  interactionType: 'select';
   stem: string;
   choices: Choice[];
   choiceAnswerSpec: ChoiceAnswerSpec;
 }
 
 export interface ClozeInputProblem extends BaseProblem {
-  pedagogicalKind: "cloze";
-  interactionType: "input";
+  pedagogicalKind: 'cloze';
+  interactionType: 'input';
   stem: string;
   answerSpec: AnswerSpec;
 }
@@ -320,22 +320,22 @@ export interface ReorderChunk {
 }
 
 export interface ReorderProblem extends BaseProblem {
-  pedagogicalKind: "reorder";
-  interactionType: "reorder";
+  pedagogicalKind: 'reorder';
+  interactionType: 'reorder';
   chunks: ReorderChunk[];
   correctOrder: ID[];
 }
 
 export interface SplitProblem extends BaseProblem {
-  pedagogicalKind: "split";
-  interactionType: "transform";
+  pedagogicalKind: 'split';
+  interactionType: 'transform';
   stem: string;
   answerSpec: AnswerSpec;
 }
 
 export interface MergeProblem extends BaseProblem {
-  pedagogicalKind: "merge";
-  interactionType: "transform";
+  pedagogicalKind: 'merge';
+  interactionType: 'transform';
   inputs: string[];
   answerSpec: AnswerSpec;
 }
@@ -346,30 +346,30 @@ export interface ErrorCorrection {
 }
 
 export interface ErrorCorrectionProblem extends BaseProblem {
-  pedagogicalKind: "error_correction";
-  interactionType: "identify";
+  pedagogicalKind: 'error_correction';
+  interactionType: 'identify';
   stem: string;
   corrections: ErrorCorrection[];
 }
 
 export interface ParaphraseProblem extends BaseProblem {
-  pedagogicalKind: "paraphrase";
-  interactionType: "transform";
+  pedagogicalKind: 'paraphrase';
+  interactionType: 'transform';
   stem: string;
   answerSpec: AnswerSpec;
 }
 
 export interface GrammarLabelProblem extends BaseProblem {
-  pedagogicalKind: "grammar_label";
-  interactionType: "select";
+  pedagogicalKind: 'grammar_label';
+  interactionType: 'select';
   stem: string;
   choices: Choice[];
   choiceAnswerSpec: ChoiceAnswerSpec;
 }
 
 export interface TranslationProblem extends BaseProblem {
-  pedagogicalKind: "translation";
-  interactionType: "input";
+  pedagogicalKind: 'translation';
+  interactionType: 'input';
   sourceJa: string;
   constraints?: Constraint[];
   answerSpec: AnswerSpec;
@@ -391,12 +391,12 @@ export type GeneratedProblem =
 // ---------------------------------------------------------------------------
 
 export type TransformType =
-  | "split"
-  | "merge"
-  | "rewrite"
-  | "mask"
-  | "inject_error"
-  | "reorder";
+  | 'split'
+  | 'merge'
+  | 'rewrite'
+  | 'mask'
+  | 'inject_error'
+  | 'reorder';
 
 export interface GeneratedTrace {
   ruleId: ID;
@@ -429,7 +429,7 @@ export interface RawSentenceRecord {
 // Session & Drill (MVP)
 // ---------------------------------------------------------------------------
 
-export type SessionStatus = "active" | "completed";
+export type SessionStatus = 'active' | 'completed';
 export type Quality = 0 | 1 | 2 | 3 | 4 | 5;
 
 export interface SessionItem {
@@ -465,7 +465,7 @@ export interface UserSettings {
   displayName: string;
   fontSize: number;
   fontWeight: number;
-  theme: "light" | "dark" | "system";
+  theme: 'light' | 'dark' | 'system';
   sessionSize: number;
 }
 
@@ -487,6 +487,6 @@ export interface LocalSettings {
   displayName: string;
   fontSize: number;
   fontWeight: number;
-  theme: "light" | "dark" | "system";
+  theme: 'light' | 'dark' | 'system';
   sessionSize: number;
 }

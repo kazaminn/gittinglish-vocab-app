@@ -1,17 +1,17 @@
 import { randomUUID } from 'node:crypto';
-import { and, eq, inArray, lte } from 'drizzle-orm';
-import { Hono } from 'hono';
 import type {
   EndSessionResultItem,
   SessionStartItem,
 } from '@gittinglish-vocab-app/shared';
+import { toProblemDTO } from '@gittinglish-vocab-app/shared';
 import {
   EndSessionRequestSchema,
   SessionStartRequestSchema,
 } from '@gittinglish-vocab-app/shared/schemas';
-import { toProblemDTO } from '@gittinglish-vocab-app/shared';
-import { db } from '../db/client.js';
+import { and, eq, inArray, lte } from 'drizzle-orm';
+import { Hono } from 'hono';
 import { getProblemById, getProblemsForQuery } from '../data/problem-loader.js';
+import { db } from '../db/client.js';
 import {
   answerLogs,
   drillProgress,
@@ -21,7 +21,13 @@ import {
 import { judgeAnswer } from '../logic/judge.js';
 import { calculateSM2, qualityFromCorrectness } from '../logic/sm2.js';
 import type { AuthEnv } from '../middleware/auth.js';
-import { ApiError, badRequest, conflict, internal, notFound } from '../utils/api-error.js';
+import {
+  ApiError,
+  badRequest,
+  conflict,
+  internal,
+  notFound,
+} from '../utils/api-error.js';
 import { err, ok } from '../utils/response.js';
 import { parseJsonBody } from '../utils/validation.js';
 
@@ -49,7 +55,9 @@ async function ensureUser(_userId: string, _displayName: string | undefined) {
   // intentionally empty
 }
 
-function buildJudgeMeta(problem: SessionStartItem['problemDTO'] | ReturnType<typeof getProblemById>) {
+function buildJudgeMeta(
+  problem: SessionStartItem['problemDTO'] | ReturnType<typeof getProblemById>
+) {
   if (!problem) return undefined;
 
   if ('choiceAnswerSpec' in problem) {
@@ -177,7 +185,10 @@ app.post('/end', async (c) => {
   }
 
   if (completedAtSeconds > nowSeconds + 60) {
-    throw badRequest('INVALID_TIMESTAMP', 'completedAt is too far in the future');
+    throw badRequest(
+      'INVALID_TIMESTAMP',
+      'completedAt is too far in the future'
+    );
   }
 
   const results: EndSessionResultItem[] = [];
@@ -193,7 +204,10 @@ app.post('/end', async (c) => {
       for (const answer of body.answers) {
         const problem = getProblemById(answer.itemId);
         if (!problem) {
-          throw notFound('INVALID_ITEM', `No problem found for ${answer.itemId}`);
+          throw notFound(
+            'INVALID_ITEM',
+            `No problem found for ${answer.itemId}`
+          );
         }
 
         if (problem.drillMode !== answer.drillMode) {
@@ -337,10 +351,13 @@ app.post('/end', async (c) => {
       normalizedMessage.includes('sqlite_constraint') ||
       normalizedMessage.includes('constraint failed') ||
       normalizedMessage.includes('session_writes')
-      ? conflict('DUPLICATE_SESSION', 'Session has already been persisted')
-      : internal('Failed to write session');
+        ? conflict('DUPLICATE_SESSION', 'Session has already been persisted')
+        : internal('Failed to write session');
 
-    return c.json(err(mappedError.code, mappedError.message), mappedError.status);
+    return c.json(
+      err(mappedError.code, mappedError.message),
+      mappedError.status
+    );
   }
 
   return c.json(

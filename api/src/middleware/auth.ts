@@ -1,9 +1,8 @@
 // Better Auth セッション (cookie) を検証して userId 等を Hono Context に注入する middleware。
 // クライアントは fetch を `credentials: 'include'` で叩くこと。
-
 import { createMiddleware } from 'hono/factory';
-import { auth } from '../auth/index.js';
 import { isDevAuthSkipActive, TEST_USER } from '../auth/dev-skip.js';
+import { auth } from '../auth/index.js';
 import { err } from '../utils/response.js';
 
 export type AuthEnv = {

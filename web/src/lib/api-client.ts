@@ -27,7 +27,9 @@ export async function apiRequest<T>(
 
   const payload = (await response.json()) as ApiResponse<T>;
   if (!response.ok || !payload.ok) {
-    const message = payload.ok ? `HTTP ${response.status}` : payload.error.message;
+    const message = payload.ok
+      ? `HTTP ${response.status}`
+      : payload.error.message;
     const code = payload.ok ? 'HTTP_ERROR' : payload.error.code;
     throw new ApiClientError(message, code, response.status);
   }

@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import { type DatasetId } from '@shared/domain';
 import { screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { describe, expect, it, vi } from 'vitest';
+import { type DatasetId } from '@shared/domain';
 import {
   getAvailableModesForDataset,
   getDatasetOptions,
@@ -29,7 +29,13 @@ function HomeHarness({
       availableModes={getAvailableModesForDataset(selection.datasetId)}
       sections={
         selection.datasetId === 'gitverbs85'
-          ? [{ id: 'section-1', label: 'Section 1 (1-70)', sentenceIds: ['s1'] }]
+          ? [
+              {
+                id: 'section-1',
+                label: 'Section 1 (1-70)',
+                sentenceIds: ['s1'],
+              },
+            ]
           : []
       }
       problemCount={12}

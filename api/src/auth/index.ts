@@ -12,13 +12,12 @@
 //   GOOGLE_CLIENT_SECRET  Phase D で必須
 //   GITHUB_CLIENT_ID      Phase D で必須
 //   GITHUB_CLIENT_SECRET  Phase D で必須
-
 import { createHmac } from 'node:crypto';
 import { betterAuth } from 'better-auth';
 import { drizzleAdapter } from 'better-auth/adapters/drizzle';
 import { username } from 'better-auth/plugins';
-import { db } from '../db/client.js';
 import * as authSchema from '../db/auth-schema.js';
+import { db } from '../db/client.js';
 
 const BETTER_AUTH_URL = process.env.BETTER_AUTH_URL ?? 'http://localhost:3001';
 const BETTER_AUTH_SECRET =
@@ -28,7 +27,9 @@ const EMAIL_HASH_SECRET =
 
 export function hashEmail(email: string): string {
   const normalized = email.trim().toLowerCase();
-  return createHmac('sha256', EMAIL_HASH_SECRET).update(normalized).digest('hex');
+  return createHmac('sha256', EMAIL_HASH_SECRET)
+    .update(normalized)
+    .digest('hex');
 }
 
 const hasGoogle =
@@ -103,7 +104,8 @@ export const auth = betterAuth({
             username?: string;
             id?: string;
           };
-          const email = typeof incoming.email === 'string' ? incoming.email : '';
+          const email =
+            typeof incoming.email === 'string' ? incoming.email : '';
           if (email && !email.endsWith('@local.invalid')) {
             const usernameOrId = incoming.username ?? incoming.id ?? 'user';
             return {

@@ -19,7 +19,8 @@ export function useSaveSettingsMutation() {
   const queryClient = useQueryClient();
 
   return useMutation({
-    mutationFn: (nextSettings: UserSettings) => settings.saveSettings(nextSettings),
+    mutationFn: (nextSettings: UserSettings) =>
+      settings.saveSettings(nextSettings),
     onSuccess: (_, variables) => {
       queryClient.setQueryData(settingsQueryKey, variables);
     },

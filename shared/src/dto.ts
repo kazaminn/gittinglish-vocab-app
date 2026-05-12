@@ -12,7 +12,7 @@ import type {
   PedagogicalKind,
   ProblemTags,
   Quality,
-} from "./domain";
+} from './domain';
 
 // ---------------------------------------------------------------------------
 // DTO types
@@ -30,26 +30,26 @@ export interface BaseProblemDTO {
 }
 
 export interface ClozeMcqProblemDTO extends BaseProblemDTO {
-  pedagogicalKind: "cloze";
-  interactionType: "select";
+  pedagogicalKind: 'cloze';
+  interactionType: 'select';
   payload: {
     stem: string;
     choices: Choice[];
-    choiceAnswerSpec: Pick<ChoiceAnswerSpec, "mode">;
+    choiceAnswerSpec: Pick<ChoiceAnswerSpec, 'mode'>;
   };
 }
 
 export interface ClozeInputProblemDTO extends BaseProblemDTO {
-  pedagogicalKind: "cloze";
-  interactionType: "input";
+  pedagogicalKind: 'cloze';
+  interactionType: 'input';
   payload: {
     stem: string;
   };
 }
 
 export interface ReorderProblemDTO extends BaseProblemDTO {
-  pedagogicalKind: "reorder";
-  interactionType: "reorder";
+  pedagogicalKind: 'reorder';
+  interactionType: 'reorder';
   payload: {
     chunks: {
       id: ID;
@@ -59,50 +59,50 @@ export interface ReorderProblemDTO extends BaseProblemDTO {
 }
 
 export interface SplitProblemDTO extends BaseProblemDTO {
-  pedagogicalKind: "split";
-  interactionType: "transform";
+  pedagogicalKind: 'split';
+  interactionType: 'transform';
   payload: {
     stem: string;
   };
 }
 
 export interface MergeProblemDTO extends BaseProblemDTO {
-  pedagogicalKind: "merge";
-  interactionType: "transform";
+  pedagogicalKind: 'merge';
+  interactionType: 'transform';
   payload: {
     inputs: string[];
   };
 }
 
 export interface ErrorCorrectionProblemDTO extends BaseProblemDTO {
-  pedagogicalKind: "error_correction";
-  interactionType: "identify";
+  pedagogicalKind: 'error_correction';
+  interactionType: 'identify';
   payload: {
     stem: string;
   };
 }
 
 export interface ParaphraseProblemDTO extends BaseProblemDTO {
-  pedagogicalKind: "paraphrase";
-  interactionType: "transform";
+  pedagogicalKind: 'paraphrase';
+  interactionType: 'transform';
   payload: {
     stem: string;
   };
 }
 
 export interface GrammarLabelProblemDTO extends BaseProblemDTO {
-  pedagogicalKind: "grammar_label";
-  interactionType: "select";
+  pedagogicalKind: 'grammar_label';
+  interactionType: 'select';
   payload: {
     stem: string;
     choices: Choice[];
-    choiceAnswerSpec: Pick<ChoiceAnswerSpec, "mode">;
+    choiceAnswerSpec: Pick<ChoiceAnswerSpec, 'mode'>;
   };
 }
 
 export interface TranslationProblemDTO extends BaseProblemDTO {
-  pedagogicalKind: "translation";
-  interactionType: "input";
+  pedagogicalKind: 'translation';
+  interactionType: 'input';
   payload: {
     sourceJa: string;
     constraints?: Constraint[];
@@ -135,7 +135,7 @@ export type ApiResponse<T> =
 // POST /api/sessions/start
 export interface SessionStartRequest {
   dataset: DatasetId;
-  drillMode: Exclude<DrillMode, "flashcard">;
+  drillMode: Exclude<DrillMode, 'flashcard'>;
   sectionId?: string;
   count: number;
 }
@@ -146,12 +146,12 @@ export interface SessionStartItem {
   problemDTO: ProblemDTO;
   judgeMeta?:
     | {
-        kind: "select";
+        kind: 'select';
         correctChoiceIds: string[];
         correctAnswer: string;
       }
     | {
-        kind: "input";
+        kind: 'input';
         acceptedAnswers: string[];
         correctAnswer: string;
       };
@@ -233,12 +233,12 @@ export function toProblemDTO(problem: GeneratedProblem): ProblemDTO {
   } satisfies BaseProblemDTO;
 
   switch (problem.pedagogicalKind) {
-    case "cloze":
-      if (problem.interactionType === "select") {
+    case 'cloze':
+      if (problem.interactionType === 'select') {
         return {
           ...base,
-          pedagogicalKind: "cloze",
-          interactionType: "select",
+          pedagogicalKind: 'cloze',
+          interactionType: 'select',
           payload: {
             stem: problem.stem,
             choices: problem.choices,
@@ -251,68 +251,68 @@ export function toProblemDTO(problem: GeneratedProblem): ProblemDTO {
 
       return {
         ...base,
-        pedagogicalKind: "cloze",
-        interactionType: "input",
+        pedagogicalKind: 'cloze',
+        interactionType: 'input',
         payload: {
           stem: problem.stem,
         },
       };
 
-    case "reorder":
+    case 'reorder':
       return {
         ...base,
-        pedagogicalKind: "reorder",
-        interactionType: "reorder",
+        pedagogicalKind: 'reorder',
+        interactionType: 'reorder',
         payload: {
           chunks: problem.chunks,
         },
       };
 
-    case "split":
+    case 'split':
       return {
         ...base,
-        pedagogicalKind: "split",
-        interactionType: "transform",
+        pedagogicalKind: 'split',
+        interactionType: 'transform',
         payload: {
           stem: problem.stem,
         },
       };
 
-    case "merge":
+    case 'merge':
       return {
         ...base,
-        pedagogicalKind: "merge",
-        interactionType: "transform",
+        pedagogicalKind: 'merge',
+        interactionType: 'transform',
         payload: {
           inputs: problem.inputs,
         },
       };
 
-    case "error_correction":
+    case 'error_correction':
       return {
         ...base,
-        pedagogicalKind: "error_correction",
-        interactionType: "identify",
+        pedagogicalKind: 'error_correction',
+        interactionType: 'identify',
         payload: {
           stem: problem.stem,
         },
       };
 
-    case "paraphrase":
+    case 'paraphrase':
       return {
         ...base,
-        pedagogicalKind: "paraphrase",
-        interactionType: "transform",
+        pedagogicalKind: 'paraphrase',
+        interactionType: 'transform',
         payload: {
           stem: problem.stem,
         },
       };
 
-    case "grammar_label":
+    case 'grammar_label':
       return {
         ...base,
-        pedagogicalKind: "grammar_label",
-        interactionType: "select",
+        pedagogicalKind: 'grammar_label',
+        interactionType: 'select',
         payload: {
           stem: problem.stem,
           choices: problem.choices,
@@ -322,11 +322,11 @@ export function toProblemDTO(problem: GeneratedProblem): ProblemDTO {
         },
       };
 
-    case "translation":
+    case 'translation':
       return {
         ...base,
-        pedagogicalKind: "translation",
-        interactionType: "input",
+        pedagogicalKind: 'translation',
+        interactionType: 'input',
         payload: {
           sourceJa: problem.sourceJa,
           constraints: problem.constraints,

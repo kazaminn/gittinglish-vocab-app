@@ -53,7 +53,9 @@ describe('FlashcardPage', () => {
     );
 
     await user.click(
-      screen.getByRole('button', { name: /Showing word. Press to reveal answer./i })
+      screen.getByRole('button', {
+        name: /Showing word. Press to reveal answer./i,
+      })
     );
 
     expect(screen.getByText(/grammar: svo/i)).toBeInTheDocument();

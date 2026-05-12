@@ -1,4 +1,4 @@
-import { z } from "zod";
+import { z } from 'zod';
 
 // ---------------------------------------------------------------------------
 // Grammar (39個)
@@ -6,34 +6,61 @@ import { z } from "zod";
 
 export const GrammarPointSchema = z.enum([
   // 文型
-  "sv", "svc", "svo", "svoo", "svoc",
+  'sv',
+  'svc',
+  'svo',
+  'svoo',
+  'svoc',
   // 時制
-  "present", "past", "present_perfect", "future",
+  'present',
+  'past',
+  'present_perfect',
+  'future',
   // 節・句
-  "relative_clause", "relative_adverb", "participle_clause",
-  "noun_clause_that", "noun_clause_wh",
+  'relative_clause',
+  'relative_adverb',
+  'participle_clause',
+  'noun_clause_that',
+  'noun_clause_wh',
   // 仮定法
-  "subjunctive_present", "subjunctive_past", "subjunctive_past_perfect",
+  'subjunctive_present',
+  'subjunctive_past',
+  'subjunctive_past_perfect',
   // 構文
-  "cleft_sentence", "inversion", "comparison", "passive", "causative",
-  "existential_there", "inanimate_subject", "question_exclamation",
+  'cleft_sentence',
+  'inversion',
+  'comparison',
+  'passive',
+  'causative',
+  'existential_there',
+  'inanimate_subject',
+  'question_exclamation',
   // 準動詞
-  "gerund", "infinitive", "participial_adjective",
+  'gerund',
+  'infinitive',
+  'participial_adjective',
   // 品詞・語法
-  "modal", "conjunction", "phrasal_verb", "perception",
-  "article", "preposition",
+  'modal',
+  'conjunction',
+  'phrasal_verb',
+  'perception',
+  'article',
+  'preposition',
   // 文法機能
-  "apposition", "ellipsis", "parallelism", "negation",
+  'apposition',
+  'ellipsis',
+  'parallelism',
+  'negation',
   // 話法
-  "reported_speech",
+  'reported_speech',
 ]);
 
 export const SupportedGenerationGrammarPointSchema = z.enum([
-  "relative_clause",
-  "participle_clause",
-  "subjunctive_past",
-  "noun_clause_that",
-  "cleft_sentence",
+  'relative_clause',
+  'participle_clause',
+  'subjunctive_past',
+  'noun_clause_that',
+  'cleft_sentence',
 ]);
 
 // ---------------------------------------------------------------------------
@@ -41,23 +68,28 @@ export const SupportedGenerationGrammarPointSchema = z.enum([
 // ---------------------------------------------------------------------------
 
 export const DrillModeSchema = z.enum([
-  "word_to_meaning",
-  "meaning_to_word",
-  "word_input",
-  "sentence_cloze",
-  "sentence_input",
-  "reorder",
-  "flashcard",
+  'word_to_meaning',
+  'meaning_to_word',
+  'word_input',
+  'sentence_cloze',
+  'sentence_input',
+  'reorder',
+  'flashcard',
 ]);
 
-export const DatasetIdSchema = z.enum(["gitverbs85"]);
+export const DatasetIdSchema = z.enum(['gitverbs85']);
 
 // ---------------------------------------------------------------------------
 // Tags
 // ---------------------------------------------------------------------------
 
 export const PartOfSpeechSchema = z.enum([
-  "noun", "verb", "adjective", "adverb", "preposition", "conjunction",
+  'noun',
+  'verb',
+  'adjective',
+  'adverb',
+  'preposition',
+  'conjunction',
 ]);
 
 export const VocabularyTagSchema = z.object({
@@ -70,7 +102,10 @@ export const VocabularyTagSchema = z.object({
 });
 
 export const PhraseType_TagSchema = z.enum([
-  "collocation", "idiom", "phrasal_verb", "compound",
+  'collocation',
+  'idiom',
+  'phrasal_verb',
+  'compound',
 ]);
 
 export const PhraseTagSchema = z.object({
@@ -89,12 +124,22 @@ export const ProblemTagsSchema = z.object({
 // ---------------------------------------------------------------------------
 
 export const PedagogicalKindSchema = z.enum([
-  "cloze", "reorder", "split", "merge",
-  "error_correction", "paraphrase", "grammar_label", "translation",
+  'cloze',
+  'reorder',
+  'split',
+  'merge',
+  'error_correction',
+  'paraphrase',
+  'grammar_label',
+  'translation',
 ]);
 
 export const InteractionTypeSchema = z.enum([
-  "select", "input", "reorder", "transform", "identify",
+  'select',
+  'input',
+  'reorder',
+  'transform',
+  'identify',
 ]);
 
 // ---------------------------------------------------------------------------
@@ -107,7 +152,7 @@ export const SpanSchema = z
     end: z.number().int().min(0),
   })
   .refine((v) => v.end >= v.start, {
-    message: "Span.end must be greater than or equal to Span.start",
+    message: 'Span.end must be greater than or equal to Span.start',
   });
 
 export const TokenNodeSchema = z.object({
@@ -120,8 +165,14 @@ export const TokenNodeSchema = z.object({
 });
 
 export const PhraseTypeSchema = z.enum([
-  "subject", "verb", "object", "complement", "modifier",
-  "relative_pronoun", "subordinator", "focus",
+  'subject',
+  'verb',
+  'object',
+  'complement',
+  'modifier',
+  'relative_pronoun',
+  'subordinator',
+  'focus',
 ]);
 
 export const PhraseNodeSchema = z.object({
@@ -133,8 +184,14 @@ export const PhraseNodeSchema = z.object({
 });
 
 export const ClauseTypeSchema = z.enum([
-  "main", "relative", "participle", "if_clause", "result_clause",
-  "noun_clause", "cleft_focus", "cleft_tail",
+  'main',
+  'relative',
+  'participle',
+  'if_clause',
+  'result_clause',
+  'noun_clause',
+  'cleft_focus',
+  'cleft_tail',
 ]);
 
 export const ClauseNodeSchema = z.object({
@@ -145,10 +202,14 @@ export const ClauseNodeSchema = z.object({
   phrases: z.array(PhraseNodeSchema),
 });
 
-export const AstNodeKindSchema = z.enum(["token", "phrase", "clause"]);
+export const AstNodeKindSchema = z.enum(['token', 'phrase', 'clause']);
 
 export const RelationTypeSchema = z.enum([
-  "modifies", "refers_to", "shares_subject_with", "conditions", "focuses_on",
+  'modifies',
+  'refers_to',
+  'shares_subject_with',
+  'conditions',
+  'focuses_on',
 ]);
 
 export const RelationEdgeSchema = z.object({
@@ -181,7 +242,11 @@ export const SentenceAstSchema = z.object({
 // ---------------------------------------------------------------------------
 
 export const AnswerJudgeTypeSchema = z.enum([
-  "exact", "normalized", "unordered", "partial", "contains",
+  'exact',
+  'normalized',
+  'unordered',
+  'partial',
+  'contains',
 ]);
 
 export const AnswerSpecSchema = z.object({
@@ -199,21 +264,22 @@ export const ChoiceSchema = z.object({
 
 export const ChoiceAnswerSpecSchema = z
   .object({
-    mode: z.enum(["single", "multiple"]),
+    mode: z.enum(['single', 'multiple']),
     correctChoiceIds: z.array(z.string().min(1)).min(1),
   })
   .superRefine((value, ctx) => {
-    if (value.mode === "single" && value.correctChoiceIds.length !== 1) {
+    if (value.mode === 'single' && value.correctChoiceIds.length !== 1) {
       ctx.addIssue({
         code: z.ZodIssueCode.custom,
-        message: 'choiceAnswerSpec.mode="single" requires exactly one correctChoiceId',
-        path: ["correctChoiceIds"],
+        message:
+          'choiceAnswerSpec.mode="single" requires exactly one correctChoiceId',
+        path: ['correctChoiceIds'],
       });
     }
   });
 
 export const ConstraintSchema = z.object({
-  type: z.enum(["must_use", "forbid", "structure"]),
+  type: z.enum(['must_use', 'forbid', 'structure']),
   value: z.string(),
 });
 
@@ -238,7 +304,11 @@ export const DifficultyFactorsSchema = z.object({
 
 export const DifficultySchema = z.object({
   level: z.union([
-    z.literal(1), z.literal(2), z.literal(3), z.literal(4), z.literal(5),
+    z.literal(1),
+    z.literal(2),
+    z.literal(3),
+    z.literal(4),
+    z.literal(5),
   ]),
   factors: DifficultyFactorsSchema.optional(),
 });
@@ -262,8 +332,8 @@ export const BaseProblemSchema = z.object({
 });
 
 export const ClozeMcqProblemSchema = BaseProblemSchema.extend({
-  pedagogicalKind: z.literal("cloze"),
-  interactionType: z.literal("select"),
+  pedagogicalKind: z.literal('cloze'),
+  interactionType: z.literal('select'),
   stem: z.string(),
   choices: z.array(ChoiceSchema).min(2),
   choiceAnswerSpec: ChoiceAnswerSpecSchema,
@@ -273,8 +343,8 @@ export const ClozeMcqProblemSchema = BaseProblemSchema.extend({
     if (!choiceIds.has(choiceId)) {
       ctx.addIssue({
         code: z.ZodIssueCode.custom,
-        message: "All correctChoiceIds must exist in choices",
-        path: ["choiceAnswerSpec", "correctChoiceIds"],
+        message: 'All correctChoiceIds must exist in choices',
+        path: ['choiceAnswerSpec', 'correctChoiceIds'],
       });
       break;
     }
@@ -282,8 +352,8 @@ export const ClozeMcqProblemSchema = BaseProblemSchema.extend({
 });
 
 export const ClozeInputProblemSchema = BaseProblemSchema.extend({
-  pedagogicalKind: z.literal("cloze"),
-  interactionType: z.literal("input"),
+  pedagogicalKind: z.literal('cloze'),
+  interactionType: z.literal('input'),
   stem: z.string(),
   answerSpec: AnswerSpecSchema,
 });
@@ -294,8 +364,8 @@ export const ReorderChunkSchema = z.object({
 });
 
 export const ReorderProblemSchema = BaseProblemSchema.extend({
-  pedagogicalKind: z.literal("reorder"),
-  interactionType: z.literal("reorder"),
+  pedagogicalKind: z.literal('reorder'),
+  interactionType: z.literal('reorder'),
   chunks: z.array(ReorderChunkSchema).min(2),
   correctOrder: z.array(z.string().min(1)).min(2),
 }).superRefine((value, ctx) => {
@@ -306,23 +376,23 @@ export const ReorderProblemSchema = BaseProblemSchema.extend({
   if (chunkIds.length !== value.correctOrder.length) {
     ctx.addIssue({
       code: z.ZodIssueCode.custom,
-      message: "correctOrder length must equal chunks length",
-      path: ["correctOrder"],
+      message: 'correctOrder length must equal chunks length',
+      path: ['correctOrder'],
     });
   }
   if (orderSet.size !== value.correctOrder.length) {
     ctx.addIssue({
       code: z.ZodIssueCode.custom,
-      message: "correctOrder must not contain duplicates",
-      path: ["correctOrder"],
+      message: 'correctOrder must not contain duplicates',
+      path: ['correctOrder'],
     });
   }
   for (const id of value.correctOrder) {
     if (!chunkIdSet.has(id)) {
       ctx.addIssue({
         code: z.ZodIssueCode.custom,
-        message: "All correctOrder ids must exist in chunks",
-        path: ["correctOrder"],
+        message: 'All correctOrder ids must exist in chunks',
+        path: ['correctOrder'],
       });
       break;
     }
@@ -330,15 +400,15 @@ export const ReorderProblemSchema = BaseProblemSchema.extend({
 });
 
 export const SplitProblemSchema = BaseProblemSchema.extend({
-  pedagogicalKind: z.literal("split"),
-  interactionType: z.literal("transform"),
+  pedagogicalKind: z.literal('split'),
+  interactionType: z.literal('transform'),
   stem: z.string(),
   answerSpec: AnswerSpecSchema,
 });
 
 export const MergeProblemSchema = BaseProblemSchema.extend({
-  pedagogicalKind: z.literal("merge"),
-  interactionType: z.literal("transform"),
+  pedagogicalKind: z.literal('merge'),
+  interactionType: z.literal('transform'),
   inputs: z.array(z.string()).min(2),
   answerSpec: AnswerSpecSchema,
 });
@@ -349,8 +419,8 @@ export const ErrorCorrectionSchema = z.object({
 });
 
 export const ErrorCorrectionProblemSchema = BaseProblemSchema.extend({
-  pedagogicalKind: z.literal("error_correction"),
-  interactionType: z.literal("identify"),
+  pedagogicalKind: z.literal('error_correction'),
+  interactionType: z.literal('identify'),
   stem: z.string(),
   corrections: z.array(ErrorCorrectionSchema).min(1),
 }).superRefine((value, ctx) => {
@@ -358,23 +428,23 @@ export const ErrorCorrectionProblemSchema = BaseProblemSchema.extend({
     if (correction.span.end > value.stem.length) {
       ctx.addIssue({
         code: z.ZodIssueCode.custom,
-        message: "Correction span must be within stem bounds",
-        path: ["corrections", index, "span"],
+        message: 'Correction span must be within stem bounds',
+        path: ['corrections', index, 'span'],
       });
     }
   }
 });
 
 export const ParaphraseProblemSchema = BaseProblemSchema.extend({
-  pedagogicalKind: z.literal("paraphrase"),
-  interactionType: z.literal("transform"),
+  pedagogicalKind: z.literal('paraphrase'),
+  interactionType: z.literal('transform'),
   stem: z.string(),
   answerSpec: AnswerSpecSchema,
 });
 
 export const GrammarLabelProblemSchema = BaseProblemSchema.extend({
-  pedagogicalKind: z.literal("grammar_label"),
-  interactionType: z.literal("select"),
+  pedagogicalKind: z.literal('grammar_label'),
+  interactionType: z.literal('select'),
   stem: z.string(),
   choices: z.array(ChoiceSchema).min(2),
   choiceAnswerSpec: ChoiceAnswerSpecSchema,
@@ -384,8 +454,8 @@ export const GrammarLabelProblemSchema = BaseProblemSchema.extend({
     if (!choiceIds.has(choiceId)) {
       ctx.addIssue({
         code: z.ZodIssueCode.custom,
-        message: "All correctChoiceIds must exist in choices",
-        path: ["choiceAnswerSpec", "correctChoiceIds"],
+        message: 'All correctChoiceIds must exist in choices',
+        path: ['choiceAnswerSpec', 'correctChoiceIds'],
       });
       break;
     }
@@ -393,34 +463,36 @@ export const GrammarLabelProblemSchema = BaseProblemSchema.extend({
 });
 
 export const TranslationProblemSchema = BaseProblemSchema.extend({
-  pedagogicalKind: z.literal("translation"),
-  interactionType: z.literal("input"),
+  pedagogicalKind: z.literal('translation'),
+  interactionType: z.literal('input'),
   sourceJa: z.string(),
   constraints: z.array(ConstraintSchema).optional(),
   answerSpec: AnswerSpecSchema,
 });
 
-export const GeneratedProblemSchema = z.discriminatedUnion(
-  "pedagogicalKind",
-  [
-    ClozeMcqProblemSchema,
-    ClozeInputProblemSchema,
-    ReorderProblemSchema,
-    SplitProblemSchema,
-    MergeProblemSchema,
-    ErrorCorrectionProblemSchema,
-    ParaphraseProblemSchema,
-    GrammarLabelProblemSchema,
-    TranslationProblemSchema,
-  ],
-);
+export const GeneratedProblemSchema = z.discriminatedUnion('pedagogicalKind', [
+  ClozeMcqProblemSchema,
+  ClozeInputProblemSchema,
+  ReorderProblemSchema,
+  SplitProblemSchema,
+  MergeProblemSchema,
+  ErrorCorrectionProblemSchema,
+  ParaphraseProblemSchema,
+  GrammarLabelProblemSchema,
+  TranslationProblemSchema,
+]);
 
 // ---------------------------------------------------------------------------
 // Generation trace / rule
 // ---------------------------------------------------------------------------
 
 export const TransformTypeSchema = z.enum([
-  "split", "merge", "rewrite", "mask", "inject_error", "reorder",
+  'split',
+  'merge',
+  'rewrite',
+  'mask',
+  'inject_error',
+  'reorder',
 ]);
 
 export const GeneratedTraceSchema = z.object({
@@ -455,12 +527,12 @@ export const RawSentenceRecordSchema = z.object({
 // ---------------------------------------------------------------------------
 
 const NonFlashcardDrillModeSchema = z.enum([
-  "word_to_meaning",
-  "meaning_to_word",
-  "word_input",
-  "sentence_cloze",
-  "sentence_input",
-  "reorder",
+  'word_to_meaning',
+  'meaning_to_word',
+  'word_input',
+  'sentence_cloze',
+  'sentence_input',
+  'reorder',
 ]);
 
 export const SessionStartRequestSchema = z.object({

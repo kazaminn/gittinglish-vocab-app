@@ -138,7 +138,10 @@ describe('Phase 3 API', () => {
     expect(payload.data.startedAt).toBeTypeOf('number');
     expect(payload.data.items).toHaveLength(5);
     expect(payload.data.items[0].problemDTO.id).toBeTruthy();
-    expect(payload.data.items[0].problemDTO.payload.choiceAnswerSpec?.correctChoiceIds).toBeUndefined();
+    expect(
+      payload.data.items[0].problemDTO.payload.choiceAnswerSpec
+        ?.correctChoiceIds
+    ).toBeUndefined();
   });
 
   it('judges answers by drillMode', async () => {

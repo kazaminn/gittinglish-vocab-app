@@ -19,7 +19,8 @@ const reorderProblem = getProblemsForQuery({
 
 describe('judgeAnswer', () => {
   it('judges select problems by choice id', () => {
-    if (!('choiceAnswerSpec' in selectProblem)) throw new Error('invalid fixture');
+    if (!('choiceAnswerSpec' in selectProblem))
+      throw new Error('invalid fixture');
 
     const correctId = selectProblem.choiceAnswerSpec.correctChoiceIds[0]!;
     expect(judgeAnswer(selectProblem, correctId).isCorrect).toBe(true);
@@ -30,7 +31,9 @@ describe('judgeAnswer', () => {
     if (!('answerSpec' in inputProblem)) throw new Error('invalid fixture');
 
     const accepted = inputProblem.answerSpec.answers[0]!;
-    expect(judgeAnswer(inputProblem, accepted.toUpperCase()).isCorrect).toBe(true);
+    expect(judgeAnswer(inputProblem, accepted.toUpperCase()).isCorrect).toBe(
+      true
+    );
     expect(judgeAnswer(inputProblem, `${accepted}.`).isCorrect).toBe(true);
     expect(judgeAnswer(inputProblem, 'definitely wrong').isCorrect).toBe(false);
   });
@@ -38,12 +41,15 @@ describe('judgeAnswer', () => {
   it('judges reorder problems by chunk order', () => {
     if (!('correctOrder' in reorderProblem)) throw new Error('invalid fixture');
 
-    expect(judgeAnswer(reorderProblem, reorderProblem.correctOrder.join(',')).isCorrect).toBe(
-      true
-    );
     expect(
-      judgeAnswer(reorderProblem, [...reorderProblem.correctOrder].reverse().join(','))
+      judgeAnswer(reorderProblem, reorderProblem.correctOrder.join(','))
         .isCorrect
+    ).toBe(true);
+    expect(
+      judgeAnswer(
+        reorderProblem,
+        [...reorderProblem.correctOrder].reverse().join(',')
+      ).isCorrect
     ).toBe(false);
   });
 });
