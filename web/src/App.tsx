@@ -13,9 +13,9 @@ import {
   getSectionsForDataset,
   preloadDatasetMode,
 } from './data/problems';
-import { LandingPage } from './features/landing/LandingPage';
 import { LoginPage } from './features/auth/LoginPage';
 import { SignupPage } from './features/auth/SignupPage';
+import { LandingPage } from './features/landing/LandingPage';
 import { PrivacyPage } from './features/legal/PrivacyPage';
 import { TermsPage } from './features/legal/TermsPage';
 import { useUserStatsQuery } from './features/user/queries';
@@ -137,13 +137,17 @@ function VocabAppShell() {
   useEffect(() => {
     let cancelled = false;
     void (async () => {
-      const [nextSections, nextPreviewProblems, nextProblemCount, nextCurrentProblems] =
-        await Promise.all([
-          getSectionsForDataset(selection.datasetId),
-          getPreviewProblems(problemQuery),
-          getProblemCount(problemQuery),
-          getProblemsForQuery(problemQuery),
-        ]);
+      const [
+        nextSections,
+        nextPreviewProblems,
+        nextProblemCount,
+        nextCurrentProblems,
+      ] = await Promise.all([
+        getSectionsForDataset(selection.datasetId),
+        getPreviewProblems(problemQuery),
+        getProblemCount(problemQuery),
+        getProblemsForQuery(problemQuery),
+      ]);
       if (cancelled) return;
       setSections(nextSections);
       setPreviewProblems(nextPreviewProblems);

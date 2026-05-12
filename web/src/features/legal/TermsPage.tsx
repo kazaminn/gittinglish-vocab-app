@@ -20,7 +20,8 @@ export function TermsPage() {
         <section className="space-y-2">
           <h2 className="text-base font-semibold">サービスの内容</h2>
           <p>
-            Git や開発業務でよく使う英語動詞をドリル形式で学べる、Web ベースの学習ツールです。
+            Git や開発業務でよく使う英語動詞をドリル形式で学べる、Web
+            ベースの学習ツールです。
           </p>
         </section>
 
@@ -28,8 +29,8 @@ export function TermsPage() {
           <h2 className="text-base font-semibold">利用条件</h2>
           <ul className="list-disc space-y-1 pl-5">
             <li>
-              ログインには Google アカウント、GitHub アカウント、または Email/Password
-              での認証が必要です。
+              ログインには Google アカウント、GitHub アカウント、または
+              Email/Password での認証が必要です。
             </li>
             <li>13 歳以上の方を想定しています（年齢確認はしていません）。</li>
             <li>利用は無料です。</li>

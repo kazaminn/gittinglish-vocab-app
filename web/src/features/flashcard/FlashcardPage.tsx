@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { type GeneratedProblem } from '@shared/domain';
-import { type DatasetId } from '../../data/problems';
 import { ProgressBar } from '../../components/ProgressBar';
 import { Shell } from '../../components/Shell';
+import { type DatasetId } from '../../data/problems';
 
 interface FlashcardPageProps {
   problems: GeneratedProblem[];
@@ -35,9 +35,7 @@ function getGrammarSummary(problem: GeneratedProblem): string {
 function getVocabularySummary(problem: GeneratedProblem): string {
   return (
     problem.tags.vocabulary
-      ?.map((tag) =>
-        tag.meaning ? `${tag.lemma}: ${tag.meaning}` : tag.lemma
-      )
+      ?.map((tag) => (tag.meaning ? `${tag.lemma}: ${tag.meaning}` : tag.lemma))
       .join(' / ') ?? 'No vocabulary metadata'
   );
 }

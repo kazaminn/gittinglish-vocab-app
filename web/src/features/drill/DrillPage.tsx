@@ -90,7 +90,7 @@ export function DrillPage({
           }
           correctId={
             item.judgeMeta?.kind === 'select'
-              ? item.judgeMeta.correctChoiceIds[0] ?? ''
+              ? (item.judgeMeta.correctChoiceIds[0] ?? '')
               : ''
           }
           showResult={lastAnswer !== undefined}

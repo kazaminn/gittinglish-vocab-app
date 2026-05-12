@@ -11,11 +11,11 @@
     "isolatedModules": true,
     "noUncheckedIndexedAccess": true,
     "paths": {
-      "@shared/*": ["./shared/*"],
+      "@shared/*": ["./shared/src/*"],
       "@web/*": ["./web/src/*"],
-      "@api/*": ["./server/src/*"]
+      "@api/*": ["./api/src/*"]
     }
   },
-  "include": ["shared/**/*", "web/src/**/*", "server/src/**/*"],
+  "include": ["shared/src/**/*", "web/src/**/*", "api/src/**/*"],
   "exclude": ["node_modules", "dist"]
 }

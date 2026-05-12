@@ -5,13 +5,22 @@ export function translateAuthError(input: {
   const code = input.code ?? '';
   const msg = input.message ?? '';
 
-  if (code === 'INVALID_CREDENTIALS' || /invalid (username|email|password|credentials)/i.test(msg)) {
+  if (
+    code === 'INVALID_CREDENTIALS' ||
+    /invalid (username|email|password|credentials)/i.test(msg)
+  ) {
     return 'ID またはパスワードが正しくありません。';
   }
-  if (code === 'USER_ALREADY_EXISTS' || /already (exists|registered)/i.test(msg)) {
+  if (
+    code === 'USER_ALREADY_EXISTS' ||
+    /already (exists|registered)/i.test(msg)
+  ) {
     return 'この ID は既に使われています。';
   }
-  if (code === 'USERNAME_ALREADY_EXISTS' || /username.*(exists|taken)/i.test(msg)) {
+  if (
+    code === 'USERNAME_ALREADY_EXISTS' ||
+    /username.*(exists|taken)/i.test(msg)
+  ) {
     return 'この ID は既に使われています。';
   }
   if (code === 'PASSWORD_TOO_SHORT' || /password.*(short|min)/i.test(msg)) {

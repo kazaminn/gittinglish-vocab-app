@@ -2,7 +2,13 @@
   "name": "@gittinglish-vocab-app/api",
   "private": true,
   "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "test": "vitest run",
+    "seed:dev": "tsx scripts/seed-testuser.ts"
+  },
   "dependencies": {
+    "@gittinglish-vocab-app/shared": "workspace:*",
     "@hono/node-server": "^1.19.11",
     "@libsql/client": "^0.17.2",
     "better-auth": "^1.6.9",
@@ -13,6 +19,9 @@
   },
   "devDependencies": {
     "@types/node": "^25.5.0",
-    "typescript": "~5.9.3"
+    "drizzle-kit": "^0.31.10",
+    "tsx": "^4.21.0",
+    "typescript": "~5.9.3",
+    "vitest": "^4.1.1"
   }
 }

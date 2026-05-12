@@ -1,5 +1,5 @@
-import { type GeneratedProblem, type DrillProgress } from '@shared/domain';
 import { beforeEach, describe, expect, it } from 'vitest';
+import { type GeneratedProblem, type DrillProgress } from '@shared/domain';
 import { createLocalSessionService } from '../../src/service/session.local';
 
 function makeProblem(id: string): GeneratedProblem {

@@ -16,8 +16,14 @@ describe('Layout', () => {
 
     await user.click(screen.getByRole('button', { name: /Open user menu/i }));
 
-    expect(screen.getByRole('menu', { name: /User menu/i })).toBeInTheDocument();
-    expect(screen.getByRole('menuitem', { name: /settings/i })).toBeInTheDocument();
-    expect(screen.getByRole('menuitem', { name: /logout/i })).toBeInTheDocument();
+    expect(
+      screen.getByRole('menu', { name: /User menu/i })
+    ).toBeInTheDocument();
+    expect(
+      screen.getByRole('menuitem', { name: /settings/i })
+    ).toBeInTheDocument();
+    expect(
+      screen.getByRole('menuitem', { name: /logout/i })
+    ).toBeInTheDocument();
   });
 });

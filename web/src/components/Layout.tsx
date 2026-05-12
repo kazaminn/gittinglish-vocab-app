@@ -84,7 +84,7 @@ export function Layout({ children }: LayoutProps) {
                   <div
                     role="menu"
                     aria-label="User menu"
-                    className="absolute right-0 top-10 z-10 min-w-40 rounded-sm border p-1"
+                    className="absolute top-10 right-0 z-10 min-w-40 rounded-sm border p-1"
                     style={{
                       background: 'var(--bg-surface)',
                       borderColor: 'var(--border-subtle)',
