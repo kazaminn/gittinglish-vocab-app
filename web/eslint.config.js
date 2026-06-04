@@ -11,7 +11,9 @@ import { defineConfig } from 'eslint/config';
 import globals from 'globals';
 import tseslint from 'typescript-eslint';
 
-const gitignorePath = path.resolve('.', '.gitignore');
+// Resolve from this config's directory (web/) so the lint run finds the
+// repo-root .gitignore regardless of the current working directory.
+const gitignorePath = path.resolve(import.meta.dirname, '../.gitignore');
 
 export default defineConfig(
   {
