@@ -127,17 +127,17 @@ export function getDefaultModeForDataset(datasetId: DatasetId): DrillMode {
   return DATASET_DEFAULT_MODE[datasetId];
 }
 
-export async function getSectionsForDataset(
+export function getSectionsForDataset(
   _datasetId: DatasetId
 ): Promise<ProblemSection[]> {
-  return [];
+  return Promise.resolve([]);
 }
 
-export async function getSectionLabel(
+export function getSectionLabel(
   _datasetId: DatasetId,
   _sectionId: string | undefined
 ): Promise<string | undefined> {
-  return undefined;
+  return Promise.resolve(undefined);
 }
 
 export async function getProblemsForQuery(
