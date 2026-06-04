@@ -47,8 +47,9 @@ const FlashcardPage = lazy(() =>
     default: module.FlashcardPage,
   }))
 );
+const loadHomePage = () => import('./features/home/HomePage');
 const HomePage = lazy(() =>
-  import('./features/home/HomePage').then((module) => ({
+  loadHomePage().then((module) => ({
     default: module.HomePage,
   }))
 );
@@ -67,6 +68,15 @@ interface AppSelection {
 
 function ProtectedRoute({ children }: { children: React.ReactNode }) {
   const { isLoading, user } = useAuth();
+
+  // Once the user is known, warm the Home chunk and the default dataset so
+  // they download alongside the shell instead of after it mounts.
+  useEffect(() => {
+    if (!user) return;
+    void loadHomePage();
+    void preloadDatasetMode('gitverbs85', 'word_to_meaning');
+  }, [user]);
+
   if (isLoading) return <ShellSkeleton />;
   if (!user) return <Navigate to="/" replace />;
   return <>{children}</>;
