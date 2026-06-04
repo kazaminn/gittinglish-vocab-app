@@ -1,37 +1,48 @@
-import { forwardRef, type ButtonHTMLAttributes } from 'react';
+import { type ButtonHTMLAttributes, forwardRef } from 'react';
 import { tv } from '../lib/tv';
 
 const buttonVariants = tv({
   base: [
-    'inline-flex items-center justify-center',
-    'rounded-md px-4 py-2',
-    'font-medium text-sm',
+    'inline-flex items-center rounded-sm border text-left',
     'transition-colors duration-150',
     'disabled:opacity-50 disabled:pointer-events-none',
-    'cursor-pointer',
   ],
   variants: {
     variant: {
-      primary: 'bg-accent text-text-inverted hover:bg-accent-hover',
-      secondary: 'bg-bg-muted text-text border border-border hover:bg-bg-hover',
-      ghost: 'text-text-muted hover:bg-bg-muted hover:text-text',
+      primary: 'bg-accent border-transparent text-white hover:bg-accent/90',
+      outline: 'bg-transparent border-edge-accent text-accent-fg',
+      secondary: 'bg-transparent border-border text-primary',
+      ghost: 'bg-transparent border-transparent text-muted hover:bg-elevated',
+    },
+    size: {
+      sm: 'px-4 py-2 text-sm',
+      md: 'px-4 py-3',
     },
   },
   defaultVariants: {
     variant: 'primary',
+    size: 'md',
   },
 });
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: 'primary' | 'secondary' | 'ghost';
+  variant?: 'primary' | 'outline' | 'secondary' | 'ghost';
+  size?: 'sm' | 'md';
+  fullWidth?: boolean;
 }
 
 export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ variant, className, ...props }, ref) => (
+  ({ variant, size, fullWidth = false, className, ...props }, ref) => (
     <button
       type="button"
       ref={ref}
-      className={buttonVariants({ variant, className })}
+      className={buttonVariants({
+        variant,
+        size,
+        className:
+          [fullWidth && 'w-full', className].filter(Boolean).join(' ') ||
+          undefined,
+      })}
       {...props}
     />
   )
