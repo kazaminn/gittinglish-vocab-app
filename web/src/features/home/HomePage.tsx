@@ -6,6 +6,7 @@ import {
 } from '@shared/domain';
 import { type UserStatsResponse } from '@shared/dto';
 import { Shell } from '../../components/Shell';
+import { SkeletonLine } from '../../components/ShellSkeleton';
 import { type DatasetOption, type ProblemSection } from '../../data/problems';
 import { useAuth } from '../../hooks/useAuth';
 
@@ -25,6 +26,7 @@ interface HomePageProps {
   sections: ProblemSection[];
   problemCount: number;
   previewProblems: GeneratedProblem[];
+  isProblemsLoading?: boolean;
   stats?: UserStatsResponse;
   isStatsLoading?: boolean;
   statsError?: string;
@@ -111,6 +113,7 @@ export function HomePage({
   sections,
   problemCount,
   previewProblems,
+  isProblemsLoading = false,
   stats,
   isStatsLoading = false,
   statsError,
@@ -394,24 +397,34 @@ export function HomePage({
           current problem list
         </p>
         <p className="text-xs" style={{ color: 'var(--text-muted)' }}>
-          {problemCount} problems available
+          {isProblemsLoading
+            ? 'loading problems…'
+            : `${problemCount} problems available`}
           {user ? ` · ${user.displayName}` : ''}
         </p>
-        <ul className="space-y-2 text-sm">
-          {previewProblems.map((problem) => (
-            <li
-              key={problem.id}
-              className="border-t pt-2 first:border-t-0 first:pt-0"
-            >
-              <p style={{ color: 'var(--text-primary)' }}>
-                {getPreviewTitle(problem)}
-              </p>
-              <p className="text-xs" style={{ color: 'var(--text-muted)' }}>
-                {problem.id} · {problem.prompt}
-              </p>
-            </li>
-          ))}
-        </ul>
+        {isProblemsLoading && previewProblems.length === 0 ? (
+          <div className="space-y-3 pt-1" aria-hidden="true">
+            <SkeletonLine />
+            <SkeletonLine width="80%" />
+            <SkeletonLine width="60%" />
+          </div>
+        ) : (
+          <ul className="space-y-2 text-sm">
+            {previewProblems.map((problem) => (
+              <li
+                key={problem.id}
+                className="border-t pt-2 first:border-t-0 first:pt-0"
+              >
+                <p style={{ color: 'var(--text-primary)' }}>
+                  {getPreviewTitle(problem)}
+                </p>
+                <p className="text-xs" style={{ color: 'var(--text-muted)' }}>
+                  {problem.id} · {problem.prompt}
+                </p>
+              </li>
+            ))}
+          </ul>
+        )}
       </div>
     </Shell>
   );
