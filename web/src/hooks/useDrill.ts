@@ -42,7 +42,7 @@ export interface DrillActions {
     sectionId?: string
   ) => Promise<void>;
   answer: (userInput: string) => Promise<AnswerResult>;
-  next: () => Promise<void>;
+  next: () => void;
   endSession: (persistProgress?: boolean) => Promise<void>;
 }
 
@@ -164,9 +164,9 @@ export function useDrill(): DrillState & DrillActions {
   );
 
   const answer = useCallback(
-    async (userInput: string): Promise<AnswerResult> => {
+    (userInput: string): Promise<AnswerResult> => {
       if (!currentProblem || !currentItem) {
-        throw new Error('No current problem');
+        return Promise.reject(new Error('No current problem'));
       }
 
       const judge = judgeOnClient(currentItem, userInput);
@@ -186,12 +186,12 @@ export function useDrill(): DrillState & DrillActions {
 
       setLastAnswer(result);
       setResults((previous) => [...previous, result]);
-      return result;
+      return Promise.resolve(result);
     },
     [currentItem, currentProblem]
   );
 
-  const next = useCallback(async () => {
+  const next = useCallback(() => {
     const nextIndex = currentIndex + 1;
     if (nextIndex >= items.length) {
       setIsSessionComplete(true);
