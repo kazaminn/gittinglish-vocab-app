@@ -2,6 +2,7 @@ import { lazy, Suspense, useEffect, useMemo, useState } from 'react';
 import { Navigate, Route, Routes, useNavigate } from 'react-router-dom';
 import { type DatasetId, type DrillMode } from '@shared/domain';
 import { Layout } from './components/Layout';
+import { ShellSkeleton } from './components/ShellSkeleton';
 import {
   getAvailableModesForDataset,
   getDatasetOptions,
@@ -57,14 +58,14 @@ interface AppSelection {
 
 function ProtectedRoute({ children }: { children: React.ReactNode }) {
   const { isLoading, user } = useAuth();
-  if (isLoading) return null;
+  if (isLoading) return <ShellSkeleton />;
   if (!user) return <Navigate to="/" replace />;
   return <>{children}</>;
 }
 
 function RootRedirect() {
   const { isLoading, user } = useAuth();
-  if (isLoading) return null;
+  if (isLoading) return <ShellSkeleton />;
   return user ? <Navigate to="/app" replace /> : <LandingPage />;
 }
 
@@ -300,7 +301,7 @@ function VocabAppShell() {
 function App() {
   return (
     <Layout>
-      <Suspense fallback={null}>
+      <Suspense fallback={<ShellSkeleton />}>
         <Routes>
           <Route path="/" element={<RootRedirect />} />
           <Route path="/signup" element={<SignupPage />} />
