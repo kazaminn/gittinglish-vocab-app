@@ -3,5 +3,5 @@
 import { describe, it } from 'vitest';
 
 describe.skip('useAuth (rewrite pending for Better Auth)', () => {
-  it.skip('placeholder', () => {});
+  it.todo('rewrite for Better Auth');
 });
