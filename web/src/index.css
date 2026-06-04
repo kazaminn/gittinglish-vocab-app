@@ -3,7 +3,6 @@
 @custom-variant dark (&:where(.dark *));
 
 @theme {
-  /* Tailwind ユーティリティに反映させるトークン */
   --color-accent: #3f5bf6;
   --color-hit: #4a9c68;
   --color-miss: #c36a76;
@@ -13,64 +12,102 @@
 
   /* Container */
   --container-max: 36rem;
+
+  /* Surfaces (light) */
+  --color-canvas: #f5f7fa;
+  --color-surface: #ffffff;
+  --color-elevated: #eef2f6;
+  --color-interactive: #f8fafc;
+  --color-interactive-hover: #edf2f7;
+  --color-selected: #e8eeff;
+  --color-success-surface: #eaf8ef;
+  --color-error-surface: #fdeeee;
+
+  /* Text (light) */
+  --color-primary: #101828;
+  --color-secondary: #243041;
+  --color-muted: #5f6b7a;
+  --color-accent-fg: #3f5bf6;
+  --color-success: #166534;
+  --color-error: #b42318;
+
+  /* Borders (light) */
+  --color-border: #d3d9e2;
+  --color-border-strong: #b4beca;
+  --color-edge-accent: #5f77ff;
+  --color-border-success: #49a56c;
+  --color-border-error: #d56767;
+
+  /* Focus (light) */
+  --color-focus: #4f6bff;
 }
 
-:root {
-  --bg-primary: #f5f7fa;
-  --bg-surface: #ffffff;
-  --bg-elevated: #eef2f6;
-  --bg-interactive: #f8fafc;
-  --bg-interactive-hover: #edf2f7;
-  --bg-selected: #e8eeff;
-  --bg-success: #eaf8ef;
-  --bg-error: #fdeeee;
-
-  --text-primary: #101828;
-  --text-secondary: #243041;
-  --text-muted: #5f6b7a;
-  --text-accent: #3f5bf6;
-  --text-success: #166534;
-  --text-error: #b42318;
-
-  --border-subtle: #d3d9e2;
-  --border-strong: #b4beca;
-  --border-accent: #5f77ff;
-  --border-success: #49a56c;
-  --border-error: #d56767;
-
-  --focus-ring: #4f6bff;
-}
-
+/*
+ * Dark overrides. Tailwind v4 generates color utilities as var(--color-*)
+ * references, so reassigning the tokens under .dark makes bg-surface,
+ * text-muted, border-edge-accent, etc. follow the theme automatically.
+ */
 .dark {
-  --bg-primary: #0a0a0b;
-  --bg-surface: #101114;
-  --bg-elevated: #15181d;
-  --bg-interactive: #12161b;
-  --bg-interactive-hover: #1a2027;
-  --bg-selected: #16233d;
-  --bg-success: #102217;
-  --bg-error: #2b1418;
+  --color-canvas: #0a0a0b;
+  --color-surface: #101114;
+  --color-elevated: #15181d;
+  --color-interactive: #12161b;
+  --color-interactive-hover: #1a2027;
+  --color-selected: #16233d;
+  --color-success-surface: #102217;
+  --color-error-surface: #2b1418;
 
-  --text-primary: #f3f5f7;
-  --text-secondary: #d6dbe2;
-  --text-muted: #a3adba;
-  --text-accent: #9aaeff;
-  --text-success: #8ce3ac;
-  --text-error: #ffabab;
+  --color-primary: #f3f5f7;
+  --color-secondary: #d6dbe2;
+  --color-muted: #a3adba;
+  --color-accent-fg: #9aaeff;
+  --color-success: #8ce3ac;
+  --color-error: #ffabab;
 
-  --border-subtle: #2d343d;
-  --border-strong: #47515d;
-  --border-accent: #7f95ff;
-  --border-success: #4a9c68;
-  --border-error: #c36a76;
+  --color-border: #2d343d;
+  --color-border-strong: #47515d;
+  --color-edge-accent: #7f95ff;
+  --color-border-success: #4a9c68;
+  --color-border-error: #c36a76;
 
-  --focus-ring: #8ea2ff;
+  --color-focus: #8ea2ff;
+}
+
+/*
+ * Legacy aliases. Pages not yet migrated to utilities still reference these
+ * names via inline styles; they resolve through the @theme tokens above, so
+ * they keep following light/dark. Remove each alias as its callers migrate.
+ */
+:root {
+  --bg-primary: var(--color-canvas);
+  --bg-surface: var(--color-surface);
+  --bg-elevated: var(--color-elevated);
+  --bg-interactive: var(--color-interactive);
+  --bg-interactive-hover: var(--color-interactive-hover);
+  --bg-selected: var(--color-selected);
+  --bg-success: var(--color-success-surface);
+  --bg-error: var(--color-error-surface);
+
+  --text-primary: var(--color-primary);
+  --text-secondary: var(--color-secondary);
+  --text-muted: var(--color-muted);
+  --text-accent: var(--color-accent-fg);
+  --text-success: var(--color-success);
+  --text-error: var(--color-error);
+
+  --border-subtle: var(--color-border);
+  --border-strong: var(--color-border-strong);
+  --border-accent: var(--color-edge-accent);
+  --border-success: var(--color-border-success);
+  --border-error: var(--color-border-error);
+
+  --focus-ring: var(--color-focus);
 }
 
 /* --- Base styles --- */
 html {
-  background-color: var(--bg-primary);
-  color: var(--text-primary);
+  background-color: var(--color-canvas);
+  color: var(--color-primary);
   font-family: var(--font-mono);
   scrollbar-gutter: stable;
 }
@@ -81,7 +118,7 @@ body {
 
 /* --- Focus visible ring --- */
 *:focus-visible {
-  outline: 2px solid var(--focus-ring);
+  outline: 2px solid var(--color-focus);
   outline-offset: 2px;
 }
 

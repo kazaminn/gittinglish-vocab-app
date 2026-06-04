@@ -1,15 +1,17 @@
-import { useMemo, useRef, type MutableRefObject } from 'react';
+import { useMemo } from 'react';
 import {
   type DatasetId,
   type DrillMode,
   type GeneratedProblem,
 } from '@shared/domain';
 import { type UserStatsResponse } from '@shared/dto';
+import { Button } from '../../components/Button';
+import { RadioOptionGroup } from '../../components/RadioOptionGroup';
 import { Shell } from '../../components/Shell';
+import { SkeletonLine } from '../../components/ShellSkeleton';
+import { StatCard } from '../../components/StatCard';
 import { type DatasetOption, type ProblemSection } from '../../data/problems';
 import { useAuth } from '../../hooks/useAuth';
-
-/* eslint-disable jsx-a11y/prefer-tag-over-role */
 
 export interface HomeSelection {
   datasetId: DatasetId;
@@ -25,6 +27,7 @@ interface HomePageProps {
   sections: ProblemSection[];
   problemCount: number;
   previewProblems: GeneratedProblem[];
+  isProblemsLoading?: boolean;
   stats?: UserStatsResponse;
   isStatsLoading?: boolean;
   statsError?: string;
@@ -92,16 +95,13 @@ function getPreviewTitle(problem: GeneratedProblem): string {
   return problem.prompt;
 }
 
-function moveFocus(
-  refs: MutableRefObject<(HTMLButtonElement | null)[]>,
-  currentIndex: number,
-  direction: 1 | -1
-) {
-  const count = refs.current.length;
-  if (count === 0) return;
-
-  const nextIndex = (currentIndex + direction + count) % count;
-  refs.current[nextIndex]?.focus();
+function optionLabel(label: string, description: string) {
+  return (
+    <>
+      {label}
+      <span className="ml-2 text-xs text-muted">({description})</span>
+    </>
+  );
 }
 
 export function HomePage({
@@ -111,6 +111,7 @@ export function HomePage({
   sections,
   problemCount,
   previewProblems,
+  isProblemsLoading = false,
   stats,
   isStatsLoading = false,
   statsError,
@@ -118,8 +119,6 @@ export function HomePage({
   onStartDrill,
 }: HomePageProps) {
   const { user } = useAuth();
-  const datasetRefs = useRef<(HTMLButtonElement | null)[]>([]);
-  const modeRefs = useRef<(HTMLButtonElement | null)[]>([]);
 
   const visibleModes = useMemo(
     () => availableModes.map((mode) => MODE_OPTIONS[mode]),
@@ -128,18 +127,11 @@ export function HomePage({
   const selectedMode = MODE_OPTIONS[selection.drillMode];
 
   function handleDatasetChange(datasetId: DatasetId) {
-    onSelectionChange({
-      ...selection,
-      datasetId,
-      sectionId: undefined,
-    });
+    onSelectionChange({ ...selection, datasetId, sectionId: undefined });
   }
 
   function handleModeChange(drillMode: DrillMode) {
-    onSelectionChange({
-      ...selection,
-      drillMode,
-    });
+    onSelectionChange({ ...selection, drillMode });
   }
 
   return (
@@ -150,16 +142,7 @@ export function HomePage({
           aria-label="Learning stats"
         >
           {statsError ? (
-            <div
-              className="rounded-sm border px-4 py-4 text-sm"
-              style={{
-                background: 'var(--bg-error)',
-                borderColor: 'var(--border-error)',
-                color: 'var(--text-error)',
-              }}
-            >
-              failed to load stats
-            </div>
+            <StatCard tone="error" label="" value="failed to load stats" />
           ) : (
             (
               [
@@ -169,92 +152,33 @@ export function HomePage({
                 ['due today', stats?.dueToday ?? 0],
               ] as const
             ).map(([label, value]) => (
-              <div
+              <StatCard
                 key={label}
-                className="rounded-sm border px-4 py-4"
-                style={{
-                  background: 'transparent',
-                  borderColor: 'var(--border-subtle)',
-                }}
-              >
-                <p className="text-xs" style={{ color: 'var(--text-muted)' }}>
-                  {label}
-                </p>
-                <p
-                  className="mt-2 text-2xl"
-                  style={{ color: 'var(--text-primary)' }}
-                >
-                  {isStatsLoading ? '...' : value}
-                </p>
-              </div>
+                label={label}
+                value={value}
+                loading={isStatsLoading}
+              />
             ))
           )}
         </div>
       )}
 
-      <div className="space-y-2">
-        <p style={{ color: 'var(--text-secondary)' }}>dataset</p>
-        <div role="radiogroup" aria-label="Dataset" className="space-y-1">
-          {datasetOptions.map((option, index) => {
-            const isSelected = selection.datasetId === option.id;
-            return (
-              <button
-                key={option.id}
-                ref={(element) => {
-                  datasetRefs.current[index] = element;
-                }}
-                type="button"
-                role="radio"
-                aria-checked={isSelected}
-                tabIndex={isSelected ? 0 : -1}
-                onClick={() => handleDatasetChange(option.id)}
-                onKeyDown={(event) => {
-                  if (event.key === 'ArrowDown' || event.key === 'ArrowRight') {
-                    event.preventDefault();
-                    moveFocus(datasetRefs, index, 1);
-                  }
-
-                  if (event.key === 'ArrowUp' || event.key === 'ArrowLeft') {
-                    event.preventDefault();
-                    moveFocus(datasetRefs, index, -1);
-                  }
-
-                  if (event.key === ' ' || event.key === 'Enter') {
-                    event.preventDefault();
-                    handleDatasetChange(option.id);
-                  }
-                }}
-                className="w-full rounded-sm border px-4 py-2 text-left text-sm"
-                style={{
-                  background: isSelected ? 'var(--bg-selected)' : 'transparent',
-                  borderColor: isSelected
-                    ? 'var(--border-accent)'
-                    : 'var(--border-subtle)',
-                  color: 'var(--text-primary)',
-                }}
-              >
-                <span className="mr-2" style={{ color: 'var(--text-muted)' }}>
-                  {isSelected ? '>' : ' '}
-                </span>
-                {option.label}
-                <span
-                  className="ml-2 text-xs"
-                  style={{ color: 'var(--text-muted)' }}
-                >
-                  ({option.description})
-                </span>
-              </button>
-            );
-          })}
-        </div>
-      </div>
+      <RadioOptionGroup
+        heading="dataset"
+        ariaLabel="Dataset"
+        items={datasetOptions}
+        getKey={(option) => option.id}
+        selectedKey={selection.datasetId}
+        onSelect={(option) => handleDatasetChange(option.id)}
+        indicator={(_option, isSelected) => (isSelected ? '>' : ' ')}
+        renderLabel={(option) => optionLabel(option.label, option.description)}
+      />
 
       {sections.length > 0 && (
         <div className="space-y-2">
           <label
             htmlFor="section-select"
-            className="block text-sm"
-            style={{ color: 'var(--text-secondary)' }}
+            className="block text-sm text-secondary"
           >
             reibun section
           </label>
@@ -267,12 +191,7 @@ export function HomePage({
                 sectionId: event.target.value || undefined,
               })
             }
-            className="w-full rounded-sm border px-3 py-2"
-            style={{
-              background: 'var(--bg-surface)',
-              borderColor: 'var(--border-subtle)',
-              color: 'var(--text-primary)',
-            }}
+            className="w-full rounded-sm border border-border bg-surface px-3 py-2 text-primary"
           >
             <option value="">All sections</option>
             {sections.map((section) => (
@@ -284,69 +203,22 @@ export function HomePage({
         </div>
       )}
 
-      <div className="space-y-2">
-        <p style={{ color: 'var(--text-secondary)' }}>mode</p>
-        <div role="radiogroup" aria-label="Drill mode" className="space-y-1">
-          {visibleModes.map((option, index) => {
-            const isSelected = selection.drillMode === option.mode;
-            return (
-              <button
-                key={option.mode}
-                ref={(element) => {
-                  modeRefs.current[index] = element;
-                }}
-                type="button"
-                role="radio"
-                aria-checked={isSelected}
-                tabIndex={isSelected ? 0 : -1}
-                onClick={() => handleModeChange(option.mode)}
-                onKeyDown={(event) => {
-                  if (event.key === 'ArrowDown' || event.key === 'ArrowRight') {
-                    event.preventDefault();
-                    moveFocus(modeRefs, index, 1);
-                  }
-
-                  if (event.key === 'ArrowUp' || event.key === 'ArrowLeft') {
-                    event.preventDefault();
-                    moveFocus(modeRefs, index, -1);
-                  }
-
-                  if (event.key === ' ' || event.key === 'Enter') {
-                    event.preventDefault();
-                    handleModeChange(option.mode);
-                  }
-                }}
-                className="w-full rounded-sm border px-4 py-2 text-left text-sm"
-                style={{
-                  background: isSelected ? 'var(--bg-selected)' : 'transparent',
-                  borderColor: isSelected
-                    ? 'var(--border-accent)'
-                    : 'var(--border-subtle)',
-                  color: 'var(--text-primary)',
-                }}
-              >
-                <span className="mr-2" style={{ color: 'var(--text-muted)' }}>
-                  {isSelected ? '>' : ' '}
-                </span>
-                {option.label}
-                <span
-                  className="ml-2 text-xs"
-                  style={{ color: 'var(--text-muted)' }}
-                >
-                  ({option.description})
-                </span>
-              </button>
-            );
-          })}
-        </div>
-      </div>
+      <RadioOptionGroup
+        heading="mode"
+        ariaLabel="Drill mode"
+        items={visibleModes}
+        getKey={(option) => option.mode}
+        selectedKey={selection.drillMode}
+        onSelect={(option) => handleModeChange(option.mode)}
+        indicator={(_option, isSelected) => (isSelected ? '>' : ' ')}
+        renderLabel={(option) => optionLabel(option.label, option.description)}
+      />
 
       {selectedMode?.category === 'drill' && (
         <div className="space-y-2">
           <label
             htmlFor="session-size"
-            className="block text-sm"
-            style={{ color: 'var(--text-secondary)' }}
+            className="block text-sm text-secondary"
           >
             session size: {selection.sessionSize}
           </label>
@@ -365,54 +237,75 @@ export function HomePage({
             }
             className="w-full accent-accent"
           />
-          <div
-            className="flex justify-between text-xs"
-            style={{ color: 'var(--text-muted)' }}
-          >
+          <div className="flex justify-between text-xs text-muted">
             <span>5</span>
             <span>50</span>
           </div>
         </div>
       )}
 
-      <button
-        type="button"
-        onClick={() => onStartDrill(selection)}
+      <Button
+        variant="outline"
+        fullWidth
         disabled={!user}
-        className="w-full rounded-sm border px-4 py-3 text-left"
-        style={{
-          background: 'transparent',
-          borderColor: 'var(--border-accent)',
-          color: 'var(--text-accent)',
-        }}
+        onClick={() => onStartDrill(selection)}
       >
         &gt; start
-      </button>
+      </Button>
 
-      <div className="space-y-2 rounded-sm border px-4 py-4">
-        <p className="text-sm" style={{ color: 'var(--text-secondary)' }}>
-          current problem list
-        </p>
-        <p className="text-xs" style={{ color: 'var(--text-muted)' }}>
-          {problemCount} problems available
-          {user ? ` · ${user.displayName}` : ''}
-        </p>
+      <PreviewList
+        userDisplayName={user?.displayName}
+        problemCount={problemCount}
+        previewProblems={previewProblems}
+        isProblemsLoading={isProblemsLoading}
+      />
+    </Shell>
+  );
+}
+
+interface PreviewListProps {
+  userDisplayName?: string;
+  problemCount: number;
+  previewProblems: GeneratedProblem[];
+  isProblemsLoading: boolean;
+}
+
+function PreviewList({
+  userDisplayName,
+  problemCount,
+  previewProblems,
+  isProblemsLoading,
+}: PreviewListProps) {
+  return (
+    <div className="space-y-2 rounded-sm border border-border px-4 py-4">
+      <p className="text-sm text-secondary">current problem list</p>
+      <p className="text-xs text-muted">
+        {isProblemsLoading
+          ? 'loading problems…'
+          : `${problemCount} problems available`}
+        {userDisplayName ? ` · ${userDisplayName}` : ''}
+      </p>
+      {isProblemsLoading && previewProblems.length === 0 ? (
+        <div className="space-y-3 pt-1" aria-hidden="true">
+          <SkeletonLine />
+          <SkeletonLine width="80%" />
+          <SkeletonLine width="60%" />
+        </div>
+      ) : (
         <ul className="space-y-2 text-sm">
           {previewProblems.map((problem) => (
             <li
               key={problem.id}
-              className="border-t pt-2 first:border-t-0 first:pt-0"
+              className="border-t border-border pt-2 first:border-t-0 first:pt-0"
             >
-              <p style={{ color: 'var(--text-primary)' }}>
-                {getPreviewTitle(problem)}
-              </p>
-              <p className="text-xs" style={{ color: 'var(--text-muted)' }}>
+              <p className="text-primary">{getPreviewTitle(problem)}</p>
+              <p className="text-xs text-muted">
                 {problem.id} · {problem.prompt}
               </p>
             </li>
           ))}
         </ul>
-      </div>
-    </Shell>
+      )}
+    </div>
   );
 }

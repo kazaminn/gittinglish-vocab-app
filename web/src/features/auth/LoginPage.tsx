@@ -38,7 +38,11 @@ export function LoginPage() {
     <main className="mx-auto max-w-md px-6 py-12">
       <h1 className="mb-6 text-2xl font-bold tracking-tight">ログイン</h1>
 
-      <form onSubmit={handleSubmit} className="flex flex-col gap-4" noValidate>
+      <form
+        onSubmit={(event) => void handleSubmit(event)}
+        className="flex flex-col gap-4"
+        noValidate
+      >
         <div className="flex flex-col gap-1">
           <label htmlFor={usernameId} className="text-sm">
             ID
@@ -52,7 +56,7 @@ export function LoginPage() {
             autoComplete="username"
             aria-invalid={hasError || undefined}
             aria-describedby={hasError ? errorId : undefined}
-            className="border-border bg-bg rounded-md border px-3 py-2"
+            className="bg-bg rounded-md border border-border px-3 py-2"
           />
         </div>
 
@@ -69,7 +73,7 @@ export function LoginPage() {
             autoComplete="current-password"
             aria-invalid={hasError || undefined}
             aria-describedby={hasError ? errorId : undefined}
-            className="border-border bg-bg rounded-md border px-3 py-2"
+            className="bg-bg rounded-md border border-border px-3 py-2"
           />
         </div>
 

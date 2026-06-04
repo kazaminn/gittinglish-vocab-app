@@ -1,26 +1,36 @@
 import { lazy, Suspense, useEffect, useMemo, useState } from 'react';
 import { Navigate, Route, Routes, useNavigate } from 'react-router-dom';
-import { type DatasetId, type DrillMode } from '@shared/domain';
+import {
+  type DatasetId,
+  type DrillMode,
+  type GeneratedProblem,
+} from '@shared/domain';
 import { Layout } from './components/Layout';
+import { ShellSkeleton } from './components/ShellSkeleton';
 import {
   getAvailableModesForDataset,
   getDatasetOptions,
   getDefaultModeForDataset,
-  getPreviewProblems,
-  getProblemCount,
-  getProblemsForQuery,
-  getSectionLabel,
-  getSectionsForDataset,
   preloadDatasetMode,
+  type ProblemSection,
 } from './data/problems';
 import { LoginPage } from './features/auth/LoginPage';
 import { SignupPage } from './features/auth/SignupPage';
+import {
+  useHomeProblemsQuery,
+  useHomeSectionsQuery,
+  useSectionLabelQuery,
+} from './features/home/queries';
 import { LandingPage } from './features/landing/LandingPage';
 import { PrivacyPage } from './features/legal/PrivacyPage';
 import { TermsPage } from './features/legal/TermsPage';
 import { useUserStatsQuery } from './features/user/queries';
 import { useAuth } from './hooks/useAuth';
 import { useDrill } from './hooks/useDrill';
+
+const EMPTY_PROBLEMS: GeneratedProblem[] = [];
+const EMPTY_SECTIONS: ProblemSection[] = [];
+const PREVIEW_LIMIT = 5;
 
 const DrillPage = lazy(() =>
   import('./features/drill/DrillPage').then((module) => ({
@@ -37,8 +47,9 @@ const FlashcardPage = lazy(() =>
     default: module.FlashcardPage,
   }))
 );
+const loadHomePage = () => import('./features/home/HomePage');
 const HomePage = lazy(() =>
-  import('./features/home/HomePage').then((module) => ({
+  loadHomePage().then((module) => ({
     default: module.HomePage,
   }))
 );
@@ -57,14 +68,23 @@ interface AppSelection {
 
 function ProtectedRoute({ children }: { children: React.ReactNode }) {
   const { isLoading, user } = useAuth();
-  if (isLoading) return null;
+
+  // Once the user is known, warm the Home chunk and the default dataset so
+  // they download alongside the shell instead of after it mounts.
+  useEffect(() => {
+    if (!user) return;
+    void loadHomePage();
+    void preloadDatasetMode('gitverbs85', 'word_to_meaning');
+  }, [user]);
+
+  if (isLoading) return <ShellSkeleton />;
   if (!user) return <Navigate to="/" replace />;
   return <>{children}</>;
 }
 
 function RootRedirect() {
   const { isLoading, user } = useAuth();
-  if (isLoading) return null;
+  if (isLoading) return <ShellSkeleton />;
   return user ? <Navigate to="/app" replace /> : <LandingPage />;
 }
 
@@ -78,7 +98,7 @@ function createDefaultSelection(datasetId: DatasetId): AppSelection {
 
 function normalizeSelection(
   selection: AppSelection,
-  sections: Awaited<ReturnType<typeof getSectionsForDataset>>
+  sections: ProblemSection[]
 ): AppSelection {
   const availableModes = getAvailableModesForDataset(selection.datasetId);
   const nextMode = availableModes.includes(selection.drillMode)
@@ -100,17 +120,6 @@ function VocabAppShell() {
   const { user } = useAuth();
   const drill = useDrill();
   const statsQuery = useUserStatsQuery(Boolean(user));
-  const [sections, setSections] = useState<
-    Awaited<ReturnType<typeof getSectionsForDataset>>
-  >([]);
-  const [previewProblems, setPreviewProblems] = useState<
-    Awaited<ReturnType<typeof getPreviewProblems>>
-  >([]);
-  const [problemCount, setProblemCount] = useState(0);
-  const [currentProblems, setCurrentProblems] = useState<
-    Awaited<ReturnType<typeof getProblemsForQuery>>
-  >([]);
-  const [sectionLabel, setSectionLabel] = useState<string | undefined>();
   const [selection, setSelection] = useState<AppSelection>(() =>
     createDefaultSelection('gitverbs85')
   );
@@ -128,52 +137,21 @@ function VocabAppShell() {
     [selection.datasetId, selection.drillMode, selection.sectionId]
   );
 
+  const sectionsQuery = useHomeSectionsQuery(selection.datasetId);
+  const problemsQuery = useHomeProblemsQuery(problemQuery);
+  const sectionLabelQuery = useSectionLabelQuery(
+    selection.datasetId,
+    selection.sectionId
+  );
+
+  const sections = sectionsQuery.data ?? EMPTY_SECTIONS;
+  const currentProblems = problemsQuery.data ?? EMPTY_PROBLEMS;
+
   useEffect(() => {
     if (drill.isSessionComplete) {
       void navigate('/app/summary');
     }
   }, [drill.isSessionComplete, navigate]);
-
-  useEffect(() => {
-    let cancelled = false;
-    void (async () => {
-      const [
-        nextSections,
-        nextPreviewProblems,
-        nextProblemCount,
-        nextCurrentProblems,
-      ] = await Promise.all([
-        getSectionsForDataset(selection.datasetId),
-        getPreviewProblems(problemQuery),
-        getProblemCount(problemQuery),
-        getProblemsForQuery(problemQuery),
-      ]);
-      if (cancelled) return;
-      setSections(nextSections);
-      setPreviewProblems(nextPreviewProblems);
-      setProblemCount(nextProblemCount);
-      setCurrentProblems(nextCurrentProblems);
-    })();
-    return () => {
-      cancelled = true;
-    };
-  }, [problemQuery, selection.datasetId]);
-
-  useEffect(() => {
-    let cancelled = false;
-    void (async () => {
-      const nextSectionLabel = await getSectionLabel(
-        selection.datasetId,
-        selection.sectionId
-      );
-      if (!cancelled) {
-        setSectionLabel(nextSectionLabel);
-      }
-    })();
-    return () => {
-      cancelled = true;
-    };
-  }, [selection.datasetId, selection.sectionId]);
 
   function handleSelectionChange(nextSelection: AppSelection) {
     setSelection(normalizeSelection(nextSelection, sections));
@@ -221,8 +199,9 @@ function VocabAppShell() {
             datasetOptions={getDatasetOptions()}
             availableModes={availableModes}
             sections={sections}
-            problemCount={problemCount}
-            previewProblems={previewProblems}
+            problemCount={currentProblems.length}
+            previewProblems={currentProblems.slice(0, PREVIEW_LIMIT)}
+            isProblemsLoading={problemsQuery.isPending}
             stats={statsQuery.data}
             isStatsLoading={statsQuery.isPending}
             statsError={statsQuery.error?.message}
@@ -272,7 +251,7 @@ function VocabAppShell() {
             <FlashcardPage
               problems={currentProblems}
               datasetId={selection.datasetId}
-              sectionLabel={sectionLabel}
+              sectionLabel={sectionLabelQuery.data}
               onBackToHome={() => {
                 void navigate('/app');
               }}
@@ -300,7 +279,7 @@ function VocabAppShell() {
 function App() {
   return (
     <Layout>
-      <Suspense fallback={null}>
+      <Suspense fallback={<ShellSkeleton />}>
         <Routes>
           <Route path="/" element={<RootRedirect />} />
           <Route path="/signup" element={<SignupPage />} />

@@ -49,7 +49,11 @@ export function SignupPage() {
     <main className="mx-auto max-w-md px-6 py-12">
       <h1 className="mb-6 text-2xl font-bold tracking-tight">サインアップ</h1>
 
-      <form onSubmit={handleSubmit} className="flex flex-col gap-4" noValidate>
+      <form
+        onSubmit={(event) => void handleSubmit(event)}
+        className="flex flex-col gap-4"
+        noValidate
+      >
         <div className="flex flex-col gap-1">
           <label htmlFor={usernameId} className="text-sm">
             ID (3〜32 文字)
@@ -65,7 +69,7 @@ export function SignupPage() {
             autoComplete="username"
             aria-invalid={hasError || undefined}
             aria-describedby={hasError ? errorId : undefined}
-            className="border-border bg-bg rounded-md border px-3 py-2"
+            className="bg-bg rounded-md border border-border px-3 py-2"
           />
         </div>
 
@@ -86,7 +90,7 @@ export function SignupPage() {
             aria-describedby={
               hasError ? `${passwordHintId} ${errorId}` : passwordHintId
             }
-            className="border-border bg-bg rounded-md border px-3 py-2"
+            className="bg-bg rounded-md border border-border px-3 py-2"
           />
           <span id={passwordHintId} className="text-text-muted text-xs">
             推奨: 15 文字以上のパスフレーズ (例: 単語を 4〜5 個つなげたもの)
@@ -104,7 +108,7 @@ export function SignupPage() {
             onChange={(e) => setDisplayName(e.target.value)}
             maxLength={64}
             autoComplete="name"
-            className="border-border bg-bg rounded-md border px-3 py-2"
+            className="bg-bg rounded-md border border-border px-3 py-2"
           />
         </div>
 
