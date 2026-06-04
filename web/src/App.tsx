@@ -84,7 +84,9 @@ function ProtectedRoute({ children }: { children: React.ReactNode }) {
 
 function RootRedirect() {
   const { isLoading, user } = useAuth();
-  if (isLoading) return <ShellSkeleton />;
+  // The landing route is public, so avoid flashing the app-style loading
+  // skeleton here; render nothing until the auth check settles.
+  if (isLoading) return null;
   return user ? <Navigate to="/app" replace /> : <LandingPage />;
 }
 
