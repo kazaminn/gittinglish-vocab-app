@@ -4,6 +4,7 @@ import { Shell } from '../../components/Shell';
 import { useSettings } from '../../hooks/useSettings';
 import { readStoredSettings } from '../../service/settings.local';
 import { useThemeStore } from '../../store/theme';
+import { KazamitteLinkSection } from './KazamitteLinkSection';
 
 interface SettingsPageProps {
   onBackToHome: () => void;
@@ -190,6 +191,8 @@ export function SettingsPage({ onBackToHome }: SettingsPageProps) {
           {draft.displayName || 'User'} can review settings here before saving.
         </p>
       </div>
+
+      <KazamitteLinkSection />
 
       <div className="flex gap-2">
         <button

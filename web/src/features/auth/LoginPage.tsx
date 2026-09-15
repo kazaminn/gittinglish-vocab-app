@@ -1,21 +1,52 @@
 import { useId, useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
-import { signIn } from '../../lib/auth-client';
+import { Link, useNavigate, useSearchParams } from 'react-router-dom';
+import { authClient, signIn } from '../../lib/auth-client';
 import { translateAuthError } from './errors';
 
 export function LoginPage() {
   const navigate = useNavigate();
+  const [searchParams] = useSearchParams();
   const usernameId = useId();
   const passwordId = useId();
   const errorId = useId();
+  const ssoErrorId = useId();
 
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState<string | undefined>();
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isRedirecting, setIsRedirecting] = useState(false);
 
-  const canSubmit = username.length > 0 && password.length > 0 && !isSubmitting;
+  // The provider sends the browser back here on failure, so the only signal
+  // available is the query string set as errorCallbackURL.
+  const [ssoError, setSsoError] = useState<string | undefined>(() =>
+    searchParams.get('error') === 'oauth'
+      ? 'Kazamitte でのログインに失敗しました。時間をおいて再度お試しください。'
+      : undefined
+  );
+
+  const isBusy = isSubmitting || isRedirecting;
+  const canSubmit = username.length > 0 && password.length > 0 && !isBusy;
   const hasError = Boolean(error);
+
+  async function handleKazamitteSignIn() {
+    if (isBusy) return;
+    setIsRedirecting(true);
+    setSsoError(undefined);
+
+    // On success this never resolves normally: the call returns a redirect the
+    // client follows, so the page is replaced.
+    const result = await authClient.signIn.oauth2({
+      providerId: 'kazamitte',
+      callbackURL: '/app',
+      errorCallbackURL: '/login?error=oauth',
+    });
+
+    if (result.error) {
+      setSsoError(translateAuthError(result.error));
+      setIsRedirecting(false);
+    }
+  }
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
@@ -37,6 +68,36 @@ export function LoginPage() {
   return (
     <main className="mx-auto max-w-md px-6 py-12">
       <h1 className="mb-6 text-2xl font-bold tracking-tight">ログイン</h1>
+
+      <div className="mb-6 flex flex-col gap-3">
+        {ssoError && (
+          <p
+            id={ssoErrorId}
+            role="alert"
+            aria-live="polite"
+            className="text-sm text-red-600"
+          >
+            {ssoError}
+          </p>
+        )}
+
+        <button
+          type="button"
+          onClick={() => void handleKazamitteSignIn()}
+          disabled={isBusy}
+          aria-busy={isRedirecting}
+          aria-describedby={ssoError ? ssoErrorId : undefined}
+          className="inline-flex items-center justify-center rounded-md border border-border px-4 py-2 text-sm font-medium transition-colors hover:bg-surface disabled:cursor-not-allowed disabled:opacity-50"
+        >
+          {isRedirecting ? 'Kazamitte に移動中…' : 'Kazamitte でログイン'}
+        </button>
+
+        <div className="flex items-center gap-3" aria-hidden="true">
+          <span className="h-px flex-1 bg-border" />
+          <span className="text-text-muted text-xs">または</span>
+          <span className="h-px flex-1 bg-border" />
+        </div>
+      </div>
 
       <form
         onSubmit={(event) => void handleSubmit(event)}
