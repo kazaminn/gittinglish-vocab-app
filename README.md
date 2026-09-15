@@ -103,9 +103,42 @@ Only required when deploying or pointing at a real Turso DB:
 | `BETTER_AUTH_SECRET` | `openssl rand -base64 32`. |
 | `EMAIL_HASH_SECRET` | `openssl rand -base64 32`. Used to hash OAuth emails so plaintext is never stored. |
 | `CORS_ORIGIN` | Optional. Set when serving the SPA from a different origin than the API. |
+| `KAZAMITTE_AUTH_CLIENT_ID` | OAuth client ID issued by kazamitte-auth. |
+| `KAZAMITTE_AUTH_CLIENT_SECRET` | Matching secret. Shown once at creation. |
+| `KAZAMITTE_AUTH_ISSUER` | Optional. Defaults to `https://auth.kazamitte.com/api/auth`. |
 
 OAuth (`GOOGLE_CLIENT_ID/SECRET`, `GITHUB_CLIENT_ID/SECRET`) is wired up in code
 but currently disabled — planned to be enabled in a future iteration.
+
+### Kazamitte SSO
+
+`auth.kazamitte.com` is the shared identity provider for kazamitte apps. It is
+registered here as a generic OAuth provider (`providerId: kazamitte`), enabled
+only when both `KAZAMITTE_AUTH_CLIENT_ID` and `KAZAMITTE_AUTH_CLIENT_SECRET`
+are set, so a half-configured deployment simply keeps password login.
+
+Endpoints are read from the issuer's discovery document rather than hardcoded.
+The one value that is fixed on both sides is the redirect URI, which
+kazamitte-auth matches exactly:
+
+```text
+https://gittinglish.kazamitte.com/api/auth/oauth2/callback/kazamitte
+```
+
+That path comes from better-auth's generic-oauth plugin on the 1.6 line. It
+moves to `/api/auth/callback/kazamitte` on 1.7, so upgrading means registering
+the new URI with kazamitte-auth first. `web/tests/lib/auth-client.test.ts` pins
+the current paths so the change cannot pass unnoticed. `BETTER_AUTH_URL` must
+be the production origin for the redirect URI to line up.
+
+**Linking is always explicit.** Every `user.email` is rewritten to
+`<username>@local.invalid` (see below), so it can never equal the real address
+the provider returns and no account is ever matched automatically at sign-in —
+`kazamitte` is deliberately absent from `trustedProviders`. Existing users
+attach their identity from `/app/settings` while signed in, which is what
+proves the local account is theirs; that endpoint rejects a mismatched address
+unless `accountLinking.allowDifferentEmails` is set, which is why it is.
+Signing in with an unlinked Kazamitte identity creates a new account.
 
 ## Deploy
 
