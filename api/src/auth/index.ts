@@ -1,7 +1,7 @@
 import { createHmac } from 'node:crypto';
 import { betterAuth } from 'better-auth';
 import { drizzleAdapter } from 'better-auth/adapters/drizzle';
-import { username } from 'better-auth/plugins';
+import { genericOAuth, username } from 'better-auth/plugins';
 import * as authSchema from '../db/auth-schema.js';
 import { db } from '../db/client.js';
 
@@ -27,6 +27,15 @@ const hasGoogle =
   !!process.env.GOOGLE_CLIENT_ID && !!process.env.GOOGLE_CLIENT_SECRET;
 const hasGithub =
   !!process.env.GITHUB_CLIENT_ID && !!process.env.GITHUB_CLIENT_SECRET;
+
+// kazamitte-auth is the shared SSO provider for kazamitte apps. Endpoints are
+// discovered from the issuer rather than hardcoded, so a provider-side path
+// change doesn't need a release here.
+const KAZAMITTE_ISSUER =
+  process.env.KAZAMITTE_AUTH_ISSUER ?? 'https://auth.kazamitte.com/api/auth';
+const hasKazamitte =
+  !!process.env.KAZAMITTE_AUTH_CLIENT_ID &&
+  !!process.env.KAZAMITTE_AUTH_CLIENT_SECRET;
 
 // Preview deployments send Origin as *.vercel.app, so accept the Vercel host
 // in addition to the production domain.
@@ -61,6 +70,24 @@ export const auth = betterAuth({
       minUsernameLength: 3,
       maxUsernameLength: 32,
     }),
+    ...(hasKazamitte
+      ? [
+          genericOAuth({
+            config: [
+              {
+                providerId: 'kazamitte',
+                discoveryUrl: `${KAZAMITTE_ISSUER}/.well-known/openid-configuration`,
+                issuer: KAZAMITTE_ISSUER,
+                requireIssuerValidation: true,
+                clientId: process.env.KAZAMITTE_AUTH_CLIENT_ID!,
+                clientSecret: process.env.KAZAMITTE_AUTH_CLIENT_SECRET!,
+                scopes: ['openid', 'profile', 'email'],
+                pkce: true,
+              },
+            ],
+          }),
+        ]
+      : []),
   ],
 
   socialProviders: {
@@ -82,6 +109,14 @@ export const auth = betterAuth({
     accountLinking: {
       enabled: true,
       trustedProviders: ['google', 'github'],
+      // Every user.email is rewritten to <username>@local.invalid below, so it
+      // can never equal the real address kazamitte-auth returns. Linking is
+      // therefore always explicit (POST /oauth2/link from a signed-in
+      // session), and that endpoint refuses a mismatched address unless this
+      // is set. Being signed in is what proves the local account is the
+      // user's; kazamitte stays out of trustedProviders so no link is ever
+      // made implicitly on sign-in.
+      allowDifferentEmails: true,
     },
   },
 
