@@ -36,8 +36,6 @@ export function LoginPage() {
     setIsRedirecting(true);
     setSsoError(undefined);
 
-    // On success this never resolves normally: the call returns a redirect the
-    // client follows, so the page is replaced.
     const result = await authClient.signIn.oauth2({
       providerId: 'kazamitte',
       callbackURL: '/app',
@@ -47,7 +45,21 @@ export function LoginPage() {
     if (result.error) {
       setSsoError(translateAuthError(result.error));
       setIsRedirecting(false);
+      return;
     }
+
+    // Better Auth's client navigates by itself when the response carries a
+    // redirect, and the page is replaced before this runs. Reaching here means
+    // it did not, so follow the URL rather than leaving the button pending
+    // forever.
+    const url = result.data?.url;
+    if (typeof url === 'string' && url.length > 0) {
+      window.location.href = url;
+      return;
+    }
+
+    setSsoError(translateOAuthError(null));
+    setIsRedirecting(false);
   }
 
   async function handleSubmit(e: React.FormEvent) {
@@ -91,7 +103,7 @@ export function LoginPage() {
           aria-describedby={ssoError ? ssoErrorId : undefined}
           className="inline-flex items-center justify-center rounded-md border border-border px-4 py-2 text-sm font-medium transition-colors hover:bg-surface disabled:cursor-not-allowed disabled:opacity-50"
         >
-          {isRedirecting ? 'Kazamitte に移動中…' : 'Kazamitte でログイン'}
+          {isRedirecting ? '認証中…' : 'Kazamitte でログイン'}
         </button>
 
         <div className="flex items-center gap-3" aria-hidden="true">

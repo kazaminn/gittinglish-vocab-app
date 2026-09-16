@@ -34,7 +34,6 @@ export function KazamitteLinkSection() {
     setIsRedirecting(true);
     setError(undefined);
 
-    // Resolves only on failure; success replaces the page with the provider's.
     const result = await authClient.oauth2.link({
       providerId: PROVIDER_ID,
       callbackURL: '/app/settings',
@@ -44,7 +43,20 @@ export function KazamitteLinkSection() {
     if (result.error) {
       setError(result.error.message ?? translateOAuthError(null));
       setIsRedirecting(false);
+      return;
     }
+
+    // The client navigates by itself when the response carries a redirect, so
+    // reaching here means it did not. Follow the URL rather than leaving the
+    // button pending forever.
+    const url = result.data?.url;
+    if (typeof url === 'string' && url.length > 0) {
+      window.location.href = url;
+      return;
+    }
+
+    setError(translateOAuthError(null));
+    setIsRedirecting(false);
   }
 
   return (
@@ -90,7 +102,7 @@ export function KazamitteLinkSection() {
             color: 'var(--text-accent)',
           }}
         >
-          &gt; {isRedirecting ? 'redirecting...' : 'link kazamitte account'}
+          &gt; {isRedirecting ? 'authenticating...' : 'link kazamitte account'}
         </button>
       )}
     </div>
