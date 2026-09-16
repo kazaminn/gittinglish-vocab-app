@@ -72,6 +72,9 @@ describe('kazamitte SSO wiring', () => {
       'https://auth.kazamitte.com/api/auth/.well-known/openid-configuration'
     );
     expect(config.requireIssuerValidation).toBe(true);
+    // kazamitte-auth registers clients as client_secret_basic and rejects
+    // credentials sent in the body, which is this plugin's default.
+    expect(config.authentication).toBe('basic');
     // kazamitte-auth rejects a plain code challenge.
     expect(config.pkce).toBe(true);
     expect(config.scopes).toEqual(['openid', 'profile', 'email']);
@@ -100,8 +103,31 @@ describe('kazamitte SSO wiring', () => {
     });
 
     const data = (result as { data: Record<string, unknown> }).data;
-    expect(data.email).toBe('user-1@local.invalid');
+    expect(data.email).toEqual(expect.stringMatching(/@local\.invalid$/));
     expect(data.emailHash).toEqual(expect.stringMatching(/^[0-9a-f]{64}$/));
     expect(JSON.stringify(data)).not.toContain('Person@Example.com');
+  });
+
+  it('gives each SSO user a distinct placeholder address', async () => {
+    const auth = await loadAuth(KAZAMITTE_ENV);
+    const before = auth.options.databaseHooks?.user?.create?.before;
+
+    // An SSO user has no username, and the id is assigned after this hook, so
+    // both callers arrive with the same fields. A shared placeholder would
+    // violate the unique email column and fail every signup after the first.
+    const placeholderFor = async (email: string) => {
+      const result = await before!({
+        name: 'Someone',
+        email,
+        emailVerified: true,
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      } as Parameters<typeof before>[0]);
+      return (result as { data: { email: string } }).data.email;
+    };
+
+    expect(await placeholderFor('one@example.com')).not.toBe(
+      await placeholderFor('two@example.com')
+    );
   });
 });

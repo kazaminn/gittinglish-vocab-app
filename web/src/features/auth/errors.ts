@@ -38,3 +38,42 @@ export function translateAuthError(input: {
   if (msg) return msg;
   return '認証エラーが発生しました。時間をおいて再度お試しください。';
 }
+
+/**
+ * Better Auth's generic-oauth routes report failures by redirecting to the
+ * error URL with `?error=<code>`. Surfacing the code matters: the provider
+ * side of a failed exchange is only visible in its server log, so an opaque
+ * message here means the real cause cannot be reached from the browser.
+ */
+export function translateOAuthError(code: string | null): string {
+  switch (code) {
+    case 'invalid_client':
+    case 'oauth_code_verification_failed':
+      return 'Kazamitte との通信に失敗しました。設定を確認してください。';
+    case 'issuer_mismatch':
+    case 'issuer_missing':
+      return 'Kazamitte の応答が想定と異なります。設定を確認してください。';
+    case 'email_is_missing':
+    case 'name_is_missing':
+    case 'user_info_is_missing':
+      return 'Kazamitte から必要な情報を取得できませんでした。';
+    case "email_doesn't_match":
+      return 'ログイン中のアカウントと異なる Kazamitte アカウントです。';
+    case 'account_already_linked_to_different_user':
+      return 'この Kazamitte アカウントは既に別のユーザーと連携されています。';
+    case 'account_not_linked':
+      return 'この Kazamitte アカウントは連携されていません。設定画面から連携してください。';
+    case 'signup_disabled':
+      return 'Kazamitte での新規登録は現在受け付けていません。';
+    case 'unable_to_link_account':
+    case 'unable_to_create_user':
+    case 'unable_to_create_session':
+      return 'アカウントの作成に失敗しました。時間をおいて再度お試しください。';
+    case null:
+    case '':
+      return '認証エラーが発生しました。時間をおいて再度お試しください。';
+    default:
+      // Unknown codes are shown verbatim so a report names the real failure.
+      return `Kazamitte でのログインに失敗しました (${code})`;
+  }
+}

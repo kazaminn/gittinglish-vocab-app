@@ -1,4 +1,4 @@
-import { createHmac } from 'node:crypto';
+import { createHmac, randomUUID } from 'node:crypto';
 import { betterAuth } from 'better-auth';
 import { drizzleAdapter } from 'better-auth/adapters/drizzle';
 import { genericOAuth, username } from 'better-auth/plugins';
@@ -83,6 +83,10 @@ export const auth = betterAuth({
                 clientSecret: process.env.KAZAMITTE_AUTH_CLIENT_SECRET!,
                 scopes: ['openid', 'profile', 'email'],
                 pkce: true,
+                // kazamitte-auth registers clients as client_secret_basic and
+                // rejects credentials in the body, which is what this plugin
+                // sends by default.
+                authentication: 'basic',
               },
             ],
           }),
@@ -140,12 +144,17 @@ export const auth = betterAuth({
           const email =
             typeof incoming.email === 'string' ? incoming.email : '';
           if (email && !email.endsWith('@local.invalid')) {
-            const usernameOrId = incoming.username ?? incoming.id ?? 'user';
+            // Only SSO reaches here — password signup already submits a
+            // @local.invalid address. Those users have no username, and the
+            // id is assigned after this hook, so the placeholder has to carry
+            // its own uniqueness or every SSO user would collide on the
+            // unique email column.
+            const localPart = incoming.username ?? randomUUID();
             return {
               data: {
                 ...incoming,
                 emailHash: hashEmail(email),
-                email: `${usernameOrId}@local.invalid`,
+                email: `${localPart}@local.invalid`,
               },
             };
           }

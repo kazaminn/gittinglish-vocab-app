@@ -1,6 +1,7 @@
 import { useId, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { authClient } from '../../lib/auth-client';
+import { translateOAuthError } from '../auth/errors';
 import { useLinkedAccountsQuery } from './queries';
 
 const PROVIDER_ID = 'kazamitte';
@@ -16,9 +17,11 @@ export function KazamitteLinkSection() {
   const statusId = useId();
   const linkedAccounts = useLinkedAccountsQuery();
   const [isRedirecting, setIsRedirecting] = useState(false);
+  // Better Auth appends `?error=<code>` to errorCallbackURL, so that URL must
+  // carry no query of its own or the code is lost behind the first parameter.
   const [error, setError] = useState<string | undefined>(() =>
-    searchParams.get('error') === 'link'
-      ? 'kazamitte link failed. please try again.'
+    searchParams.has('error')
+      ? translateOAuthError(searchParams.get('error'))
       : undefined
   );
 
@@ -35,11 +38,11 @@ export function KazamitteLinkSection() {
     const result = await authClient.oauth2.link({
       providerId: PROVIDER_ID,
       callbackURL: '/app/settings',
-      errorCallbackURL: '/app/settings?error=link',
+      errorCallbackURL: '/app/settings',
     });
 
     if (result.error) {
-      setError(result.error.message ?? 'kazamitte link failed.');
+      setError(result.error.message ?? translateOAuthError(null));
       setIsRedirecting(false);
     }
   }

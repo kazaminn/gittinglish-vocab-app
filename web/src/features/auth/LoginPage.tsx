@@ -1,7 +1,7 @@
 import { useId, useState } from 'react';
 import { Link, useNavigate, useSearchParams } from 'react-router-dom';
 import { authClient, signIn } from '../../lib/auth-client';
-import { translateAuthError } from './errors';
+import { translateAuthError, translateOAuthError } from './errors';
 
 export function LoginPage() {
   const navigate = useNavigate();
@@ -18,10 +18,12 @@ export function LoginPage() {
   const [isRedirecting, setIsRedirecting] = useState(false);
 
   // The provider sends the browser back here on failure, so the only signal
-  // available is the query string set as errorCallbackURL.
+  // available is the `error` code Better Auth appends to errorCallbackURL.
+  // That URL must carry no query of its own, or the code lands in a second
+  // `error` parameter and the first one wins.
   const [ssoError, setSsoError] = useState<string | undefined>(() =>
-    searchParams.get('error') === 'oauth'
-      ? 'Kazamitte でのログインに失敗しました。時間をおいて再度お試しください。'
+    searchParams.has('error')
+      ? translateOAuthError(searchParams.get('error'))
       : undefined
   );
 
@@ -39,7 +41,7 @@ export function LoginPage() {
     const result = await authClient.signIn.oauth2({
       providerId: 'kazamitte',
       callbackURL: '/app',
-      errorCallbackURL: '/login?error=oauth',
+      errorCallbackURL: '/login',
     });
 
     if (result.error) {
