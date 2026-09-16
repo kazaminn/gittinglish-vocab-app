@@ -10,6 +10,10 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noUncheckedIndexedAccess": true,
+    // api/vercel.ts sits outside every package, so this is the config Vercel
+    // compiles the function with. It reaches server/src, which needs node
+    // globals; web overrides `types` for the browser.
+    "types": ["node"],
     "paths": {
       "@shared/*": ["./shared/src/*"],
       "@web/*": ["./web/src/*"],
