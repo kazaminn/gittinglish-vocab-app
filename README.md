@@ -45,6 +45,11 @@ The Vercel function entry (`api/vercel.ts`) re-exports the Hono app as a
 Web-Standard handler — Vercel's native Hono detection takes care of the
 runtime adapter, so there is no `@hono/node-server` glue in the deploy path.
 
+**`api/` must hold that one file and nothing else.** Vercel turns every file
+under it into a Serverless Function, and the Hobby plan caps a deployment at
+12 — so a second file there costs a function slot even though only the entry
+ever serves a request. Application code belongs in `server/`.
+
 ## Project layout
 
 ```

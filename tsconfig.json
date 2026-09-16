@@ -13,9 +13,9 @@
     "paths": {
       "@shared/*": ["./shared/src/*"],
       "@web/*": ["./web/src/*"],
-      "@api/*": ["./api/src/*"]
+      "@api/*": ["./server/src/*"]
     }
   },
-  "include": ["shared/src/**/*", "web/src/**/*", "api/src/**/*"],
+  "include": ["shared/src/**/*", "web/src/**/*", "server/src/**/*"],
   "exclude": ["node_modules", "dist"]
 }

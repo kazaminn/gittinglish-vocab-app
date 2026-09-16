@@ -32,3 +32,6 @@ dist-ssr
 # Claude Code workspace files
 .claude/
 
+
+# Local SQLite files created by dev servers and tests
+*.db
