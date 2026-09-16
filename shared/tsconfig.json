@@ -4,6 +4,10 @@
     "outDir": "./dist",
     "rootDir": "./src",
     "declaration": true,
+    // shared is consumed by the browser bundle, so node globals must not
+    // typecheck here even though the root config pulls them in for the
+    // Vercel function entry.
+    "types": [],
     "emitDeclarationOnly": false,
     "noEmit": false
   },
