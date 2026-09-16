@@ -108,6 +108,26 @@ describe('kazamitte SSO wiring', () => {
     expect(JSON.stringify(data)).not.toContain('Person@Example.com');
   });
 
+  it('keeps the provider display name and avatar out of the database', async () => {
+    const auth = await loadAuth(KAZAMITTE_ENV);
+    const before = auth.options.databaseHooks?.user?.create?.before;
+
+    const result = await before!({
+      name: 'Asako Suzuki',
+      email: 'person@example.com',
+      image: 'https://lh3.googleusercontent.com/a/some-avatar-id',
+      emailVerified: true,
+      createdAt: new Date(),
+      updatedAt: new Date(),
+    } as Parameters<typeof before>[0]);
+
+    const data = (result as { data: Record<string, unknown> }).data;
+    expect(data.name).not.toBe('Asako Suzuki');
+    expect(data.image).toBeNull();
+    expect(JSON.stringify(data)).not.toContain('Asako');
+    expect(JSON.stringify(data)).not.toContain('googleusercontent');
+  });
+
   it('gives each SSO user a distinct placeholder address', async () => {
     const auth = await loadAuth(KAZAMITTE_ENV);
     const before = auth.options.databaseHooks?.user?.create?.before;

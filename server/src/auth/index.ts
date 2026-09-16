@@ -155,6 +155,12 @@ export const auth = betterAuth({
                 ...incoming,
                 emailHash: hashEmail(email),
                 email: `${localPart}@local.invalid`,
+                // The provider also hands over the account's display name and
+                // avatar URL. Neither is needed to run a drill and both
+                // identify the person, so they are dropped on the same
+                // principle as the address. The user picks a name at setup.
+                name: localPart,
+                image: null,
               },
             };
           }
