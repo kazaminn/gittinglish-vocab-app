@@ -1,0 +1,12 @@
+# Vercel turns every file under the root `api/` directory into a Serverless
+# Function, and the Hobby plan allows 12 per deployment. None of these run in
+# production — they are tests and developer tooling — so keeping them out of
+# the upload keeps the function count down to what actually serves traffic.
+#
+# Anything listed here must not be imported by api/vercel.ts or its transitive
+# imports, or the function will fail to build.
+api/**/__tests__/**
+api/**/*.test.ts
+api/vitest.config.ts
+api/drizzle.config.ts
+api/scripts/**
