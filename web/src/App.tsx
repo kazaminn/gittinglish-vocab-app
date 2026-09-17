@@ -15,6 +15,7 @@ import {
   type ProblemSection,
 } from './data/problems';
 import { LoginPage } from './features/auth/LoginPage';
+import { LogoutPage } from './features/auth/LogoutPage';
 import { SignupPage } from './features/auth/SignupPage';
 import {
   useHomeProblemsQuery,
@@ -304,6 +305,7 @@ function App() {
           <Route path="/" element={<RootRedirect />} />
           <Route path="/signup" element={<SignupPage />} />
           <Route path="/login" element={<LoginPage />} />
+          <Route path="/logout" element={<LogoutPage />} />
           <Route path="/privacy" element={<PrivacyPage />} />
           <Route path="/terms" element={<TermsPage />} />
           <Route
