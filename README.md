@@ -145,6 +145,15 @@ proves the local account is theirs; that endpoint rejects a mismatched address
 unless `accountLinking.allowDifferentEmails` is set, which is why it is.
 Signing in with an unlinked Kazamitte identity creates a new account.
 
+**A Kazamitte sign-up is only half an account.** The provider's response
+carries no ID, and the display name and avatar it does carry are dropped, so
+the new row has a UUID standing in for both the name and the email local part.
+`/app/setup` is where the user picks their real ID; the sign-in call points
+`newUserCallbackURL` at it, and `ProtectedRoute` keeps sending them back until
+`user.username` exists, so a reload or a bookmark cannot strand a half-created
+account. It is also the only place a Kazamitte sign-up is shown the terms,
+which the password form asks for at sign-up.
+
 ## Deploy
 
 This repo is set up for Vercel. The `vercel.json` declares a single function
