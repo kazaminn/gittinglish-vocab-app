@@ -1,4 +1,3 @@
-import { createHmac, randomUUID } from 'node:crypto';
 import { betterAuth } from 'better-auth';
 import { drizzleAdapter } from 'better-auth/adapters/drizzle';
 import { genericOAuth, username } from 'better-auth/plugins';
@@ -13,15 +12,6 @@ const BETTER_AUTH_URL =
   process.env.BETTER_AUTH_URL ?? vercelURL ?? 'http://localhost:3001';
 const BETTER_AUTH_SECRET =
   process.env.BETTER_AUTH_SECRET ?? 'dev-secret-do-not-use-in-prod';
-const EMAIL_HASH_SECRET =
-  process.env.EMAIL_HASH_SECRET ?? 'dev-email-hash-secret-do-not-use-in-prod';
-
-export function hashEmail(email: string): string {
-  const normalized = email.trim().toLowerCase();
-  return createHmac('sha256', EMAIL_HASH_SECRET)
-    .update(normalized)
-    .digest('hex');
-}
 
 const hasGoogle =
   !!process.env.GOOGLE_CLIENT_ID && !!process.env.GOOGLE_CLIENT_SECRET;
@@ -81,12 +71,45 @@ export const auth = betterAuth({
                 requireIssuerValidation: true,
                 clientId: process.env.KAZAMITTE_AUTH_CLIENT_ID!,
                 clientSecret: process.env.KAZAMITTE_AUTH_CLIENT_SECRET!,
-                scopes: ['openid', 'profile', 'email'],
+                // kazamitte-auth never puts email/profile claims in the ID
+                // token or hands them back in a way this app would keep (see
+                // mapProfileToUser below), so there is no reason to ask for
+                // more than the identity itself.
+                scopes: ['openid'],
                 pkce: true,
                 // kazamitte-auth registers clients as client_secret_basic and
                 // rejects credentials in the body, which is what this plugin
                 // sends by default.
                 authentication: 'basic',
+                // With only `openid` requested, UserInfo returns just the
+                // subject. Better Auth still insists on an email and a name
+                // to create a user (generic-oauth's callback rejects a
+                // missing one of either), so synthesize both from the
+                // subject instead of asking the provider for real ones we'd
+                // only have to throw away. `profile.id` is generic-oauth's
+                // own normalization of the UserInfo `sub` claim and is
+                // always a string (falls back to "" rather than undefined);
+                // `profile.sub` is the same value from the raw spread but
+                // isn't guaranteed present on the type, so `id` is the safer
+                // read.
+                mapProfileToUser: (profile: Record<string, unknown>) => {
+                  const id = String(profile.id ?? '');
+                  // generic-oauth defaults the subject to "" when UserInfo
+                  // carries none, and nothing downstream rejects that: the
+                  // empty string would be written as this account's
+                  // accountId, so the next subject-less sign-in would match
+                  // that row and be let in as the first user. Fail closed —
+                  // an error here is a failed login, which is recoverable.
+                  if (!id) {
+                    throw new Error(
+                      'kazamitte: user info carried no subject; refusing to derive an identity'
+                    );
+                  }
+                  return {
+                    email: `${id}@local.invalid`,
+                    name: id,
+                  };
+                },
               },
             ],
           }),
@@ -113,8 +136,9 @@ export const auth = betterAuth({
     accountLinking: {
       enabled: true,
       trustedProviders: ['google', 'github'],
-      // Every user.email is rewritten to <username>@local.invalid below, so it
-      // can never equal the real address kazamitte-auth returns. Linking is
+      // user.email is always a synthesized <local-part>@local.invalid (see
+      // the SSO mapProfileToUser above and the password signup form), so it
+      // can never equal the real address a provider returns. Linking is
       // therefore always explicit (POST /oauth2/link from a signed-in
       // session), and that endpoint refuses a mismatched address unless this
       // is set. Being signed in is what proves the local account is the
@@ -124,48 +148,76 @@ export const auth = betterAuth({
     },
   },
 
-  user: {
-    additionalFields: {
-      emailHash: { type: 'string', required: false },
-    },
-  },
-
   databaseHooks: {
     user: {
       create: {
         before: async (rawUser) => {
-          // Real emails from OAuth are never stored: hash them into emailHash
-          // and replace user.email with a dummy so plaintext doesn't persist.
           const incoming = rawUser as Record<string, unknown> & {
             email?: string;
-            username?: string;
-            id?: string;
           };
           const email =
             typeof incoming.email === 'string' ? incoming.email : '';
+          // Every path that reaches here is expected to already carry a
+          // synthesized placeholder: password signup submits
+          // <username>@local.invalid directly, and kazamitte SSO's
+          // mapProfileToUser (above) builds <subject>@local.invalid from the
+          // subject alone. This branch is therefore unreachable today — it
+          // exists so that a future `profile`/`email` scope, or a second SSO
+          // provider (google/github are wired up but disabled), can't slip a
+          // real address past this hook without someone deliberately adding
+          // its own privacy transform first.
           if (email && !email.endsWith('@local.invalid')) {
-            // Only SSO reaches here — password signup already submits a
-            // @local.invalid address. Those users have no username, and the
-            // id is assigned after this hook, so the placeholder has to carry
-            // its own uniqueness or every SSO user would collide on the
-            // unique email column.
-            const localPart = incoming.username ?? randomUUID();
-            return {
-              data: {
-                ...incoming,
-                emailHash: hashEmail(email),
-                email: `${localPart}@local.invalid`,
-                // The provider also hands over the account's display name and
-                // avatar URL. Neither is needed to run a drill and both
-                // identify the person, so they are dropped on the same
-                // principle as the address. The user picks a name at setup.
-                name: localPart,
-                image: null,
-              },
-            };
+            console.error(
+              'auth: refusing to create a user with a non-placeholder email; the provider path needs its own privacy transform'
+            );
+            return false;
           }
-          return { data: incoming };
+          return {
+            data: {
+              ...incoming,
+              // Only an OAuth provider ever hands over an avatar URL, and
+              // nothing in this app displays one. Dropping it unconditionally
+              // here — rather than only when rewriting a real email — means a
+              // future `profile` scope or provider can't reintroduce one
+              // without a deliberate change to this hook.
+              image: null,
+            },
+          };
         },
+      },
+    },
+
+    // kazamitte-auth's tokens (and google/github's, if those providers are
+    // ever turned on) are never used after sign-in — this app only asks
+    // "who is this", never "act on their behalf" — so persisting them is
+    // pure liability. Blank them at the hook rather than via
+    // account.updateAccountOnSignIn: false, which would also stop `scope`
+    // and any other useful field from refreshing on re-sign-in and would
+    // leave whatever was already written in place.
+    account: {
+      create: {
+        before: async (rawAccount) => ({
+          data: {
+            ...rawAccount,
+            accessToken: null,
+            refreshToken: null,
+            idToken: null,
+            accessTokenExpiresAt: null,
+            refreshTokenExpiresAt: null,
+          },
+        }),
+      },
+      update: {
+        before: async (rawAccount) => ({
+          data: {
+            ...rawAccount,
+            accessToken: null,
+            refreshToken: null,
+            idToken: null,
+            accessTokenExpiresAt: null,
+            refreshTokenExpiresAt: null,
+          },
+        }),
       },
     },
   },

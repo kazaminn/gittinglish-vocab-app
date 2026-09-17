@@ -136,23 +136,34 @@ the new URI with kazamitte-auth first. `web/tests/lib/auth-client.test.ts` pins
 the current paths so the change cannot pass unnoticed. `BETTER_AUTH_URL` must
 be the production origin for the redirect URI to line up.
 
-**Linking is always explicit.** Every `user.email` is rewritten to
-`<username>@local.invalid` (see below), so it can never equal the real address
-the provider returns and no account is ever matched automatically at sign-in —
-`kazamitte` is deliberately absent from `trustedProviders`. Existing users
-attach their identity from `/app/settings` while signed in, which is what
-proves the local account is theirs; that endpoint rejects a mismatched address
-unless `accountLinking.allowDifferentEmails` is set, which is why it is.
-Signing in with an unlinked Kazamitte identity creates a new account.
+**Only `openid` is requested.** kazamitte-auth never puts email in its ID
+token and gittinglish never needed the profile/email claims it was receiving
+from UserInfo, so nothing but the subject is asked for. A `mapProfileToUser`
+on the provider config synthesizes what Better Auth still requires to create
+a user — `<subject>@local.invalid` for the email, the subject itself for the
+name — directly from that subject, before the request ever reaches the
+provider's UserInfo endpoint for real profile data.
 
-**A Kazamitte sign-up is only half an account.** The provider's response
-carries no ID, and the display name and avatar it does carry are dropped, so
-the new row has a UUID standing in for both the name and the email local part.
+**Linking is always explicit.** `user.email` is always a synthesized
+`@local.invalid` address (see above, and the password signup form), so it can
+never equal a real address and no account is ever matched automatically at
+sign-in — `kazamitte` is deliberately absent from `trustedProviders`. Existing
+users attach their identity from `/app/settings` while signed in, which is
+what proves the local account is theirs; that endpoint rejects a mismatched
+address unless `accountLinking.allowDifferentEmails` is set, which is why it
+is. Signing in with an unlinked Kazamitte identity creates a new account.
+
+**A Kazamitte sign-up is only half an account.** The subject is all that's
+available, so it stands in for both the name and the email local part.
 `/app/setup` is where the user picks their real ID; the sign-in call points
 `newUserCallbackURL` at it, and `ProtectedRoute` keeps sending them back until
 `user.username` exists, so a reload or a bookmark cannot strand a half-created
 account. It is also the only place a Kazamitte sign-up is shown the terms,
-which the password form asks for at sign-up.
+which the password form asks for at sign-up. A `databaseHooks.user.create`
+guard also forces `image` to `null` unconditionally, so a future scope change
+or a second SSO provider can't reintroduce an avatar without a deliberate
+change to that hook, and refuses (rather than stores) any user row that still
+carries a real, non-`@local.invalid` email.
 
 **A Kazamitte-only account has exactly one login method.** Its only `account`
 row is `providerId: kazamitte`, and Better Auth refuses to unlink a user's
@@ -165,6 +176,28 @@ better-auth version is a real function but is never mounted over HTTP — its
 The route calls that function directly, forwarding the request headers so
 Better Auth resolves the session itself; a `PASSWORD_ALREADY_SET` response
 means the account already has one.
+
+**No provider tokens are ever stored.** Gittinglish only uses Kazamitte ID
+(and, if enabled later, Google/GitHub) to establish who's signing in — it
+never calls a provider's API on the user's behalf. A
+`databaseHooks.account.create`/`update` guard blanks `accessToken`,
+`refreshToken`, `idToken`, and both expiry columns before every account row is
+written, including on every re-sign-in, so nothing unencrypted and unused
+sits in the database as a liability.
+
+### Account deletion
+
+`DELETE /api/users/me` (behind `authMiddleware`) permanently deletes the
+signed-in Gittinglish account: the `user` row, its `session`/`account` rows
+(cascade via FK), and every row in `session_writes`, `drill_progress`,
+`answer_logs` and `user_activities` — those four carry a plain `user_id` with
+no FK to `user`, so they're deleted explicitly, in one `db.transaction()`
+alongside the `user` row. The request body must include `confirmUsername`
+matching the caller's own `username`, taken from the session — never from the
+body — so a mismatch (or someone else's id) is rejected before anything is
+touched. This does **not** delete the Kazamitte ID account: that identity
+lives in kazamitte-auth and is shared with other Kazamitte apps, and deleting
+a Gittinglish account never reaches it.
 
 ## Deploy
 

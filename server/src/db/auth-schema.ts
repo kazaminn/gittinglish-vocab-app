@@ -1,7 +1,6 @@
 // Generated layout for Better Auth's Drizzle sqlite adapter, extended with
-// the username plugin columns and a custom emailHash column. Re-running
-// `better-auth generate` will overwrite this file — re-add emailHash,
-// username, and displayUsername if that happens.
+// the username plugin columns. Re-running `better-auth generate` will
+// overwrite this file — re-add username and displayUsername if that happens.
 import { sql } from 'drizzle-orm';
 import { integer, sqliteTable, text } from 'drizzle-orm/sqlite-core';
 
@@ -21,8 +20,6 @@ export const user = sqliteTable('user', {
     .default(sql`(unixepoch())`),
   username: text('username').unique(),
   displayUsername: text('display_username'),
-  // HMAC_SHA256 of the OAuth email; plaintext email is never stored.
-  emailHash: text('email_hash'),
 });
 
 export const session = sqliteTable('session', {
