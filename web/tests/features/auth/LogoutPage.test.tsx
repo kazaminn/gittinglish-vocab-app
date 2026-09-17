@@ -59,7 +59,7 @@ describe('LogoutPage', () => {
     renderWithProviders(<LogoutPage />);
 
     const link = await screen.findByRole('link', {
-      name: 'Kazamitte ID からもログアウトする',
+      name: 'Kazamitte ID からもログアウトする (別タブ)',
     });
     expect(link).toHaveAttribute('href', KAZAMITTE_SIGN_OUT_URL);
   });
@@ -82,7 +82,9 @@ describe('LogoutPage', () => {
 
     await screen.findByRole('heading', { name: 'ログアウトしました' });
     expect(
-      screen.queryByRole('link', { name: 'Kazamitte ID からもログアウトする' })
+      screen.queryByRole('link', {
+        name: 'Kazamitte ID からもログアウトする (別タブ)',
+      })
     ).not.toBeInTheDocument();
   });
 
@@ -96,7 +98,7 @@ describe('LogoutPage', () => {
 
     expect(
       await screen.findByRole('link', {
-        name: 'Kazamitte ID からもログアウトする',
+        name: 'Kazamitte ID からもログアウトする (別タブ)',
       })
     ).toBeInTheDocument();
   });

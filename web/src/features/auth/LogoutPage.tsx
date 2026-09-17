@@ -72,11 +72,15 @@ export function LogoutPage() {
           <p className="text-text-muted text-sm">
             このままでは、次のログインで確認なしに同じアカウントに入ります。共有の端末を使っている場合は、こちらもログアウトしてください。
           </p>
+          {/* The provider only redirects to its own origin after signing out,
+              so opening in the same tab would strand the user there. */}
           <a
             href={KAZAMITTE_SIGN_OUT_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-text-inverted hover:bg-accent-hover inline-flex items-center justify-center rounded-md bg-accent px-4 py-2 text-sm font-medium transition-colors"
           >
-            Kazamitte ID からもログアウトする
+            Kazamitte ID からもログアウトする (別タブ)
           </a>
           <p className="text-text-muted text-xs">
             Kazamitte ID からログアウトしても、その先の Google / GitHub
