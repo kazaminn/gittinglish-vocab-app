@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useAuth } from '../../hooks/useAuth';
 import { authClient } from '../../lib/auth-client';
+import { useServices } from '../../service';
 
 // The provider's production origin is fixed, same as the issuer the server
 // discovers against. Its sign-out is a page rather than a call: the session
@@ -18,6 +19,7 @@ const PROVIDER_ID = 'kazamitte';
  */
 export function LogoutPage() {
   const { isLoading, user } = useAuth();
+  const { progress, session } = useServices();
   const [isDone, setIsDone] = useState(false);
   const [hadKazamitte, setHadKazamitte] = useState(false);
   const hasStarted = useRef(false);
@@ -41,11 +43,24 @@ export function LogoutPage() {
                 (account) => account.providerId === PROVIDER_ID
               )
         );
+
+        // Drill progress and the in-flight session are kept in this browser
+        // under the user's id. Nothing reads them back for a different
+        // account, but on a shared machine they outlive the session that
+        // produced them, so they go with it. A storage failure here must not
+        // stop the sign-out — being left signed in is the worse outcome.
+        try {
+          await progress.resetProgress(user.id);
+          await session.clearSession(user.id);
+        } catch {
+          // Ignored on purpose; see above.
+        }
+
         await authClient.signOut();
       }
       setIsDone(true);
     })();
-  }, [isLoading, user]);
+  }, [isLoading, user, progress, session]);
 
   if (!isDone) {
     return (

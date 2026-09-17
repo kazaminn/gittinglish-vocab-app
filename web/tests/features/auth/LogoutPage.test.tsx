@@ -35,6 +35,7 @@ const KAZAMITTE_SIGN_OUT_URL = 'https://auth.kazamitte.com/sign-out';
 describe('LogoutPage', () => {
   beforeEach(() => {
     vi.clearAllMocks();
+    localStorage.clear();
     mockSignedIn(true);
     mockedSignOut.mockResolvedValue({ data: null, error: null });
     mockedListAccounts.mockResolvedValue({
@@ -101,6 +102,25 @@ describe('LogoutPage', () => {
         name: 'Kazamitte ID からもログアウトする (別タブ)',
       })
     ).toBeInTheDocument();
+  });
+
+  it("clears this browser's copy of the user's drill data", async () => {
+    // renderWithProviders wires the real localStorage-backed services, so
+    // these are the keys the app itself would have written.
+    localStorage.setItem('gittinglish:progress:u1', '[]');
+    localStorage.setItem('gittinglish:session:u1', '{}');
+    localStorage.setItem('gittinglish:progress:someone-else', '[]');
+
+    renderWithProviders(<LogoutPage />);
+
+    await screen.findByRole('heading', { name: 'ログアウトしました' });
+
+    expect(localStorage.getItem('gittinglish:progress:u1')).toBeNull();
+    expect(localStorage.getItem('gittinglish:session:u1')).toBeNull();
+    // Only the signed-out user's rows go; nothing else in the browser does.
+    expect(localStorage.getItem('gittinglish:progress:someone-else')).toBe(
+      '[]'
+    );
   });
 
   it('does not call sign-out for someone who is already signed out', async () => {
