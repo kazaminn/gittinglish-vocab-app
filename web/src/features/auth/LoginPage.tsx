@@ -1,7 +1,11 @@
 import { useId, useState } from 'react';
 import { Link, useNavigate, useSearchParams } from 'react-router-dom';
 import { authClient, signIn } from '../../lib/auth-client';
-import { translateAuthError, translateOAuthError } from './errors';
+import {
+  isAccountAlreadyLinkedError,
+  translateAuthError,
+  translateOAuthError,
+} from './errors';
 
 export function LoginPage() {
   const navigate = useNavigate();
@@ -21,11 +25,13 @@ export function LoginPage() {
   // available is the `error` code Better Auth appends to errorCallbackURL.
   // That URL must carry no query of its own, or the code lands in a second
   // `error` parameter and the first one wins.
-  const [ssoError, setSsoError] = useState<string | undefined>(() =>
-    searchParams.has('error')
-      ? translateOAuthError(searchParams.get('error'))
-      : undefined
-  );
+  const [ssoError, setSsoError] = useState<
+    { code: string | null; message: string } | undefined
+  >(() => {
+    if (!searchParams.has('error')) return undefined;
+    const code = searchParams.get('error');
+    return { code, message: translateOAuthError(code) };
+  });
 
   const isBusy = isSubmitting || isRedirecting;
   const canSubmit = username.length > 0 && password.length > 0 && !isBusy;
@@ -46,7 +52,10 @@ export function LoginPage() {
     });
 
     if (result.error) {
-      setSsoError(translateAuthError(result.error));
+      setSsoError({
+        code: result.error.code ?? null,
+        message: translateAuthError(result.error),
+      });
       setIsRedirecting(false);
       return;
     }
@@ -61,8 +70,13 @@ export function LoginPage() {
       return;
     }
 
-    setSsoError(translateOAuthError(null));
+    setSsoError({ code: null, message: translateOAuthError(null) });
     setIsRedirecting(false);
+  }
+
+  async function handleSignOutAndRetry() {
+    await authClient.signOut();
+    setSsoError(undefined);
   }
 
   async function handleSubmit(e: React.FormEvent) {
@@ -88,14 +102,35 @@ export function LoginPage() {
 
       <div className="mb-6 flex flex-col gap-3">
         {ssoError && (
-          <p
-            id={ssoErrorId}
-            role="alert"
-            aria-live="polite"
-            className="text-sm text-red-600"
-          >
-            {ssoError}
-          </p>
+          <div className="flex flex-col gap-2">
+            <p
+              id={ssoErrorId}
+              role="alert"
+              aria-live="polite"
+              className="text-sm text-red-600"
+            >
+              {ssoError.message}
+            </p>
+
+            {isAccountAlreadyLinkedError(ssoError.code) && (
+              <div className="flex flex-wrap gap-x-4 gap-y-1 text-sm">
+                <button
+                  type="button"
+                  onClick={() => void handleSignOutAndRetry()}
+                  className="underline"
+                >
+                  サインアウトしてその Kazamitte ID でログインし直す
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setSsoError(undefined)}
+                  className="text-text-muted underline"
+                >
+                  ID とパスワードでログインする
+                </button>
+              </div>
+            )}
+          </div>
         )}
 
         <button
@@ -106,7 +141,7 @@ export function LoginPage() {
           aria-describedby={ssoError ? ssoErrorId : undefined}
           className="inline-flex items-center justify-center rounded-md border border-border px-4 py-2 text-sm font-medium transition-colors hover:bg-surface disabled:cursor-not-allowed disabled:opacity-50"
         >
-          {isRedirecting ? '認証中…' : 'Kazamitte でログイン'}
+          {isRedirecting ? '認証中…' : 'Kazamitte ID でログイン'}
         </button>
 
         <div className="flex items-center gap-3" aria-hidden="true">

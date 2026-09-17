@@ -5,6 +5,22 @@ export function translateAuthError(input: {
   const code = input.code ?? '';
   const msg = input.message ?? '';
 
+  // Better Auth's own last-account-standing guard (`/unlink-account`) refuses
+  // to remove the only remaining login method. The user needs a next step,
+  // not just a failure: set a password before the Kazamitte ID link can go.
+  if (
+    code === 'FAILED_TO_UNLINK_LAST_ACCOUNT' ||
+    /unlink.*last account|last account.*unlink/i.test(msg)
+  ) {
+    return 'Kazamitte ID は現在唯一のログイン方法です。連携を解除するには、先にパスワードを設定してください。';
+  }
+  // `/unlink-account` runs behind freshSessionMiddleware, and freshAge
+  // defaults to 24 hours while the session itself lasts days. Signing in
+  // yesterday and unlinking today is therefore an ordinary thing to do and an
+  // ordinary thing to be refused for, so name the remedy rather than the rule.
+  if (code === 'SESSION_NOT_FRESH' || /session is not fresh/i.test(msg)) {
+    return 'この操作には最近のログインが必要です。一度ログアウトしてから、ログインし直してお試しください。';
+  }
   if (
     code === 'INVALID_CREDENTIALS' ||
     /invalid (username|email|password|credentials)/i.test(msg)
@@ -53,22 +69,22 @@ export function translateOAuthError(code: string | null): string {
   switch (code) {
     case 'invalid_client':
     case 'oauth_code_verification_failed':
-      return 'Kazamitte との通信に失敗しました。設定を確認してください。';
+      return 'Kazamitte ID との通信に失敗しました。設定を確認してください。';
     case 'issuer_mismatch':
     case 'issuer_missing':
-      return 'Kazamitte の応答が想定と異なります。設定を確認してください。';
+      return 'Kazamitte ID の応答が想定と異なります。設定を確認してください。';
     case 'email_is_missing':
     case 'name_is_missing':
     case 'user_info_is_missing':
-      return 'Kazamitte から必要な情報を取得できませんでした。';
+      return 'Kazamitte ID から必要な情報を取得できませんでした。';
     case "email_doesn't_match":
-      return 'ログイン中のアカウントと異なる Kazamitte アカウントです。';
+      return 'ログイン中のアカウントと異なる Kazamitte ID です。';
     case 'account_already_linked_to_different_user':
-      return 'この Kazamitte アカウントは既に別のユーザーと連携されています。';
+      return 'この Kazamitte ID は既に別のアカウントと連携されています。';
     case 'account_not_linked':
-      return 'この Kazamitte アカウントは連携されていません。設定画面から連携してください。';
+      return 'この Kazamitte ID は連携されていません。設定画面から連携してください。';
     case 'signup_disabled':
-      return 'Kazamitte での新規登録は現在受け付けていません。';
+      return 'Kazamitte ID での新規登録は現在受け付けていません。';
     case 'unable_to_link_account':
     case 'unable_to_create_user':
     case 'unable_to_create_session':
@@ -78,6 +94,20 @@ export function translateOAuthError(code: string | null): string {
       return '認証エラーが発生しました。時間をおいて再度お試しください。';
     default:
       // Unknown codes are shown verbatim so a report names the real failure.
-      return `Kazamitte でのログインに失敗しました (${code})`;
+      return `Kazamitte ID でのログインに失敗しました (${code})`;
   }
+}
+
+/**
+ * `account_already_linked_to_different_user` means the Kazamitte ID belongs
+ * to another Gittinglish account. Never resolve or display which one — that
+ * would be an account-enumeration leak — but the user is not stuck: they can
+ * sign out and sign in with that Kazamitte ID directly, or stay on the
+ * account they are already using. Callers use this to decide whether to
+ * offer that choice alongside the translated message.
+ */
+export function isAccountAlreadyLinkedError(
+  code: string | null | undefined
+): boolean {
+  return code === 'account_already_linked_to_different_user';
 }
