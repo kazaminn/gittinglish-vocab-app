@@ -4,9 +4,15 @@ import { Hono } from 'hono';
 import { z } from 'zod';
 import { auth } from '../auth/index.js';
 import { db } from '../db/client.js';
-import { drillProgress, userActivities } from '../db/schema.js';
+import {
+  answerLogs,
+  drillProgress,
+  sessionWrites,
+  user,
+  userActivities,
+} from '../db/schema.js';
 import type { AuthEnv } from '../middleware/auth.js';
-import { conflict } from '../utils/api-error.js';
+import { badRequest, conflict } from '../utils/api-error.js';
 import { ok } from '../utils/response.js';
 import { parseJsonBody } from '../utils/validation.js';
 
@@ -25,6 +31,10 @@ function formatTokyoDate(date: Date): string {
 // Matches emailAndPassword.{min,max}PasswordLength in ../auth/index.ts.
 const SetPasswordRequestSchema = z.object({
   newPassword: z.string().min(8).max(128),
+});
+
+const DeleteAccountRequestSchema = z.object({
+  confirmUsername: z.string().min(1),
 });
 
 // GET /api/users/me/stats
@@ -112,6 +122,67 @@ app.post('/password', async (c) => {
       );
     }
     throw error;
+  }
+
+  return c.json(ok({ success: true }));
+});
+
+// DELETE /api/users/me
+// Irreversible, so the caller must retype their own username — never an id
+// taken from the body — to prove intent. session_writes, drill_progress,
+// answer_logs and user_activities key on a plain user_id with no FK to
+// `user` (see server/src/db/schema.ts), so deleting `user` alone would
+// strand them; they're deleted explicitly here, and the `user` row last so
+// `session`/`account` (which do declare onDelete: 'cascade') go with it.
+// All five deletes run in one db.transaction(): @libsql/client opens a
+// Hrana stream for `transaction()` even in HTTP mode against Turso, so this
+// is a real all-or-nothing commit, not best-effort ordering. Signing out
+// runs before that commit, because afterwards there is no session left for
+// Better Auth to find and clear.
+app.delete('/me', async (c) => {
+  const userId = c.get('userId');
+  const username = c.get('username');
+  const { confirmUsername } = await parseJsonBody(
+    c.req.raw,
+    DeleteAccountRequestSchema
+  );
+
+  if (!username || confirmUsername !== username) {
+    throw badRequest(
+      'CONFIRMATION_MISMATCH',
+      'Confirmation did not match your account ID'
+    );
+  }
+
+  // Sign out first, and only for the headers: Better Auth resolves the
+  // session from the request, and the delete below cascades that row away,
+  // so asking afterwards would find nothing to clear and leave the browser
+  // holding the cookie. Failing here is not fatal — a cookie pointing at a
+  // deleted session authenticates nobody — so the delete still runs.
+  let cookieClears: string[] = [];
+  try {
+    const signOutResult = await auth.api.signOut({
+      headers: c.req.raw.headers,
+      returnHeaders: true,
+    });
+    cookieClears = signOutResult.headers.getSetCookie();
+  } catch (error) {
+    console.error(
+      'Failed to clear session cookie before account delete:',
+      error
+    );
+  }
+
+  await db.transaction(async (tx) => {
+    await tx.delete(sessionWrites).where(eq(sessionWrites.userId, userId));
+    await tx.delete(drillProgress).where(eq(drillProgress.userId, userId));
+    await tx.delete(answerLogs).where(eq(answerLogs.userId, userId));
+    await tx.delete(userActivities).where(eq(userActivities.userId, userId));
+    await tx.delete(user).where(eq(user.id, userId));
+  });
+
+  for (const cookie of cookieClears) {
+    c.header('set-cookie', cookie, { append: true });
   }
 
   return c.json(ok({ success: true }));

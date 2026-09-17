@@ -7,6 +7,7 @@ import { authClient } from '../../lib/auth-client';
 import { readStoredSettings } from '../../service/settings.local';
 import { useThemeStore } from '../../store/theme';
 import { translateAuthError } from '../auth/errors';
+import { DeleteAccountSection } from './DeleteAccountSection';
 import { KazamitteLinkSection } from './KazamitteLinkSection';
 import { PasswordSection } from './PasswordSection';
 
@@ -255,6 +256,8 @@ export function SettingsPage({ onBackToHome }: SettingsPageProps) {
           &gt; home
         </button>
       </div>
+
+      <DeleteAccountSection />
     </Shell>
   );
 }
