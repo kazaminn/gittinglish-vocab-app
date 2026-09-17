@@ -1,9 +1,12 @@
 import { useState } from 'react';
 import { type UserSettings } from '@shared/domain';
 import { Shell } from '../../components/Shell';
+import { useAuth } from '../../hooks/useAuth';
 import { useSettings } from '../../hooks/useSettings';
+import { authClient } from '../../lib/auth-client';
 import { readStoredSettings } from '../../service/settings.local';
 import { useThemeStore } from '../../store/theme';
+import { translateAuthError } from '../auth/errors';
 import { KazamitteLinkSection } from './KazamitteLinkSection';
 
 interface SettingsPageProps {
@@ -22,23 +25,40 @@ function updateSettings<TKey extends keyof UserSettings>(
 }
 
 export function SettingsPage({ onBackToHome }: SettingsPageProps) {
+  const { user } = useAuth();
   const { saveSettings } = useSettings();
   const { setMode } = useThemeStore();
   const [draft, setDraft] = useState<UserSettings>(() => readStoredSettings());
   const [theme, setTheme] = useState<UserSettings['theme']>(draft.theme);
+  const [displayName, setDisplayName] = useState(user?.displayName ?? '');
   const [isSaving, setIsSaving] = useState(false);
+  const [error, setError] = useState<string | undefined>();
 
   async function handleSave() {
     const currentDraft = draft;
     const nextSettings: UserSettings = {
-      displayName: currentDraft.displayName,
       fontSize: currentDraft.fontSize,
       fontWeight: currentDraft.fontWeight,
       sessionSize: currentDraft.sessionSize,
       theme,
     };
 
+    // Sign-up and setup both fall back to the ID when the display name is
+    // left blank. Saving an empty name here would only make every header and
+    // greeting fall back to the ID anyway, so do it once, in the account.
+    const nextName = displayName.trim() || (user?.username ?? '');
+
     setIsSaving(true);
+    setError(undefined);
+
+    const result = await authClient.updateUser({ name: nextName });
+    if (result.error) {
+      setError(translateAuthError(result.error));
+      setIsSaving(false);
+      return;
+    }
+    setDisplayName(nextName);
+
     await saveSettings(nextSettings);
     setMode(theme);
     setDraft(nextSettings);
@@ -58,10 +78,8 @@ export function SettingsPage({ onBackToHome }: SettingsPageProps) {
         <input
           id="display-name"
           type="text"
-          value={draft.displayName}
-          onChange={(event) =>
-            setDraft(updateSettings(draft, 'displayName', event.target.value))
-          }
+          value={displayName}
+          onChange={(event) => setDisplayName(event.target.value)}
           className="w-full rounded-sm border px-3 py-2"
           style={{
             background: 'var(--bg-surface)',
@@ -70,6 +88,17 @@ export function SettingsPage({ onBackToHome }: SettingsPageProps) {
           }}
         />
       </div>
+
+      {error && (
+        <p
+          role="alert"
+          aria-live="polite"
+          className="text-sm"
+          style={{ color: 'var(--text-error)' }}
+        >
+          {error}
+        </p>
+      )}
 
       <div className="space-y-2">
         <p className="text-sm" style={{ color: 'var(--text-secondary)' }}>
@@ -188,7 +217,7 @@ export function SettingsPage({ onBackToHome }: SettingsPageProps) {
       >
         <p style={{ color: 'var(--text-muted)' }}>&gt; preview</p>
         <p className="mt-2" style={{ color: 'var(--text-primary)' }}>
-          {draft.displayName || 'User'} can review settings here before saving.
+          {displayName || 'User'} can review settings here before saving.
         </p>
       </div>
 

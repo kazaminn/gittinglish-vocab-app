@@ -424,7 +424,6 @@ export interface DrillProgress {
 }
 
 export interface UserSettings {
-  displayName: string;
   fontSize: number;
   fontWeight: number;
   theme: 'light' | 'dark' | 'system';
