@@ -29,56 +29,56 @@ export function PrivacyPage() {
           <h2 className="text-base font-semibold">取得する情報</h2>
           <p>ログインや利用にあたって、以下の情報を取得します。</p>
           <div className="overflow-x-auto">
-            <table className="border-border w-full border-collapse border text-xs">
+            <table className="w-full border-collapse border border-border text-xs">
               <thead className="bg-bg-muted">
                 <tr>
-                  <th className="border-border border px-3 py-2 text-left">
+                  <th className="border border-border px-3 py-2 text-left">
                     種類
                   </th>
-                  <th className="border-border border px-3 py-2 text-left">
+                  <th className="border border-border px-3 py-2 text-left">
                     いつ取得
                   </th>
-                  <th className="border-border border px-3 py-2 text-left">
+                  <th className="border border-border px-3 py-2 text-left">
                     何に使う
                   </th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td className="border-border border px-3 py-2">
+                  <td className="border border-border px-3 py-2">
                     メールアドレス（ハッシュ化）
                   </td>
-                  <td className="border-border border px-3 py-2">
+                  <td className="border border-border px-3 py-2">
                     OAuth ログイン時
                   </td>
-                  <td className="border-border border px-3 py-2">
+                  <td className="border border-border px-3 py-2">
                     同じユーザーかどうかの照合
                   </td>
                 </tr>
                 <tr>
-                  <td className="border-border border px-3 py-2">表示名</td>
-                  <td className="border-border border px-3 py-2">
+                  <td className="border border-border px-3 py-2">表示名</td>
+                  <td className="border border-border px-3 py-2">
                     OAuth ログイン時
                   </td>
-                  <td className="border-border border px-3 py-2">画面表示</td>
+                  <td className="border border-border px-3 py-2">画面表示</td>
                 </tr>
                 <tr>
-                  <td className="border-border border px-3 py-2">
+                  <td className="border border-border px-3 py-2">
                     学習進捗データ
                   </td>
-                  <td className="border-border border px-3 py-2">
+                  <td className="border border-border px-3 py-2">
                     ドリル利用時
                   </td>
-                  <td className="border-border border px-3 py-2">
+                  <td className="border border-border px-3 py-2">
                     進捗の保存・復習スケジュールの計算
                   </td>
                 </tr>
                 <tr>
-                  <td className="border-border border px-3 py-2">
+                  <td className="border border-border px-3 py-2">
                     認証セッション Cookie
                   </td>
-                  <td className="border-border border px-3 py-2">ログイン時</td>
-                  <td className="border-border border px-3 py-2">
+                  <td className="border border-border px-3 py-2">ログイン時</td>
+                  <td className="border border-border px-3 py-2">
                     ログイン状態の維持
                   </td>
                 </tr>

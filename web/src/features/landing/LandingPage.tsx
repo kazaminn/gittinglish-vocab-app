@@ -31,7 +31,7 @@ export function LandingPage() {
         </Link>
         <Link
           to="/login"
-          className="bg-bg-muted text-text border-border hover:bg-bg-hover inline-flex items-center justify-center rounded-md border px-6 py-3 text-sm font-medium transition-colors"
+          className="bg-bg-muted text-text hover:bg-bg-hover inline-flex items-center justify-center rounded-md border border-border px-6 py-3 text-sm font-medium transition-colors"
         >
           ログイン
         </Link>
