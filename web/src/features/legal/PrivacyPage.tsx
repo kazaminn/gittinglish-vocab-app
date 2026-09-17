@@ -109,6 +109,11 @@ export function PrivacyPage() {
             ID
             でログインした場合もメールアドレスは受け取らず、ID・パスワードでサインアップする場合も入力を求めません。
           </p>
+          <p>
+            ただし、Kazamitte ID でログインする場合、Kazamitte ID
+            自体は認証基盤として、Google または GitHub
+            から取得したメールアドレスを保持しています。本サービスがそれを参照することはありません。
+          </p>
 
           <h3 className="text-sm font-semibold">表示名について</h3>
           <p>
