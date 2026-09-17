@@ -35,7 +35,9 @@ describe('PrivacyPage', () => {
   it('discloses the hosting and database processors', () => {
     renderWithProviders(<PrivacyPage />);
 
-    expect(screen.getByText(/Vercel/)).toBeInTheDocument();
+    // Named in more than one place (the processor list and log retention),
+    // so assert it is disclosed at all rather than disclosed exactly once.
+    expect(screen.getAllByText(/Vercel/).length).toBeGreaterThan(0);
     expect(screen.getByText(/Turso/)).toBeInTheDocument();
   });
 
@@ -43,7 +45,7 @@ describe('PrivacyPage', () => {
     renderWithProviders(<PrivacyPage />);
 
     expect(
-      screen.getByText(/IP アドレス・ユーザーエージェント/)
+      screen.getAllByText(/IP アドレス・ユーザーエージェント/)[0]
     ).toBeInTheDocument();
   });
 
