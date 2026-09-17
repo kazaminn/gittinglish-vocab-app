@@ -82,13 +82,33 @@ describe('kazamitte SSO wiring', () => {
     expect(config.scopes).toEqual(['openid']);
   });
 
-  it('never links implicitly: kazamitte is not a trusted provider', async () => {
+  it('never links implicitly: no provider is trusted', async () => {
     const auth = await loadAuth(KAZAMITTE_ENV);
-    const linking = auth.options.account?.accountLinking;
+    const linking = auth.options.account?.accountLinking as
+      | { trustedProviders?: string[]; allowDifferentEmails?: boolean }
+      | undefined;
 
-    expect(linking?.trustedProviders).not.toContain('kazamitte');
+    // Better Auth reads an unset trustedProviders as an empty list, so an
+    // absent key and an empty one mean the same thing: nothing is linked
+    // without the user asking for it from a signed-in session.
+    expect(linking?.trustedProviders ?? []).toEqual([]);
     // Required because a linked user's stored email is always a dummy.
     expect(linking?.allowDifferentEmails).toBe(true);
+  });
+
+  it('configures no social providers of its own', async () => {
+    const auth = await loadAuth(KAZAMITTE_ENV);
+
+    // Google and GitHub sign-in belongs to Kazamitte ID, one hop upstream.
+    // Configuring them here too would bypass the generic-oauth mapping that
+    // keeps the real name, email and avatar out of this database.
+    // Cast because the inferred options type has no such key today — which
+    // is itself the stronger guarantee. The assertion is what catches it
+    // being added back.
+    const options = auth.options as {
+      socialProviders?: Record<string, unknown>;
+    };
+    expect(options.socialProviders ?? {}).toEqual({});
   });
 
   it('synthesizes a placeholder email and name from just the subject', async () => {

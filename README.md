@@ -106,14 +106,16 @@ Only required when deploying or pointing at a real Turso DB:
 | `TURSO_AUTH_TOKEN` | Turso auth token. |
 | `BETTER_AUTH_URL` | Public base URL of the deployment. |
 | `BETTER_AUTH_SECRET` | `openssl rand -base64 32`. |
-| `EMAIL_HASH_SECRET` | `openssl rand -base64 32`. Used to hash OAuth emails so plaintext is never stored. |
 | `CORS_ORIGIN` | Optional. Set when serving the SPA from a different origin than the API. |
 | `KAZAMITTE_AUTH_CLIENT_ID` | OAuth client ID issued by kazamitte-auth. |
 | `KAZAMITTE_AUTH_CLIENT_SECRET` | Matching secret. Shown once at creation. |
 | `KAZAMITTE_AUTH_ISSUER` | Optional. Defaults to `https://auth.kazamitte.com/api/auth`. |
 
-OAuth (`GOOGLE_CLIENT_ID/SECRET`, `GITHUB_CLIENT_ID/SECRET`) is wired up in code
-but currently disabled — planned to be enabled in a future iteration.
+There are no social provider credentials here. Signing in with Google or
+GitHub is Kazamitte ID's job, one hop upstream; configuring those providers in
+this app as well would have it talking to Google and GitHub directly and
+receiving the real name, email and avatar the auth config goes out of its way
+not to keep.
 
 ### Kazamitte SSO
 

@@ -13,11 +13,6 @@ const BETTER_AUTH_URL =
 const BETTER_AUTH_SECRET =
   process.env.BETTER_AUTH_SECRET ?? 'dev-secret-do-not-use-in-prod';
 
-const hasGoogle =
-  !!process.env.GOOGLE_CLIENT_ID && !!process.env.GOOGLE_CLIENT_SECRET;
-const hasGithub =
-  !!process.env.GITHUB_CLIENT_ID && !!process.env.GITHUB_CLIENT_SECRET;
-
 // kazamitte-auth is the shared SSO provider for kazamitte apps. Endpoints are
 // discovered from the issuer rather than hardcoded, so a provider-side path
 // change doesn't need a release here.
@@ -117,33 +112,24 @@ export const auth = betterAuth({
       : []),
   ],
 
-  socialProviders: {
-    ...(hasGoogle && {
-      google: {
-        clientId: process.env.GOOGLE_CLIENT_ID!,
-        clientSecret: process.env.GOOGLE_CLIENT_SECRET!,
-      },
-    }),
-    ...(hasGithub && {
-      github: {
-        clientId: process.env.GITHUB_CLIENT_ID!,
-        clientSecret: process.env.GITHUB_CLIENT_SECRET!,
-      },
-    }),
-  },
+  // No social providers. Google and GitHub sign-in belongs to Kazamitte ID,
+  // one hop upstream; configuring them here as well would have this app
+  // talking to them directly and receiving the real name, email and avatar
+  // that everything below exists to avoid.
 
   account: {
     accountLinking: {
       enabled: true,
-      trustedProviders: ['google', 'github'],
+      // trustedProviders is left unset, which Better Auth reads as an empty
+      // list, so no provider is ever linked implicitly on sign-in.
+      //
       // user.email is always a synthesized <local-part>@local.invalid (see
       // the SSO mapProfileToUser above and the password signup form), so it
       // can never equal the real address a provider returns. Linking is
       // therefore always explicit (POST /oauth2/link from a signed-in
       // session), and that endpoint refuses a mismatched address unless this
       // is set. Being signed in is what proves the local account is the
-      // user's; kazamitte stays out of trustedProviders so no link is ever
-      // made implicitly on sign-in.
+      // user's.
       allowDifferentEmails: true,
     },
   },
@@ -162,10 +148,9 @@ export const auth = betterAuth({
           // <username>@local.invalid directly, and kazamitte SSO's
           // mapProfileToUser (above) builds <subject>@local.invalid from the
           // subject alone. This branch is therefore unreachable today — it
-          // exists so that a future `profile`/`email` scope, or a second SSO
-          // provider (google/github are wired up but disabled), can't slip a
-          // real address past this hook without someone deliberately adding
-          // its own privacy transform first.
+          // exists so that a future `profile`/`email` scope, or a second
+          // provider, can't slip a real address past this hook without
+          // someone deliberately adding its own privacy transform first.
           if (email && !email.endsWith('@local.invalid')) {
             console.error(
               'auth: refusing to create a user with a non-placeholder email; the provider path needs its own privacy transform'
@@ -187,10 +172,9 @@ export const auth = betterAuth({
       },
     },
 
-    // kazamitte-auth's tokens (and google/github's, if those providers are
-    // ever turned on) are never used after sign-in — this app only asks
-    // "who is this", never "act on their behalf" — so persisting them is
-    // pure liability. Blank them at the hook rather than via
+    // kazamitte-auth's tokens are never used after sign-in — this app only
+    // asks "who is this", never "act on their behalf" — so persisting them
+    // is pure liability. Blank them at the hook rather than via
     // account.updateAccountOnSignIn: false, which would also stop `scope`
     // and any other useful field from refreshing on re-sign-in and would
     // leave whatever was already written in place.
