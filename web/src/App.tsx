@@ -58,6 +58,11 @@ const SettingsPage = lazy(() =>
     default: module.SettingsPage,
   }))
 );
+const SetupPage = lazy(() =>
+  import('./features/auth/SetupPage').then((module) => ({
+    default: module.SetupPage,
+  }))
+);
 
 interface AppSelection {
   datasetId: DatasetId;
@@ -66,7 +71,13 @@ interface AppSelection {
   sessionSize: number;
 }
 
-function ProtectedRoute({ children }: { children: React.ReactNode }) {
+function ProtectedRoute({
+  children,
+  requireUserId = true,
+}: {
+  children: React.ReactNode;
+  requireUserId?: boolean;
+}) {
   const { isLoading, user } = useAuth();
 
   // Once the user is known, warm the Home chunk and the default dataset so
@@ -79,6 +90,13 @@ function ProtectedRoute({ children }: { children: React.ReactNode }) {
 
   if (isLoading) return <ShellSkeleton />;
   if (!user) return <Navigate to="/" replace />;
+  // Signing up through Kazamitte creates the account before an ID is chosen,
+  // and the whole app identifies the user by that ID. The OAuth callback URL
+  // only covers the first hop, so gate every app route on it as well: a
+  // reload or a bookmark would otherwise leave the account half-created.
+  if (requireUserId && !user.username) {
+    return <Navigate to="/app/setup" replace />;
+  }
   return <>{children}</>;
 }
 
@@ -288,6 +306,14 @@ function App() {
           <Route path="/login" element={<LoginPage />} />
           <Route path="/privacy" element={<PrivacyPage />} />
           <Route path="/terms" element={<TermsPage />} />
+          <Route
+            path="/app/setup"
+            element={
+              <ProtectedRoute requireUserId={false}>
+                <SetupPage />
+              </ProtectedRoute>
+            }
+          />
           <Route
             path="/app/*"
             element={

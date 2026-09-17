@@ -39,6 +39,9 @@ export function LoginPage() {
     const result = await authClient.signIn.oauth2({
       providerId: 'kazamitte',
       callbackURL: '/app',
+      // A first sign-in creates the account without an ID, so send those
+      // users straight to setup instead of letting ProtectedRoute bounce them.
+      newUserCallbackURL: '/app/setup',
       errorCallbackURL: '/login',
     });
 

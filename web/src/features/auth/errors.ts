@@ -19,9 +19,13 @@ export function translateAuthError(input: {
   }
   if (
     code === 'USERNAME_ALREADY_EXISTS' ||
+    code === 'USERNAME_IS_ALREADY_TAKEN' ||
     /username.*(exists|taken)/i.test(msg)
   ) {
     return 'この ID は既に使われています。';
+  }
+  if (code === 'INVALID_USERNAME' || /username is invalid/i.test(msg)) {
+    return 'ID に使えるのは半角英数字と _ . のみです。';
   }
   if (code === 'PASSWORD_TOO_SHORT' || /password.*(short|min)/i.test(msg)) {
     return 'パスワードは 8 文字以上で入力してください。';
