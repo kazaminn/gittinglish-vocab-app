@@ -154,6 +154,18 @@ the new row has a UUID standing in for both the name and the email local part.
 account. It is also the only place a Kazamitte sign-up is shown the terms,
 which the password form asks for at sign-up.
 
+**A Kazamitte-only account has exactly one login method.** Its only `account`
+row is `providerId: kazamitte`, and Better Auth refuses to unlink a user's
+last remaining method, so that user can never detach from Kazamitte ID as
+things stand. `POST /api/users/password` (behind `authMiddleware`) gives them
+a way out: it sets a password, which becomes a second method. It exists as
+its own route because Better Auth's `auth.api.setPassword` on this
+better-auth version is a real function but is never mounted over HTTP — its
+`createAuthEndpoint()` call passes no path, so better-call's router skips it.
+The route calls that function directly, forwarding the request headers so
+Better Auth resolves the session itself; a `PASSWORD_ALREADY_SET` response
+means the account already has one.
+
 ## Deploy
 
 This repo is set up for Vercel. The `vercel.json` declares a single function

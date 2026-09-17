@@ -8,6 +8,7 @@ import { readStoredSettings } from '../../service/settings.local';
 import { useThemeStore } from '../../store/theme';
 import { translateAuthError } from '../auth/errors';
 import { KazamitteLinkSection } from './KazamitteLinkSection';
+import { PasswordSection } from './PasswordSection';
 
 interface SettingsPageProps {
   onBackToHome: () => void;
@@ -220,6 +221,8 @@ export function SettingsPage({ onBackToHome }: SettingsPageProps) {
           {displayName || 'User'} can review settings here before saving.
         </p>
       </div>
+
+      <PasswordSection />
 
       <KazamitteLinkSection />
 
