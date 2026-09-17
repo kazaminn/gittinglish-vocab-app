@@ -1,6 +1,6 @@
 import { useId, useState } from 'react';
-import { useNavigate, useSearchParams } from 'react-router-dom';
 import { useQueryClient } from '@tanstack/react-query';
+import { useNavigate, useSearchParams } from 'react-router-dom';
 import { authClient } from '../../lib/auth-client';
 import {
   isAccountAlreadyLinkedError,
@@ -207,8 +207,8 @@ export function KazamitteLinkSection() {
               className="text-xs"
               style={{ color: 'var(--text-muted)' }}
             >
-              this is your only login method. set a password first if you
-              want to unlink it.
+              this is your only login method. set a password first if you want
+              to unlink it.
             </p>
           )}
 
@@ -235,8 +235,8 @@ export function KazamitteLinkSection() {
               style={{ borderColor: 'var(--border-subtle)' }}
             >
               <p className="text-xs" style={{ color: 'var(--text-muted)' }}>
-                unlink kazamitte id? you will need a password or another
-                login method to sign back in without it.
+                unlink kazamitte id? you will need a password or another login
+                method to sign back in without it.
               </p>
               <div className="flex gap-3">
                 <button

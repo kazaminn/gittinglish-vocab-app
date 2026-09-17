@@ -1,7 +1,7 @@
 import { screen, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import type * as ReactRouterDom from 'react-router-dom';
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import { KazamitteLinkSection } from '../../../src/features/settings/KazamitteLinkSection';
 import { authClient } from '../../../src/lib/auth-client';
 import { renderWithProviders } from '../../test-utils';
@@ -9,9 +9,8 @@ import { renderWithProviders } from '../../test-utils';
 const mockNavigate = vi.fn();
 
 vi.mock('react-router-dom', async () => {
-  const actual = await vi.importActual<typeof ReactRouterDom>(
-    'react-router-dom'
-  );
+  const actual =
+    await vi.importActual<typeof ReactRouterDom>('react-router-dom');
   return {
     ...actual,
     useNavigate: () => mockNavigate,
@@ -127,9 +126,7 @@ describe('KazamitteLinkSection', () => {
     );
     await user.click(screen.getByRole('button', { name: /yes, unlink it/i }));
 
-    await waitFor(() =>
-      expect(mockedListAccounts).toHaveBeenCalledTimes(2)
-    );
+    await waitFor(() => expect(mockedListAccounts).toHaveBeenCalledTimes(2));
     expect(
       await screen.findByText(/not linked\. link your kazamitte id/i)
     ).toBeInTheDocument();

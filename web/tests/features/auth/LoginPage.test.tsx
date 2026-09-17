@@ -1,7 +1,7 @@
 import { screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { beforeEach, describe, expect, it, vi } from 'vitest';
 import type * as ReactRouterDom from 'react-router-dom';
+import { beforeEach, describe, expect, it, vi } from 'vitest';
 import { LoginPage } from '../../../src/features/auth/LoginPage';
 import { authClient, signIn } from '../../../src/lib/auth-client';
 import { renderWithProviders } from '../../test-utils';
@@ -9,9 +9,8 @@ import { renderWithProviders } from '../../test-utils';
 const mockNavigate = vi.fn();
 
 vi.mock('react-router-dom', async () => {
-  const actual = await vi.importActual<typeof ReactRouterDom>(
-    'react-router-dom'
-  );
+  const actual =
+    await vi.importActual<typeof ReactRouterDom>('react-router-dom');
   return {
     ...actual,
     useNavigate: () => mockNavigate,
