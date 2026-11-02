@@ -24,30 +24,41 @@ export interface DatasetOption {
   description: string;
 }
 
+// gitverbs85 is left off the menu (gitverbs replaces it) but stays loadable
+// so a session already running on it can finish.
 const DATASET_OPTIONS: DatasetOption[] = [
   {
-    id: 'gitverbs85',
-    label: 'GitVerbs85',
-    description: '頻出動詞 85 のドリル',
+    id: 'gitverbs',
+    label: 'GitVerbs',
+    description: '頻出動詞 100 語のドリル',
+  },
+  {
+    id: 'gitnouns',
+    label: 'GitNouns',
+    description: '頻出名詞 39 語のドリル',
+  },
+  {
+    id: 'gitadjectives',
+    label: 'GitAdjectives',
+    description: '頻出形容詞 51 語のドリル',
+  },
+  {
+    id: 'gitadverbs',
+    label: 'GitAdverbs',
+    description: '頻出副詞 41 語のドリル',
   },
 ];
 
-const DATASET_MODE_MAP: Record<DatasetId, DrillMode[]> = {
-  gitverbs85: [
-    'word_to_meaning',
-    'meaning_to_word',
-    'sentence_cloze',
-    'flashcard',
-  ],
-};
+export const DEFAULT_DATASET_ID: DatasetId = 'gitverbs';
 
-const DATASET_DEFAULT_MODE: Record<DatasetId, DrillMode> = {
-  gitverbs85: 'word_to_meaning',
-};
+type ProblemMode = 'word_to_meaning' | 'meaning_to_word' | 'sentence_cloze';
 
-const DATASET_FLASHCARD_MODE: Record<DatasetId, DrillMode> = {
-  gitverbs85: 'word_to_meaning',
-};
+const DATASET_MODES: DrillMode[] = [
+  'word_to_meaning',
+  'meaning_to_word',
+  'sentence_cloze',
+  'flashcard',
+];
 
 function importProblemModule(
   loader: () => Promise<{ default: unknown }>,
@@ -58,19 +69,69 @@ function importProblemModule(
   };
 }
 
-const gitverbsProblemImporters: Record<
-  'word_to_meaning' | 'meaning_to_word' | 'sentence_cloze',
-  () => Promise<GeneratedProblem[]>
+// Literal paths so Vite can split each file into its own chunk.
+const problemImporters: Record<
+  DatasetId,
+  Record<ProblemMode, () => Promise<GeneratedProblem[]>>
 > = {
-  word_to_meaning: importProblemModule(
-    () => import('../../../data/gitverbs85_word_to_meaning.json'),
-  ),
-  meaning_to_word: importProblemModule(
-    () => import('../../../data/gitverbs85_meaning_to_word.json'),
-  ),
-  sentence_cloze: importProblemModule(
-    () => import('../../../data/gitverbs85_sentence_cloze.json'),
-  ),
+  gitverbs85: {
+    word_to_meaning: importProblemModule(
+      () => import('../../../data/gitverbs85_word_to_meaning.json'),
+    ),
+    meaning_to_word: importProblemModule(
+      () => import('../../../data/gitverbs85_meaning_to_word.json'),
+    ),
+    sentence_cloze: importProblemModule(
+      () => import('../../../data/gitverbs85_sentence_cloze.json'),
+    ),
+  },
+  gitverbs: {
+    word_to_meaning: importProblemModule(
+      () => import('../../../data/gitverbs/gitverbs_word_to_meaning.json'),
+    ),
+    meaning_to_word: importProblemModule(
+      () => import('../../../data/gitverbs/gitverbs_meaning_to_word.json'),
+    ),
+    sentence_cloze: importProblemModule(
+      () => import('../../../data/gitverbs/gitverbs_sentence_cloze.json'),
+    ),
+  },
+  gitnouns: {
+    word_to_meaning: importProblemModule(
+      () => import('../../../data/gitnouns/gitnouns_word_to_meaning.json'),
+    ),
+    meaning_to_word: importProblemModule(
+      () => import('../../../data/gitnouns/gitnouns_meaning_to_word.json'),
+    ),
+    sentence_cloze: importProblemModule(
+      () => import('../../../data/gitnouns/gitnouns_sentence_cloze.json'),
+    ),
+  },
+  gitadjectives: {
+    word_to_meaning: importProblemModule(
+      () =>
+        import('../../../data/gitadjectives/gitadjectives_word_to_meaning.json'),
+    ),
+    meaning_to_word: importProblemModule(
+      () =>
+        import('../../../data/gitadjectives/gitadjectives_meaning_to_word.json'),
+    ),
+    sentence_cloze: importProblemModule(
+      () =>
+        import('../../../data/gitadjectives/gitadjectives_sentence_cloze.json'),
+    ),
+  },
+  gitadverbs: {
+    word_to_meaning: importProblemModule(
+      () => import('../../../data/gitadverbs/gitadverbs_word_to_meaning.json'),
+    ),
+    meaning_to_word: importProblemModule(
+      () => import('../../../data/gitadverbs/gitadverbs_meaning_to_word.json'),
+    ),
+    sentence_cloze: importProblemModule(
+      () => import('../../../data/gitadverbs/gitadverbs_sentence_cloze.json'),
+    ),
+  },
 };
 
 const problemsCache = new Map<string, Promise<GeneratedProblem[]>>();
@@ -78,11 +139,7 @@ const problemsCache = new Map<string, Promise<GeneratedProblem[]>>();
 function getRequestedMode(
   query: ProblemQuery,
 ): Exclude<DrillMode, 'flashcard'> {
-  return (
-    query.drillMode === 'flashcard'
-      ? DATASET_FLASHCARD_MODE[query.datasetId]
-      : query.drillMode
-  ) as Exclude<DrillMode, 'flashcard'>;
+  return query.drillMode === 'flashcard' ? 'word_to_meaning' : query.drillMode;
 }
 
 function getCacheKey(datasetId: DatasetId, key: string) {
@@ -97,13 +154,8 @@ async function loadProblemsForMode(
   const cached = problemsCache.get(cacheKey);
   if (cached) return cached;
 
-  const importer =
-    gitverbsProblemImporters[
-      drillMode as Extract<
-        Exclude<DrillMode, 'flashcard'>,
-        'word_to_meaning' | 'meaning_to_word' | 'sentence_cloze'
-      >
-    ];
+  const importer = problemImporters[datasetId][drillMode as ProblemMode] as
+    (() => Promise<GeneratedProblem[]>) | undefined;
   if (!importer) {
     const empty = Promise.resolve([]);
     problemsCache.set(cacheKey, empty);
@@ -119,12 +171,14 @@ export function getDatasetOptions(): DatasetOption[] {
   return DATASET_OPTIONS;
 }
 
-export function getAvailableModesForDataset(datasetId: DatasetId): DrillMode[] {
-  return DATASET_MODE_MAP[datasetId];
+export function getAvailableModesForDataset(
+  _datasetId: DatasetId,
+): DrillMode[] {
+  return DATASET_MODES;
 }
 
-export function getDefaultModeForDataset(datasetId: DatasetId): DrillMode {
-  return DATASET_DEFAULT_MODE[datasetId];
+export function getDefaultModeForDataset(_datasetId: DatasetId): DrillMode {
+  return 'word_to_meaning';
 }
 
 export function getSectionsForDataset(

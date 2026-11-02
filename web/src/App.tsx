@@ -8,6 +8,7 @@ import {
 import { Layout } from './components/Layout';
 import { ShellSkeleton } from './components/ShellSkeleton';
 import {
+  DEFAULT_DATASET_ID,
   getAvailableModesForDataset,
   getDatasetOptions,
   getDefaultModeForDataset,
@@ -86,7 +87,7 @@ function ProtectedRoute({
   useEffect(() => {
     if (!user) return;
     void loadHomePage();
-    void preloadDatasetMode('gitverbs85', 'word_to_meaning');
+    void preloadDatasetMode(DEFAULT_DATASET_ID, 'word_to_meaning');
   }, [user]);
 
   if (isLoading) return <ShellSkeleton />;
@@ -142,7 +143,7 @@ function VocabAppShell() {
   const drill = useDrill();
   const statsQuery = useUserStatsQuery(Boolean(user));
   const [selection, setSelection] = useState<AppSelection>(() =>
-    createDefaultSelection('gitverbs85'),
+    createDefaultSelection(DEFAULT_DATASET_ID),
   );
 
   const availableModes = useMemo(

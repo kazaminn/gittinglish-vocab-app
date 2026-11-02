@@ -55,7 +55,8 @@ ever serves a request. Application code belongs in `server/`.
 ```
 .
 ├── api/        Vercel function entry (re-exports Hono app)
-├── data/       gitverbs85 problem JSON (word → meaning, meaning → word, cloze)
+├── data/       Problem JSON per dataset: gitverbs, gitnouns, gitadjectives,
+│               gitadverbs (gitverbs85 at the top level is off the menu)
 ├── server/     Hono app, Better Auth, Drizzle schema + migrations
 ├── shared/     Cross-package types and domain constants
 ├── web/        Vite SPA (React 19)
