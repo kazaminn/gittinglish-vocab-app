@@ -40,8 +40,8 @@ export function LogoutPage() {
               // who did leaves them signed in believing they are not.
               true
             : (accounts.data ?? []).some(
-                (account) => account.providerId === PROVIDER_ID
-              )
+                (account) => account.providerId === PROVIDER_ID,
+              ),
         );
 
         // Drill progress and the in-flight session are kept in this browser

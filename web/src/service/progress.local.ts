@@ -25,10 +25,10 @@ export function createLocalProgressService(): ProgressService {
   return {
     getProgress(
       userId: string,
-      drillMode: DrillMode
+      drillMode: DrillMode,
     ): Promise<DrillProgress[]> {
       return Promise.resolve(
-        loadAll(userId).filter((p) => p.drillMode === drillMode)
+        loadAll(userId).filter((p) => p.drillMode === drillMode),
       );
     },
 
@@ -36,7 +36,7 @@ export function createLocalProgressService(): ProgressService {
       const all = loadAll(progress.userId);
       const idx = all.findIndex(
         (p) =>
-          p.itemId === progress.itemId && p.drillMode === progress.drillMode
+          p.itemId === progress.itemId && p.drillMode === progress.drillMode,
       );
       if (idx >= 0) {
         all[idx] = progress;

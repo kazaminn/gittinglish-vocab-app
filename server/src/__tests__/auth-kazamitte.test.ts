@@ -69,7 +69,7 @@ describe('kazamitte SSO wiring', () => {
     expect(config.providerId).toBe('kazamitte');
     expect(config.issuer).toBe('https://auth.kazamitte.com/api/auth');
     expect(config.discoveryUrl).toBe(
-      'https://auth.kazamitte.com/api/auth/.well-known/openid-configuration'
+      'https://auth.kazamitte.com/api/auth/.well-known/openid-configuration',
     );
     expect(config.requireIssuerValidation).toBe(true);
     // kazamitte-auth registers clients as client_secret_basic and rejects
@@ -173,7 +173,7 @@ describe('kazamitte SSO wiring', () => {
     ).options.config[0]!;
 
     expect(config.mapProfileToUser({ id: 'user-one' }).email).not.toBe(
-      config.mapProfileToUser({ id: 'user-two' }).email
+      config.mapProfileToUser({ id: 'user-two' }).email,
     );
   });
 

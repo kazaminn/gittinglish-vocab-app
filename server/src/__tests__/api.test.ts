@@ -76,13 +76,13 @@ async function createTables() {
     PRIMARY KEY (user_id, activity_date)
   )`);
   await testDb.run(
-    sql`CREATE INDEX IF NOT EXISTS idx_user_activities_user_date ON user_activities(user_id, activity_date)`
+    sql`CREATE INDEX IF NOT EXISTS idx_user_activities_user_date ON user_activities(user_id, activity_date)`,
   );
   await testDb.run(
-    sql`CREATE INDEX IF NOT EXISTS idx_progress_review ON drill_progress(user_id, drill_mode, next_review)`
+    sql`CREATE INDEX IF NOT EXISTS idx_progress_review ON drill_progress(user_id, drill_mode, next_review)`,
   );
   await testDb.run(
-    sql`CREATE INDEX IF NOT EXISTS idx_answer_logs_session ON answer_logs(session_id)`
+    sql`CREATE INDEX IF NOT EXISTS idx_answer_logs_session ON answer_logs(session_id)`,
   );
 }
 
@@ -136,7 +136,7 @@ describe('API', () => {
     expect(payload.data.items[0].problemDTO.id).toBeTruthy();
     expect(
       payload.data.items[0].problemDTO.payload.choiceAnswerSpec
-        ?.correctChoiceIds
+        ?.correctChoiceIds,
     ).toBeUndefined();
   });
 

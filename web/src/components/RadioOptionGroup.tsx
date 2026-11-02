@@ -1,5 +1,5 @@
-import { type ReactNode, useEffect, useRef } from 'react';
-import { type OptionState, SelectableOption } from './SelectableOption';
+import { useEffect, useRef, type ReactNode } from 'react';
+import { SelectableOption, type OptionState } from './SelectableOption';
 
 interface RadioOptionGroupProps<T> {
   ariaLabel: string;

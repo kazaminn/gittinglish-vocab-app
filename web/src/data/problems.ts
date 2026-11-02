@@ -50,7 +50,7 @@ const DATASET_FLASHCARD_MODE: Record<DatasetId, DrillMode> = {
 };
 
 function importProblemModule(
-  loader: () => Promise<{ default: unknown }>
+  loader: () => Promise<{ default: unknown }>,
 ): () => Promise<GeneratedProblem[]> {
   return async () => {
     const module = await loader();
@@ -63,20 +63,20 @@ const gitverbsProblemImporters: Record<
   () => Promise<GeneratedProblem[]>
 > = {
   word_to_meaning: importProblemModule(
-    () => import('../../../data/gitverbs85_word_to_meaning.json')
+    () => import('../../../data/gitverbs85_word_to_meaning.json'),
   ),
   meaning_to_word: importProblemModule(
-    () => import('../../../data/gitverbs85_meaning_to_word.json')
+    () => import('../../../data/gitverbs85_meaning_to_word.json'),
   ),
   sentence_cloze: importProblemModule(
-    () => import('../../../data/gitverbs85_sentence_cloze.json')
+    () => import('../../../data/gitverbs85_sentence_cloze.json'),
   ),
 };
 
 const problemsCache = new Map<string, Promise<GeneratedProblem[]>>();
 
 function getRequestedMode(
-  query: ProblemQuery
+  query: ProblemQuery,
 ): Exclude<DrillMode, 'flashcard'> {
   return (
     query.drillMode === 'flashcard'
@@ -91,7 +91,7 @@ function getCacheKey(datasetId: DatasetId, key: string) {
 
 async function loadProblemsForMode(
   datasetId: DatasetId,
-  drillMode: Exclude<DrillMode, 'flashcard'>
+  drillMode: Exclude<DrillMode, 'flashcard'>,
 ): Promise<GeneratedProblem[]> {
   const cacheKey = getCacheKey(datasetId, drillMode);
   const cached = problemsCache.get(cacheKey);
@@ -128,20 +128,20 @@ export function getDefaultModeForDataset(datasetId: DatasetId): DrillMode {
 }
 
 export function getSectionsForDataset(
-  _datasetId: DatasetId
+  _datasetId: DatasetId,
 ): Promise<ProblemSection[]> {
   return Promise.resolve([]);
 }
 
 export function getSectionLabel(
   _datasetId: DatasetId,
-  _sectionId: string | undefined
+  _sectionId: string | undefined,
 ): Promise<string | undefined> {
   return Promise.resolve(undefined);
 }
 
 export async function getProblemsForQuery(
-  query: ProblemQuery
+  query: ProblemQuery,
 ): Promise<GeneratedProblem[]> {
   const requestedMode = getRequestedMode(query);
   return loadProblemsForMode(query.datasetId, requestedMode);
@@ -153,14 +153,14 @@ export async function getProblemCount(query: ProblemQuery): Promise<number> {
 
 export async function getPreviewProblems(
   query: ProblemQuery,
-  limit = 5
+  limit = 5,
 ): Promise<GeneratedProblem[]> {
   return (await getProblemsForQuery(query)).slice(0, limit);
 }
 
 export async function preloadDatasetMode(
   datasetId: DatasetId,
-  drillMode: Exclude<DrillMode, 'flashcard'>
+  drillMode: Exclude<DrillMode, 'flashcard'>,
 ) {
   await loadProblemsForMode(datasetId, drillMode);
 }

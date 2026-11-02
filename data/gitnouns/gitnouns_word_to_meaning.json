@@ -1,0 +1,2459 @@
+[
+  {
+    "id": "gitnouns_001_w2m_1",
+    "sentenceId": "gitnouns_001",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "word_to_meaning",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "addition",
+          "pos": "noun",
+          "meaning": "追加したもの・追加すること",
+          "target": true,
+          "category": "addition"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 2,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "What does 'addition' mean?",
+    "stem": "addition",
+    "choices": [
+      {
+        "id": "a",
+        "text": "追加したもの・追加すること"
+      },
+      {
+        "id": "b",
+        "text": "新しく作ること（作成の処理・タイミング）"
+      },
+      {
+        "id": "c",
+        "text": "機能やインターフェースを実際に動かすコード（実装）"
+      },
+      {
+        "id": "d",
+        "text": "使い始める前の準備・構成（開発環境・テスト・CI など）"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "a"
+      ]
+    },
+    "explanation": {
+      "summary": "'addition' means: 追加したもの・追加すること。よく使う形: in addition to（〜に加えて）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitnouns_002_w2m_1",
+    "sentenceId": "gitnouns_002",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "word_to_meaning",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "creation",
+          "pos": "noun",
+          "meaning": "新しく作ること（作成の処理・タイミング）",
+          "target": true,
+          "category": "addition"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 2,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "What does 'creation' mean?",
+    "stem": "creation",
+    "choices": [
+      {
+        "id": "a",
+        "text": "追加したもの・追加すること"
+      },
+      {
+        "id": "b",
+        "text": "新しく作ること（作成の処理・タイミング）"
+      },
+      {
+        "id": "c",
+        "text": "機能やインターフェースを実際に動かすコード（実装）"
+      },
+      {
+        "id": "d",
+        "text": "使い始める前の準備・構成（開発環境・テスト・CI など）"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "'creation' means: 新しく作ること（作成の処理・タイミング）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitnouns_003_w2m_1",
+    "sentenceId": "gitnouns_003",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "word_to_meaning",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "implementation",
+          "pos": "noun",
+          "meaning": "機能やインターフェースを実際に動かすコード（実装）",
+          "target": true,
+          "category": "addition"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 2,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "What does 'implementation' mean?",
+    "stem": "implementation",
+    "choices": [
+      {
+        "id": "a",
+        "text": "新しく作ること（作成の処理・タイミング）"
+      },
+      {
+        "id": "b",
+        "text": "使い始める前の準備・構成（開発環境・テスト・CI など）"
+      },
+      {
+        "id": "c",
+        "text": "機能やインターフェースを実際に動かすコード（実装）"
+      },
+      {
+        "id": "d",
+        "text": "追加したもの・追加すること"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "'implementation' means: 機能やインターフェースを実際に動かすコード（実装）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitnouns_004_w2m_1",
+    "sentenceId": "gitnouns_004",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "word_to_meaning",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "setup",
+          "pos": "noun",
+          "meaning": "使い始める前の準備・構成（開発環境・テスト・CI など）",
+          "target": true,
+          "category": "addition"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 2,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "What does 'setup' mean?",
+    "stem": "setup",
+    "choices": [
+      {
+        "id": "a",
+        "text": "機能やインターフェースを実際に動かすコード（実装）"
+      },
+      {
+        "id": "b",
+        "text": "使い始める前の準備・構成（開発環境・テスト・CI など）"
+      },
+      {
+        "id": "c",
+        "text": "外部のサービスやツールとの連携部分（組み込んだもの）"
+      },
+      {
+        "id": "d",
+        "text": "新しく作ること（作成の処理・タイミング）"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "'setup' means: 使い始める前の準備・構成（開発環境・テスト・CI など）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitnouns_005_w2m_1",
+    "sentenceId": "gitnouns_005",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "word_to_meaning",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "integration",
+          "pos": "noun",
+          "meaning": "外部のサービスやツールとの連携部分（組み込んだもの）",
+          "target": true,
+          "category": "addition"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 2,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "What does 'integration' mean?",
+    "stem": "integration",
+    "choices": [
+      {
+        "id": "a",
+        "text": "外部のサービスやツールとの連携部分（組み込んだもの）"
+      },
+      {
+        "id": "b",
+        "text": "使い始める前の準備・構成（開発環境・テスト・CI など）"
+      },
+      {
+        "id": "c",
+        "text": "機能やインターフェースを実際に動かすコード（実装）"
+      },
+      {
+        "id": "d",
+        "text": "新しく作ること（作成の処理・タイミング）"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "a"
+      ]
+    },
+    "explanation": {
+      "summary": "'integration' means: 外部のサービスやツールとの連携部分（組み込んだもの）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitnouns_006_w2m_1",
+    "sentenceId": "gitnouns_006",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "word_to_meaning",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "removal",
+          "pos": "noun",
+          "meaning": "取り除くこと（削除の予定や処理）",
+          "target": true,
+          "category": "removal"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 2,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "What does 'removal' mean?",
+    "stem": "removal",
+    "choices": [
+      {
+        "id": "a",
+        "text": "不要なコードなどの片付け（振る舞いは変えない）"
+      },
+      {
+        "id": "b",
+        "text": "非推奨にすること・非推奨の告知（まだ動くが将来消す）"
+      },
+      {
+        "id": "c",
+        "text": "取り除くこと（削除の予定や処理）"
+      },
+      {
+        "id": "d",
+        "text": "外部のサービスやツールとの連携部分（組み込んだもの）"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "'removal' means: 取り除くこと（削除の予定や処理）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitnouns_007_w2m_1",
+    "sentenceId": "gitnouns_007",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "word_to_meaning",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "cleanup",
+          "pos": "noun",
+          "meaning": "不要なコードなどの片付け（振る舞いは変えない）",
+          "target": true,
+          "category": "removal"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 2,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "What does 'cleanup' mean?",
+    "stem": "cleanup",
+    "choices": [
+      {
+        "id": "a",
+        "text": "不要なコードなどの片付け（振る舞いは変えない）"
+      },
+      {
+        "id": "b",
+        "text": "取り除くこと（削除の予定や処理）"
+      },
+      {
+        "id": "c",
+        "text": "非推奨にすること・非推奨の告知（まだ動くが将来消す）"
+      },
+      {
+        "id": "d",
+        "text": "外部のサービスやツールとの連携部分（組み込んだもの）"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "a"
+      ]
+    },
+    "explanation": {
+      "summary": "'cleanup' means: 不要なコードなどの片付け（振る舞いは変えない）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitnouns_008_w2m_1",
+    "sentenceId": "gitnouns_008",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "word_to_meaning",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "deprecation",
+          "pos": "noun",
+          "meaning": "非推奨にすること・非推奨の告知（まだ動くが将来消す）",
+          "target": true,
+          "category": "removal"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 2,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "What does 'deprecation' mean?",
+    "stem": "deprecation",
+    "choices": [
+      {
+        "id": "a",
+        "text": "不要なコードなどの片付け（振る舞いは変えない）"
+      },
+      {
+        "id": "b",
+        "text": "取り除くこと（削除の予定や処理）"
+      },
+      {
+        "id": "c",
+        "text": "非推奨にすること・非推奨の告知（まだ動くが将来消す）"
+      },
+      {
+        "id": "d",
+        "text": "（依存・モジュール・型などを）解決すること・その結果"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "'deprecation' means: 非推奨にすること・非推奨の告知（まだ動くが将来消す）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitnouns_009_w2m_1",
+    "sentenceId": "gitnouns_009",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "word_to_meaning",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "resolution",
+          "pos": "noun",
+          "meaning": "（依存・モジュール・型などを）解決すること・その結果",
+          "target": true,
+          "category": "correction"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 2,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "What does 'resolution' mean?",
+    "stem": "resolution",
+    "choices": [
+      {
+        "id": "a",
+        "text": "（依存・モジュール・型などを）解決すること・その結果"
+      },
+      {
+        "id": "b",
+        "text": "解決を担当する部品（パスや値を探し当てる仕組み）"
+      },
+      {
+        "id": "c",
+        "text": "非推奨にすること・非推奨の告知（まだ動くが将来消す）"
+      },
+      {
+        "id": "d",
+        "text": "不要なコードなどの片付け（振る舞いは変えない）"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "a"
+      ]
+    },
+    "explanation": {
+      "summary": "'resolution' means: （依存・モジュール・型などを）解決すること・その結果",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitnouns_010_w2m_1",
+    "sentenceId": "gitnouns_010",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "word_to_meaning",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "resolver",
+          "pos": "noun",
+          "meaning": "解決を担当する部品（パスや値を探し当てる仕組み）",
+          "target": true,
+          "category": "correction"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 2,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "What does 'resolver' mean?",
+    "stem": "resolver",
+    "choices": [
+      {
+        "id": "a",
+        "text": "（依存・モジュール・型などを）解決すること・その結果"
+      },
+      {
+        "id": "b",
+        "text": "新しいバージョン・方式への移行（の作業や手順）"
+      },
+      {
+        "id": "c",
+        "text": "解決を担当する部品（パスや値を探し当てる仕組み）"
+      },
+      {
+        "id": "d",
+        "text": "非推奨にすること・非推奨の告知（まだ動くが将来消す）"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "'resolver' means: 解決を担当する部品（パスや値を探し当てる仕組み）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitnouns_011_w2m_1",
+    "sentenceId": "gitnouns_011",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "word_to_meaning",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "migration",
+          "pos": "noun",
+          "meaning": "新しいバージョン・方式への移行（の作業や手順）",
+          "target": true,
+          "category": "modification"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 2,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "What does 'migration' mean?",
+    "stem": "migration",
+    "choices": [
+      {
+        "id": "a",
+        "text": "置き換え先（代わりに使うもの）"
+      },
+      {
+        "id": "b",
+        "text": "形式や型の変換"
+      },
+      {
+        "id": "c",
+        "text": "新しいバージョン・方式への移行（の作業や手順）"
+      },
+      {
+        "id": "d",
+        "text": "振る舞いを変えずにコードの構造を直すこと"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "'migration' means: 新しいバージョン・方式への移行（の作業や手順）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitnouns_012_w2m_1",
+    "sentenceId": "gitnouns_012",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "word_to_meaning",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "replacement",
+          "pos": "noun",
+          "meaning": "置き換え先（代わりに使うもの）",
+          "target": true,
+          "category": "modification"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 2,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "What does 'replacement' mean?",
+    "stem": "replacement",
+    "choices": [
+      {
+        "id": "a",
+        "text": "置き換え先（代わりに使うもの）"
+      },
+      {
+        "id": "b",
+        "text": "新しいバージョン・方式への移行（の作業や手順）"
+      },
+      {
+        "id": "c",
+        "text": "形式や型の変換"
+      },
+      {
+        "id": "d",
+        "text": "振る舞いを変えずにコードの構造を直すこと"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "a"
+      ]
+    },
+    "explanation": {
+      "summary": "'replacement' means: 置き換え先（代わりに使うもの）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitnouns_013_w2m_1",
+    "sentenceId": "gitnouns_013",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "word_to_meaning",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "conversion",
+          "pos": "noun",
+          "meaning": "形式や型の変換",
+          "target": true,
+          "category": "modification"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 2,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "What does 'conversion' mean?",
+    "stem": "conversion",
+    "choices": [
+      {
+        "id": "a",
+        "text": "置き換え先（代わりに使うもの）"
+      },
+      {
+        "id": "b",
+        "text": "振る舞いを変えずにコードの構造を直すこと"
+      },
+      {
+        "id": "c",
+        "text": "形式や型の変換"
+      },
+      {
+        "id": "d",
+        "text": "新しいバージョン・方式への移行（の作業や手順）"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "'conversion' means: 形式や型の変換",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitnouns_014_w2m_1",
+    "sentenceId": "gitnouns_014",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "word_to_meaning",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "refactoring",
+          "pos": "noun",
+          "meaning": "振る舞いを変えずにコードの構造を直すこと",
+          "target": true,
+          "category": "modification"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 2,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "What does 'refactoring' mean?",
+    "stem": "refactoring",
+    "choices": [
+      {
+        "id": "a",
+        "text": "振る舞いを変えずにコードの構造を直すこと"
+      },
+      {
+        "id": "b",
+        "text": "形式や型の変換"
+      },
+      {
+        "id": "c",
+        "text": "置き換え先（代わりに使うもの）"
+      },
+      {
+        "id": "d",
+        "text": "新しいバージョン・方式への移行（の作業や手順）"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "a"
+      ]
+    },
+    "explanation": {
+      "summary": "'refactoring' means: 振る舞いを変えずにコードの構造を直すこと",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitnouns_015_w2m_1",
+    "sentenceId": "gitnouns_015",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "word_to_meaning",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "optimization",
+          "pos": "noun",
+          "meaning": "性能を上げるための工夫・変更（最適化）",
+          "target": true,
+          "category": "optimization"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 2,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "What does 'optimization' mean?",
+    "stem": "optimization",
+    "choices": [
+      {
+        "id": "a",
+        "text": "改善点・改良（性能・UI・メッセージなど全般）"
+      },
+      {
+        "id": "b",
+        "text": "振る舞いを変えずにコードの構造を直すこと"
+      },
+      {
+        "id": "c",
+        "text": "形式や型の変換"
+      },
+      {
+        "id": "d",
+        "text": "性能を上げるための工夫・変更（最適化）"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "'optimization' means: 性能を上げるための工夫・変更（最適化）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitnouns_016_w2m_1",
+    "sentenceId": "gitnouns_016",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "word_to_meaning",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "improvement",
+          "pos": "noun",
+          "meaning": "改善点・改良（性能・UI・メッセージなど全般）",
+          "target": true,
+          "category": "optimization"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 2,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "What does 'improvement' mean?",
+    "stem": "improvement",
+    "choices": [
+      {
+        "id": "a",
+        "text": "性能を上げるための工夫・変更（最適化）"
+      },
+      {
+        "id": "b",
+        "text": "入力や値がルールに合っているかの検証"
+      },
+      {
+        "id": "c",
+        "text": "改善点・改良（性能・UI・メッセージなど全般）"
+      },
+      {
+        "id": "d",
+        "text": "振る舞いを変えずにコードの構造を直すこと"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "'improvement' means: 改善点・改良（性能・UI・メッセージなど全般）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitnouns_017_w2m_1",
+    "sentenceId": "gitnouns_017",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "word_to_meaning",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "validation",
+          "pos": "noun",
+          "meaning": "入力や値がルールに合っているかの検証",
+          "target": true,
+          "category": "safety"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 2,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "What does 'validation' mean?",
+    "stem": "validation",
+    "choices": [
+      {
+        "id": "a",
+        "text": "検証を行う関数・部品（バリデーター）"
+      },
+      {
+        "id": "b",
+        "text": "イベントやリクエストに応じて呼ばれる関数（ハンドラー）"
+      },
+      {
+        "id": "c",
+        "text": "（エラーなどへの）対処のしかた・処理"
+      },
+      {
+        "id": "d",
+        "text": "入力や値がルールに合っているかの検証"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "'validation' means: 入力や値がルールに合っているかの検証",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitnouns_018_w2m_1",
+    "sentenceId": "gitnouns_018",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "word_to_meaning",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "validator",
+          "pos": "noun",
+          "meaning": "検証を行う関数・部品（バリデーター）",
+          "target": true,
+          "category": "safety"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 2,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "What does 'validator' mean?",
+    "stem": "validator",
+    "choices": [
+      {
+        "id": "a",
+        "text": "入力や値がルールに合っているかの検証"
+      },
+      {
+        "id": "b",
+        "text": "イベントやリクエストに応じて呼ばれる関数（ハンドラー）"
+      },
+      {
+        "id": "c",
+        "text": "検証を行う関数・部品（バリデーター）"
+      },
+      {
+        "id": "d",
+        "text": "（エラーなどへの）対処のしかた・処理"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "'validator' means: 検証を行う関数・部品（バリデーター）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitnouns_019_w2m_1",
+    "sentenceId": "gitnouns_019",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "word_to_meaning",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "handler",
+          "pos": "noun",
+          "meaning": "イベントやリクエストに応じて呼ばれる関数（ハンドラー）",
+          "target": true,
+          "category": "safety"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 2,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "What does 'handler' mean?",
+    "stem": "handler",
+    "choices": [
+      {
+        "id": "a",
+        "text": "検証を行う関数・部品（バリデーター）"
+      },
+      {
+        "id": "b",
+        "text": "（エラーなどへの）対処のしかた・処理"
+      },
+      {
+        "id": "c",
+        "text": "イベントやリクエストに応じて呼ばれる関数（ハンドラー）"
+      },
+      {
+        "id": "d",
+        "text": "入力や値がルールに合っているかの検証"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "'handler' means: イベントやリクエストに応じて呼ばれる関数（ハンドラー）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitnouns_020_w2m_1",
+    "sentenceId": "gitnouns_020",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "word_to_meaning",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "handling",
+          "pos": "noun",
+          "meaning": "（エラーなどへの）対処のしかた・処理",
+          "target": true,
+          "category": "safety"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 2,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "What does 'handling' mean?",
+    "stem": "handling",
+    "choices": [
+      {
+        "id": "a",
+        "text": "イベントやリクエストに応じて呼ばれる関数（ハンドラー）"
+      },
+      {
+        "id": "b",
+        "text": "（エラーなどへの）対処のしかた・処理"
+      },
+      {
+        "id": "c",
+        "text": "主な手段が使えないときの代わり（フォールバック）"
+      },
+      {
+        "id": "d",
+        "text": "検証を行う関数・部品（バリデーター）"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "'handling' means: （エラーなどへの）対処のしかた・処理",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitnouns_021_w2m_1",
+    "sentenceId": "gitnouns_021",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "word_to_meaning",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "fallback",
+          "pos": "noun",
+          "meaning": "主な手段が使えないときの代わり（フォールバック）",
+          "target": true,
+          "category": "safety"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 2,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "What does 'fallback' mean?",
+    "stem": "fallback",
+    "choices": [
+      {
+        "id": "a",
+        "text": "主な手段が使えないときの代わり（フォールバック）"
+      },
+      {
+        "id": "b",
+        "text": "（エラーなどへの）対処のしかた・処理"
+      },
+      {
+        "id": "c",
+        "text": "イベントやリクエストに応じて呼ばれる関数（ハンドラー）"
+      },
+      {
+        "id": "d",
+        "text": "検証を行う関数・部品（バリデーター）"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "a"
+      ]
+    },
+    "explanation": {
+      "summary": "'fallback' means: 主な手段が使えないときの代わり（フォールバック）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitnouns_022_w2m_1",
+    "sentenceId": "gitnouns_022",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "word_to_meaning",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "extension",
+          "pos": "noun",
+          "meaning": "機能を足す追加モジュール（拡張機能）・ファイルの拡張子",
+          "target": true,
+          "category": "extension"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 2,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "What does 'extension' mean?",
+    "stem": "extension",
+    "choices": [
+      {
+        "id": "a",
+        "text": "主な手段が使えないときの代わり（フォールバック）"
+      },
+      {
+        "id": "b",
+        "text": "機能を足す追加モジュール（拡張機能）・ファイルの拡張子"
+      },
+      {
+        "id": "c",
+        "text": "アプリを環境に配置して動かすこと（デプロイ）"
+      },
+      {
+        "id": "d",
+        "text": "（エラーなどへの）対処のしかた・処理"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "'extension' means: 機能を足す追加モジュール（拡張機能）・ファイルの拡張子",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitnouns_023_w2m_1",
+    "sentenceId": "gitnouns_023",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "word_to_meaning",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "deployment",
+          "pos": "noun",
+          "meaning": "アプリを環境に配置して動かすこと（デプロイ）",
+          "target": true,
+          "category": "release"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 2,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "What does 'deployment' mean?",
+    "stem": "deployment",
+    "choices": [
+      {
+        "id": "a",
+        "text": "依存の正確なバージョンを記録するファイル"
+      },
+      {
+        "id": "b",
+        "text": "アプリを環境に配置して動かすこと（デプロイ）"
+      },
+      {
+        "id": "c",
+        "text": "機能を足す追加モジュール（拡張機能）・ファイルの拡張子"
+      },
+      {
+        "id": "d",
+        "text": "主な手段が使えないときの代わり（フォールバック）"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "'deployment' means: アプリを環境に配置して動かすこと（デプロイ）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitnouns_024_w2m_1",
+    "sentenceId": "gitnouns_024",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "word_to_meaning",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "lockfile",
+          "pos": "noun",
+          "meaning": "依存の正確なバージョンを記録するファイル",
+          "target": true,
+          "category": "release"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 2,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "What does 'lockfile' mean?",
+    "stem": "lockfile",
+    "choices": [
+      {
+        "id": "a",
+        "text": "アプリを環境に配置して動かすこと（デプロイ）"
+      },
+      {
+        "id": "b",
+        "text": "依存の正確なバージョンを記録するファイル"
+      },
+      {
+        "id": "c",
+        "text": "使い方や仕組みの説明文書（ドキュメント）"
+      },
+      {
+        "id": "d",
+        "text": "機能を足す追加モジュール（拡張機能）・ファイルの拡張子"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "'lockfile' means: 依存の正確なバージョンを記録するファイル。よく使う形: package-lock.json・pnpm-lock.yaml など",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitnouns_025_w2m_1",
+    "sentenceId": "gitnouns_025",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "word_to_meaning",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "documentation",
+          "pos": "noun",
+          "meaning": "使い方や仕組みの説明文書（ドキュメント）",
+          "target": true,
+          "category": "documentation"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 2,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "What does 'documentation' mean?",
+    "stem": "documentation",
+    "choices": [
+      {
+        "id": "a",
+        "text": "説明文（PR の説明・型や設定項目の説明など）"
+      },
+      {
+        "id": "b",
+        "text": "コードに付ける注釈（型注釈・コメントなど）"
+      },
+      {
+        "id": "c",
+        "text": "使い方や仕組みの説明文書（ドキュメント）"
+      },
+      {
+        "id": "d",
+        "text": "動作をログとして記録すること・その仕組み"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "'documentation' means: 使い方や仕組みの説明文書（ドキュメント）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitnouns_026_w2m_1",
+    "sentenceId": "gitnouns_026",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "word_to_meaning",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "description",
+          "pos": "noun",
+          "meaning": "説明文（PR の説明・型や設定項目の説明など）",
+          "target": true,
+          "category": "documentation"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 2,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "What does 'description' mean?",
+    "stem": "description",
+    "choices": [
+      {
+        "id": "a",
+        "text": "説明文（PR の説明・型や設定項目の説明など）"
+      },
+      {
+        "id": "b",
+        "text": "使い方や仕組みの説明文書（ドキュメント）"
+      },
+      {
+        "id": "c",
+        "text": "コードに付ける注釈（型注釈・コメントなど）"
+      },
+      {
+        "id": "d",
+        "text": "動作をログとして記録すること・その仕組み"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "a"
+      ]
+    },
+    "explanation": {
+      "summary": "'description' means: 説明文（PR の説明・型や設定項目の説明など）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitnouns_027_w2m_1",
+    "sentenceId": "gitnouns_027",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "word_to_meaning",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "annotation",
+          "pos": "noun",
+          "meaning": "コードに付ける注釈（型注釈・コメントなど）",
+          "target": true,
+          "category": "documentation"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 2,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "What does 'annotation' mean?",
+    "stem": "annotation",
+    "choices": [
+      {
+        "id": "a",
+        "text": "説明文（PR の説明・型や設定項目の説明など）"
+      },
+      {
+        "id": "b",
+        "text": "動作をログとして記録すること・その仕組み"
+      },
+      {
+        "id": "c",
+        "text": "使い方や仕組みの説明文書（ドキュメント）"
+      },
+      {
+        "id": "d",
+        "text": "コードに付ける注釈（型注釈・コメントなど）"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "'annotation' means: コードに付ける注釈（型注釈・コメントなど）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitnouns_028_w2m_1",
+    "sentenceId": "gitnouns_028",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "word_to_meaning",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "logging",
+          "pos": "noun",
+          "meaning": "動作をログとして記録すること・その仕組み",
+          "target": true,
+          "category": "documentation"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 2,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "What does 'logging' mean?",
+    "stem": "logging",
+    "choices": [
+      {
+        "id": "a",
+        "text": "コードに付ける注釈（型注釈・コメントなど）"
+      },
+      {
+        "id": "b",
+        "text": "説明文（PR の説明・型や設定項目の説明など）"
+      },
+      {
+        "id": "c",
+        "text": "使い方や仕組みの説明文書（ドキュメント）"
+      },
+      {
+        "id": "d",
+        "text": "動作をログとして記録すること・その仕組み"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "'logging' means: 動作をログとして記録すること・その仕組み",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitnouns_029_w2m_1",
+    "sentenceId": "gitnouns_029",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "word_to_meaning",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "usage",
+          "pos": "noun",
+          "meaning": "使い方・使用量",
+          "target": true,
+          "category": "general"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 2,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "What does 'usage' mean?",
+    "stem": "usage",
+    "choices": [
+      {
+        "id": "a",
+        "text": "処理は止めずに問題の可能性を知らせるメッセージ（警告）"
+      },
+      {
+        "id": "b",
+        "text": "使い方・使用量"
+      },
+      {
+        "id": "c",
+        "text": "コードが実行される環境・実行時"
+      },
+      {
+        "id": "d",
+        "text": "テストやタスクを実行するプログラム"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "'usage' means: 使い方・使用量",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitnouns_030_w2m_1",
+    "sentenceId": "gitnouns_030",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "word_to_meaning",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "warning",
+          "pos": "noun",
+          "meaning": "処理は止めずに問題の可能性を知らせるメッセージ（警告）",
+          "target": true,
+          "category": "safety"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 2,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "What does 'warning' mean?",
+    "stem": "warning",
+    "choices": [
+      {
+        "id": "a",
+        "text": "使い方・使用量"
+      },
+      {
+        "id": "b",
+        "text": "コードが実行される環境・実行時"
+      },
+      {
+        "id": "c",
+        "text": "処理は止めずに問題の可能性を知らせるメッセージ（警告）"
+      },
+      {
+        "id": "d",
+        "text": "テストやタスクを実行するプログラム"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "'warning' means: 処理は止めずに問題の可能性を知らせるメッセージ（警告）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitnouns_031_w2m_1",
+    "sentenceId": "gitnouns_031",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "word_to_meaning",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "runtime",
+          "pos": "noun",
+          "meaning": "コードが実行される環境・実行時",
+          "target": true,
+          "category": "general"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 2,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "What does 'runtime' mean?",
+    "stem": "runtime",
+    "choices": [
+      {
+        "id": "a",
+        "text": "コードが実行される環境・実行時"
+      },
+      {
+        "id": "b",
+        "text": "処理は止めずに問題の可能性を知らせるメッセージ（警告）"
+      },
+      {
+        "id": "c",
+        "text": "テストやタスクを実行するプログラム"
+      },
+      {
+        "id": "d",
+        "text": "使い方・使用量"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "a"
+      ]
+    },
+    "explanation": {
+      "summary": "'runtime' means: コードが実行される環境・実行時",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitnouns_032_w2m_1",
+    "sentenceId": "gitnouns_032",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "word_to_meaning",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "runner",
+          "pos": "noun",
+          "meaning": "テストやタスクを実行するプログラム",
+          "target": true,
+          "category": "general"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 2,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "What does 'runner' mean?",
+    "stem": "runner",
+    "choices": [
+      {
+        "id": "a",
+        "text": "コードが実行される環境・実行時"
+      },
+      {
+        "id": "b",
+        "text": "コードやファイルを自動で作るツール・関数"
+      },
+      {
+        "id": "c",
+        "text": "テストやタスクを実行するプログラム"
+      },
+      {
+        "id": "d",
+        "text": "処理は止めずに問題の可能性を知らせるメッセージ（警告）"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "'runner' means: テストやタスクを実行するプログラム",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitnouns_033_w2m_1",
+    "sentenceId": "gitnouns_033",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "word_to_meaning",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "generator",
+          "pos": "noun",
+          "meaning": "コードやファイルを自動で作るツール・関数",
+          "target": true,
+          "category": "addition"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 2,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "What does 'generator' mean?",
+    "stem": "generator",
+    "choices": [
+      {
+        "id": "a",
+        "text": "テストやタスクを実行するプログラム"
+      },
+      {
+        "id": "b",
+        "text": "自動で作ること（生成の処理）"
+      },
+      {
+        "id": "c",
+        "text": "コードが実行される環境・実行時"
+      },
+      {
+        "id": "d",
+        "text": "コードやファイルを自動で作るツール・関数"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "'generator' means: コードやファイルを自動で作るツール・関数",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitnouns_034_w2m_1",
+    "sentenceId": "gitnouns_034",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "word_to_meaning",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "generation",
+          "pos": "noun",
+          "meaning": "自動で作ること（生成の処理）",
+          "target": true,
+          "category": "addition"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 2,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "What does 'generation' mean?",
+    "stem": "generation",
+    "choices": [
+      {
+        "id": "a",
+        "text": "自動で作ること（生成の処理）"
+      },
+      {
+        "id": "b",
+        "text": "コードやファイルを自動で作るツール・関数"
+      },
+      {
+        "id": "c",
+        "text": "テストやタスクを実行するプログラム"
+      },
+      {
+        "id": "d",
+        "text": "コードが実行される環境・実行時"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "a"
+      ]
+    },
+    "explanation": {
+      "summary": "'generation' means: 自動で作ること（生成の処理）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitnouns_035_w2m_1",
+    "sentenceId": "gitnouns_035",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "word_to_meaning",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "detection",
+          "pos": "noun",
+          "meaning": "自動で見つけ出すこと（検出）",
+          "target": true,
+          "category": "standalone"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 2,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "What does 'detection' mean?",
+    "stem": "detection",
+    "choices": [
+      {
+        "id": "a",
+        "text": "既定の値や動作を上書きする設定"
+      },
+      {
+        "id": "b",
+        "text": "設定項目（オプション）"
+      },
+      {
+        "id": "c",
+        "text": "条件に合うものだけを選ぶ仕組み（フィルター）"
+      },
+      {
+        "id": "d",
+        "text": "自動で見つけ出すこと（検出）"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "'detection' means: 自動で見つけ出すこと（検出）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitnouns_036_w2m_1",
+    "sentenceId": "gitnouns_036",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "word_to_meaning",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "override",
+          "pos": "noun",
+          "meaning": "既定の値や動作を上書きする設定",
+          "target": true,
+          "category": "standalone"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 2,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "What does 'override' mean?",
+    "stem": "override",
+    "choices": [
+      {
+        "id": "a",
+        "text": "既定の値や動作を上書きする設定"
+      },
+      {
+        "id": "b",
+        "text": "自動で見つけ出すこと（検出）"
+      },
+      {
+        "id": "c",
+        "text": "設定項目（オプション）"
+      },
+      {
+        "id": "d",
+        "text": "条件に合うものだけを選ぶ仕組み（フィルター）"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "a"
+      ]
+    },
+    "explanation": {
+      "summary": "'override' means: 既定の値や動作を上書きする設定",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitnouns_037_w2m_1",
+    "sentenceId": "gitnouns_037",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "word_to_meaning",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "option",
+          "pos": "noun",
+          "meaning": "設定項目（オプション）",
+          "target": true,
+          "category": "standalone"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 2,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "What does 'option' mean?",
+    "stem": "option",
+    "choices": [
+      {
+        "id": "a",
+        "text": "既定の値や動作を上書きする設定"
+      },
+      {
+        "id": "b",
+        "text": "設定項目（オプション）"
+      },
+      {
+        "id": "c",
+        "text": "条件に合うものだけを選ぶ仕組み（フィルター）"
+      },
+      {
+        "id": "d",
+        "text": "自動で見つけ出すこと（検出）"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "'option' means: 設定項目（オプション）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitnouns_038_w2m_1",
+    "sentenceId": "gitnouns_038",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "word_to_meaning",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "filter",
+          "pos": "noun",
+          "meaning": "条件に合うものだけを選ぶ仕組み（フィルター）",
+          "target": true,
+          "category": "standalone"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 2,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "What does 'filter' mean?",
+    "stem": "filter",
+    "choices": [
+      {
+        "id": "a",
+        "text": "設定項目（オプション）"
+      },
+      {
+        "id": "b",
+        "text": "処理の途中で独自のコードを差し込める場所・関数（フック）"
+      },
+      {
+        "id": "c",
+        "text": "条件に合うものだけを選ぶ仕組み（フィルター）"
+      },
+      {
+        "id": "d",
+        "text": "既定の値や動作を上書きする設定"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "'filter' means: 条件に合うものだけを選ぶ仕組み（フィルター）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitnouns_039_w2m_1",
+    "sentenceId": "gitnouns_039",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "word_to_meaning",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "hook",
+          "pos": "noun",
+          "meaning": "処理の途中で独自のコードを差し込める場所・関数（フック）",
+          "target": true,
+          "category": "standalone"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 2,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "What does 'hook' mean?",
+    "stem": "hook",
+    "choices": [
+      {
+        "id": "a",
+        "text": "条件に合うものだけを選ぶ仕組み（フィルター）"
+      },
+      {
+        "id": "b",
+        "text": "処理の途中で独自のコードを差し込める場所・関数（フック）"
+      },
+      {
+        "id": "c",
+        "text": "設定項目（オプション）"
+      },
+      {
+        "id": "d",
+        "text": "既定の値や動作を上書きする設定"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "'hook' means: 処理の途中で独自のコードを差し込める場所・関数（フック）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  }
+]

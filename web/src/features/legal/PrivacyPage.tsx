@@ -1,5 +1,5 @@
-import { LegalDocument } from './LegalDocument';
 import { PRIVACY_POLICY } from './documents';
+import { LegalDocument } from './LegalDocument';
 
 export function PrivacyPage() {
   return (

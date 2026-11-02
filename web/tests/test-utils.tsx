@@ -6,7 +6,7 @@ import { createDefaultServices, ServiceProvider } from '../src/service';
 
 export function renderWithProviders(
   ui: ReactElement,
-  options?: Omit<RenderOptions, 'wrapper'>
+  options?: Omit<RenderOptions, 'wrapper'>,
 ) {
   const services = createDefaultServices();
   const queryClient = new QueryClient({

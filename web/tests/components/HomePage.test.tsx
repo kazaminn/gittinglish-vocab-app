@@ -65,10 +65,10 @@ describe('HomePage', () => {
 
     expect(screen.getByLabelText(/reibun section/i)).toBeInTheDocument();
     expect(
-      screen.getByRole('radio', { name: /sentence cloze/i })
+      screen.getByRole('radio', { name: /sentence cloze/i }),
     ).toBeInTheDocument();
     expect(
-      screen.getByRole('radio', { name: /word → meaning/i })
+      screen.getByRole('radio', { name: /word → meaning/i }),
     ).toBeInTheDocument();
   });
 
@@ -85,7 +85,7 @@ describe('HomePage', () => {
         datasetId: 'gitverbs85',
         drillMode: 'word_to_meaning',
         sessionSize: 20,
-      })
+      }),
     );
   });
 
@@ -112,7 +112,7 @@ describe('HomePage', () => {
         }}
         onSelectionChange={vi.fn()}
         onStartDrill={onStartDrill}
-      />
+      />,
     );
 
     expect(screen.getByText('reviewed')).toBeInTheDocument();

@@ -7,7 +7,7 @@ describe('SelectableOption', () => {
   it('applies the variant class for its state', () => {
     render(<SelectableOption state="correct">answer</SelectableOption>);
     expect(screen.getByRole('button', { name: 'answer' }).className).toContain(
-      'bg-success-surface'
+      'bg-success-surface',
     );
   });
 
@@ -16,7 +16,7 @@ describe('SelectableOption', () => {
     render(
       <SelectableOption ref={ref} state="selected">
         x
-      </SelectableOption>
+      </SelectableOption>,
     );
     expect(ref.current).toBeInstanceOf(HTMLButtonElement);
   });

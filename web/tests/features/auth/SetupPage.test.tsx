@@ -128,7 +128,7 @@ describe('SetupPage', () => {
     await user.click(submitButton);
 
     expect(await screen.findByRole('alert')).toHaveTextContent(
-      'この ID は既に使われています。'
+      'この ID は既に使われています。',
     );
     expect(submitButton).toBeEnabled();
     expect(submitButton).toHaveTextContent('設定して始める');

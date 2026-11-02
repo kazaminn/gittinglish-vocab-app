@@ -25,16 +25,16 @@ export function ReorderList({
   correctOrder,
 }: ReorderListProps) {
   const [slotIds, setSlotIds] = useState<(ID | undefined)[]>(() =>
-    Array.from({ length: chunks.length }, () => undefined)
+    Array.from({ length: chunks.length }, () => undefined),
   );
   const [activeSlotIdx, setActiveSlotIdx] = useState(0);
   const [candidateOrder] = useState<ID[]>(() =>
-    shuffleArray(chunks.map((chunk) => chunk.id))
+    shuffleArray(chunks.map((chunk) => chunk.id)),
   );
 
   const chunkMap = useMemo(
     () => new Map(chunks.map((chunk) => [chunk.id, chunk])),
-    [chunks]
+    [chunks],
   );
   const availableIds = candidateOrder.filter((id) => !slotIds.includes(id));
   const isComplete = slotIds.every((id) => id !== undefined);
@@ -55,7 +55,7 @@ export function ReorderList({
 
     setActiveSlotIdx((prev) => {
       const nextEmptyIdx = slotIds.findIndex(
-        (id, idx) => idx > prev && id === undefined
+        (id, idx) => idx > prev && id === undefined,
       );
       return nextEmptyIdx >= 0 ? nextEmptyIdx : prev;
     });
@@ -130,7 +130,7 @@ export function ReorderList({
                   if (event.key === 'ArrowRight' || event.key === 'ArrowDown') {
                     event.preventDefault();
                     setActiveSlotIdx((current) =>
-                      Math.min(slotIds.length - 1, current + 1)
+                      Math.min(slotIds.length - 1, current + 1),
                     );
                   }
 

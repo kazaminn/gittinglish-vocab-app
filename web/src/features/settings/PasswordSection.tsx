@@ -29,7 +29,7 @@ export function PasswordSection() {
   const hasPassword =
     justSet ||
     (linkedAccounts.data?.some(
-      (account) => account.providerId === CREDENTIAL_PROVIDER_ID
+      (account) => account.providerId === CREDENTIAL_PROVIDER_ID,
     ) ??
       false);
 

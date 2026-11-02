@@ -22,7 +22,7 @@ describe('useHomeProblemsQuery', () => {
           datasetId: 'gitverbs85',
           drillMode: 'word_to_meaning',
         }),
-      { wrapper: Wrapper }
+      { wrapper: Wrapper },
     );
 
     await waitFor(() => expect(result.current.isSuccess).toBe(true));

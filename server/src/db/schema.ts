@@ -1,11 +1,11 @@
 import { sql } from 'drizzle-orm';
 import {
+  index,
+  integer,
+  primaryKey,
+  real,
   sqliteTable,
   text,
-  integer,
-  real,
-  primaryKey,
-  index,
 } from 'drizzle-orm/sqlite-core';
 
 export { account, session, user, verification } from './auth-schema.js';
@@ -35,9 +35,9 @@ export const drillProgress = sqliteTable(
     index('idx_progress_review').on(
       table.userId,
       table.drillMode,
-      table.nextReview
+      table.nextReview,
     ),
-  ]
+  ],
 );
 
 export const answerLogs = sqliteTable(
@@ -55,7 +55,7 @@ export const answerLogs = sqliteTable(
       .notNull()
       .default(sql`(unixepoch())`),
   },
-  (table) => [index('idx_answer_logs_session').on(table.sessionId)]
+  (table) => [index('idx_answer_logs_session').on(table.sessionId)],
 );
 
 export const userActivities = sqliteTable(
@@ -75,5 +75,5 @@ export const userActivities = sqliteTable(
   (table) => [
     primaryKey({ columns: [table.userId, table.activityDate] }),
     index('idx_user_activities_user_date').on(table.userId, table.activityDate),
-  ]
+  ],
 );

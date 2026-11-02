@@ -43,11 +43,11 @@ describe('RadioOptionGroup', () => {
     expect(screen.getByRole('radiogroup', { name: 'Test group' })).toBeTruthy();
     expect(screen.getByRole('radio', { name: 'Alpha' })).toHaveAttribute(
       'aria-checked',
-      'true'
+      'true',
     );
     expect(screen.getByRole('radio', { name: 'Beta' })).toHaveAttribute(
       'aria-checked',
-      'false'
+      'false',
     );
   });
 
@@ -63,7 +63,7 @@ describe('RadioOptionGroup', () => {
     await user.keyboard('{Enter}');
     expect(screen.getByRole('radio', { name: 'Beta' })).toHaveAttribute(
       'aria-checked',
-      'true'
+      'true',
     );
   });
 
@@ -82,7 +82,7 @@ describe('RadioOptionGroup', () => {
     await user.keyboard('3');
     expect(screen.getByRole('radio', { name: 'Gamma' })).toHaveAttribute(
       'aria-checked',
-      'true'
+      'true',
     );
   });
 });

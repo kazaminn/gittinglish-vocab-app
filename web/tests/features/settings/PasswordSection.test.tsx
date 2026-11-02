@@ -40,8 +40,8 @@ describe('PasswordSection', () => {
 
     expect(
       await screen.findByText(
-        'password set. you can sign in with your id and password.'
-      )
+        'password set. you can sign in with your id and password.',
+      ),
     ).toBeInTheDocument();
     expect(screen.queryByLabelText('new password')).not.toBeInTheDocument();
   });
@@ -68,8 +68,8 @@ describe('PasswordSection', () => {
 
     expect(
       await screen.findByText(
-        'password set. you can sign in with your id and password.'
-      )
+        'password set. you can sign in with your id and password.',
+      ),
     ).toBeInTheDocument();
     expect(mockedApiRequest).toHaveBeenCalledWith('/api/users/password', {
       method: 'POST',
@@ -88,8 +88,8 @@ describe('PasswordSection', () => {
       new ApiClientError(
         'User already has a password set',
         'PASSWORD_ALREADY_SET',
-        409
-      )
+        409,
+      ),
     );
 
     renderWithProviders(<PasswordSection />);
@@ -99,7 +99,7 @@ describe('PasswordSection', () => {
     await user.click(screen.getByRole('button', { name: /set password/ }));
 
     expect(await screen.findByRole('alert')).toHaveTextContent(
-      'このアカウントには既にパスワードが設定されています。'
+      'このアカウントには既にパスワードが設定されています。',
     );
   });
 });

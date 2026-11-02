@@ -1,5 +1,5 @@
 import { useCallback, useMemo, useState } from 'react';
-import type { DrillMode, DatasetId, Explanation } from '@shared/domain';
+import type { DatasetId, DrillMode, Explanation } from '@shared/domain';
 import type { ProblemDTO, SessionStartItem } from '@shared/dto';
 import {
   useEndSessionMutation,
@@ -39,7 +39,7 @@ export interface DrillActions {
     dataset: DatasetId,
     drillMode: Exclude<DrillMode, 'flashcard'>,
     sessionSize: number,
-    sectionId?: string
+    sectionId?: string,
   ) => Promise<void>;
   answer: (userInput: string) => Promise<AnswerResult>;
   next: () => void;
@@ -67,7 +67,7 @@ function getExplanationText(explanation: Explanation): string {
 
 function getDisplayedUserAnswer(
   problem: ProblemDTO,
-  userInput: string
+  userInput: string,
 ): string {
   if ('choices' in problem.payload) {
     return (
@@ -78,7 +78,7 @@ function getDisplayedUserAnswer(
 
   if ('chunks' in problem.payload) {
     const chunkMap = new Map(
-      problem.payload.chunks.map((chunk) => [chunk.id, chunk.text])
+      problem.payload.chunks.map((chunk) => [chunk.id, chunk.text]),
     );
     return userInput
       .split(',')
@@ -125,7 +125,7 @@ export function useDrill(): DrillState & DrillActions {
         answers: pendingResults.map(toEndSessionAnswer),
       });
     },
-    [endSessionMutation, sessionId, startedAt]
+    [endSessionMutation, sessionId, startedAt],
   );
 
   const resetState = useCallback(() => {
@@ -143,7 +143,7 @@ export function useDrill(): DrillState & DrillActions {
       dataset: DatasetId,
       drillMode: Exclude<DrillMode, 'flashcard'>,
       sessionSize: number,
-      sectionId?: string
+      sectionId?: string,
     ) => {
       const response = await startSessionMutation.mutateAsync({
         dataset,
@@ -160,7 +160,7 @@ export function useDrill(): DrillState & DrillActions {
       setResults([]);
       setIsSessionComplete(false);
     },
-    [startSessionMutation]
+    [startSessionMutation],
   );
 
   const answer = useCallback(
@@ -188,7 +188,7 @@ export function useDrill(): DrillState & DrillActions {
       setResults((previous) => [...previous, result]);
       return Promise.resolve(result);
     },
-    [currentItem, currentProblem]
+    [currentItem, currentProblem],
   );
 
   const next = useCallback(() => {
@@ -220,17 +220,17 @@ export function useDrill(): DrillState & DrillActions {
 
       resetState();
     },
-    [isSessionComplete, persistSessionResults, resetState, results]
+    [isSessionComplete, persistSessionResults, resetState, results],
   );
 
   const isBusy = useMemo(
     () => startSessionMutation.isPending || endSessionMutation.isPending,
-    [endSessionMutation.isPending, startSessionMutation.isPending]
+    [endSessionMutation.isPending, startSessionMutation.isPending],
   );
 
   return {
     isActive: Boolean(
-      user && sessionId && currentProblem && !isSessionComplete
+      user && sessionId && currentProblem && !isSessionComplete,
     ),
     isBusy,
     currentItem,

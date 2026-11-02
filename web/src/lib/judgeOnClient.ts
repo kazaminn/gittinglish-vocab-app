@@ -12,12 +12,12 @@ import { normalizeTextAnswer } from './normalizeTextAnswer';
  */
 export function judgeOnClient(
   item: SessionStartItem,
-  answer: string
+  answer: string,
 ): JudgeResponse {
   const meta = item.judgeMeta;
   if (!meta) {
     throw new Error(
-      `judgeOnClient: item ${item.itemId} (${item.drillMode}) has no judgeMeta`
+      `judgeOnClient: item ${item.itemId} (${item.drillMode}) has no judgeMeta`,
     );
   }
 
@@ -33,7 +33,7 @@ export function judgeOnClient(
 
   const normalized = normalizeTextAnswer(answer);
   const isCorrect = meta.acceptedAnswers.some(
-    (candidate) => normalizeTextAnswer(candidate) === normalized
+    (candidate) => normalizeTextAnswer(candidate) === normalized,
   );
   return {
     isCorrect,

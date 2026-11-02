@@ -70,14 +70,14 @@ describe('KazamitteLinkSection', () => {
 
     await user.click(unlinkButton);
     expect(
-      screen.getByText(/unlink kazamitte id\? you will need/i)
+      screen.getByText(/unlink kazamitte id\? you will need/i),
     ).toBeInTheDocument();
     expect(mockedUnlinkAccount).not.toHaveBeenCalled();
 
     // Cancelling must not call the API either.
     await user.click(screen.getByRole('button', { name: 'cancel' }));
     expect(
-      screen.queryByText(/unlink kazamitte id\? you will need/i)
+      screen.queryByText(/unlink kazamitte id\? you will need/i),
     ).not.toBeInTheDocument();
     expect(mockedUnlinkAccount).not.toHaveBeenCalled();
 
@@ -87,7 +87,7 @@ describe('KazamitteLinkSection', () => {
     });
 
     await user.click(
-      screen.getByRole('button', { name: /unlink kazamitte id/i })
+      screen.getByRole('button', { name: /unlink kazamitte id/i }),
     );
     await user.click(screen.getByRole('button', { name: /yes, unlink it/i }));
 
@@ -122,16 +122,16 @@ describe('KazamitteLinkSection', () => {
     await screen.findByText(/linked\. you can sign in with your kazamitte id/i);
 
     await user.click(
-      await screen.findByRole('button', { name: /unlink kazamitte id/i })
+      await screen.findByRole('button', { name: /unlink kazamitte id/i }),
     );
     await user.click(screen.getByRole('button', { name: /yes, unlink it/i }));
 
     await waitFor(() => expect(mockedListAccounts).toHaveBeenCalledTimes(2));
     expect(
-      await screen.findByText(/not linked\. link your kazamitte id/i)
+      await screen.findByText(/not linked\. link your kazamitte id/i),
     ).toBeInTheDocument();
     expect(
-      screen.getByRole('button', { name: /link kazamitte id/i })
+      screen.getByRole('button', { name: /link kazamitte id/i }),
     ).toBeInTheDocument();
   });
 
@@ -153,16 +153,16 @@ describe('KazamitteLinkSection', () => {
 
     // Told up front, before ever attempting the call.
     expect(
-      await screen.findByText(/this is your only login method/i)
+      await screen.findByText(/this is your only login method/i),
     ).toBeInTheDocument();
 
     await user.click(
-      screen.getByRole('button', { name: /unlink kazamitte id/i })
+      screen.getByRole('button', { name: /unlink kazamitte id/i }),
     );
     await user.click(screen.getByRole('button', { name: /yes, unlink it/i }));
 
     expect(await screen.findByRole('alert')).toHaveTextContent(
-      'Kazamitte ID は現在唯一のログイン方法です。連携を解除するには、先にパスワードを設定してください。'
+      'Kazamitte ID は現在唯一のログイン方法です。連携を解除するには、先にパスワードを設定してください。',
     );
   });
 
@@ -178,7 +178,7 @@ describe('KazamitteLinkSection', () => {
 
     const alert = await screen.findByRole('alert');
     expect(alert).toHaveTextContent(
-      'この Kazamitte ID は既に別のアカウントと連携されています。'
+      'この Kazamitte ID は既に別のアカウントと連携されています。',
     );
     // No account identifier, id, or name leaks into the message.
     expect(alert.textContent).not.toMatch(/user|@|#/i);
@@ -211,7 +211,7 @@ describe('KazamitteLinkSection', () => {
     await user.click(
       screen.getByRole('button', {
         name: /このまま今のアカウントを使う/,
-      })
+      }),
     );
 
     expect(screen.queryByRole('alert')).not.toBeInTheDocument();

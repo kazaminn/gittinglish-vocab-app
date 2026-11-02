@@ -112,5 +112,5 @@ export default defineConfig(
       '@typescript-eslint/no-unsafe-return': 'warn',
     },
   },
-  prettierConfig
+  prettierConfig,
 );

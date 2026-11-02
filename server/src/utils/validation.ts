@@ -9,14 +9,14 @@ function formatPath(path: readonly PropertyKey[]) {
         ? `[${segment}]`
         : index === 0
           ? String(segment)
-          : `.${String(segment)}`
+          : `.${String(segment)}`,
     )
     .join('');
 }
 
 export async function parseJsonBody<T>(
   request: Request,
-  schema: ZodSchema<T>
+  schema: ZodSchema<T>,
 ): Promise<T> {
   let payload: unknown;
 

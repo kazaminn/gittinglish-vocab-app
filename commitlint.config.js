@@ -39,7 +39,7 @@ export default {
 
           const normalizedType = type.replace(/\uFE0F/g, '').trim();
           const normalizedExpected = expectedValues.map((v) =>
-            v.replace(/\uFE0F/g, '')
+            v.replace(/\uFE0F/g, ''),
           );
 
           return [normalizedExpected.includes(normalizedType), 'invalid type'];

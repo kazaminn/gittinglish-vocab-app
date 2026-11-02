@@ -11,9 +11,9 @@ describe('translateAuthError', () => {
       translateAuthError({
         code: 'FAILED_TO_UNLINK_LAST_ACCOUNT',
         message: "You can't unlink your last account",
-      })
+      }),
     ).toBe(
-      'Kazamitte ID は現在唯一のログイン方法です。連携を解除するには、先にパスワードを設定してください。'
+      'Kazamitte ID は現在唯一のログイン方法です。連携を解除するには、先にパスワードを設定してください。',
     );
   });
 
@@ -32,19 +32,19 @@ describe('translateAuthError', () => {
       translateAuthError({
         code: 'USERNAME_IS_ALREADY_TAKEN',
         message: 'Username is already taken. Please try another.',
-      })
+      }),
     ).toBe('この ID は既に使われています。');
     expect(
       translateAuthError({
         code: 'INVALID_USERNAME',
         message: 'Username is invalid',
-      })
+      }),
     ).toBe('ID に使えるのは半角英数字と _ . のみです。');
   });
 
   it('falls back to the raw message so an unmapped failure is still nameable', () => {
     expect(translateAuthError({ code: 'SOMETHING_NEW', message: 'boom' })).toBe(
-      'boom'
+      'boom',
     );
   });
 });
@@ -72,7 +72,7 @@ describe('translateOAuthError', () => {
 
   it('never names the account that already owns the identity', () => {
     expect(
-      translateOAuthError('account_already_linked_to_different_user')
+      translateOAuthError('account_already_linked_to_different_user'),
     ).toBe('この Kazamitte ID は既に別のアカウントと連携されています。');
   });
 
@@ -84,7 +84,7 @@ describe('translateOAuthError', () => {
 describe('isAccountAlreadyLinkedError', () => {
   it('matches only the linked-elsewhere code', () => {
     expect(
-      isAccountAlreadyLinkedError('account_already_linked_to_different_user')
+      isAccountAlreadyLinkedError('account_already_linked_to_different_user'),
     ).toBe(true);
     expect(isAccountAlreadyLinkedError('account_not_linked')).toBe(false);
     expect(isAccountAlreadyLinkedError(null)).toBe(false);

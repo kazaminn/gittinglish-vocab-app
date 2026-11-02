@@ -107,7 +107,7 @@ export function translateOAuthError(code: string | null): string {
  * offer that choice alongside the translated message.
  */
 export function isAccountAlreadyLinkedError(
-  code: string | null | undefined
+  code: string | null | undefined,
 ): boolean {
   return code === 'account_already_linked_to_different_user';
 }

@@ -74,7 +74,7 @@ describe('LogoutPage', () => {
     renderWithProviders(<LogoutPage />);
 
     expect(
-      await screen.findByText(/Google \/ GitHub[\s\S]*のログインは残ります/)
+      await screen.findByText(/Google \/ GitHub[\s\S]*のログインは残ります/),
     ).toBeInTheDocument();
   });
 
@@ -85,7 +85,7 @@ describe('LogoutPage', () => {
     expect(
       screen.queryByRole('link', {
         name: 'Kazamitte ID からもログアウトする (別タブ)',
-      })
+      }),
     ).not.toBeInTheDocument();
   });
 
@@ -100,7 +100,7 @@ describe('LogoutPage', () => {
     expect(
       await screen.findByRole('link', {
         name: 'Kazamitte ID からもログアウトする (別タブ)',
-      })
+      }),
     ).toBeInTheDocument();
   });
 
@@ -119,7 +119,7 @@ describe('LogoutPage', () => {
     expect(localStorage.getItem('gittinglish:session:u1')).toBeNull();
     // Only the signed-out user's rows go; nothing else in the browser does.
     expect(localStorage.getItem('gittinglish:progress:someone-else')).toBe(
-      '[]'
+      '[]',
     );
   });
 

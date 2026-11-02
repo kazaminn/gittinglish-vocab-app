@@ -14,7 +14,7 @@ export class ApiClientError extends Error {
 
 export async function apiRequest<T>(
   path: string,
-  init: RequestInit = {}
+  init: RequestInit = {},
 ): Promise<T> {
   const response = await fetch(path, {
     ...init,

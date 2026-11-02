@@ -1,0 +1,3237 @@
+[
+  {
+    "id": "gitadjectives_001_scloze_1",
+    "sentenceId": "gitadjectives_001",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "additional",
+          "pos": "adjective",
+          "meaning": "追加の・それ以外の（もう少しある）",
+          "target": true,
+          "category": "from_verb"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best adjective to fill in the blank.",
+    "stem": "The loader now accepts ___ options, such as `timeout` and `retries`, on top of the defaults.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "additional"
+      },
+      {
+        "id": "b",
+        "text": "unused"
+      },
+      {
+        "id": "c",
+        "text": "outdated"
+      },
+      {
+        "id": "d",
+        "text": "flaky"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "a"
+      ]
+    },
+    "explanation": {
+      "summary": "on top of the defaults（既定に加えて）がヒント。追加のものはadditional。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadjectives_002_scloze_1",
+    "sentenceId": "gitadjectives_002",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo",
+        "participial_adjective"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "unused",
+          "pos": "adjective",
+          "meaning": "使われていない（消してよい）",
+          "target": true,
+          "category": "from_verb"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best adjective to fill in the blank.",
+    "stem": "The linter flags imports that are never referenced, so remove all ___ imports.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "missing"
+      },
+      {
+        "id": "b",
+        "text": "stable"
+      },
+      {
+        "id": "c",
+        "text": "visible"
+      },
+      {
+        "id": "d",
+        "text": "unused"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "never referenced（一度も使われない）→ unused。",
+      "relatedGrammar": [
+        "svo",
+        "participial_adjective"
+      ]
+    }
+  },
+  {
+    "id": "gitadjectives_003_scloze_1",
+    "sentenceId": "gitadjectives_003",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "useless",
+          "pos": "adjective",
+          "meaning": "あっても意味のない（効果がない）",
+          "target": true,
+          "category": "from_verb"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best adjective to fill in the blank.",
+    "stem": "This `await` does nothing because `getConfig()` returns a plain value, not a Promise. Remove the ___ `await`.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "missing"
+      },
+      {
+        "id": "b",
+        "text": "stable"
+      },
+      {
+        "id": "c",
+        "text": "external"
+      },
+      {
+        "id": "d",
+        "text": "useless"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "書いてあっても効果がないものはuseless。unused（使われていない）とは違い、使われていても意味がない場合。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadjectives_004_scloze_1",
+    "sentenceId": "gitadjectives_004",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo",
+        "participial_adjective"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "disabled",
+          "pos": "adjective",
+          "meaning": "無効になっている（OFFの）",
+          "target": true,
+          "category": "from_verb"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best adjective to fill in the blank.",
+    "stem": "The submit button stays ___ until all required fields are filled in.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "enabled"
+      },
+      {
+        "id": "b",
+        "text": "external"
+      },
+      {
+        "id": "c",
+        "text": "generic"
+      },
+      {
+        "id": "d",
+        "text": "disabled"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "押せない状態はdisabled。until ... are filled in（入力し終わるまで）がヒントで、enabled は逆。",
+      "relatedGrammar": [
+        "svo",
+        "participial_adjective"
+      ]
+    }
+  },
+  {
+    "id": "gitadjectives_005_scloze_1",
+    "sentenceId": "gitadjectives_005",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo",
+        "participial_adjective"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "enabled",
+          "pos": "adjective",
+          "meaning": "有効になっている（ONの）",
+          "target": true,
+          "category": "from_verb"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best adjective to fill in the blank.",
+    "stem": "Debug logs are only printed when verbose mode is ___.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "disabled"
+      },
+      {
+        "id": "b",
+        "text": "external"
+      },
+      {
+        "id": "c",
+        "text": "enabled"
+      },
+      {
+        "id": "d",
+        "text": "nested"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "ON になっている状態はenabled。only printed when（そのときだけ出る）がヒント。",
+      "relatedGrammar": [
+        "svo",
+        "participial_adjective"
+      ]
+    }
+  },
+  {
+    "id": "gitadjectives_006_scloze_1",
+    "sentenceId": "gitadjectives_006",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "correct",
+          "pos": "adjective",
+          "meaning": "正しい（間違いのない）",
+          "target": true,
+          "category": "from_verb"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best adjective to fill in the blank.",
+    "stem": "The tooltip showed the wrong date, so this fix makes sure the ___ time zone is used.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "incorrect"
+      },
+      {
+        "id": "b",
+        "text": "correct"
+      },
+      {
+        "id": "c",
+        "text": "nested"
+      },
+      {
+        "id": "d",
+        "text": "flaky"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "wrong date を直すので、正しいものはcorrect。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadjectives_007_scloze_1",
+    "sentenceId": "gitadjectives_007",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "incorrect",
+          "pos": "adjective",
+          "meaning": "正しくない（誤った）",
+          "target": true,
+          "category": "from_verb"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best adjective to fill in the blank.",
+    "stem": "The docs say the default port is 3000, but it is actually 8080. Fix the ___ value in the docs.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "incorrect"
+      },
+      {
+        "id": "b",
+        "text": "correct"
+      },
+      {
+        "id": "c",
+        "text": "stable"
+      },
+      {
+        "id": "d",
+        "text": "standalone"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "a"
+      ]
+    },
+    "explanation": {
+      "summary": "実際と違う値はincorrect（誤った）。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadjectives_008_scloze_1",
+    "sentenceId": "gitadjectives_008",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo",
+        "participial_adjective"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "deprecated",
+          "pos": "adjective",
+          "meaning": "非推奨になった（まだ動くが将来消える）",
+          "target": true,
+          "category": "from_verb"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best adjective to fill in the blank.",
+    "stem": "`oldMethod()` still works, but it is ___ and will be removed in the next major version.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "deprecated"
+      },
+      {
+        "id": "b",
+        "text": "broken"
+      },
+      {
+        "id": "c",
+        "text": "missing"
+      },
+      {
+        "id": "d",
+        "text": "nested"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "a"
+      ]
+    },
+    "explanation": {
+      "summary": "still works（まだ動く）＋ will be removed（将来消える）→ deprecated。broken は動かない場合。",
+      "relatedGrammar": [
+        "svo",
+        "participial_adjective"
+      ]
+    }
+  },
+  {
+    "id": "gitadjectives_009_scloze_1",
+    "sentenceId": "gitadjectives_009",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo",
+        "participial_adjective"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "unresolved",
+          "pos": "adjective",
+          "meaning": "解決されていない（見つからない・決まっていない）",
+          "target": true,
+          "category": "from_verb"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best adjective to fill in the blank.",
+    "stem": "The build fails with an error about an ___ import: the file `./utils` does not exist.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "explicit"
+      },
+      {
+        "id": "b",
+        "text": "initial"
+      },
+      {
+        "id": "c",
+        "text": "unresolved"
+      },
+      {
+        "id": "d",
+        "text": "eager"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "読み込み先が見つからない import はunresolved。does not exist がヒント。",
+      "relatedGrammar": [
+        "svo",
+        "participial_adjective"
+      ]
+    }
+  },
+  {
+    "id": "gitadjectives_010_scloze_1",
+    "sentenceId": "gitadjectives_010",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "valid",
+          "pos": "adjective",
+          "meaning": "ルールや形式に合っている（有効な）",
+          "target": true,
+          "category": "from_verb"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best adjective to fill in the blank.",
+    "stem": "The parser throws unless the config file is ___ JSON.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "invalid"
+      },
+      {
+        "id": "b",
+        "text": "stale"
+      },
+      {
+        "id": "c",
+        "text": "flaky"
+      },
+      {
+        "id": "d",
+        "text": "valid"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "throws unless（〜でない限りエラー）なので、形式に合っているvalid。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadjectives_011_scloze_1",
+    "sentenceId": "gitadjectives_011",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "invalid",
+          "pos": "adjective",
+          "meaning": "ルールや形式に合っていない（無効な・不正な）",
+          "target": true,
+          "category": "from_verb"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best adjective to fill in the blank.",
+    "stem": "Passing a negative number for `retries` now throws an ___ argument error.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "optional"
+      },
+      {
+        "id": "b",
+        "text": "explicit"
+      },
+      {
+        "id": "c",
+        "text": "invalid"
+      },
+      {
+        "id": "d",
+        "text": "eager"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "ルールに合わない値はinvalid（invalid argument）。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadjectives_012_scloze_1",
+    "sentenceId": "gitadjectives_012",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo",
+        "participial_adjective"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "unsupported",
+          "pos": "adjective",
+          "meaning": "対応していない（サポート外の）",
+          "target": true,
+          "category": "from_verb"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best adjective to fill in the blank.",
+    "stem": "Running the CLI on Node 16 now prints a warning that the version is ___.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "unsupported"
+      },
+      {
+        "id": "b",
+        "text": "nested"
+      },
+      {
+        "id": "c",
+        "text": "partial"
+      },
+      {
+        "id": "d",
+        "text": "standalone"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "a"
+      ]
+    },
+    "explanation": {
+      "summary": "対応していないバージョンはunsupported。",
+      "relatedGrammar": [
+        "svo",
+        "participial_adjective"
+      ]
+    }
+  },
+  {
+    "id": "gitadjectives_013_scloze_1",
+    "sentenceId": "gitadjectives_013",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "flat",
+          "pos": "adjective",
+          "meaning": "入れ子のない（一段の）",
+          "target": true,
+          "category": "from_verb"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best adjective to fill in the blank.",
+    "stem": "ESLint's new ___ config replaces the old `.eslintrc` format.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "nested"
+      },
+      {
+        "id": "b",
+        "text": "eager"
+      },
+      {
+        "id": "c",
+        "text": "flat"
+      },
+      {
+        "id": "d",
+        "text": "partial"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "flat config（ESLint の新しい設定形式）。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadjectives_014_scloze_1",
+    "sentenceId": "gitadjectives_014",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo",
+        "participial_adjective"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "hidden",
+          "pos": "adjective",
+          "meaning": "表示されていない（隠れた）",
+          "target": true,
+          "category": "from_verb"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best adjective to fill in the blank.",
+    "stem": "The file watcher ignores ___ files such as `.DS_Store` and `.env`.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "visible"
+      },
+      {
+        "id": "b",
+        "text": "nested"
+      },
+      {
+        "id": "c",
+        "text": "eager"
+      },
+      {
+        "id": "d",
+        "text": "hidden"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "ドットで始まるファイルは hidden files。",
+      "relatedGrammar": [
+        "svo",
+        "participial_adjective"
+      ]
+    }
+  },
+  {
+    "id": "gitadjectives_015_scloze_1",
+    "sentenceId": "gitadjectives_015",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "empty",
+          "pos": "adjective",
+          "meaning": "中身がない（空の）",
+          "target": true,
+          "category": "state"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best adjective to fill in the blank.",
+    "stem": "The page crashed when the search returned an ___ array with no results.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "unused"
+      },
+      {
+        "id": "b",
+        "text": "external"
+      },
+      {
+        "id": "c",
+        "text": "empty"
+      },
+      {
+        "id": "d",
+        "text": "eager"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "with no results（結果が0件）→ empty array。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadjectives_016_scloze_1",
+    "sentenceId": "gitadjectives_016",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "missing",
+          "pos": "adjective",
+          "meaning": "あるべきなのに無い（欠けている）",
+          "target": true,
+          "category": "state"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best adjective to fill in the blank.",
+    "stem": "React logs a warning because the `key` prop is ___ on the list items.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "redundant"
+      },
+      {
+        "id": "b",
+        "text": "missing"
+      },
+      {
+        "id": "c",
+        "text": "global"
+      },
+      {
+        "id": "d",
+        "text": "stable"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "あるべきなのに無いものはmissing。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadjectives_017_scloze_1",
+    "sentenceId": "gitadjectives_017",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "redundant",
+          "pos": "adjective",
+          "meaning": "ほかと重複していて要らない（冗長な）",
+          "target": true,
+          "category": "state"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best adjective to fill in the blank.",
+    "stem": "We already check for null in the parent component, so the same check here is ___.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "redundant"
+      },
+      {
+        "id": "b",
+        "text": "missing"
+      },
+      {
+        "id": "c",
+        "text": "external"
+      },
+      {
+        "id": "d",
+        "text": "eager"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "a"
+      ]
+    },
+    "explanation": {
+      "summary": "same check（同じチェック）が二重にある → redundant。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadjectives_018_scloze_1",
+    "sentenceId": "gitadjectives_018",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "unnecessary",
+          "pos": "adjective",
+          "meaning": "必要のない（なくてもよい）",
+          "target": true,
+          "category": "state"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best adjective to fill in the blank.",
+    "stem": "The data never changes, so fetching it again on every render is ___.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "missing"
+      },
+      {
+        "id": "b",
+        "text": "nested"
+      },
+      {
+        "id": "c",
+        "text": "native"
+      },
+      {
+        "id": "d",
+        "text": "unnecessary"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "never changes（変わらない）のに毎回取り直すのはunnecessary。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadjectives_019_scloze_1",
+    "sentenceId": "gitadjectives_019",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "duplicate",
+          "pos": "adjective",
+          "meaning": "重複した（同じものが2つ以上ある）",
+          "target": true,
+          "category": "state"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best adjective to fill in the blank.",
+    "stem": "React warns about ___ keys when two items in the list have the same ID.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "missing"
+      },
+      {
+        "id": "b",
+        "text": "generic"
+      },
+      {
+        "id": "c",
+        "text": "duplicate"
+      },
+      {
+        "id": "d",
+        "text": "absolute"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "have the same ID（同じ ID）→ duplicate keys。missing は key が無い場合。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadjectives_020_scloze_1",
+    "sentenceId": "gitadjectives_020",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo",
+        "participial_adjective"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "outdated",
+          "pos": "adjective",
+          "meaning": "古くなった（最新ではない）",
+          "target": true,
+          "category": "state"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best adjective to fill in the blank.",
+    "stem": "The dependency report lists packages that have newer versions available, so let's update the ___ ones.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "hidden"
+      },
+      {
+        "id": "b",
+        "text": "outdated"
+      },
+      {
+        "id": "c",
+        "text": "native"
+      },
+      {
+        "id": "d",
+        "text": "partial"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "newer versions available（新しい版がある）→ outdated。",
+      "relatedGrammar": [
+        "svo",
+        "participial_adjective"
+      ]
+    }
+  },
+  {
+    "id": "gitadjectives_021_scloze_1",
+    "sentenceId": "gitadjectives_021",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "stale",
+          "pos": "adjective",
+          "meaning": "古いまま残っている（更新されていない）",
+          "target": true,
+          "category": "state"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best adjective to fill in the blank.",
+    "stem": "After the deploy, users still saw old data because the cache was ___.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "stale"
+      },
+      {
+        "id": "b",
+        "text": "empty"
+      },
+      {
+        "id": "c",
+        "text": "strict"
+      },
+      {
+        "id": "d",
+        "text": "native"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "a"
+      ]
+    },
+    "explanation": {
+      "summary": "still saw old data（古いデータが見えた）→ キャッシュが stale。empty なら古いデータは出ない。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadjectives_022_scloze_1",
+    "sentenceId": "gitadjectives_022",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "flaky",
+          "pos": "adjective",
+          "meaning": "コードを変えていないのに通ったり落ちたりする（不安定な）",
+          "target": true,
+          "category": "state"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best adjective to fill in the blank.",
+    "stem": "The e2e test passes locally but sometimes fails in CI without any code change; it is ___.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "broken"
+      },
+      {
+        "id": "b",
+        "text": "stable"
+      },
+      {
+        "id": "c",
+        "text": "flaky"
+      },
+      {
+        "id": "d",
+        "text": "generic"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "sometimes fails（たまに落ちる）→ flaky。broken は常に動かない、stable は逆。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadjectives_023_scloze_1",
+    "sentenceId": "gitadjectives_023",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "stable",
+          "pos": "adjective",
+          "meaning": "変わらない・壊れにくい（安定した）",
+          "target": true,
+          "category": "state"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best adjective to fill in the blank.",
+    "stem": "The API was only a preview in v2, but it is now ___ and safe to use in production.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "experimental"
+      },
+      {
+        "id": "b",
+        "text": "flaky"
+      },
+      {
+        "id": "c",
+        "text": "stable"
+      },
+      {
+        "id": "d",
+        "text": "partial"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "safe to use in production（本番で使える）→ stable。experimental は逆。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadjectives_024_scloze_1",
+    "sentenceId": "gitadjectives_024",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "experimental",
+          "pos": "adjective",
+          "meaning": "試験的な（今後変わる可能性がある）",
+          "target": true,
+          "category": "state"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best adjective to fill in the blank.",
+    "stem": "Streaming is behind an ___ flag because the API may still change.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "external"
+      },
+      {
+        "id": "b",
+        "text": "experimental"
+      },
+      {
+        "id": "c",
+        "text": "eager"
+      },
+      {
+        "id": "d",
+        "text": "initial"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "may still change（まだ変わるかもしれない）→ experimental。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadjectives_025_scloze_1",
+    "sentenceId": "gitadjectives_025",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo",
+        "participial_adjective"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "broken",
+          "pos": "adjective",
+          "meaning": "壊れている（動かない）",
+          "target": true,
+          "category": "state"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best adjective to fill in the blank.",
+    "stem": "The link to the migration guide returns a 404, so it is ___.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "broken"
+      },
+      {
+        "id": "b",
+        "text": "nested"
+      },
+      {
+        "id": "c",
+        "text": "generic"
+      },
+      {
+        "id": "d",
+        "text": "eager"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "a"
+      ]
+    },
+    "explanation": {
+      "summary": "404 になるリンクはbroken link。",
+      "relatedGrammar": [
+        "svo",
+        "participial_adjective"
+      ]
+    }
+  },
+  {
+    "id": "gitadjectives_026_scloze_1",
+    "sentenceId": "gitadjectives_026",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "obsolete",
+          "pos": "adjective",
+          "meaning": "（新しいものに置き換わって）もう使われない",
+          "target": true,
+          "category": "state"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best adjective to fill in the blank.",
+    "stem": "Now that all supported browsers have `fetch`, the polyfill is ___ and can be deleted.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "obsolete"
+      },
+      {
+        "id": "b",
+        "text": "missing"
+      },
+      {
+        "id": "c",
+        "text": "nested"
+      },
+      {
+        "id": "d",
+        "text": "explicit"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "a"
+      ]
+    },
+    "explanation": {
+      "summary": "役目を終えたものはobsolete。all supported browsers have fetch（もう要らない）がヒント。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadjectives_027_scloze_1",
+    "sentenceId": "gitadjectives_027",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "initial",
+          "pos": "adjective",
+          "meaning": "最初の（初期の）",
+          "target": true,
+          "category": "scope"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best adjective to fill in the blank.",
+    "stem": "The select box shows nothing until you click it, because its ___ value is undefined.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "nested"
+      },
+      {
+        "id": "b",
+        "text": "initial"
+      },
+      {
+        "id": "c",
+        "text": "flaky"
+      },
+      {
+        "id": "d",
+        "text": "absolute"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "最初の値はinitial value。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadjectives_028_scloze_1",
+    "sentenceId": "gitadjectives_028",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "internal",
+          "pos": "adjective",
+          "meaning": "内部の（外から使う前提でない）",
+          "target": true,
+          "category": "scope"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best adjective to fill in the blank.",
+    "stem": "Helpers in `src/utils/` are ___ and may change without notice, so don't import them from outside the package.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "internal"
+      },
+      {
+        "id": "b",
+        "text": "external"
+      },
+      {
+        "id": "c",
+        "text": "stable"
+      },
+      {
+        "id": "d",
+        "text": "standalone"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "a"
+      ]
+    },
+    "explanation": {
+      "summary": "外から使う前提でないものはinternal。external は逆。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadjectives_029_scloze_1",
+    "sentenceId": "gitadjectives_029",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "external",
+          "pos": "adjective",
+          "meaning": "外部の（プロジェクトの外の）",
+          "target": true,
+          "category": "scope"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best adjective to fill in the blank.",
+    "stem": "Mark React as ___ so that it is not bundled into the library.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "internal"
+      },
+      {
+        "id": "b",
+        "text": "nested"
+      },
+      {
+        "id": "c",
+        "text": "external"
+      },
+      {
+        "id": "d",
+        "text": "eager"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "バンドルに含めない外部の依存はexternal。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadjectives_030_scloze_1",
+    "sentenceId": "gitadjectives_030",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "local",
+          "pos": "adjective",
+          "meaning": "手元の・その範囲だけの（ローカルの）",
+          "target": true,
+          "category": "scope"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best adjective to fill in the blank.",
+    "stem": "The tests pass on my ___ machine but fail in CI.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "remote"
+      },
+      {
+        "id": "b",
+        "text": "nested"
+      },
+      {
+        "id": "c",
+        "text": "local"
+      },
+      {
+        "id": "d",
+        "text": "generic"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "手元のマシンはlocal machine。CI との対比がヒント。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadjectives_031_scloze_1",
+    "sentenceId": "gitadjectives_031",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "remote",
+          "pos": "adjective",
+          "meaning": "別のマシン・サーバー上の（リモートの）",
+          "target": true,
+          "category": "scope"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best adjective to fill in the blank.",
+    "stem": "Delete the ___ branch on GitHub after the pull request is merged.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "local"
+      },
+      {
+        "id": "b",
+        "text": "static"
+      },
+      {
+        "id": "c",
+        "text": "partial"
+      },
+      {
+        "id": "d",
+        "text": "remote"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "GitHub 上のブランチはremote branch。local は手元のブランチ。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadjectives_032_scloze_1",
+    "sentenceId": "gitadjectives_032",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "global",
+          "pos": "adjective",
+          "meaning": "全体に効く（グローバルな）",
+          "target": true,
+          "category": "scope"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best adjective to fill in the blank.",
+    "stem": "Avoid polluting the ___ scope by wrapping the script in a function.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "global"
+      },
+      {
+        "id": "b",
+        "text": "local"
+      },
+      {
+        "id": "c",
+        "text": "nested"
+      },
+      {
+        "id": "d",
+        "text": "flaky"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "a"
+      ]
+    },
+    "explanation": {
+      "summary": "全体に効く範囲はglobal scope。関数で包むと local になる。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadjectives_033_scloze_1",
+    "sentenceId": "gitadjectives_033",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "optional",
+          "pos": "adjective",
+          "meaning": "省略できる（任意の）",
+          "target": true,
+          "category": "scope"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best adjective to fill in the blank.",
+    "stem": "The `options` argument is ___; if you leave it out, the defaults are used.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "required"
+      },
+      {
+        "id": "b",
+        "text": "optional"
+      },
+      {
+        "id": "c",
+        "text": "explicit"
+      },
+      {
+        "id": "d",
+        "text": "stale"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "leave it out（省略する）ことができる → optional。required は逆。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadjectives_034_scloze_1",
+    "sentenceId": "gitadjectives_034",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "explicit",
+          "pos": "adjective",
+          "meaning": "明示的な（はっきり書いた）",
+          "target": true,
+          "category": "scope"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best adjective to fill in the blank.",
+    "stem": "TypeScript can't infer it here, so add an ___ return type.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "implicit"
+      },
+      {
+        "id": "b",
+        "text": "explicit"
+      },
+      {
+        "id": "c",
+        "text": "external"
+      },
+      {
+        "id": "d",
+        "text": "eager"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "推論できないので、はっきり書く → explicit。implicit は逆。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadjectives_035_scloze_1",
+    "sentenceId": "gitadjectives_035",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "implicit",
+          "pos": "adjective",
+          "meaning": "暗黙の（書かなくても自動でそうなる）",
+          "target": true,
+          "category": "scope"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best adjective to fill in the blank.",
+    "stem": "In strict mode, TypeScript reports parameters whose type is an ___ `any` because it could not be inferred.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "explicit"
+      },
+      {
+        "id": "b",
+        "text": "external"
+      },
+      {
+        "id": "c",
+        "text": "implicit"
+      },
+      {
+        "id": "d",
+        "text": "initial"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "書いていないのに any になるのはimplicit any。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadjectives_036_scloze_1",
+    "sentenceId": "gitadjectives_036",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "static",
+          "pos": "adjective",
+          "meaning": "ビルド時に決まる（実行中に変わらない）",
+          "target": true,
+          "category": "scope"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best adjective to fill in the blank.",
+    "stem": "The blog pages are generated at build time as ___ HTML.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "dynamic"
+      },
+      {
+        "id": "b",
+        "text": "stale"
+      },
+      {
+        "id": "c",
+        "text": "flaky"
+      },
+      {
+        "id": "d",
+        "text": "static"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "at build time（ビルド時に）→ static。dynamic は逆。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadjectives_037_scloze_1",
+    "sentenceId": "gitadjectives_037",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "dynamic",
+          "pos": "adjective",
+          "meaning": "実行時に決まる（変わりうる）",
+          "target": true,
+          "category": "scope"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best adjective to fill in the blank.",
+    "stem": "The editor is large, so load it with a ___ import only when the user opens it.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "dynamic"
+      },
+      {
+        "id": "b",
+        "text": "static"
+      },
+      {
+        "id": "c",
+        "text": "global"
+      },
+      {
+        "id": "d",
+        "text": "flat"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "a"
+      ]
+    },
+    "explanation": {
+      "summary": "only when the user opens it（開いたときだけ）→ dynamic import。static は逆。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadjectives_038_scloze_1",
+    "sentenceId": "gitadjectives_038",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "relative",
+          "pos": "adjective",
+          "meaning": "今の場所を基準にした（相対の）",
+          "target": true,
+          "category": "scope"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best adjective to fill in the blank.",
+    "stem": "Paths in the config are resolved ___ to the config file, not the current folder.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "absolute"
+      },
+      {
+        "id": "b",
+        "text": "nested"
+      },
+      {
+        "id": "c",
+        "text": "generic"
+      },
+      {
+        "id": "d",
+        "text": "relative"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "relative to（〜を基準にした）。absolute は to をとらない。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadjectives_039_scloze_1",
+    "sentenceId": "gitadjectives_039",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "absolute",
+          "pos": "adjective",
+          "meaning": "基準によらない完全な（絶対の）",
+          "target": true,
+          "category": "scope"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best adjective to fill in the blank.",
+    "stem": "Use an ___ path like `/home/user/app` so that it works from any directory.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "initial"
+      },
+      {
+        "id": "b",
+        "text": "optional"
+      },
+      {
+        "id": "c",
+        "text": "absolute"
+      },
+      {
+        "id": "d",
+        "text": "eager"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "どこからでも同じ場所を指すのはabsolute path。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadjectives_040_scloze_1",
+    "sentenceId": "gitadjectives_040",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo",
+        "participial_adjective"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "nested",
+          "pos": "adjective",
+          "meaning": "入れ子になった（中にさらにある）",
+          "target": true,
+          "category": "scope"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best adjective to fill in the blank.",
+    "stem": "The settings object has objects inside objects, so the merge must handle ___ keys.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "flat"
+      },
+      {
+        "id": "b",
+        "text": "stale"
+      },
+      {
+        "id": "c",
+        "text": "nested"
+      },
+      {
+        "id": "d",
+        "text": "native"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "objects inside objects（入れ子）→ nested。flat は逆。",
+      "relatedGrammar": [
+        "svo",
+        "participial_adjective"
+      ]
+    }
+  },
+  {
+    "id": "gitadjectives_041_scloze_1",
+    "sentenceId": "gitadjectives_041",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "partial",
+          "pos": "adjective",
+          "meaning": "一部の（全部ではない）",
+          "target": true,
+          "category": "scope"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best adjective to fill in the blank.",
+    "stem": "Users can pass only the options they want to change; ___ config objects are merged with the defaults.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "partial"
+      },
+      {
+        "id": "b",
+        "text": "stale"
+      },
+      {
+        "id": "c",
+        "text": "broken"
+      },
+      {
+        "id": "d",
+        "text": "native"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "a"
+      ]
+    },
+    "explanation": {
+      "summary": "only the options they want（一部だけ）→ partial。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadjectives_042_scloze_1",
+    "sentenceId": "gitadjectives_042",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "standalone",
+          "pos": "adjective",
+          "meaning": "単体で動く（ほかに依存しない）",
+          "target": true,
+          "category": "scope"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best adjective to fill in the blank.",
+    "stem": "The CLI is published as a ___ binary, so you don't need Node.js installed.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "standalone"
+      },
+      {
+        "id": "b",
+        "text": "nested"
+      },
+      {
+        "id": "c",
+        "text": "partial"
+      },
+      {
+        "id": "d",
+        "text": "relative"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "a"
+      ]
+    },
+    "explanation": {
+      "summary": "ほかに依存せず単体で動くのはstandalone。you don't need Node.js がヒント。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadjectives_043_scloze_1",
+    "sentenceId": "gitadjectives_043",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "lazy",
+          "pos": "adjective",
+          "meaning": "必要になるまで行わない（遅延の）",
+          "target": true,
+          "category": "property"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best adjective to fill in the blank.",
+    "stem": "The settings panel is rarely opened, so make it ___ and load it only on demand.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "eager"
+      },
+      {
+        "id": "b",
+        "text": "flat"
+      },
+      {
+        "id": "c",
+        "text": "strict"
+      },
+      {
+        "id": "d",
+        "text": "lazy"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "必要になるまで読み込まないのはlazy。eager は逆。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadjectives_044_scloze_1",
+    "sentenceId": "gitadjectives_044",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "reusable",
+          "pos": "adjective",
+          "meaning": "ほかの場所でも使い回せる（再利用できる）",
+          "target": true,
+          "category": "property"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best adjective to fill in the blank.",
+    "stem": "We extracted the dialog into a ___ component that every page can share.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "flaky"
+      },
+      {
+        "id": "b",
+        "text": "broken"
+      },
+      {
+        "id": "c",
+        "text": "reusable"
+      },
+      {
+        "id": "d",
+        "text": "stale"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "every page can share（どのページでも使える）→ reusable。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadjectives_045_scloze_1",
+    "sentenceId": "gitadjectives_045",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "strict",
+          "pos": "adjective",
+          "meaning": "厳格な（ルールを例外なく守らせる）",
+          "target": true,
+          "category": "property"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best adjective to fill in the blank.",
+    "stem": "Turn on TypeScript's ___ mode to catch null and undefined errors early.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "strict"
+      },
+      {
+        "id": "b",
+        "text": "local"
+      },
+      {
+        "id": "c",
+        "text": "flat"
+      },
+      {
+        "id": "d",
+        "text": "nested"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "a"
+      ]
+    },
+    "explanation": {
+      "summary": "strict mode（厳格モード）。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadjectives_046_scloze_1",
+    "sentenceId": "gitadjectives_046",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "consistent",
+          "pos": "adjective",
+          "meaning": "どこでも同じ（統一された・ぶれない）",
+          "target": true,
+          "category": "property"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best adjective to fill in the blank.",
+    "stem": "Some files use camelCase and others snake_case; make the naming ___ across the project.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "partial"
+      },
+      {
+        "id": "b",
+        "text": "consistent"
+      },
+      {
+        "id": "c",
+        "text": "flaky"
+      },
+      {
+        "id": "d",
+        "text": "nested"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "バラバラなものを統一する → consistent。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadjectives_047_scloze_1",
+    "sentenceId": "gitadjectives_047",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "generic",
+          "pos": "adjective",
+          "meaning": "汎用的な・型を引数に取る（ジェネリック）",
+          "target": true,
+          "category": "property"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best adjective to fill in the blank.",
+    "stem": "Make the table component ___ so that it works with any row type `<T>`.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "generic"
+      },
+      {
+        "id": "b",
+        "text": "native"
+      },
+      {
+        "id": "c",
+        "text": "flat"
+      },
+      {
+        "id": "d",
+        "text": "eager"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "a"
+      ]
+    },
+    "explanation": {
+      "summary": "<T>（型引数）を取って何にでも使える → generic。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadjectives_048_scloze_1",
+    "sentenceId": "gitadjectives_048",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "native",
+          "pos": "adjective",
+          "meaning": "プラットフォームに元からある（ネイティブの）",
+          "target": true,
+          "category": "property"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best adjective to fill in the blank.",
+    "stem": "Use the browser's ___ `fetch` instead of adding the axios dependency.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "nested"
+      },
+      {
+        "id": "b",
+        "text": "stale"
+      },
+      {
+        "id": "c",
+        "text": "native"
+      },
+      {
+        "id": "d",
+        "text": "partial"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "ブラウザに元からあるものはnative。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadjectives_049_scloze_1",
+    "sentenceId": "gitadjectives_049",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "eager",
+          "pos": "adjective",
+          "meaning": "前もってすぐに行う（先に読み込む）",
+          "target": true,
+          "category": "property"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best adjective to fill in the blank.",
+    "stem": "Fonts for the first screen are needed right away, so switch them to ___ loading.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "lazy"
+      },
+      {
+        "id": "b",
+        "text": "nested"
+      },
+      {
+        "id": "c",
+        "text": "stale"
+      },
+      {
+        "id": "d",
+        "text": "eager"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "needed right away（すぐ必要）→ eager loading。lazy は逆。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadjectives_050_scloze_1",
+    "sentenceId": "gitadjectives_050",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "visible",
+          "pos": "adjective",
+          "meaning": "表示されている（見える）",
+          "target": true,
+          "category": "property"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best adjective to fill in the blank.",
+    "stem": "The focus ring disappears in dark mode; keep it ___ for keyboard users.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "hidden"
+      },
+      {
+        "id": "b",
+        "text": "visible"
+      },
+      {
+        "id": "c",
+        "text": "nested"
+      },
+      {
+        "id": "d",
+        "text": "generic"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "disappears（消える）のを直す → visible。hidden は逆。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadjectives_051_scloze_1",
+    "sentenceId": "gitadjectives_051",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo",
+        "participial_adjective"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "required",
+          "pos": "adjective",
+          "meaning": "必須の（省略できない）",
+          "target": true,
+          "category": "property"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best adjective to fill in the blank.",
+    "stem": "The form submits without a name, so mark the `name` field as ___.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "required"
+      },
+      {
+        "id": "b",
+        "text": "optional"
+      },
+      {
+        "id": "c",
+        "text": "flat"
+      },
+      {
+        "id": "d",
+        "text": "eager"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "a"
+      ]
+    },
+    "explanation": {
+      "summary": "名前なしで送れてしまうのを止める → required。optional は逆。",
+      "relatedGrammar": [
+        "svo",
+        "participial_adjective"
+      ]
+    }
+  }
+]

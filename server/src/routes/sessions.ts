@@ -1,9 +1,9 @@
 import { randomUUID } from 'node:crypto';
-import type {
-  EndSessionResultItem,
-  SessionStartItem,
+import {
+  toProblemDTO,
+  type EndSessionResultItem,
+  type SessionStartItem,
 } from '@gittinglish-vocab-app/shared';
-import { toProblemDTO } from '@gittinglish-vocab-app/shared';
 import {
   EndSessionRequestSchema,
   SessionStartRequestSchema,
@@ -54,13 +54,13 @@ function formatTokyoDateFromUnixSeconds(unixSeconds: number): string {
 async function ensureUser(_userId: string, _displayName: string | undefined) {}
 
 function buildJudgeMeta(
-  problem: SessionStartItem['problemDTO'] | ReturnType<typeof getProblemById>
+  problem: SessionStartItem['problemDTO'] | ReturnType<typeof getProblemById>,
 ) {
   if (!problem) return undefined;
 
   if ('choiceAnswerSpec' in problem) {
     const correctChoice = problem.choices.find((choice) =>
-      problem.choiceAnswerSpec.correctChoiceIds.includes(choice.id)
+      problem.choiceAnswerSpec.correctChoiceIds.includes(choice.id),
     );
 
     return {
@@ -101,7 +101,7 @@ app.post('/start', async (c) => {
         sessionId: randomUUID(),
         startedAt: Date.now(),
         items: [],
-      })
+      }),
     );
   }
 
@@ -113,28 +113,29 @@ app.post('/start', async (c) => {
       and(
         eq(drillProgress.userId, userId),
         eq(drillProgress.drillMode, body.drillMode),
-        inArray(drillProgress.itemId, candidateIds)
-      )
+        inArray(drillProgress.itemId, candidateIds),
+      ),
     );
 
   const progressByItemId = new Map(
-    relevantProgress.map((progress) => [progress.itemId, progress])
+    relevantProgress.map((progress) => [progress.itemId, progress]),
   );
   const dueIds = new Set(
     relevantProgress
       .filter((progress) => progress.nextReview <= nowSeconds)
-      .map((progress) => progress.itemId)
+      .map((progress) => progress.itemId),
   );
 
   const selectedProblems = candidateProblems
     .filter((problem) => dueIds.has(problem.id))
     .concat(
-      candidateProblems.filter((problem) => !progressByItemId.has(problem.id))
+      candidateProblems.filter((problem) => !progressByItemId.has(problem.id)),
     )
     .concat(
       candidateProblems.filter(
-        (problem) => progressByItemId.has(problem.id) && !dueIds.has(problem.id)
-      )
+        (problem) =>
+          progressByItemId.has(problem.id) && !dueIds.has(problem.id),
+      ),
     )
     .slice(0, count);
 
@@ -159,7 +160,7 @@ app.post('/start', async (c) => {
       sessionId: randomUUID(),
       startedAt: Date.now(),
       items,
-    })
+    }),
   );
 });
 
@@ -178,14 +179,14 @@ app.post('/end', async (c) => {
   if (body.startedAt > body.completedAt) {
     throw badRequest(
       'INVALID_TIMESTAMP',
-      'startedAt must be earlier than or equal to completedAt'
+      'startedAt must be earlier than or equal to completedAt',
     );
   }
 
   if (completedAtSeconds > nowSeconds + 60) {
     throw badRequest(
       'INVALID_TIMESTAMP',
-      'completedAt is too far in the future'
+      'completedAt is too far in the future',
     );
   }
 
@@ -204,14 +205,14 @@ app.post('/end', async (c) => {
         if (!problem) {
           throw notFound(
             'INVALID_ITEM',
-            `No problem found for ${answer.itemId}`
+            `No problem found for ${answer.itemId}`,
           );
         }
 
         if (problem.drillMode !== answer.drillMode) {
           throw badRequest(
             'INVALID_DRILL_MODE',
-            `Problem ${answer.itemId} does not support ${answer.drillMode}`
+            `Problem ${answer.itemId} does not support ${answer.drillMode}`,
           );
         }
 
@@ -222,7 +223,7 @@ app.post('/end', async (c) => {
         ) {
           throw badRequest(
             'INVALID_TIMESTAMP',
-            `answeredAt out of range for ${answer.itemId}`
+            `answeredAt out of range for ${answer.itemId}`,
           );
         }
 
@@ -236,8 +237,8 @@ app.post('/end', async (c) => {
             and(
               eq(drillProgress.userId, userId),
               eq(drillProgress.itemId, answer.itemId),
-              eq(drillProgress.drillMode, answer.drillMode)
-            )
+              eq(drillProgress.drillMode, answer.drillMode),
+            ),
           )
           .get();
 
@@ -248,7 +249,7 @@ app.post('/end', async (c) => {
             interval: currentProgress?.interval ?? 1,
             reps: currentProgress?.reps ?? 0,
           },
-          answeredAtSeconds
+          answeredAtSeconds,
         );
 
         await tx
@@ -296,8 +297,8 @@ app.post('/end', async (c) => {
           .where(
             and(
               eq(userActivities.userId, userId),
-              eq(userActivities.activityDate, date)
-            )
+              eq(userActivities.activityDate, date),
+            ),
           )
           .get();
 
@@ -314,8 +315,8 @@ app.post('/end', async (c) => {
             .where(
               and(
                 eq(userActivities.userId, userId),
-                eq(userActivities.activityDate, date)
-              )
+                eq(userActivities.activityDate, date),
+              ),
             );
         } else {
           await tx.insert(userActivities).values({
@@ -354,7 +355,7 @@ app.post('/end', async (c) => {
 
     return c.json(
       err(mappedError.code, mappedError.message),
-      mappedError.status
+      mappedError.status,
     );
   }
 
@@ -362,7 +363,7 @@ app.post('/end', async (c) => {
     ok({
       accepted: results.length,
       results,
-    })
+    }),
   );
 });
 

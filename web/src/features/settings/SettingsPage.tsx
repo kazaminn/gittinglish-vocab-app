@@ -18,7 +18,7 @@ interface SettingsPageProps {
 function updateSettings<TKey extends keyof UserSettings>(
   settings: UserSettings,
   key: TKey,
-  value: UserSettings[TKey]
+  value: UserSettings[TKey],
 ): UserSettings {
   return {
     ...settings,
@@ -147,7 +147,7 @@ export function SettingsPage({ onBackToHome }: SettingsPageProps) {
           value={draft.fontSize}
           onChange={(event) =>
             setDraft(
-              updateSettings(draft, 'fontSize', Number(event.target.value))
+              updateSettings(draft, 'fontSize', Number(event.target.value)),
             )
           }
           className="w-full accent-accent"
@@ -167,7 +167,7 @@ export function SettingsPage({ onBackToHome }: SettingsPageProps) {
           value={draft.fontWeight}
           onChange={(event) =>
             setDraft(
-              updateSettings(draft, 'fontWeight', Number(event.target.value))
+              updateSettings(draft, 'fontWeight', Number(event.target.value)),
             )
           }
           className="w-full rounded-sm border px-3 py-2"
@@ -201,7 +201,7 @@ export function SettingsPage({ onBackToHome }: SettingsPageProps) {
           value={draft.sessionSize}
           onChange={(event) =>
             setDraft(
-              updateSettings(draft, 'sessionSize', Number(event.target.value))
+              updateSettings(draft, 'sessionSize', Number(event.target.value)),
             )
           }
           className="w-full accent-accent"

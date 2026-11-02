@@ -25,7 +25,7 @@ const hasKazamitte =
 // Preview deployments send Origin as *.vercel.app, so accept the Vercel host
 // in addition to the production domain.
 const trustedOrigins = Array.from(
-  new Set([BETTER_AUTH_URL, vercelURL].filter((v): v is string => !!v))
+  new Set([BETTER_AUTH_URL, vercelURL].filter((v): v is string => !!v)),
 );
 
 export const auth = betterAuth({
@@ -97,7 +97,7 @@ export const auth = betterAuth({
                   // an error here is a failed login, which is recoverable.
                   if (!id) {
                     throw new Error(
-                      'kazamitte: user info carried no subject; refusing to derive an identity'
+                      'kazamitte: user info carried no subject; refusing to derive an identity',
                     );
                   }
                   return {
@@ -153,7 +153,7 @@ export const auth = betterAuth({
           // someone deliberately adding its own privacy transform first.
           if (email && !email.endsWith('@local.invalid')) {
             console.error(
-              'auth: refusing to create a user with a non-placeholder email; the provider path needs its own privacy transform'
+              'auth: refusing to create a user with a non-placeholder email; the provider path needs its own privacy transform',
             );
             return false;
           }

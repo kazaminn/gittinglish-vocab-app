@@ -1,5 +1,5 @@
 import { APIError } from 'better-auth';
-import { eq, and, sql } from 'drizzle-orm';
+import { and, eq, sql } from 'drizzle-orm';
 import { Hono } from 'hono';
 import { z } from 'zod';
 import { auth } from '../auth/index.js';
@@ -85,7 +85,7 @@ app.get('/me/stats', async (c) => {
       totalCorrect: stats?.totalCorrect ?? 0,
       streakDays,
       dueToday: dueResult?.count ?? 0,
-    })
+    }),
   );
 });
 
@@ -103,7 +103,7 @@ app.get('/me/stats', async (c) => {
 app.post('/password', async (c) => {
   const { newPassword } = await parseJsonBody(
     c.req.raw,
-    SetPasswordRequestSchema
+    SetPasswordRequestSchema,
   );
 
   try {
@@ -118,7 +118,7 @@ app.post('/password', async (c) => {
     ) {
       throw conflict(
         'PASSWORD_ALREADY_SET',
-        'A password is already set for this account'
+        'A password is already set for this account',
       );
     }
     throw error;
@@ -144,13 +144,13 @@ app.delete('/me', async (c) => {
   const username = c.get('username');
   const { confirmUsername } = await parseJsonBody(
     c.req.raw,
-    DeleteAccountRequestSchema
+    DeleteAccountRequestSchema,
   );
 
   if (!username || confirmUsername !== username) {
     throw badRequest(
       'CONFIRMATION_MISMATCH',
-      'Confirmation did not match your account ID'
+      'Confirmation did not match your account ID',
     );
   }
 
@@ -169,7 +169,7 @@ app.delete('/me', async (c) => {
   } catch (error) {
     console.error(
       'Failed to clear session cookie before account delete:',
-      error
+      error,
     );
   }
 
