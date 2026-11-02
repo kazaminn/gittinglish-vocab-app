@@ -36,33 +36,33 @@ const PREVIEW_LIMIT = 5;
 const DrillPage = lazy(() =>
   import('./features/drill/DrillPage').then((module) => ({
     default: module.DrillPage,
-  }))
+  })),
 );
 const SummaryPage = lazy(() =>
   import('./features/drill/SummaryPage').then((module) => ({
     default: module.SummaryPage,
-  }))
+  })),
 );
 const FlashcardPage = lazy(() =>
   import('./features/flashcard/FlashcardPage').then((module) => ({
     default: module.FlashcardPage,
-  }))
+  })),
 );
 const loadHomePage = () => import('./features/home/HomePage');
 const HomePage = lazy(() =>
   loadHomePage().then((module) => ({
     default: module.HomePage,
-  }))
+  })),
 );
 const SettingsPage = lazy(() =>
   import('./features/settings/SettingsPage').then((module) => ({
     default: module.SettingsPage,
-  }))
+  })),
 );
 const SetupPage = lazy(() =>
   import('./features/auth/SetupPage').then((module) => ({
     default: module.SetupPage,
-  }))
+  })),
 );
 
 interface AppSelection {
@@ -119,7 +119,7 @@ function createDefaultSelection(datasetId: DatasetId): AppSelection {
 
 function normalizeSelection(
   selection: AppSelection,
-  sections: ProblemSection[]
+  sections: ProblemSection[],
 ): AppSelection {
   const availableModes = getAvailableModesForDataset(selection.datasetId);
   const nextMode = availableModes.includes(selection.drillMode)
@@ -142,12 +142,12 @@ function VocabAppShell() {
   const drill = useDrill();
   const statsQuery = useUserStatsQuery(Boolean(user));
   const [selection, setSelection] = useState<AppSelection>(() =>
-    createDefaultSelection('gitverbs85')
+    createDefaultSelection('gitverbs85'),
   );
 
   const availableModes = useMemo(
     () => getAvailableModesForDataset(selection.datasetId),
-    [selection.datasetId]
+    [selection.datasetId],
   );
   const problemQuery = useMemo(
     () => ({
@@ -155,14 +155,14 @@ function VocabAppShell() {
       drillMode: selection.drillMode,
       sectionId: selection.sectionId,
     }),
-    [selection.datasetId, selection.drillMode, selection.sectionId]
+    [selection.datasetId, selection.drillMode, selection.sectionId],
   );
 
   const sectionsQuery = useHomeSectionsQuery(selection.datasetId);
   const problemsQuery = useHomeProblemsQuery(problemQuery);
   const sectionLabelQuery = useSectionLabelQuery(
     selection.datasetId,
-    selection.sectionId
+    selection.sectionId,
   );
 
   const sections = sectionsQuery.data ?? EMPTY_SECTIONS;
@@ -186,7 +186,7 @@ function VocabAppShell() {
       if (normalizedSelection.drillMode === 'flashcard') {
         await preloadDatasetMode(
           normalizedSelection.datasetId,
-          getDefaultFlashcardSourceMode(normalizedSelection.datasetId)
+          getDefaultFlashcardSourceMode(normalizedSelection.datasetId),
         );
         await navigate('/app/flashcard');
         return;
@@ -197,7 +197,7 @@ function VocabAppShell() {
         normalizedSelection.datasetId,
         drillMode,
         normalizedSelection.sessionSize,
-        normalizedSelection.sectionId
+        normalizedSelection.sectionId,
       );
       await navigate('/app/drill');
     })();
@@ -334,7 +334,7 @@ function App() {
 export default App;
 
 function getDefaultFlashcardSourceMode(
-  _datasetId: DatasetId
+  _datasetId: DatasetId,
 ): Exclude<DrillMode, 'flashcard'> {
   return 'word_to_meaning';
 }

@@ -31,11 +31,11 @@ describe('Layout', () => {
     renderWithProviders(
       <Layout>
         <div>content</div>
-      </Layout>
+      </Layout>,
     );
 
     expect(
-      screen.getByRole('button', { name: /open user menu.*tester/i })
+      screen.getByRole('button', { name: /open user menu.*tester/i }),
     ).toHaveTextContent('tester');
   });
 
@@ -45,19 +45,19 @@ describe('Layout', () => {
     renderWithProviders(
       <Layout>
         <div>content</div>
-      </Layout>
+      </Layout>,
     );
 
     await user.click(screen.getByRole('button', { name: /open user menu/i }));
 
     expect(
-      screen.getByRole('menu', { name: /User menu/i })
+      screen.getByRole('menu', { name: /User menu/i }),
     ).toBeInTheDocument();
     expect(
-      screen.getByRole('menuitem', { name: /settings/i })
+      screen.getByRole('menuitem', { name: /settings/i }),
     ).toBeInTheDocument();
     expect(
-      screen.getByRole('menuitem', { name: /logout/i })
+      screen.getByRole('menuitem', { name: /logout/i }),
     ).toBeInTheDocument();
   });
 
@@ -67,7 +67,7 @@ describe('Layout', () => {
     renderWithProviders(
       <Layout>
         <div>content</div>
-      </Layout>
+      </Layout>,
     );
 
     await user.click(screen.getByRole('button', { name: /open user menu/i }));
@@ -86,7 +86,7 @@ describe('Layout', () => {
     renderWithProviders(
       <Layout>
         <div>content</div>
-      </Layout>
+      </Layout>,
     );
 
     await user.click(screen.getByRole('button', { name: /open user menu/i }));

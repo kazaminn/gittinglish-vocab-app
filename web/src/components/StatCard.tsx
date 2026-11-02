@@ -6,7 +6,7 @@ const statCard = tv({
   variants: {
     tone: {
       default: 'border-border',
-      error: 'bg-error-surface border-border-error text-error text-sm',
+      error: 'border-border-error bg-error-surface text-sm text-error',
     },
   },
   defaultVariants: {

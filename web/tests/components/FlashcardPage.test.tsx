@@ -49,13 +49,13 @@ describe('FlashcardPage', () => {
         datasetId="gitverbs85"
         sectionLabel={undefined}
         onBackToHome={vi.fn()}
-      />
+      />,
     );
 
     await user.click(
       screen.getByRole('button', {
         name: /Showing word. Press to reveal answer./i,
-      })
+      }),
     );
 
     expect(screen.getByText(/grammar: svo/i)).toBeInTheDocument();

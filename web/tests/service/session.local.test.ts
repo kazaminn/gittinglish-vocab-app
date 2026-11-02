@@ -1,5 +1,5 @@
 import { beforeEach, describe, expect, it } from 'vitest';
-import { type GeneratedProblem, type DrillProgress } from '@shared/domain';
+import { type DrillProgress, type GeneratedProblem } from '@shared/domain';
 import { createLocalSessionService } from '../../src/service/session.local';
 
 function makeProblem(id: string): GeneratedProblem {
@@ -48,7 +48,7 @@ describe('createLocalSessionService', () => {
     const session = await service.startSession(
       { userId: 'test-user', drillMode: 'word_to_meaning', count: 10 },
       problems,
-      []
+      [],
     );
 
     expect(session.items.length).toBe(10);
@@ -62,7 +62,7 @@ describe('createLocalSessionService', () => {
     const session = await service.startSession(
       { userId: 'test-user', drillMode: 'word_to_meaning', count: 20 },
       problems,
-      []
+      [],
     );
 
     expect(session.items.length).toBe(10);
@@ -81,7 +81,7 @@ describe('createLocalSessionService', () => {
     const session = await service.startSession(
       { userId: 'test-user', drillMode: 'word_to_meaning', count: 5 },
       problems,
-      progress
+      progress,
     );
 
     // Review items first
@@ -96,7 +96,7 @@ describe('createLocalSessionService', () => {
     const session = await service.startSession(
       { userId: 'test-user', drillMode: 'word_to_meaning', count: 1 },
       problems,
-      []
+      [],
     );
 
     const retrieved = await service.getActiveSession('test-user');
@@ -109,7 +109,7 @@ describe('createLocalSessionService', () => {
     await service.startSession(
       { userId: 'test-user', drillMode: 'word_to_meaning', count: 1 },
       problems,
-      []
+      [],
     );
     await service.clearSession('test-user');
 
@@ -122,7 +122,7 @@ describe('createLocalSessionService', () => {
     const session = await service.startSession(
       { userId: 'test-user', drillMode: 'word_to_meaning', count: 10 },
       [],
-      []
+      [],
     );
 
     expect(session.items.length).toBe(0);

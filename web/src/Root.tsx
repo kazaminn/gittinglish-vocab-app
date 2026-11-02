@@ -19,7 +19,7 @@ export function Root() {
           },
         },
       }),
-    []
+    [],
   );
 
   return (

@@ -2,7 +2,7 @@ import { screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { describe, expect, it, vi } from 'vitest';
 import { type ClozeMcqProblem } from '@shared/domain';
-import { type SessionStartItem, toProblemDTO } from '@shared/dto';
+import { toProblemDTO, type SessionStartItem } from '@shared/dto';
 import { DrillPage } from '../../src/features/drill/DrillPage';
 import { renderWithProviders } from '../test-utils';
 
@@ -63,7 +63,7 @@ describe('DrillPage', () => {
         onAnswer={vi.fn()}
         onNext={vi.fn()}
         onExitToHome={onExitToHome}
-      />
+      />,
     );
 
     await user.click(screen.getByRole('button', { name: /> home/i }));
@@ -84,7 +84,7 @@ describe('DrillPage', () => {
         onAnswer={onAnswer}
         onNext={vi.fn()}
         onExitToHome={vi.fn()}
-      />
+      />,
     );
 
     await user.keyboard('1');

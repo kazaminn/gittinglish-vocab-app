@@ -69,12 +69,7 @@ export type DrillMode =
 export type DatasetId = 'gitverbs85';
 
 export type PartOfSpeech =
-  | 'noun'
-  | 'verb'
-  | 'adjective'
-  | 'adverb'
-  | 'preposition'
-  | 'conjunction';
+  'noun' | 'verb' | 'adjective' | 'adverb' | 'preposition' | 'conjunction';
 
 export interface VocabularyTag {
   lemma: string;
@@ -86,10 +81,7 @@ export interface VocabularyTag {
 }
 
 export type PhraseType_Tag =
-  | 'collocation'
-  | 'idiom'
-  | 'phrasal_verb'
-  | 'compound';
+  'collocation' | 'idiom' | 'phrasal_verb' | 'compound';
 
 export interface PhraseTag {
   text: string;
@@ -113,11 +105,7 @@ export type PedagogicalKind =
   | 'translation';
 
 export type InteractionType =
-  | 'select'
-  | 'input'
-  | 'reorder'
-  | 'transform'
-  | 'identify';
+  'select' | 'input' | 'reorder' | 'transform' | 'identify';
 
 export interface Span {
   start: number;
@@ -202,11 +190,7 @@ export interface SentenceAst {
 }
 
 export type AnswerJudgeType =
-  | 'exact'
-  | 'normalized'
-  | 'unordered'
-  | 'partial'
-  | 'contains';
+  'exact' | 'normalized' | 'unordered' | 'partial' | 'contains';
 
 export interface AnswerSpec {
   judgeType: AnswerJudgeType;
@@ -357,12 +341,7 @@ export type GeneratedProblem =
   | TranslationProblem;
 
 export type TransformType =
-  | 'split'
-  | 'merge'
-  | 'rewrite'
-  | 'mask'
-  | 'inject_error'
-  | 'reorder';
+  'split' | 'merge' | 'rewrite' | 'mask' | 'inject_error' | 'reorder';
 
 export interface GeneratedTrace {
   ruleId: ID;

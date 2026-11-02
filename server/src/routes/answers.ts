@@ -24,7 +24,7 @@ app.post('/judge', async (c) => {
       isCorrect: result.isCorrect,
       correctAnswer: result.correctAnswer,
       explanation: problem.explanation,
-    })
+    }),
   );
 });
 

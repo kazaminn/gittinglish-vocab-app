@@ -26,8 +26,8 @@ app.use(
           allowMethods: ['GET', 'POST', 'OPTIONS'],
           allowHeaders: ['Content-Type'],
         }
-      : undefined
-  )
+      : undefined,
+  ),
 );
 
 app.on(['GET', 'POST'], '/api/auth/*', (c) => auth.handler(c.req.raw));
@@ -40,7 +40,7 @@ app.get('/api/health', (c) =>
       hasBetterAuthUrl: !!process.env.BETTER_AUTH_URL,
       hasBetterAuthSecret: !!process.env.BETTER_AUTH_SECRET,
     },
-  })
+  }),
 );
 
 app.use('/api/sessions/*', authMiddleware);

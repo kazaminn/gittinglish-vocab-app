@@ -50,7 +50,7 @@ describe('LoginPage', () => {
     renderWithProviders(<LoginPage />);
 
     expect(
-      screen.getByRole('button', { name: 'Kazamitte ID でログイン' })
+      screen.getByRole('button', { name: 'Kazamitte ID でログイン' }),
     ).toBeInTheDocument();
   });
 
@@ -63,7 +63,7 @@ describe('LoginPage', () => {
 
     const alert = await screen.findByRole('alert');
     expect(alert).toHaveTextContent(
-      'この Kazamitte ID は既に別のアカウントと連携されています。'
+      'この Kazamitte ID は既に別のアカウントと連携されています。',
     );
     expect(alert.textContent).not.toMatch(/user|@|#/i);
 
@@ -72,7 +72,7 @@ describe('LoginPage', () => {
     });
     expect(signOutButton).toBeInTheDocument();
     expect(
-      screen.getByRole('button', { name: /ID とパスワードでログインする/ })
+      screen.getByRole('button', { name: /ID とパスワードでログインする/ }),
     ).toBeInTheDocument();
 
     await user.click(signOutButton);
@@ -87,7 +87,7 @@ describe('LoginPage', () => {
 
     await screen.findByRole('alert');
     await user.click(
-      screen.getByRole('button', { name: /ID とパスワードでログインする/ })
+      screen.getByRole('button', { name: /ID とパスワードでログインする/ }),
     );
 
     expect(screen.queryByRole('alert')).not.toBeInTheDocument();
@@ -100,7 +100,7 @@ describe('LoginPage', () => {
 
     await screen.findByRole('alert');
     expect(
-      screen.queryByRole('button', { name: /サインアウトして/ })
+      screen.queryByRole('button', { name: /サインアウトして/ }),
     ).not.toBeInTheDocument();
   });
 });

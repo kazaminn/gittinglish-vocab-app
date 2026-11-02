@@ -41,7 +41,7 @@ function renderBlock(block: LegalBlock, key: string): ReactNode {
                   ))}
                 </ol>
               </li>
-            )
+            ),
           )}
         </ol>
       );
@@ -69,7 +69,7 @@ export function LegalDocument({
 
       <article className="text-text space-y-3 text-sm leading-relaxed">
         {content.blocks.map((block, index) =>
-          renderBlock(block, `${block.kind}-${String(index)}`)
+          renderBlock(block, `${block.kind}-${String(index)}`),
         )}
       </article>
 

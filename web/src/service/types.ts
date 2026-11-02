@@ -40,7 +40,7 @@ export interface SessionService {
   startSession(
     params: SessionStartParams,
     problems: GeneratedProblem[],
-    progressList: DrillProgress[]
+    progressList: DrillProgress[],
   ): Promise<Session>;
   getActiveSession(userId: string): Promise<Session | undefined>;
   saveSession(session: Session): Promise<void>;

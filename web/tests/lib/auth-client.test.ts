@@ -15,7 +15,7 @@ describe('auth client oauth contract', () => {
   // so stubbing the global after import would not be picked up.
   const customFetchImpl = (
     input: string | URL | Request,
-    init?: RequestInit
+    init?: RequestInit,
   ) => {
     const url =
       typeof input === 'string'
@@ -31,7 +31,7 @@ describe('auth client oauth contract', () => {
       new Response('[]', {
         status: 200,
         headers: { 'content-type': 'application/json' },
-      })
+      }),
     );
   };
 

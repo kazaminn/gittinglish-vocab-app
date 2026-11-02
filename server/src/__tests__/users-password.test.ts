@@ -92,7 +92,7 @@ describe('POST /api/users/password', () => {
       new APIError('BAD_REQUEST', {
         message: 'User already has a password set',
         code: 'PASSWORD_ALREADY_SET',
-      })
+      }),
     );
 
     const response = await req({ newPassword: 'password123' });

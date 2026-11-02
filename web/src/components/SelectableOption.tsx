@@ -1,4 +1,4 @@
-import { type ButtonHTMLAttributes, forwardRef, type ReactNode } from 'react';
+import { forwardRef, type ButtonHTMLAttributes, type ReactNode } from 'react';
 import { tv } from '../lib/tv';
 
 export type OptionState = 'default' | 'selected' | 'correct' | 'incorrect';
@@ -7,10 +7,10 @@ const selectableOption = tv({
   base: 'w-full rounded-sm border text-left',
   variants: {
     state: {
-      default: 'bg-transparent border-border text-primary',
-      selected: 'bg-selected border-edge-accent text-primary',
-      correct: 'bg-success-surface border-border-success text-success',
-      incorrect: 'bg-error-surface border-border-error text-error',
+      default: 'border-border bg-transparent text-primary',
+      selected: 'border-edge-accent bg-selected text-primary',
+      correct: 'border-border-success bg-success-surface text-success',
+      incorrect: 'border-border-error bg-error-surface text-error',
     },
     density: {
       compact: 'px-4 py-2 text-sm',

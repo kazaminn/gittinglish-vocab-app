@@ -85,7 +85,7 @@ describe('DeleteAccountSection', () => {
     await user.click(screen.getByRole('button', { name: /^> delete account/ }));
     await user.type(screen.getByLabelText('confirm account id'), 'kazamin');
     await user.click(
-      screen.getByRole('button', { name: /yes, delete my account/ })
+      screen.getByRole('button', { name: /yes, delete my account/ }),
     );
 
     expect(mockedApiRequest).toHaveBeenCalledWith('/api/users/me', {
@@ -105,7 +105,7 @@ describe('DeleteAccountSection', () => {
     await user.click(screen.getByRole('button', { name: 'cancel' }));
 
     expect(
-      screen.queryByLabelText('confirm account id')
+      screen.queryByLabelText('confirm account id'),
     ).not.toBeInTheDocument();
     expect(mockedApiRequest).not.toHaveBeenCalled();
   });
@@ -116,8 +116,8 @@ describe('DeleteAccountSection', () => {
       new ApiClientError(
         'Confirmation did not match your account ID',
         'CONFIRMATION_MISMATCH',
-        400
-      )
+        400,
+      ),
     );
 
     renderWithProviders(<DeleteAccountSection />);
@@ -125,11 +125,11 @@ describe('DeleteAccountSection', () => {
     await user.click(screen.getByRole('button', { name: /^> delete account/ }));
     await user.type(screen.getByLabelText('confirm account id'), 'kazamin');
     await user.click(
-      screen.getByRole('button', { name: /yes, delete my account/ })
+      screen.getByRole('button', { name: /yes, delete my account/ }),
     );
 
     expect(await screen.findByRole('alert')).toHaveTextContent(
-      '入力した ID が一致しませんでした。'
+      '入力した ID が一致しませんでした。',
     );
     expect(mockedSignOut).not.toHaveBeenCalled();
     expect(mockNavigate).not.toHaveBeenCalled();

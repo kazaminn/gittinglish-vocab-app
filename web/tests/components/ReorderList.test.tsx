@@ -17,26 +17,26 @@ describe('ReorderList', () => {
         ]}
         onSubmit={onSubmit}
         disabled={false}
-      />
+      />,
     );
 
     await user.click(
-      screen.getByRole('button', { name: /Answer slot 1: empty/i })
+      screen.getByRole('button', { name: /Answer slot 1: empty/i }),
     );
     await user.click(
-      screen.getByRole('button', { name: /Chunk choice: alpha/i })
+      screen.getByRole('button', { name: /Chunk choice: alpha/i }),
     );
     await user.click(
-      screen.getByRole('button', { name: /Answer slot 1: alpha/i })
+      screen.getByRole('button', { name: /Answer slot 1: alpha/i }),
     );
     await user.click(
-      screen.getByRole('button', { name: /Chunk choice: beta/i })
+      screen.getByRole('button', { name: /Chunk choice: beta/i }),
     );
     await user.click(
-      screen.getByRole('button', { name: /Answer slot 2: empty/i })
+      screen.getByRole('button', { name: /Answer slot 2: empty/i }),
     );
     await user.click(
-      screen.getByRole('button', { name: /Chunk choice: alpha/i })
+      screen.getByRole('button', { name: /Chunk choice: alpha/i }),
     );
     await user.click(screen.getByRole('button', { name: /> submit order/i }));
 

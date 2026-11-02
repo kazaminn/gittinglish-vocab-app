@@ -20,7 +20,7 @@ describe('settings.local', () => {
         fontWeight: 500,
         theme: 'dark',
         sessionSize: 30,
-      })
+      }),
     );
 
     const settings = readStoredSettings();

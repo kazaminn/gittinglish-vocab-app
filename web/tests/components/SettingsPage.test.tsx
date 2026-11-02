@@ -120,7 +120,7 @@ describe('SettingsPage', () => {
         fontWeight: 500,
         theme: 'dark',
         sessionSize: 30,
-      })
+      }),
     );
 
     renderWithProviders(<SettingsPage onBackToHome={vi.fn()} />);
@@ -129,7 +129,7 @@ describe('SettingsPage', () => {
     // The field reflects the signed-in account, never the stale local value.
     expect(displayNameInput).toHaveValue('Kazamin');
     expect(
-      screen.queryByText(/ghost of a previous user/i)
+      screen.queryByText(/ghost of a previous user/i),
     ).not.toBeInTheDocument();
   });
 });

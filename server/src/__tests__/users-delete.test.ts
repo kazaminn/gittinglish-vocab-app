@@ -126,19 +126,19 @@ async function clearTables() {
 
 async function seedUser(userId: string, username: string) {
   await testDb.run(
-    sql`INSERT INTO user (id, name, email, username) VALUES (${userId}, ${'Someone'}, ${`${userId}@example.com`}, ${username})`
+    sql`INSERT INTO user (id, name, email, username) VALUES (${userId}, ${'Someone'}, ${`${userId}@example.com`}, ${username})`,
   );
   await testDb.run(
-    sql`INSERT INTO session_writes (session_id, user_id, written_at) VALUES (${`sw-${userId}`}, ${userId}, ${1})`
+    sql`INSERT INTO session_writes (session_id, user_id, written_at) VALUES (${`sw-${userId}`}, ${userId}, ${1})`,
   );
   await testDb.run(
-    sql`INSERT INTO drill_progress (user_id, item_id, drill_mode, next_review) VALUES (${userId}, ${'item-1'}, ${'word_to_meaning'}, ${1})`
+    sql`INSERT INTO drill_progress (user_id, item_id, drill_mode, next_review) VALUES (${userId}, ${'item-1'}, ${'word_to_meaning'}, ${1})`,
   );
   await testDb.run(
-    sql`INSERT INTO answer_logs (user_id, session_id, item_id, drill_mode, is_correct, quality) VALUES (${userId}, ${`sw-${userId}`}, ${'item-1'}, ${'word_to_meaning'}, ${1}, ${4})`
+    sql`INSERT INTO answer_logs (user_id, session_id, item_id, drill_mode, is_correct, quality) VALUES (${userId}, ${`sw-${userId}`}, ${'item-1'}, ${'word_to_meaning'}, ${1}, ${4})`,
   );
   await testDb.run(
-    sql`INSERT INTO user_activities (user_id, activity_date, items_reviewed, correct_count) VALUES (${userId}, ${'2026-01-01'}, ${1}, ${1})`
+    sql`INSERT INTO user_activities (user_id, activity_date, items_reviewed, correct_count) VALUES (${userId}, ${'2026-01-01'}, ${1}, ${1})`,
   );
 }
 

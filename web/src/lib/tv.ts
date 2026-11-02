@@ -20,7 +20,7 @@ function toClassArray(value: string | string[] | undefined): string[] {
 }
 
 export function tv<TVariants extends VariantGroups>(
-  config: TVConfig<TVariants>
+  config: TVConfig<TVariants>,
 ) {
   return (selection: VariantSelection<TVariants> = {}): string => {
     const classes = [...toClassArray(config.base)];

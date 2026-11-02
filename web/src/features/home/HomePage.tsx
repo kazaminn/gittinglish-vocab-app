@@ -122,7 +122,7 @@ export function HomePage({
 
   const visibleModes = useMemo(
     () => availableModes.map((mode) => MODE_OPTIONS[mode]),
-    [availableModes]
+    [availableModes],
   );
   const selectedMode = MODE_OPTIONS[selection.drillMode];
 

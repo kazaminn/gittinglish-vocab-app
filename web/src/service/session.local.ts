@@ -16,7 +16,7 @@ function storageKey(userId: string): string {
 function generateSessionItems(
   problems: GeneratedProblem[],
   progressList: DrillProgress[],
-  sessionSize: number
+  sessionSize: number,
 ): SessionItem[] {
   const now = Date.now();
   const progressMap = new Map(progressList.map((p) => [p.itemId, p]));
@@ -38,7 +38,7 @@ function generateSessionItems(
     const remaining = sessionSize - items.length;
     const maxNew = Math.min(remaining, MAX_NEW_ITEMS);
     const newProblems = problems.filter(
-      (p) => !reviewIds.has(p.id) && !progressMap.has(p.id)
+      (p) => !reviewIds.has(p.id) && !progressMap.has(p.id),
     );
     for (let i = 0; i < Math.min(maxNew, newProblems.length); i++) {
       const p = newProblems[i];
@@ -56,7 +56,7 @@ export function createLocalSessionService(): SessionService {
     startSession(
       params: SessionStartParams,
       problems: GeneratedProblem[],
-      progressList: DrillProgress[]
+      progressList: DrillProgress[],
     ): Promise<Session> {
       const items = generateSessionItems(problems, progressList, params.count);
       const session: Session = {
@@ -78,7 +78,7 @@ export function createLocalSessionService(): SessionService {
       try {
         const session = JSON.parse(raw) as Session;
         return Promise.resolve(
-          session.status === 'active' ? session : undefined
+          session.status === 'active' ? session : undefined,
         );
       } catch {
         return Promise.resolve(undefined);

@@ -8,11 +8,11 @@ export interface JudgeResult {
 
 function joinChunksInOrder(
   problem: GeneratedProblem,
-  orderedIds: string[]
+  orderedIds: string[],
 ): string {
   if (!('chunks' in problem)) return '';
   const chunkMap = new Map(
-    problem.chunks.map((chunk) => [chunk.id, chunk.text])
+    problem.chunks.map((chunk) => [chunk.id, chunk.text]),
   );
   return orderedIds
     .map((id) => chunkMap.get(id) ?? '')
@@ -26,13 +26,13 @@ function joinChunksInOrder(
  */
 export function judgeAnswer(
   problem: GeneratedProblem,
-  answer: string
+  answer: string,
 ): JudgeResult {
   if ('choiceAnswerSpec' in problem) {
     const normalized = answer.trim();
     const correctIds = problem.choiceAnswerSpec.correctChoiceIds;
     const correctChoice = problem.choices.find((choice) =>
-      correctIds.includes(choice.id)
+      correctIds.includes(choice.id),
     );
     return {
       isCorrect: correctIds.includes(normalized),
@@ -43,7 +43,7 @@ export function judgeAnswer(
   if ('answerSpec' in problem) {
     const normalized = normalizeTextAnswer(answer);
     const isCorrect = problem.answerSpec.answers.some(
-      (candidate) => normalizeTextAnswer(candidate) === normalized
+      (candidate) => normalizeTextAnswer(candidate) === normalized,
     );
     return {
       isCorrect,
@@ -59,7 +59,7 @@ export function judgeAnswer(
     const isCorrect =
       userOrder.length === problem.correctOrder.length &&
       userOrder.every(
-        (chunkId, index) => chunkId === problem.correctOrder[index]
+        (chunkId, index) => chunkId === problem.correctOrder[index],
       );
     return {
       isCorrect,

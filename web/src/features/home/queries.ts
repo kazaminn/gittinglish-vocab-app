@@ -43,7 +43,7 @@ export function useHomeProblemsQuery(query: ProblemQuery) {
 
 export function useSectionLabelQuery(
   datasetId: DatasetId,
-  sectionId: string | undefined
+  sectionId: string | undefined,
 ) {
   return useQuery({
     queryKey: homeQueryKeys.sectionLabel(datasetId, sectionId),

@@ -41,11 +41,11 @@ export function KazamitteLinkSection() {
       if (!searchParams.has('error')) return undefined;
       const code = searchParams.get('error');
       return { code, message: translateOAuthError(code) };
-    }
+    },
   );
 
   const kazamitteAccount = linkedAccounts.data?.find(
-    (account) => account.providerId === PROVIDER_ID
+    (account) => account.providerId === PROVIDER_ID,
   );
   const isLinked = Boolean(kazamitteAccount);
   const isSoleLoginMethod = isLinked && linkedAccounts.data?.length === 1;

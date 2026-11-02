@@ -1,5 +1,5 @@
-import { LegalDocument } from './LegalDocument';
 import { TERMS } from './documents';
+import { LegalDocument } from './LegalDocument';
 
 export function TermsPage() {
   return (
