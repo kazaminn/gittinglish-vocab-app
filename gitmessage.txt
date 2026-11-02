@@ -6,14 +6,19 @@
 #   ✨ feat(auth): add OAuth login
 #
 # ----------------------------------------
-# type (絵文字付き):
-#   🎉 init       - 初期セットアップ
-#   ✨ feat       - 新機能追加
-#   🛠️ fix        - バグ修正
-#   ♻️ refactor   - リファクタリング
-#   🚀 perf       - パフォーマンス改善
-#   🧪 test       - テスト追加・修正
-#   💄 style      - 機械的なコードフォーマット
-#   📝 docs       - ドキュメント更新
-#   🧹 chore      - 設定変更、CI、依存更新など
-#   🚧 wip        - Work In Progress
+# type (emoji):
+#   🎉 init       - Initial project setup
+#   ✨ feat       - New feature
+#   🛠️ fix        - Bug fix
+#   🚑 hotfix     - Critical production fix
+#   ♻️ refactor   - Code refactoring
+#   🚀 perf       - Performance improvement
+#   🧪 test       - Add or update tests
+#   💄 style      - UI / visual changes only
+#   📝 docs       - Developer documentation
+#   📖 content    - Site or article content
+#   🔧 config     - Configuration changes
+#   📦 deps       - Dependency updates
+#   👷 ci         - CI/CD changes
+#   🧹 chore      - Maintenance and housekeeping
+#   🚧 wip        - Work in progress

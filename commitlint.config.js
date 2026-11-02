@@ -1,14 +1,20 @@
-// 🎉 init,✨ feat,🛠️ fix,♻️ refactor,🚀 perf,
-// 🧪 test,💄 style,📝 docs,🧹 chore,🚧 wip
+// 🎉 init, ✨ feat, 🛠️ fix, 🚑 hotfix, ♻️ refactor, 🚀 perf,
+// 🧪 test, 💄 style, 📝 docs, 📖 content, 🔧 config,
+// 📦 deps, 👷 ci, 🧹 chore, 🚧 wip
 const emojiTypes = [
   '\u{1F389} init',
   '\u{2728} feat',
   '\u{1F6E0}\u{FE0F} fix',
+  '\u{1F691} hotfix',
   '\u{267B}\u{FE0F} refactor',
   '\u{1F680} perf',
   '\u{1F9EA} test',
   '\u{1F484} style',
   '\u{1F4DD} docs',
+  '\u{1F4D6} content',
+  '\u{1F527} config',
+  '\u{1F4E6} deps',
+  '\u{1F477} ci',
   '\u{1F9F9} chore',
   '\u{1F6A7} wip',
 ];
