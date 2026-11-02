@@ -1,0 +1,2459 @@
+[
+  {
+    "id": "gitnouns_001_scloze_1",
+    "sentenceId": "gitnouns_001",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "addition",
+          "pos": "noun",
+          "meaning": "追加したもの・追加すること",
+          "target": true,
+          "category": "addition"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best noun to fill in the blank.",
+    "stem": "The CLI now supports ESM in ___ to CommonJS.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "extension"
+      },
+      {
+        "id": "b",
+        "text": "integration"
+      },
+      {
+        "id": "c",
+        "text": "option"
+      },
+      {
+        "id": "d",
+        "text": "addition"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "in addition to（〜に加えて）は決まった形。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitnouns_002_scloze_1",
+    "sentenceId": "gitnouns_002",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "creation",
+          "pos": "noun",
+          "meaning": "新しく作ること（作成の処理・タイミング）",
+          "target": true,
+          "category": "addition"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best noun to fill in the blank.",
+    "stem": "The bug only happens during branch ___, before any commits are added.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "creation"
+      },
+      {
+        "id": "b",
+        "text": "deployment"
+      },
+      {
+        "id": "c",
+        "text": "migration"
+      },
+      {
+        "id": "d",
+        "text": "resolution"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "a"
+      ]
+    },
+    "explanation": {
+      "summary": "branch creation（ブランチを作ること）。before any commits are added（まだコミットがない）がヒント。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitnouns_003_scloze_1",
+    "sentenceId": "gitnouns_003",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "implementation",
+          "pos": "noun",
+          "meaning": "機能やインターフェースを実際に動かすコード（実装）",
+          "target": true,
+          "category": "addition"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best noun to fill in the blank.",
+    "stem": "The interface is done, but the ___ is still a stub that returns null.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "deprecation"
+      },
+      {
+        "id": "b",
+        "text": "implementation"
+      },
+      {
+        "id": "c",
+        "text": "usage"
+      },
+      {
+        "id": "d",
+        "text": "warning"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "interface（外から見た約束）と対になる中身はimplementation。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitnouns_004_scloze_1",
+    "sentenceId": "gitnouns_004",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "setup",
+          "pos": "noun",
+          "meaning": "使い始める前の準備・構成（開発環境・テスト・CI など）",
+          "target": true,
+          "category": "addition"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best noun to fill in the blank.",
+    "stem": "New contributors kept failing to run the tests, so we simplified the local ___ in the README.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "setup"
+      },
+      {
+        "id": "b",
+        "text": "removal"
+      },
+      {
+        "id": "c",
+        "text": "conversion"
+      },
+      {
+        "id": "d",
+        "text": "refactoring"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "a"
+      ]
+    },
+    "explanation": {
+      "summary": "local setup（手元の開発環境の準備）。動詞は set up と2語、名詞は1語の setup。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitnouns_005_scloze_1",
+    "sentenceId": "gitnouns_005",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "integration",
+          "pos": "noun",
+          "meaning": "外部のサービスやツールとの連携部分（組み込んだもの）",
+          "target": true,
+          "category": "addition"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best noun to fill in the blank.",
+    "stem": "We added Sentry ___ so that production errors are reported automatically.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "removal"
+      },
+      {
+        "id": "b",
+        "text": "conversion"
+      },
+      {
+        "id": "c",
+        "text": "resolution"
+      },
+      {
+        "id": "d",
+        "text": "integration"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "外部サービスとの連携部分はintegration（Sentry integration）。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitnouns_006_scloze_1",
+    "sentenceId": "gitnouns_006",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "removal",
+          "pos": "noun",
+          "meaning": "取り除くこと（削除の予定や処理）",
+          "target": true,
+          "category": "removal"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best noun to fill in the blank.",
+    "stem": "The `legacyMode` option is deprecated and scheduled for ___ in v4.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "creation"
+      },
+      {
+        "id": "b",
+        "text": "removal"
+      },
+      {
+        "id": "c",
+        "text": "integration"
+      },
+      {
+        "id": "d",
+        "text": "generation"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "scheduled for removal（削除予定）は非推奨の説明の決まり文句。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitnouns_007_scloze_1",
+    "sentenceId": "gitnouns_007",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "cleanup",
+          "pos": "noun",
+          "meaning": "不要なコードなどの片付け（振る舞いは変えない）",
+          "target": true,
+          "category": "removal"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best noun to fill in the blank.",
+    "stem": "This PR has no behavior changes; it is just a ___ of dead code and unused imports.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "deployment"
+      },
+      {
+        "id": "b",
+        "text": "generation"
+      },
+      {
+        "id": "c",
+        "text": "detection"
+      },
+      {
+        "id": "d",
+        "text": "cleanup"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "不要なコードの片付けはcleanup（動詞は clean up と2語）。no behavior changes（振る舞いは変えない）がヒント。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitnouns_008_scloze_1",
+    "sentenceId": "gitnouns_008",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "deprecation",
+          "pos": "noun",
+          "meaning": "非推奨にすること・非推奨の告知（まだ動くが将来消す）",
+          "target": true,
+          "category": "removal"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best noun to fill in the blank.",
+    "stem": "Using `config.legacy` now prints a ___ warning that points to the new API.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "creation"
+      },
+      {
+        "id": "b",
+        "text": "deprecation"
+      },
+      {
+        "id": "c",
+        "text": "generation"
+      },
+      {
+        "id": "d",
+        "text": "conversion"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "deprecation warning（非推奨の警告）。points to the new API（新しい API へ案内する）がヒント。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitnouns_009_scloze_1",
+    "sentenceId": "gitnouns_009",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "resolution",
+          "pos": "noun",
+          "meaning": "（依存・モジュール・型などを）解決すること・その結果",
+          "target": true,
+          "category": "correction"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best noun to fill in the blank.",
+    "stem": "Imports with the `.js` extension fail because module ___ looks for the wrong file.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "creation"
+      },
+      {
+        "id": "b",
+        "text": "deployment"
+      },
+      {
+        "id": "c",
+        "text": "cleanup"
+      },
+      {
+        "id": "d",
+        "text": "resolution"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "module resolution（どのファイルを読むかを決める仕組み）。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitnouns_010_scloze_1",
+    "sentenceId": "gitnouns_010",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "resolver",
+          "pos": "noun",
+          "meaning": "解決を担当する部品（パスや値を探し当てる仕組み）",
+          "target": true,
+          "category": "correction"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best noun to fill in the blank.",
+    "stem": "We wrote a custom ___ so that `@/` paths point to the `src/` folder.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "validator"
+      },
+      {
+        "id": "b",
+        "text": "resolver"
+      },
+      {
+        "id": "c",
+        "text": "runner"
+      },
+      {
+        "id": "d",
+        "text": "generator"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "パスを解決する部品はresolver（-er で「〜するもの」）。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitnouns_011_scloze_1",
+    "sentenceId": "gitnouns_011",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "migration",
+          "pos": "noun",
+          "meaning": "新しいバージョン・方式への移行（の作業や手順）",
+          "target": true,
+          "category": "modification"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best noun to fill in the blank.",
+    "stem": "Before upgrading to v3, read the ___ guide for the list of breaking changes.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "creation"
+      },
+      {
+        "id": "b",
+        "text": "migration"
+      },
+      {
+        "id": "c",
+        "text": "cleanup"
+      },
+      {
+        "id": "d",
+        "text": "annotation"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "migration guide（移行ガイド）。upgrading to v3・breaking changes がヒント。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitnouns_012_scloze_1",
+    "sentenceId": "gitnouns_012",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "replacement",
+          "pos": "noun",
+          "meaning": "置き換え先（代わりに使うもの）",
+          "target": true,
+          "category": "modification"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best noun to fill in the blank.",
+    "stem": "`node-fetch` is no longer needed; native fetch is a drop-in ___.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "integration"
+      },
+      {
+        "id": "b",
+        "text": "extension"
+      },
+      {
+        "id": "c",
+        "text": "deployment"
+      },
+      {
+        "id": "d",
+        "text": "replacement"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "drop-in replacement（そのまま差し替えられる代わりのもの）は決まった形。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitnouns_013_scloze_1",
+    "sentenceId": "gitnouns_013",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "conversion",
+          "pos": "noun",
+          "meaning": "形式や型の変換",
+          "target": true,
+          "category": "modification"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best noun to fill in the blank.",
+    "stem": "The date was off by one day because of a bug in the UTC ___.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "creation"
+      },
+      {
+        "id": "b",
+        "text": "conversion"
+      },
+      {
+        "id": "c",
+        "text": "cleanup"
+      },
+      {
+        "id": "d",
+        "text": "annotation"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "形式や時刻の変換はconversion。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitnouns_014_scloze_1",
+    "sentenceId": "gitnouns_014",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "refactoring",
+          "pos": "noun",
+          "meaning": "振る舞いを変えずにコードの構造を直すこと",
+          "target": true,
+          "category": "modification"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best noun to fill in the blank.",
+    "stem": "The parser was hard to read, so we split the work into several PRs of pure ___ with no behavior change.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "deployment"
+      },
+      {
+        "id": "b",
+        "text": "generation"
+      },
+      {
+        "id": "c",
+        "text": "integration"
+      },
+      {
+        "id": "d",
+        "text": "refactoring"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "振る舞いを変えずに構造を直す作業はrefactoring。no behavior change がヒント。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitnouns_015_scloze_1",
+    "sentenceId": "gitnouns_015",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "optimization",
+          "pos": "noun",
+          "meaning": "性能を上げるための工夫・変更（最適化）",
+          "target": true,
+          "category": "optimization"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best noun to fill in the blank.",
+    "stem": "Skipping static nodes during re-render is the key ___ that makes large lists much faster.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "deprecation"
+      },
+      {
+        "id": "b",
+        "text": "annotation"
+      },
+      {
+        "id": "c",
+        "text": "optimization"
+      },
+      {
+        "id": "d",
+        "text": "conversion"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "性能を上げる工夫はoptimization。makes ... faster がヒント。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitnouns_016_scloze_1",
+    "sentenceId": "gitnouns_016",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "improvement",
+          "pos": "noun",
+          "meaning": "改善点・改良（性能・UI・メッセージなど全般）",
+          "target": true,
+          "category": "optimization"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best noun to fill in the blank.",
+    "stem": "The release notes list several accessibility ___ in the dialog component.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "annotations"
+      },
+      {
+        "id": "b",
+        "text": "improvements"
+      },
+      {
+        "id": "c",
+        "text": "conversions"
+      },
+      {
+        "id": "d",
+        "text": "resolutions"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "改善点はimprovement（数えられる名詞なので several の後ろは複数形）。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitnouns_017_scloze_1",
+    "sentenceId": "gitnouns_017",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "validation",
+          "pos": "noun",
+          "meaning": "入力や値がルールに合っているかの検証",
+          "target": true,
+          "category": "safety"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best noun to fill in the blank.",
+    "stem": "Submitting the form with an empty email should fail ___ and show an error.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "conversion"
+      },
+      {
+        "id": "b",
+        "text": "deployment"
+      },
+      {
+        "id": "c",
+        "text": "validation"
+      },
+      {
+        "id": "d",
+        "text": "generation"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "入力がルールに合うかの検証はvalidation（fail validation）。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitnouns_018_scloze_1",
+    "sentenceId": "gitnouns_018",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "validator",
+          "pos": "noun",
+          "meaning": "検証を行う関数・部品（バリデーター）",
+          "target": true,
+          "category": "safety"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best noun to fill in the blank.",
+    "stem": "Write a custom ___ that rejects email addresses without a domain.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "resolver"
+      },
+      {
+        "id": "b",
+        "text": "validator"
+      },
+      {
+        "id": "c",
+        "text": "runner"
+      },
+      {
+        "id": "d",
+        "text": "generator"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "検証をする部品はvalidator（-or で「〜するもの」）。rejects（はねる）がヒント。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitnouns_019_scloze_1",
+    "sentenceId": "gitnouns_019",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "handler",
+          "pos": "noun",
+          "meaning": "イベントやリクエストに応じて呼ばれる関数（ハンドラー）",
+          "target": true,
+          "category": "safety"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best noun to fill in the blank.",
+    "stem": "Clicking the button does nothing because the click ___ was never attached.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "filter"
+      },
+      {
+        "id": "b",
+        "text": "handler"
+      },
+      {
+        "id": "c",
+        "text": "runner"
+      },
+      {
+        "id": "d",
+        "text": "validator"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "イベントに応じて呼ばれる関数はhandler（click handler）。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitnouns_020_scloze_1",
+    "sentenceId": "gitnouns_020",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "handling",
+          "pos": "noun",
+          "meaning": "（エラーなどへの）対処のしかた・処理",
+          "target": true,
+          "category": "safety"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best noun to fill in the blank.",
+    "stem": "The upload crashes on network errors, so this PR improves error ___.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "handling"
+      },
+      {
+        "id": "b",
+        "text": "handler"
+      },
+      {
+        "id": "c",
+        "text": "conversion"
+      },
+      {
+        "id": "d",
+        "text": "migration"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "a"
+      ]
+    },
+    "explanation": {
+      "summary": "error handling（エラーへの対処のしかた）。handler（部品）は数えられる名詞なので、冠詞なしの単数では使わない。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitnouns_021_scloze_1",
+    "sentenceId": "gitnouns_021",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "fallback",
+          "pos": "noun",
+          "meaning": "主な手段が使えないときの代わり（フォールバック）",
+          "target": true,
+          "category": "safety"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best noun to fill in the blank.",
+    "stem": "Older browsers don't support this API, so we load a polyfill as a ___.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "runner"
+      },
+      {
+        "id": "b",
+        "text": "filter"
+      },
+      {
+        "id": "c",
+        "text": "hook"
+      },
+      {
+        "id": "d",
+        "text": "fallback"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "主な手段が使えないときの代わりはfallback。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitnouns_022_scloze_1",
+    "sentenceId": "gitnouns_022",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "extension",
+          "pos": "noun",
+          "meaning": "機能を足す追加モジュール（拡張機能）・ファイルの拡張子",
+          "target": true,
+          "category": "extension"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best noun to fill in the blank.",
+    "stem": "The VS Code ___ stopped activating after the latest editor update.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "extension"
+      },
+      {
+        "id": "b",
+        "text": "lockfile"
+      },
+      {
+        "id": "c",
+        "text": "generator"
+      },
+      {
+        "id": "d",
+        "text": "filter"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "a"
+      ]
+    },
+    "explanation": {
+      "summary": "エディターに機能を足す追加モジュールはextension（VS Code extension）。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitnouns_023_scloze_1",
+    "sentenceId": "gitnouns_023",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "deployment",
+          "pos": "noun",
+          "meaning": "アプリを環境に配置して動かすこと（デプロイ）",
+          "target": true,
+          "category": "release"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best noun to fill in the blank.",
+    "stem": "Every pull request gets its own preview ___ so that reviewers can try the change.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "deployment"
+      },
+      {
+        "id": "b",
+        "text": "generation"
+      },
+      {
+        "id": "c",
+        "text": "resolution"
+      },
+      {
+        "id": "d",
+        "text": "conversion"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "a"
+      ]
+    },
+    "explanation": {
+      "summary": "preview deployment（PR ごとの確認用のデプロイ）。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitnouns_024_scloze_1",
+    "sentenceId": "gitnouns_024",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "lockfile",
+          "pos": "noun",
+          "meaning": "依存の正確なバージョンを記録するファイル",
+          "target": true,
+          "category": "release"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best noun to fill in the blank.",
+    "stem": "CI installs different versions than your machine because the ___ was not committed.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "lockfile"
+      },
+      {
+        "id": "b",
+        "text": "runner"
+      },
+      {
+        "id": "c",
+        "text": "hook"
+      },
+      {
+        "id": "d",
+        "text": "generator"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "a"
+      ]
+    },
+    "explanation": {
+      "summary": "依存の正確なバージョンを記録するファイルはlockfile。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitnouns_025_scloze_1",
+    "sentenceId": "gitnouns_025",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "documentation",
+          "pos": "noun",
+          "meaning": "使い方や仕組みの説明文書（ドキュメント）",
+          "target": true,
+          "category": "documentation"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best noun to fill in the blank.",
+    "stem": "The new API has no examples yet, so this PR adds ___ with usage examples.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "deployment"
+      },
+      {
+        "id": "b",
+        "text": "documentation"
+      },
+      {
+        "id": "c",
+        "text": "migration"
+      },
+      {
+        "id": "d",
+        "text": "detection"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "説明文書はdocumentation（数えられない名詞なので冠詞なし）。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitnouns_026_scloze_1",
+    "sentenceId": "gitnouns_026",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "description",
+          "pos": "noun",
+          "meaning": "説明文（PR の説明・型や設定項目の説明など）",
+          "target": true,
+          "category": "documentation"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best noun to fill in the blank.",
+    "stem": "Please fill in the PR ___ and explain how you tested the change.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "annotation"
+      },
+      {
+        "id": "b",
+        "text": "validation"
+      },
+      {
+        "id": "c",
+        "text": "generation"
+      },
+      {
+        "id": "d",
+        "text": "description"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "PR description（PR の説明欄）。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitnouns_027_scloze_1",
+    "sentenceId": "gitnouns_027",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "annotation",
+          "pos": "noun",
+          "meaning": "コードに付ける注釈（型注釈・コメントなど）",
+          "target": true,
+          "category": "documentation"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best noun to fill in the blank.",
+    "stem": "TypeScript cannot infer the return types here, so add explicit type ___ to the public functions.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "filters"
+      },
+      {
+        "id": "b",
+        "text": "hooks"
+      },
+      {
+        "id": "c",
+        "text": "annotations"
+      },
+      {
+        "id": "d",
+        "text": "runners"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "type annotation（型注釈）。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitnouns_028_scloze_1",
+    "sentenceId": "gitnouns_028",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "logging",
+          "pos": "noun",
+          "meaning": "動作をログとして記録すること・その仕組み",
+          "target": true,
+          "category": "documentation"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best noun to fill in the blank.",
+    "stem": "To debug the cache misses, turn on verbose ___ with `DEBUG=cache`.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "handling"
+      },
+      {
+        "id": "b",
+        "text": "generation"
+      },
+      {
+        "id": "c",
+        "text": "logging"
+      },
+      {
+        "id": "d",
+        "text": "detection"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "verbose logging（詳しいログの記録）。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitnouns_029_scloze_1",
+    "sentenceId": "gitnouns_029",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "usage",
+          "pos": "noun",
+          "meaning": "使い方・使用量",
+          "target": true,
+          "category": "general"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best noun to fill in the blank.",
+    "stem": "The README now shows example ___ for every command.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "usage"
+      },
+      {
+        "id": "b",
+        "text": "generation"
+      },
+      {
+        "id": "c",
+        "text": "conversion"
+      },
+      {
+        "id": "d",
+        "text": "resolution"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "a"
+      ]
+    },
+    "explanation": {
+      "summary": "example usage（使用例）。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitnouns_030_scloze_1",
+    "sentenceId": "gitnouns_030",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "warning",
+          "pos": "noun",
+          "meaning": "処理は止めずに問題の可能性を知らせるメッセージ（警告）",
+          "target": true,
+          "category": "safety"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best noun to fill in the blank.",
+    "stem": "React prints a ___ in the console when list items have no `key` prop.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "handler"
+      },
+      {
+        "id": "b",
+        "text": "warning"
+      },
+      {
+        "id": "c",
+        "text": "filter"
+      },
+      {
+        "id": "d",
+        "text": "hook"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "処理は止めずに問題を知らせるメッセージはwarning。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitnouns_031_scloze_1",
+    "sentenceId": "gitnouns_031",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "runtime",
+          "pos": "noun",
+          "meaning": "コードが実行される環境・実行時",
+          "target": true,
+          "category": "general"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best noun to fill in the blank.",
+    "stem": "This code works in Node.js but fails in the Bun ___ because of a missing API.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "generator"
+      },
+      {
+        "id": "b",
+        "text": "validator"
+      },
+      {
+        "id": "c",
+        "text": "filter"
+      },
+      {
+        "id": "d",
+        "text": "runtime"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "Node.js や Bun のような実行環境はruntime。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitnouns_032_scloze_1",
+    "sentenceId": "gitnouns_032",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "runner",
+          "pos": "noun",
+          "meaning": "テストやタスクを実行するプログラム",
+          "target": true,
+          "category": "general"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best noun to fill in the blank.",
+    "stem": "We switched the test ___ from Jest to Vitest.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "resolver"
+      },
+      {
+        "id": "b",
+        "text": "runner"
+      },
+      {
+        "id": "c",
+        "text": "filter"
+      },
+      {
+        "id": "d",
+        "text": "hook"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "テストを実行するプログラムはtest runner。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitnouns_033_scloze_1",
+    "sentenceId": "gitnouns_033",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "generator",
+          "pos": "noun",
+          "meaning": "コードやファイルを自動で作るツール・関数",
+          "target": true,
+          "category": "addition"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best noun to fill in the blank.",
+    "stem": "Instead of copying files by hand, use the component ___ in the CLI.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "resolver"
+      },
+      {
+        "id": "b",
+        "text": "validator"
+      },
+      {
+        "id": "c",
+        "text": "generator"
+      },
+      {
+        "id": "d",
+        "text": "filter"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "ファイルを自動で作るツールはgenerator。by hand との対比がヒント。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitnouns_034_scloze_1",
+    "sentenceId": "gitnouns_034",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "generation",
+          "pos": "noun",
+          "meaning": "自動で作ること（生成の処理）",
+          "target": true,
+          "category": "addition"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best noun to fill in the blank.",
+    "stem": "Type ___ from the OpenAPI schema now runs automatically on build.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "deployment"
+      },
+      {
+        "id": "b",
+        "text": "cleanup"
+      },
+      {
+        "id": "c",
+        "text": "removal"
+      },
+      {
+        "id": "d",
+        "text": "generation"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "type generation（型の自動生成）。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitnouns_035_scloze_1",
+    "sentenceId": "gitnouns_035",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "detection",
+          "pos": "noun",
+          "meaning": "自動で見つけ出すこと（検出）",
+          "target": true,
+          "category": "standalone"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best noun to fill in the blank.",
+    "stem": "The CLI picks npm, pnpm, or yarn automatically thanks to package manager ___.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "generation"
+      },
+      {
+        "id": "b",
+        "text": "deployment"
+      },
+      {
+        "id": "c",
+        "text": "detection"
+      },
+      {
+        "id": "d",
+        "text": "annotation"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "自動で見つけ出すことはdetection（package manager detection）。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitnouns_036_scloze_1",
+    "sentenceId": "gitnouns_036",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "override",
+          "pos": "noun",
+          "meaning": "既定の値や動作を上書きする設定",
+          "target": true,
+          "category": "standalone"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best noun to fill in the blank.",
+    "stem": "A dependency has a security issue, so we added an ___ to force the patched version.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "extension"
+      },
+      {
+        "id": "b",
+        "text": "integration"
+      },
+      {
+        "id": "c",
+        "text": "annotation"
+      },
+      {
+        "id": "d",
+        "text": "override"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "依存のバージョンなどを上書きする設定はoverride。force（強制する）がヒント。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitnouns_037_scloze_1",
+    "sentenceId": "gitnouns_037",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "option",
+          "pos": "noun",
+          "meaning": "設定項目（オプション）",
+          "target": true,
+          "category": "standalone"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best noun to fill in the blank.",
+    "stem": "Pass the `--silent` ___ to hide the progress bar.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "option"
+      },
+      {
+        "id": "b",
+        "text": "filter"
+      },
+      {
+        "id": "c",
+        "text": "hook"
+      },
+      {
+        "id": "d",
+        "text": "handler"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "a"
+      ]
+    },
+    "explanation": {
+      "summary": "コマンドの設定項目はoption（--silent option）。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitnouns_038_scloze_1",
+    "sentenceId": "gitnouns_038",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "filter",
+          "pos": "noun",
+          "meaning": "条件に合うものだけを選ぶ仕組み（フィルター）",
+          "target": true,
+          "category": "standalone"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best noun to fill in the blank.",
+    "stem": "The search results include archived projects, so add a ___ to exclude them.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "runner"
+      },
+      {
+        "id": "b",
+        "text": "filter"
+      },
+      {
+        "id": "c",
+        "text": "validator"
+      },
+      {
+        "id": "d",
+        "text": "generator"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "条件に合うものだけを選ぶ仕組みはfilter。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitnouns_039_scloze_1",
+    "sentenceId": "gitnouns_039",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "hook",
+          "pos": "noun",
+          "meaning": "処理の途中で独自のコードを差し込める場所・関数（フック）",
+          "target": true,
+          "category": "standalone"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best noun to fill in the blank.",
+    "stem": "Run Prettier automatically with a pre-commit ___.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "hook"
+      },
+      {
+        "id": "b",
+        "text": "filter"
+      },
+      {
+        "id": "c",
+        "text": "validator"
+      },
+      {
+        "id": "d",
+        "text": "resolver"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "a"
+      ]
+    },
+    "explanation": {
+      "summary": "コミット前に動くスクリプトは Git の pre-commit hook。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  }
+]

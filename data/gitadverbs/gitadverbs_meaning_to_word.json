@@ -1,0 +1,2585 @@
+[
+  {
+    "id": "gitadverbs_001_m2w_1",
+    "sentenceId": "gitadverbs_001",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "correctly",
+          "pos": "adverb",
+          "meaning": "正しく（期待どおりに）",
+          "target": true,
+          "category": "from_adjective"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 正しく（期待どおりに）?",
+    "stem": "正しく（期待どおりに）",
+    "choices": [
+      {
+        "id": "a",
+        "text": "correctly"
+      },
+      {
+        "id": "b",
+        "text": "incorrectly"
+      },
+      {
+        "id": "c",
+        "text": "explicitly"
+      },
+      {
+        "id": "d",
+        "text": "implicitly"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "a"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'correctly': 正しく（期待どおりに）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadverbs_002_m2w_1",
+    "sentenceId": "gitadverbs_002",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "incorrectly",
+          "pos": "adverb",
+          "meaning": "誤って（間違った形で）",
+          "target": true,
+          "category": "from_adjective"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 誤って（間違った形で）?",
+    "stem": "誤って（間違った形で）",
+    "choices": [
+      {
+        "id": "a",
+        "text": "correctly"
+      },
+      {
+        "id": "b",
+        "text": "explicitly"
+      },
+      {
+        "id": "c",
+        "text": "implicitly"
+      },
+      {
+        "id": "d",
+        "text": "incorrectly"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'incorrectly': 誤って（間違った形で）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadverbs_003_m2w_1",
+    "sentenceId": "gitadverbs_003",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "properly",
+          "pos": "adverb",
+          "meaning": "きちんと（本来あるべき形で）",
+          "target": true,
+          "category": "from_adjective"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: きちんと（本来あるべき形で）?",
+    "stem": "きちんと（本来あるべき形で）",
+    "choices": [
+      {
+        "id": "a",
+        "text": "explicitly"
+      },
+      {
+        "id": "b",
+        "text": "implicitly"
+      },
+      {
+        "id": "c",
+        "text": "properly"
+      },
+      {
+        "id": "d",
+        "text": "lazily"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'properly': きちんと（本来あるべき形で）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadverbs_004_m2w_1",
+    "sentenceId": "gitadverbs_004",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "explicitly",
+          "pos": "adverb",
+          "meaning": "明示的に（はっきり指定して）",
+          "target": true,
+          "category": "from_adjective"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 明示的に（はっきり指定して）?",
+    "stem": "明示的に（はっきり指定して）",
+    "choices": [
+      {
+        "id": "a",
+        "text": "explicitly"
+      },
+      {
+        "id": "b",
+        "text": "implicitly"
+      },
+      {
+        "id": "c",
+        "text": "properly"
+      },
+      {
+        "id": "d",
+        "text": "lazily"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "a"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'explicitly': 明示的に（はっきり指定して）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadverbs_005_m2w_1",
+    "sentenceId": "gitadverbs_005",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "implicitly",
+          "pos": "adverb",
+          "meaning": "暗黙に（書かなくても自動で）",
+          "target": true,
+          "category": "from_adjective"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 暗黙に（書かなくても自動で）?",
+    "stem": "暗黙に（書かなくても自動で）",
+    "choices": [
+      {
+        "id": "a",
+        "text": "explicitly"
+      },
+      {
+        "id": "b",
+        "text": "implicitly"
+      },
+      {
+        "id": "c",
+        "text": "lazily"
+      },
+      {
+        "id": "d",
+        "text": "properly"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'implicitly': 暗黙に（書かなくても自動で）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadverbs_006_m2w_1",
+    "sentenceId": "gitadverbs_006",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "lazily",
+          "pos": "adverb",
+          "meaning": "必要になったときに（遅延して）",
+          "target": true,
+          "category": "from_adjective"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 必要になったときに（遅延して）?",
+    "stem": "必要になったときに（遅延して）",
+    "choices": [
+      {
+        "id": "a",
+        "text": "eagerly"
+      },
+      {
+        "id": "b",
+        "text": "implicitly"
+      },
+      {
+        "id": "c",
+        "text": "lazily"
+      },
+      {
+        "id": "d",
+        "text": "explicitly"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'lazily': 必要になったときに（遅延して）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadverbs_007_m2w_1",
+    "sentenceId": "gitadverbs_007",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "eagerly",
+          "pos": "adverb",
+          "meaning": "前もってすぐに",
+          "target": true,
+          "category": "from_adjective"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 前もってすぐに?",
+    "stem": "前もってすぐに",
+    "choices": [
+      {
+        "id": "a",
+        "text": "lazily"
+      },
+      {
+        "id": "b",
+        "text": "dynamically"
+      },
+      {
+        "id": "c",
+        "text": "eagerly"
+      },
+      {
+        "id": "d",
+        "text": "implicitly"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'eagerly': 前もってすぐに",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadverbs_008_m2w_1",
+    "sentenceId": "gitadverbs_008",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "dynamically",
+          "pos": "adverb",
+          "meaning": "実行時に（状況に応じて）",
+          "target": true,
+          "category": "from_adjective"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 実行時に（状況に応じて）?",
+    "stem": "実行時に（状況に応じて）",
+    "choices": [
+      {
+        "id": "a",
+        "text": "dynamically"
+      },
+      {
+        "id": "b",
+        "text": "statically"
+      },
+      {
+        "id": "c",
+        "text": "eagerly"
+      },
+      {
+        "id": "d",
+        "text": "lazily"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "a"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'dynamically': 実行時に（状況に応じて）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadverbs_009_m2w_1",
+    "sentenceId": "gitadverbs_009",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "statically",
+          "pos": "adverb",
+          "meaning": "ビルド時に（実行せずに）",
+          "target": true,
+          "category": "from_adjective"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: ビルド時に（実行せずに）?",
+    "stem": "ビルド時に（実行せずに）",
+    "choices": [
+      {
+        "id": "a",
+        "text": "dynamically"
+      },
+      {
+        "id": "b",
+        "text": "internally"
+      },
+      {
+        "id": "c",
+        "text": "eagerly"
+      },
+      {
+        "id": "d",
+        "text": "statically"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'statically': ビルド時に（実行せずに）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadverbs_010_m2w_1",
+    "sentenceId": "gitadverbs_010",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "internally",
+          "pos": "adverb",
+          "meaning": "内部で（利用者からは見えないところで）",
+          "target": true,
+          "category": "from_adjective"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 内部で（利用者からは見えないところで）?",
+    "stem": "内部で（利用者からは見えないところで）",
+    "choices": [
+      {
+        "id": "a",
+        "text": "statically"
+      },
+      {
+        "id": "b",
+        "text": "locally"
+      },
+      {
+        "id": "c",
+        "text": "dynamically"
+      },
+      {
+        "id": "d",
+        "text": "internally"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'internally': 内部で（利用者からは見えないところで）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadverbs_011_m2w_1",
+    "sentenceId": "gitadverbs_011",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "locally",
+          "pos": "adverb",
+          "meaning": "手元で・その範囲だけで",
+          "target": true,
+          "category": "from_adjective"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 手元で・その範囲だけで?",
+    "stem": "手元で・その範囲だけで",
+    "choices": [
+      {
+        "id": "a",
+        "text": "globally"
+      },
+      {
+        "id": "b",
+        "text": "locally"
+      },
+      {
+        "id": "c",
+        "text": "internally"
+      },
+      {
+        "id": "d",
+        "text": "statically"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'locally': 手元で・その範囲だけで",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadverbs_012_m2w_1",
+    "sentenceId": "gitadverbs_012",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "globally",
+          "pos": "adverb",
+          "meaning": "全体に（グローバルに）",
+          "target": true,
+          "category": "from_adjective"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 全体に（グローバルに）?",
+    "stem": "全体に（グローバルに）",
+    "choices": [
+      {
+        "id": "a",
+        "text": "locally"
+      },
+      {
+        "id": "b",
+        "text": "partially"
+      },
+      {
+        "id": "c",
+        "text": "internally"
+      },
+      {
+        "id": "d",
+        "text": "globally"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'globally': 全体に（グローバルに）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadverbs_013_m2w_1",
+    "sentenceId": "gitadverbs_013",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "partially",
+          "pos": "adverb",
+          "meaning": "部分的に（一部だけ）",
+          "target": true,
+          "category": "from_adjective"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 部分的に（一部だけ）?",
+    "stem": "部分的に（一部だけ）",
+    "choices": [
+      {
+        "id": "a",
+        "text": "globally"
+      },
+      {
+        "id": "b",
+        "text": "consistently"
+      },
+      {
+        "id": "c",
+        "text": "locally"
+      },
+      {
+        "id": "d",
+        "text": "partially"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'partially': 部分的に（一部だけ）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadverbs_014_m2w_1",
+    "sentenceId": "gitadverbs_014",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "consistently",
+          "pos": "adverb",
+          "meaning": "いつも同じように（ぶれずに）",
+          "target": true,
+          "category": "from_adjective"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: いつも同じように（ぶれずに）?",
+    "stem": "いつも同じように（ぶれずに）",
+    "choices": [
+      {
+        "id": "a",
+        "text": "consistently"
+      },
+      {
+        "id": "b",
+        "text": "partially"
+      },
+      {
+        "id": "c",
+        "text": "unnecessarily"
+      },
+      {
+        "id": "d",
+        "text": "globally"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "a"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'consistently': いつも同じように（ぶれずに）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadverbs_015_m2w_1",
+    "sentenceId": "gitadverbs_015",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "unnecessarily",
+          "pos": "adverb",
+          "meaning": "不要なのに（余計に）",
+          "target": true,
+          "category": "from_adjective"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 不要なのに（余計に）?",
+    "stem": "不要なのに（余計に）",
+    "choices": [
+      {
+        "id": "a",
+        "text": "consistently"
+      },
+      {
+        "id": "b",
+        "text": "automatically"
+      },
+      {
+        "id": "c",
+        "text": "unnecessarily"
+      },
+      {
+        "id": "d",
+        "text": "partially"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'unnecessarily': 不要なのに（余計に）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadverbs_016_m2w_1",
+    "sentenceId": "gitadverbs_016",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "automatically",
+          "pos": "adverb",
+          "meaning": "自動的に（人の手を使わずに）",
+          "target": true,
+          "category": "from_adjective"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 自動的に（人の手を使わずに）?",
+    "stem": "自動的に（人の手を使わずに）",
+    "choices": [
+      {
+        "id": "a",
+        "text": "manually"
+      },
+      {
+        "id": "b",
+        "text": "unnecessarily"
+      },
+      {
+        "id": "c",
+        "text": "automatically"
+      },
+      {
+        "id": "d",
+        "text": "consistently"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'automatically': 自動的に（人の手を使わずに）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadverbs_017_m2w_1",
+    "sentenceId": "gitadverbs_017",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "manually",
+          "pos": "adverb",
+          "meaning": "手作業で（自分で）",
+          "target": true,
+          "category": "from_adjective"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 手作業で（自分で）?",
+    "stem": "手作業で（自分で）",
+    "choices": [
+      {
+        "id": "a",
+        "text": "manually"
+      },
+      {
+        "id": "b",
+        "text": "automatically"
+      },
+      {
+        "id": "c",
+        "text": "temporarily"
+      },
+      {
+        "id": "d",
+        "text": "unnecessarily"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "a"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'manually': 手作業で（自分で）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadverbs_018_m2w_1",
+    "sentenceId": "gitadverbs_018",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "temporarily",
+          "pos": "adverb",
+          "meaning": "一時的に（あとで戻す前提で）",
+          "target": true,
+          "category": "from_adjective"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 一時的に（あとで戻す前提で）?",
+    "stem": "一時的に（あとで戻す前提で）",
+    "choices": [
+      {
+        "id": "a",
+        "text": "manually"
+      },
+      {
+        "id": "b",
+        "text": "temporarily"
+      },
+      {
+        "id": "c",
+        "text": "conditionally"
+      },
+      {
+        "id": "d",
+        "text": "automatically"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'temporarily': 一時的に（あとで戻す前提で）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadverbs_019_m2w_1",
+    "sentenceId": "gitadverbs_019",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "conditionally",
+          "pos": "adverb",
+          "meaning": "条件付きで（条件を満たすときだけ）",
+          "target": true,
+          "category": "from_adjective"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 条件付きで（条件を満たすときだけ）?",
+    "stem": "条件付きで（条件を満たすときだけ）",
+    "choices": [
+      {
+        "id": "a",
+        "text": "temporarily"
+      },
+      {
+        "id": "b",
+        "text": "gracefully"
+      },
+      {
+        "id": "c",
+        "text": "conditionally"
+      },
+      {
+        "id": "d",
+        "text": "manually"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'conditionally': 条件付きで（条件を満たすときだけ）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadverbs_020_m2w_1",
+    "sentenceId": "gitadverbs_020",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "gracefully",
+          "pos": "adverb",
+          "meaning": "落ちずにうまく（穏当に）",
+          "target": true,
+          "category": "from_adjective"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 落ちずにうまく（穏当に）?",
+    "stem": "落ちずにうまく（穏当に）",
+    "choices": [
+      {
+        "id": "a",
+        "text": "conditionally"
+      },
+      {
+        "id": "b",
+        "text": "silently"
+      },
+      {
+        "id": "c",
+        "text": "temporarily"
+      },
+      {
+        "id": "d",
+        "text": "gracefully"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'gracefully': 落ちずにうまく（穏当に）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadverbs_021_m2w_1",
+    "sentenceId": "gitadverbs_021",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "silently",
+          "pos": "adverb",
+          "meaning": "何も知らせずに（黙って）",
+          "target": true,
+          "category": "from_adjective"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 何も知らせずに（黙って）?",
+    "stem": "何も知らせずに（黙って）",
+    "choices": [
+      {
+        "id": "a",
+        "text": "gracefully"
+      },
+      {
+        "id": "b",
+        "text": "silently"
+      },
+      {
+        "id": "c",
+        "text": "accidentally"
+      },
+      {
+        "id": "d",
+        "text": "conditionally"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'silently': 何も知らせずに（黙って）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadverbs_022_m2w_1",
+    "sentenceId": "gitadverbs_022",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "accidentally",
+          "pos": "adverb",
+          "meaning": "うっかり（意図せずに）",
+          "target": true,
+          "category": "from_adjective"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: うっかり（意図せずに）?",
+    "stem": "うっかり（意図せずに）",
+    "choices": [
+      {
+        "id": "a",
+        "text": "silently"
+      },
+      {
+        "id": "b",
+        "text": "synchronously"
+      },
+      {
+        "id": "c",
+        "text": "accidentally"
+      },
+      {
+        "id": "d",
+        "text": "gracefully"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'accidentally': うっかり（意図せずに）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadverbs_023_m2w_1",
+    "sentenceId": "gitadverbs_023",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "synchronously",
+          "pos": "adverb",
+          "meaning": "同期的に（終わるのを待ってから次へ）",
+          "target": true,
+          "category": "from_adjective"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 同期的に（終わるのを待ってから次へ）?",
+    "stem": "同期的に（終わるのを待ってから次へ）",
+    "choices": [
+      {
+        "id": "a",
+        "text": "asynchronously"
+      },
+      {
+        "id": "b",
+        "text": "synchronously"
+      },
+      {
+        "id": "c",
+        "text": "accidentally"
+      },
+      {
+        "id": "d",
+        "text": "silently"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'synchronously': 同期的に（終わるのを待ってから次へ）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadverbs_024_m2w_1",
+    "sentenceId": "gitadverbs_024",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "asynchronously",
+          "pos": "adverb",
+          "meaning": "非同期に（終わるのを待たずに）",
+          "target": true,
+          "category": "from_adjective"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 非同期に（終わるのを待たずに）?",
+    "stem": "非同期に（終わるのを待たずに）",
+    "choices": [
+      {
+        "id": "a",
+        "text": "synchronously"
+      },
+      {
+        "id": "b",
+        "text": "concurrently"
+      },
+      {
+        "id": "c",
+        "text": "asynchronously"
+      },
+      {
+        "id": "d",
+        "text": "accidentally"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'asynchronously': 非同期に（終わるのを待たずに）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadverbs_025_m2w_1",
+    "sentenceId": "gitadverbs_025",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "concurrently",
+          "pos": "adverb",
+          "meaning": "同時に（並行して）",
+          "target": true,
+          "category": "from_adjective"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 同時に（並行して）?",
+    "stem": "同時に（並行して）",
+    "choices": [
+      {
+        "id": "a",
+        "text": "asynchronously"
+      },
+      {
+        "id": "b",
+        "text": "concurrently"
+      },
+      {
+        "id": "c",
+        "text": "programmatically"
+      },
+      {
+        "id": "d",
+        "text": "synchronously"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'concurrently': 同時に（並行して）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadverbs_026_m2w_1",
+    "sentenceId": "gitadverbs_026",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "programmatically",
+          "pos": "adverb",
+          "meaning": "コードから（画面操作ではなくプログラムで）",
+          "target": true,
+          "category": "from_adjective"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: コードから（画面操作ではなくプログラムで）?",
+    "stem": "コードから（画面操作ではなくプログラムで）",
+    "choices": [
+      {
+        "id": "a",
+        "text": "concurrently"
+      },
+      {
+        "id": "b",
+        "text": "programmatically"
+      },
+      {
+        "id": "c",
+        "text": "directly"
+      },
+      {
+        "id": "d",
+        "text": "asynchronously"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'programmatically': コードから（画面操作ではなくプログラムで）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadverbs_027_m2w_1",
+    "sentenceId": "gitadverbs_027",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "directly",
+          "pos": "adverb",
+          "meaning": "直接（間を通さずに）",
+          "target": true,
+          "category": "from_adjective"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 直接（間を通さずに）?",
+    "stem": "直接（間を通さずに）",
+    "choices": [
+      {
+        "id": "a",
+        "text": "programmatically"
+      },
+      {
+        "id": "b",
+        "text": "directly"
+      },
+      {
+        "id": "c",
+        "text": "concurrently"
+      },
+      {
+        "id": "d",
+        "text": "asynchronously"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'directly': 直接（間を通さずに）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadverbs_028_m2w_1",
+    "sentenceId": "gitadverbs_028",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "only",
+          "pos": "adverb",
+          "meaning": "〜だけ（それ以外はしない）",
+          "target": true,
+          "category": "standalone"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 〜だけ（それ以外はしない）?",
+    "stem": "〜だけ（それ以外はしない）",
+    "choices": [
+      {
+        "id": "a",
+        "text": "instead"
+      },
+      {
+        "id": "b",
+        "text": "always"
+      },
+      {
+        "id": "c",
+        "text": "never"
+      },
+      {
+        "id": "d",
+        "text": "only"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'only': 〜だけ（それ以外はしない）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadverbs_029_m2w_1",
+    "sentenceId": "gitadverbs_029",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "instead",
+          "pos": "adverb",
+          "meaning": "代わりに",
+          "target": true,
+          "category": "standalone"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 代わりに?",
+    "stem": "代わりに",
+    "choices": [
+      {
+        "id": "a",
+        "text": "only"
+      },
+      {
+        "id": "b",
+        "text": "instead"
+      },
+      {
+        "id": "c",
+        "text": "always"
+      },
+      {
+        "id": "d",
+        "text": "never"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'instead': 代わりに",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadverbs_030_m2w_1",
+    "sentenceId": "gitadverbs_030",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "always",
+          "pos": "adverb",
+          "meaning": "いつも（毎回必ず）",
+          "target": true,
+          "category": "standalone"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: いつも（毎回必ず）?",
+    "stem": "いつも（毎回必ず）",
+    "choices": [
+      {
+        "id": "a",
+        "text": "never"
+      },
+      {
+        "id": "b",
+        "text": "instead"
+      },
+      {
+        "id": "c",
+        "text": "always"
+      },
+      {
+        "id": "d",
+        "text": "only"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'always': いつも（毎回必ず）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadverbs_031_m2w_1",
+    "sentenceId": "gitadverbs_031",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "never",
+          "pos": "adverb",
+          "meaning": "決して〜しない（一度も〜ない）",
+          "target": true,
+          "category": "standalone"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 決して〜しない（一度も〜ない）?",
+    "stem": "決して〜しない（一度も〜ない）",
+    "choices": [
+      {
+        "id": "a",
+        "text": "always"
+      },
+      {
+        "id": "b",
+        "text": "never"
+      },
+      {
+        "id": "c",
+        "text": "already"
+      },
+      {
+        "id": "d",
+        "text": "instead"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'never': 決して〜しない（一度も〜ない）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadverbs_032_m2w_1",
+    "sentenceId": "gitadverbs_032",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "already",
+          "pos": "adverb",
+          "meaning": "すでに（もう）",
+          "target": true,
+          "category": "standalone"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: すでに（もう）?",
+    "stem": "すでに（もう）",
+    "choices": [
+      {
+        "id": "a",
+        "text": "never"
+      },
+      {
+        "id": "b",
+        "text": "again"
+      },
+      {
+        "id": "c",
+        "text": "always"
+      },
+      {
+        "id": "d",
+        "text": "already"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'already': すでに（もう）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadverbs_033_m2w_1",
+    "sentenceId": "gitadverbs_033",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "again",
+          "pos": "adverb",
+          "meaning": "もう一度・再び",
+          "target": true,
+          "category": "standalone"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: もう一度・再び?",
+    "stem": "もう一度・再び",
+    "choices": [
+      {
+        "id": "a",
+        "text": "already"
+      },
+      {
+        "id": "b",
+        "text": "again"
+      },
+      {
+        "id": "c",
+        "text": "once"
+      },
+      {
+        "id": "d",
+        "text": "never"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'again': もう一度・再び",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadverbs_034_m2w_1",
+    "sentenceId": "gitadverbs_034",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "once",
+          "pos": "adverb",
+          "meaning": "一度だけ",
+          "target": true,
+          "category": "standalone"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 一度だけ?",
+    "stem": "一度だけ",
+    "choices": [
+      {
+        "id": "a",
+        "text": "twice"
+      },
+      {
+        "id": "b",
+        "text": "again"
+      },
+      {
+        "id": "c",
+        "text": "once"
+      },
+      {
+        "id": "d",
+        "text": "already"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'once': 一度だけ",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadverbs_035_m2w_1",
+    "sentenceId": "gitadverbs_035",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "twice",
+          "pos": "adverb",
+          "meaning": "二度（二回）",
+          "target": true,
+          "category": "standalone"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 二度（二回）?",
+    "stem": "二度（二回）",
+    "choices": [
+      {
+        "id": "a",
+        "text": "once"
+      },
+      {
+        "id": "b",
+        "text": "twice"
+      },
+      {
+        "id": "c",
+        "text": "still"
+      },
+      {
+        "id": "d",
+        "text": "again"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'twice': 二度（二回）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadverbs_036_m2w_1",
+    "sentenceId": "gitadverbs_036",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "still",
+          "pos": "adverb",
+          "meaning": "まだ（今も続いている）",
+          "target": true,
+          "category": "standalone"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: まだ（今も続いている）?",
+    "stem": "まだ（今も続いている）",
+    "choices": [
+      {
+        "id": "a",
+        "text": "anymore"
+      },
+      {
+        "id": "b",
+        "text": "still"
+      },
+      {
+        "id": "c",
+        "text": "twice"
+      },
+      {
+        "id": "d",
+        "text": "once"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'still': まだ（今も続いている）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadverbs_037_m2w_1",
+    "sentenceId": "gitadverbs_037",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "anymore",
+          "pos": "adverb",
+          "meaning": "もう〜ない（今はしない）",
+          "target": true,
+          "category": "standalone"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: もう〜ない（今はしない）?",
+    "stem": "もう〜ない（今はしない）",
+    "choices": [
+      {
+        "id": "a",
+        "text": "anymore"
+      },
+      {
+        "id": "b",
+        "text": "still"
+      },
+      {
+        "id": "c",
+        "text": "yet"
+      },
+      {
+        "id": "d",
+        "text": "twice"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "a"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'anymore': もう〜ない（今はしない）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadverbs_038_m2w_1",
+    "sentenceId": "gitadverbs_038",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "yet",
+          "pos": "adverb",
+          "meaning": "まだ〜ない（今のところ）",
+          "target": true,
+          "category": "standalone"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: まだ〜ない（今のところ）?",
+    "stem": "まだ〜ない（今のところ）",
+    "choices": [
+      {
+        "id": "a",
+        "text": "anymore"
+      },
+      {
+        "id": "b",
+        "text": "back"
+      },
+      {
+        "id": "c",
+        "text": "still"
+      },
+      {
+        "id": "d",
+        "text": "yet"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'yet': まだ〜ない（今のところ）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadverbs_039_m2w_1",
+    "sentenceId": "gitadverbs_039",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "back",
+          "pos": "adverb",
+          "meaning": "元に（戻して）",
+          "target": true,
+          "category": "standalone"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 元に（戻して）?",
+    "stem": "元に（戻して）",
+    "choices": [
+      {
+        "id": "a",
+        "text": "yet"
+      },
+      {
+        "id": "b",
+        "text": "early"
+      },
+      {
+        "id": "c",
+        "text": "back"
+      },
+      {
+        "id": "d",
+        "text": "anymore"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'back': 元に（戻して）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadverbs_040_m2w_1",
+    "sentenceId": "gitadverbs_040",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "early",
+          "pos": "adverb",
+          "meaning": "早めに（先の段階で）",
+          "target": true,
+          "category": "standalone"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: 早めに（先の段階で）?",
+    "stem": "早めに（先の段階で）",
+    "choices": [
+      {
+        "id": "a",
+        "text": "back"
+      },
+      {
+        "id": "b",
+        "text": "rather"
+      },
+      {
+        "id": "c",
+        "text": "early"
+      },
+      {
+        "id": "d",
+        "text": "yet"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'early': 早めに（先の段階で）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadverbs_041_m2w_1",
+    "sentenceId": "gitadverbs_041",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "meaning_to_word",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "rather",
+          "pos": "adverb",
+          "meaning": "むしろ（〜よりも）",
+          "target": true,
+          "category": "standalone"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Which word means: むしろ（〜よりも）?",
+    "stem": "むしろ（〜よりも）",
+    "choices": [
+      {
+        "id": "a",
+        "text": "early"
+      },
+      {
+        "id": "b",
+        "text": "back"
+      },
+      {
+        "id": "c",
+        "text": "yet"
+      },
+      {
+        "id": "d",
+        "text": "rather"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "The answer is 'rather': むしろ（〜よりも）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  }
+]

@@ -1,0 +1,2585 @@
+[
+  {
+    "id": "gitadverbs_001_scloze_1",
+    "sentenceId": "gitadverbs_001",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "correctly",
+          "pos": "adverb",
+          "meaning": "正しく（期待どおりに）",
+          "target": true,
+          "category": "from_adjective"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best adverb to fill in the blank.",
+    "stem": "Dates in the Japanese locale were shown in the wrong order; this PR makes them display ___.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "incorrectly"
+      },
+      {
+        "id": "b",
+        "text": "lazily"
+      },
+      {
+        "id": "c",
+        "text": "correctly"
+      },
+      {
+        "id": "d",
+        "text": "eagerly"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "wrong order を直すので correctly（正しく）。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadverbs_002_scloze_1",
+    "sentenceId": "gitadverbs_002",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "incorrectly",
+          "pos": "adverb",
+          "meaning": "誤って（間違った形で）",
+          "target": true,
+          "category": "from_adjective"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best adverb to fill in the blank.",
+    "stem": "Fix a bug where optional props were ___ marked as required.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "correctly"
+      },
+      {
+        "id": "b",
+        "text": "incorrectly"
+      },
+      {
+        "id": "c",
+        "text": "lazily"
+      },
+      {
+        "id": "d",
+        "text": "globally"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "Fix a bug（バグを直す）ので、誤ってそうなっていた → incorrectly。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadverbs_003_scloze_1",
+    "sentenceId": "gitadverbs_003",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "properly",
+          "pos": "adverb",
+          "meaning": "きちんと（本来あるべき形で）",
+          "target": true,
+          "category": "from_adjective"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best adverb to fill in the blank.",
+    "stem": "The modal leaks memory because its event listeners are not ___ removed when it closes.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "properly"
+      },
+      {
+        "id": "b",
+        "text": "lazily"
+      },
+      {
+        "id": "c",
+        "text": "globally"
+      },
+      {
+        "id": "d",
+        "text": "statically"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "a"
+      ]
+    },
+    "explanation": {
+      "summary": "leaks memory（メモリが漏れる）のは、きちんと外していないから → properly。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadverbs_004_scloze_1",
+    "sentenceId": "gitadverbs_004",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "explicitly",
+          "pos": "adverb",
+          "meaning": "明示的に（はっきり指定して）",
+          "target": true,
+          "category": "from_adjective"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best adverb to fill in the blank.",
+    "stem": "The feature is off by default, and users must ___ opt in with `--experimental`.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "implicitly"
+      },
+      {
+        "id": "b",
+        "text": "automatically"
+      },
+      {
+        "id": "c",
+        "text": "explicitly"
+      },
+      {
+        "id": "d",
+        "text": "lazily"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "off by default（初期状態は OFF）なので、自分ではっきり選ぶ → explicitly。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadverbs_005_scloze_1",
+    "sentenceId": "gitadverbs_005",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "implicitly",
+          "pos": "adverb",
+          "meaning": "暗黙に（書かなくても自動で）",
+          "target": true,
+          "category": "from_adjective"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best adverb to fill in the blank.",
+    "stem": "This module ___ depends on `window` being defined, which breaks server rendering.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "eagerly"
+      },
+      {
+        "id": "b",
+        "text": "partially"
+      },
+      {
+        "id": "c",
+        "text": "temporarily"
+      },
+      {
+        "id": "d",
+        "text": "implicitly"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "書かれていない前提に頼っている → implicitly。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadverbs_006_scloze_1",
+    "sentenceId": "gitadverbs_006",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "lazily",
+          "pos": "adverb",
+          "meaning": "必要になったときに（遅延して）",
+          "target": true,
+          "category": "from_adjective"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best adverb to fill in the blank.",
+    "stem": "The syntax highlighter is large, so it is loaded ___ when the first code block appears.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "lazily"
+      },
+      {
+        "id": "b",
+        "text": "eagerly"
+      },
+      {
+        "id": "c",
+        "text": "globally"
+      },
+      {
+        "id": "d",
+        "text": "consistently"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "a"
+      ]
+    },
+    "explanation": {
+      "summary": "when the first code block appears（必要になったときに）→ lazily。eagerly は逆。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadverbs_007_scloze_1",
+    "sentenceId": "gitadverbs_007",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "eagerly",
+          "pos": "adverb",
+          "meaning": "前もってすぐに",
+          "target": true,
+          "category": "from_adjective"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best adverb to fill in the blank.",
+    "stem": "The hero image is needed right away, so load it ___ instead of waiting for scroll.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "eagerly"
+      },
+      {
+        "id": "b",
+        "text": "lazily"
+      },
+      {
+        "id": "c",
+        "text": "partially"
+      },
+      {
+        "id": "d",
+        "text": "internally"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "a"
+      ]
+    },
+    "explanation": {
+      "summary": "needed right away（すぐ必要）→ eagerly。lazily は逆。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadverbs_008_scloze_1",
+    "sentenceId": "gitadverbs_008",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "dynamically",
+          "pos": "adverb",
+          "meaning": "実行時に（状況に応じて）",
+          "target": true,
+          "category": "from_adjective"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best adverb to fill in the blank.",
+    "stem": "The page title is set ___ from the current route at runtime.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "statically"
+      },
+      {
+        "id": "b",
+        "text": "eagerly"
+      },
+      {
+        "id": "c",
+        "text": "dynamically"
+      },
+      {
+        "id": "d",
+        "text": "partially"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "at runtime（実行時に）→ dynamically。statically は逆。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadverbs_009_scloze_1",
+    "sentenceId": "gitadverbs_009",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "statically",
+          "pos": "adverb",
+          "meaning": "ビルド時に（実行せずに）",
+          "target": true,
+          "category": "from_adjective"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best adverb to fill in the blank.",
+    "stem": "The bundler can only remove unused exports when imports can be analyzed ___ at build time.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "dynamically"
+      },
+      {
+        "id": "b",
+        "text": "statically"
+      },
+      {
+        "id": "c",
+        "text": "temporarily"
+      },
+      {
+        "id": "d",
+        "text": "gracefully"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "at build time（ビルド時に）→ statically。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadverbs_010_scloze_1",
+    "sentenceId": "gitadverbs_010",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "internally",
+          "pos": "adverb",
+          "meaning": "内部で（利用者からは見えないところで）",
+          "target": true,
+          "category": "from_adjective"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best adverb to fill in the blank.",
+    "stem": "The router uses a Map ___, but the public API only exposes plain objects.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "globally"
+      },
+      {
+        "id": "b",
+        "text": "internally"
+      },
+      {
+        "id": "c",
+        "text": "eagerly"
+      },
+      {
+        "id": "d",
+        "text": "accidentally"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "public API との対比で、内部で → internally。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadverbs_011_scloze_1",
+    "sentenceId": "gitadverbs_011",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "locally",
+          "pos": "adverb",
+          "meaning": "手元で・その範囲だけで",
+          "target": true,
+          "category": "from_adjective"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best adverb to fill in the blank.",
+    "stem": "The e2e tests are slow in CI, but you can run them ___ with `pnpm test:e2e`.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "globally"
+      },
+      {
+        "id": "b",
+        "text": "statically"
+      },
+      {
+        "id": "c",
+        "text": "implicitly"
+      },
+      {
+        "id": "d",
+        "text": "locally"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "CI との対比で、手元で → locally。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadverbs_012_scloze_1",
+    "sentenceId": "gitadverbs_012",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "globally",
+          "pos": "adverb",
+          "meaning": "全体に（グローバルに）",
+          "target": true,
+          "category": "from_adjective"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best adverb to fill in the blank.",
+    "stem": "Register the plugin ___ so that every component can use it.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "locally"
+      },
+      {
+        "id": "b",
+        "text": "globally"
+      },
+      {
+        "id": "c",
+        "text": "partially"
+      },
+      {
+        "id": "d",
+        "text": "silently"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "every component（すべてのコンポーネント）→ globally。locally は逆。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadverbs_013_scloze_1",
+    "sentenceId": "gitadverbs_013",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "partially",
+          "pos": "adverb",
+          "meaning": "部分的に（一部だけ）",
+          "target": true,
+          "category": "from_adjective"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best adverb to fill in the blank.",
+    "stem": "Only some of the changes caused the regression, so this PR ___ reverts #1234.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "consistently"
+      },
+      {
+        "id": "b",
+        "text": "partially"
+      },
+      {
+        "id": "c",
+        "text": "eagerly"
+      },
+      {
+        "id": "d",
+        "text": "globally"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "Only some of the changes（一部だけ）→ partially。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadverbs_014_scloze_1",
+    "sentenceId": "gitadverbs_014",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "consistently",
+          "pos": "adverb",
+          "meaning": "いつも同じように（ぶれずに）",
+          "target": true,
+          "category": "from_adjective"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best adverb to fill in the blank.",
+    "stem": "The test fails ___ on Windows, every single time, so it is not flaky.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "partially"
+      },
+      {
+        "id": "b",
+        "text": "accidentally"
+      },
+      {
+        "id": "c",
+        "text": "consistently"
+      },
+      {
+        "id": "d",
+        "text": "lazily"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "every single time（毎回）→ consistently。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadverbs_015_scloze_1",
+    "sentenceId": "gitadverbs_015",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "unnecessarily",
+          "pos": "adverb",
+          "meaning": "不要なのに（余計に）",
+          "target": true,
+          "category": "from_adjective"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best adverb to fill in the blank.",
+    "stem": "The list re-renders ___ even when none of its props change.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "unnecessarily"
+      },
+      {
+        "id": "b",
+        "text": "lazily"
+      },
+      {
+        "id": "c",
+        "text": "statically"
+      },
+      {
+        "id": "d",
+        "text": "explicitly"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "a"
+      ]
+    },
+    "explanation": {
+      "summary": "none of its props change（何も変わらない）のに → unnecessarily。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadverbs_016_scloze_1",
+    "sentenceId": "gitadverbs_016",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "automatically",
+          "pos": "adverb",
+          "meaning": "自動的に（人の手を使わずに）",
+          "target": true,
+          "category": "from_adjective"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best adverb to fill in the blank.",
+    "stem": "Stale issues are now closed ___ by a bot after 30 days.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "automatically"
+      },
+      {
+        "id": "b",
+        "text": "manually"
+      },
+      {
+        "id": "c",
+        "text": "partially"
+      },
+      {
+        "id": "d",
+        "text": "statically"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "a"
+      ]
+    },
+    "explanation": {
+      "summary": "by a bot（bot が）→ automatically。manually は逆。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadverbs_017_scloze_1",
+    "sentenceId": "gitadverbs_017",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "manually",
+          "pos": "adverb",
+          "meaning": "手作業で（自分で）",
+          "target": true,
+          "category": "from_adjective"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best adverb to fill in the blank.",
+    "stem": "There is no workflow for this yet, so you have to trigger the release ___.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "automatically"
+      },
+      {
+        "id": "b",
+        "text": "dynamically"
+      },
+      {
+        "id": "c",
+        "text": "manually"
+      },
+      {
+        "id": "d",
+        "text": "globally"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "no workflow（自動化されていない）→ manually。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadverbs_018_scloze_1",
+    "sentenceId": "gitadverbs_018",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "temporarily",
+          "pos": "adverb",
+          "meaning": "一時的に（あとで戻す前提で）",
+          "target": true,
+          "category": "from_adjective"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best adverb to fill in the blank.",
+    "stem": "Disable the flaky test ___ until the race condition is fixed.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "consistently"
+      },
+      {
+        "id": "b",
+        "text": "statically"
+      },
+      {
+        "id": "c",
+        "text": "implicitly"
+      },
+      {
+        "id": "d",
+        "text": "temporarily"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "until ... is fixed（直るまで）→ temporarily。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadverbs_019_scloze_1",
+    "sentenceId": "gitadverbs_019",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "conditionally",
+          "pos": "adverb",
+          "meaning": "条件付きで（条件を満たすときだけ）",
+          "target": true,
+          "category": "from_adjective"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best adverb to fill in the blank.",
+    "stem": "Render the banner ___: only show it when the user has not dismissed it.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "conditionally"
+      },
+      {
+        "id": "b",
+        "text": "statically"
+      },
+      {
+        "id": "c",
+        "text": "eagerly"
+      },
+      {
+        "id": "d",
+        "text": "accidentally"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "a"
+      ]
+    },
+    "explanation": {
+      "summary": "only ... when（〜のときだけ）→ conditionally。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadverbs_020_scloze_1",
+    "sentenceId": "gitadverbs_020",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "gracefully",
+          "pos": "adverb",
+          "meaning": "落ちずにうまく（穏当に）",
+          "target": true,
+          "category": "from_adjective"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best adverb to fill in the blank.",
+    "stem": "Instead of crashing on network errors, the app now handles them ___ and shows a retry button.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "silently"
+      },
+      {
+        "id": "b",
+        "text": "gracefully"
+      },
+      {
+        "id": "c",
+        "text": "eagerly"
+      },
+      {
+        "id": "d",
+        "text": "statically"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "Instead of crashing（落ちずに）→ gracefully。shows a retry button なので silently（黙って）ではない。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadverbs_021_scloze_1",
+    "sentenceId": "gitadverbs_021",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "silently",
+          "pos": "adverb",
+          "meaning": "何も知らせずに（黙って）",
+          "target": true,
+          "category": "from_adjective"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best adverb to fill in the blank.",
+    "stem": "Invalid options were ___ ignored, so typos in the config went unnoticed.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "lazily"
+      },
+      {
+        "id": "b",
+        "text": "explicitly"
+      },
+      {
+        "id": "c",
+        "text": "eagerly"
+      },
+      {
+        "id": "d",
+        "text": "silently"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "went unnoticed（気づかれなかった）→ silently。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadverbs_022_scloze_1",
+    "sentenceId": "gitadverbs_022",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "accidentally",
+          "pos": "adverb",
+          "meaning": "うっかり（意図せずに）",
+          "target": true,
+          "category": "from_adjective"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best adverb to fill in the blank.",
+    "stem": "Revert the debug code that was ___ committed in the last PR.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "accidentally"
+      },
+      {
+        "id": "b",
+        "text": "lazily"
+      },
+      {
+        "id": "c",
+        "text": "globally"
+      },
+      {
+        "id": "d",
+        "text": "statically"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "a"
+      ]
+    },
+    "explanation": {
+      "summary": "debug code を入れてしまった → accidentally（うっかり）。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadverbs_023_scloze_1",
+    "sentenceId": "gitadverbs_023",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "synchronously",
+          "pos": "adverb",
+          "meaning": "同期的に（終わるのを待ってから次へ）",
+          "target": true,
+          "category": "from_adjective"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best adverb to fill in the blank.",
+    "stem": "Reading the config ___ blocks the main thread, so use the async API instead.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "asynchronously"
+      },
+      {
+        "id": "b",
+        "text": "lazily"
+      },
+      {
+        "id": "c",
+        "text": "partially"
+      },
+      {
+        "id": "d",
+        "text": "synchronously"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "blocks the main thread（止めてしまう）→ synchronously。asynchronously は逆。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadverbs_024_scloze_1",
+    "sentenceId": "gitadverbs_024",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "asynchronously",
+          "pos": "adverb",
+          "meaning": "非同期に（終わるのを待たずに）",
+          "target": true,
+          "category": "from_adjective"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best adverb to fill in the blank.",
+    "stem": "Translations are loaded ___, so the page renders before they arrive.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "asynchronously"
+      },
+      {
+        "id": "b",
+        "text": "synchronously"
+      },
+      {
+        "id": "c",
+        "text": "consistently"
+      },
+      {
+        "id": "d",
+        "text": "internally"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "a"
+      ]
+    },
+    "explanation": {
+      "summary": "renders before they arrive（届く前に表示する）→ asynchronously。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadverbs_025_scloze_1",
+    "sentenceId": "gitadverbs_025",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "concurrently",
+          "pos": "adverb",
+          "meaning": "同時に（並行して）",
+          "target": true,
+          "category": "from_adjective"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best adverb to fill in the blank.",
+    "stem": "Lint and unit tests don't depend on each other, so run them ___ to save time.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "synchronously"
+      },
+      {
+        "id": "b",
+        "text": "globally"
+      },
+      {
+        "id": "c",
+        "text": "internally"
+      },
+      {
+        "id": "d",
+        "text": "concurrently"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "don't depend on each other（互いに関係ない）・save time → concurrently（同時に）。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadverbs_026_scloze_1",
+    "sentenceId": "gitadverbs_026",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "programmatically",
+          "pos": "adverb",
+          "meaning": "コードから（画面操作ではなくプログラムで）",
+          "target": true,
+          "category": "from_adjective"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best adverb to fill in the blank.",
+    "stem": "Besides the button, the dialog can now be opened ___ with `dialog.open()`.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "manually"
+      },
+      {
+        "id": "b",
+        "text": "statically"
+      },
+      {
+        "id": "c",
+        "text": "partially"
+      },
+      {
+        "id": "d",
+        "text": "programmatically"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "with dialog.open()（コードから）→ programmatically。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadverbs_027_scloze_1",
+    "sentenceId": "gitadverbs_027",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "directly",
+          "pos": "adverb",
+          "meaning": "直接（間を通さずに）",
+          "target": true,
+          "category": "from_adjective"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best adverb to fill in the blank.",
+    "stem": "Don't mutate the state ___; call `setState` with a new object instead.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "lazily"
+      },
+      {
+        "id": "b",
+        "text": "eagerly"
+      },
+      {
+        "id": "c",
+        "text": "statically"
+      },
+      {
+        "id": "d",
+        "text": "directly"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "setState を通さずに → directly。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadverbs_028_scloze_1",
+    "sentenceId": "gitadverbs_028",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "only",
+          "pos": "adverb",
+          "meaning": "〜だけ（それ以外はしない）",
+          "target": true,
+          "category": "standalone"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best adverb to fill in the blank.",
+    "stem": "The banner should appear ___ once per session, not on every page load.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "still"
+      },
+      {
+        "id": "b",
+        "text": "only"
+      },
+      {
+        "id": "c",
+        "text": "never"
+      },
+      {
+        "id": "d",
+        "text": "already"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "not on every page load（毎回ではない）→ only once。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadverbs_029_scloze_1",
+    "sentenceId": "gitadverbs_029",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "instead",
+          "pos": "adverb",
+          "meaning": "代わりに",
+          "target": true,
+          "category": "standalone"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best adverb to fill in the blank.",
+    "stem": "`rimraf` is no longer needed; use `fs.rm` ___.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "again"
+      },
+      {
+        "id": "b",
+        "text": "already"
+      },
+      {
+        "id": "c",
+        "text": "yet"
+      },
+      {
+        "id": "d",
+        "text": "instead"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "代わりに → instead。no longer needed がヒント。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadverbs_030_scloze_1",
+    "sentenceId": "gitadverbs_030",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "always",
+          "pos": "adverb",
+          "meaning": "いつも（毎回必ず）",
+          "target": true,
+          "category": "standalone"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best adverb to fill in the blank.",
+    "stem": "Close the file handle ___, even when the read fails.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "always"
+      },
+      {
+        "id": "b",
+        "text": "never"
+      },
+      {
+        "id": "c",
+        "text": "yet"
+      },
+      {
+        "id": "d",
+        "text": "anymore"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "a"
+      ]
+    },
+    "explanation": {
+      "summary": "even when the read fails（失敗しても）→ always。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadverbs_031_scloze_1",
+    "sentenceId": "gitadverbs_031",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "never",
+          "pos": "adverb",
+          "meaning": "決して〜しない（一度も〜ない）",
+          "target": true,
+          "category": "standalone"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best adverb to fill in the blank.",
+    "stem": "Secrets should ___ be written to the logs.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "always"
+      },
+      {
+        "id": "b",
+        "text": "yet"
+      },
+      {
+        "id": "c",
+        "text": "already"
+      },
+      {
+        "id": "d",
+        "text": "never"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "秘密情報はログに書かない → never。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadverbs_032_scloze_1",
+    "sentenceId": "gitadverbs_032",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "already",
+          "pos": "adverb",
+          "meaning": "すでに（もう）",
+          "target": true,
+          "category": "standalone"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best adverb to fill in the blank.",
+    "stem": "Skip the download if the file ___ exists in the cache.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "yet"
+      },
+      {
+        "id": "b",
+        "text": "already"
+      },
+      {
+        "id": "c",
+        "text": "anymore"
+      },
+      {
+        "id": "d",
+        "text": "rather"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "Skip（飛ばす）ので、すでにある → already。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadverbs_033_scloze_1",
+    "sentenceId": "gitadverbs_033",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "again",
+          "pos": "adverb",
+          "meaning": "もう一度・再び",
+          "target": true,
+          "category": "standalone"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best adverb to fill in the blank.",
+    "stem": "After the user logs in, fetch the profile ___ so that it includes the private fields.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "already"
+      },
+      {
+        "id": "b",
+        "text": "yet"
+      },
+      {
+        "id": "c",
+        "text": "rather"
+      },
+      {
+        "id": "d",
+        "text": "again"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "ログイン後にもう一度取り直す → again。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadverbs_034_scloze_1",
+    "sentenceId": "gitadverbs_034",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "once",
+          "pos": "adverb",
+          "meaning": "一度だけ",
+          "target": true,
+          "category": "standalone"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best adverb to fill in the blank.",
+    "stem": "The deprecation warning is printed ___ per session, not on every call.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "once"
+      },
+      {
+        "id": "b",
+        "text": "early"
+      },
+      {
+        "id": "c",
+        "text": "back"
+      },
+      {
+        "id": "d",
+        "text": "rather"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "a"
+      ]
+    },
+    "explanation": {
+      "summary": "not on every call（毎回ではない）→ once（一度だけ）。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadverbs_035_scloze_1",
+    "sentenceId": "gitadverbs_035",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "twice",
+          "pos": "adverb",
+          "meaning": "二度（二回）",
+          "target": true,
+          "category": "standalone"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best adverb to fill in the blank.",
+    "stem": "In development, React strict mode runs effects ___ to help find bugs.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "once"
+      },
+      {
+        "id": "b",
+        "text": "back"
+      },
+      {
+        "id": "c",
+        "text": "rather"
+      },
+      {
+        "id": "d",
+        "text": "twice"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "strict mode は effect を二回動かす → twice。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadverbs_036_scloze_1",
+    "sentenceId": "gitadverbs_036",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "still",
+          "pos": "adverb",
+          "meaning": "まだ（今も続いている）",
+          "target": true,
+          "category": "standalone"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best adverb to fill in the blank.",
+    "stem": "The old API is deprecated, but it ___ works and will be removed in v4.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "anymore"
+      },
+      {
+        "id": "b",
+        "text": "yet"
+      },
+      {
+        "id": "c",
+        "text": "already"
+      },
+      {
+        "id": "d",
+        "text": "still"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "deprecated でもまだ動く → still。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadverbs_037_scloze_1",
+    "sentenceId": "gitadverbs_037",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "anymore",
+          "pos": "adverb",
+          "meaning": "もう〜ない（今はしない）",
+          "target": true,
+          "category": "standalone"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best adverb to fill in the blank.",
+    "stem": "The polyfill was for IE11, which we don't support ___, so remove it.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "still"
+      },
+      {
+        "id": "b",
+        "text": "already"
+      },
+      {
+        "id": "c",
+        "text": "anymore"
+      },
+      {
+        "id": "d",
+        "text": "early"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "don't support anymore（もうサポートしていない）→ remove。still は逆。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadverbs_038_scloze_1",
+    "sentenceId": "gitadverbs_038",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "yet",
+          "pos": "adverb",
+          "meaning": "まだ〜ない（今のところ）",
+          "target": true,
+          "category": "standalone"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best adverb to fill in the blank.",
+    "stem": "Streaming is not supported ___, but it is planned for the next release.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "anymore"
+      },
+      {
+        "id": "b",
+        "text": "yet"
+      },
+      {
+        "id": "c",
+        "text": "already"
+      },
+      {
+        "id": "d",
+        "text": "rather"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "planned（予定がある）→ not ... yet（まだ）。anymore だと「もうしない」で逆。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadverbs_039_scloze_1",
+    "sentenceId": "gitadverbs_039",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "back",
+          "pos": "adverb",
+          "meaning": "元に（戻して）",
+          "target": true,
+          "category": "standalone"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best adverb to fill in the blank.",
+    "stem": "The refactor removed the `default` export by mistake, so this PR adds it ___.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "back"
+      },
+      {
+        "id": "b",
+        "text": "early"
+      },
+      {
+        "id": "c",
+        "text": "rather"
+      },
+      {
+        "id": "d",
+        "text": "yet"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "a"
+      ]
+    },
+    "explanation": {
+      "summary": "removed by mistake（誤って消した）→ add back（元に戻す）。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadverbs_040_scloze_1",
+    "sentenceId": "gitadverbs_040",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "early",
+          "pos": "adverb",
+          "meaning": "早めに（先の段階で）",
+          "target": true,
+          "category": "standalone"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best adverb to fill in the blank.",
+    "stem": "If the input is empty, return ___ instead of running the whole parser.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "early"
+      },
+      {
+        "id": "b",
+        "text": "back"
+      },
+      {
+        "id": "c",
+        "text": "already"
+      },
+      {
+        "id": "d",
+        "text": "rather"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "a"
+      ]
+    },
+    "explanation": {
+      "summary": "return early（早めに返す）は決まった形。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadverbs_041_scloze_1",
+    "sentenceId": "gitadverbs_041",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "sentence_cloze",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "rather",
+          "pos": "adverb",
+          "meaning": "むしろ（〜よりも）",
+          "target": true,
+          "category": "standalone"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 3,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 2,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "Choose the best adverb to fill in the blank.",
+    "stem": "Throw an error ___ than silently returning undefined.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "instead"
+      },
+      {
+        "id": "b",
+        "text": "rather"
+      },
+      {
+        "id": "c",
+        "text": "already"
+      },
+      {
+        "id": "d",
+        "text": "again"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "rather than（〜よりむしろ）。instead は instead of の形で、than はとらない。",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  }
+]

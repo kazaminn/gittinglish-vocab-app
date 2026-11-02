@@ -1,0 +1,3237 @@
+[
+  {
+    "id": "gitadjectives_001_w2m_1",
+    "sentenceId": "gitadjectives_001",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "word_to_meaning",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "additional",
+          "pos": "adjective",
+          "meaning": "追加の・それ以外の（もう少しある）",
+          "target": true,
+          "category": "from_verb"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 2,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "What does 'additional' mean?",
+    "stem": "additional",
+    "choices": [
+      {
+        "id": "a",
+        "text": "使われていない（消してよい）"
+      },
+      {
+        "id": "b",
+        "text": "追加の・それ以外の（もう少しある）"
+      },
+      {
+        "id": "c",
+        "text": "あっても意味のない（効果がない）"
+      },
+      {
+        "id": "d",
+        "text": "無効になっている（OFFの）"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "'additional' means: 追加の・それ以外の（もう少しある）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadjectives_002_w2m_1",
+    "sentenceId": "gitadjectives_002",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "word_to_meaning",
+    "tags": {
+      "grammar": [
+        "svo",
+        "participial_adjective"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "unused",
+          "pos": "adjective",
+          "meaning": "使われていない（消してよい）",
+          "target": true,
+          "category": "from_verb"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 2,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "What does 'unused' mean?",
+    "stem": "unused",
+    "choices": [
+      {
+        "id": "a",
+        "text": "使われていない（消してよい）"
+      },
+      {
+        "id": "b",
+        "text": "追加の・それ以外の（もう少しある）"
+      },
+      {
+        "id": "c",
+        "text": "あっても意味のない（効果がない）"
+      },
+      {
+        "id": "d",
+        "text": "無効になっている（OFFの）"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "a"
+      ]
+    },
+    "explanation": {
+      "summary": "'unused' means: 使われていない（消してよい）",
+      "relatedGrammar": [
+        "svo",
+        "participial_adjective"
+      ]
+    }
+  },
+  {
+    "id": "gitadjectives_003_w2m_1",
+    "sentenceId": "gitadjectives_003",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "word_to_meaning",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "useless",
+          "pos": "adjective",
+          "meaning": "あっても意味のない（効果がない）",
+          "target": true,
+          "category": "from_verb"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 2,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "What does 'useless' mean?",
+    "stem": "useless",
+    "choices": [
+      {
+        "id": "a",
+        "text": "あっても意味のない（効果がない）"
+      },
+      {
+        "id": "b",
+        "text": "使われていない（消してよい）"
+      },
+      {
+        "id": "c",
+        "text": "無効になっている（OFFの）"
+      },
+      {
+        "id": "d",
+        "text": "追加の・それ以外の（もう少しある）"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "a"
+      ]
+    },
+    "explanation": {
+      "summary": "'useless' means: あっても意味のない（効果がない）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadjectives_004_w2m_1",
+    "sentenceId": "gitadjectives_004",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "word_to_meaning",
+    "tags": {
+      "grammar": [
+        "svo",
+        "participial_adjective"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "disabled",
+          "pos": "adjective",
+          "meaning": "無効になっている（OFFの）",
+          "target": true,
+          "category": "from_verb"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 2,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "What does 'disabled' mean?",
+    "stem": "disabled",
+    "choices": [
+      {
+        "id": "a",
+        "text": "無効になっている（OFFの）"
+      },
+      {
+        "id": "b",
+        "text": "有効になっている（ONの）"
+      },
+      {
+        "id": "c",
+        "text": "あっても意味のない（効果がない）"
+      },
+      {
+        "id": "d",
+        "text": "使われていない（消してよい）"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "a"
+      ]
+    },
+    "explanation": {
+      "summary": "'disabled' means: 無効になっている（OFFの）",
+      "relatedGrammar": [
+        "svo",
+        "participial_adjective"
+      ]
+    }
+  },
+  {
+    "id": "gitadjectives_005_w2m_1",
+    "sentenceId": "gitadjectives_005",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "word_to_meaning",
+    "tags": {
+      "grammar": [
+        "svo",
+        "participial_adjective"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "enabled",
+          "pos": "adjective",
+          "meaning": "有効になっている（ONの）",
+          "target": true,
+          "category": "from_verb"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 2,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "What does 'enabled' mean?",
+    "stem": "enabled",
+    "choices": [
+      {
+        "id": "a",
+        "text": "無効になっている（OFFの）"
+      },
+      {
+        "id": "b",
+        "text": "正しい（間違いのない）"
+      },
+      {
+        "id": "c",
+        "text": "あっても意味のない（効果がない）"
+      },
+      {
+        "id": "d",
+        "text": "有効になっている（ONの）"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "'enabled' means: 有効になっている（ONの）",
+      "relatedGrammar": [
+        "svo",
+        "participial_adjective"
+      ]
+    }
+  },
+  {
+    "id": "gitadjectives_006_w2m_1",
+    "sentenceId": "gitadjectives_006",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "word_to_meaning",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "correct",
+          "pos": "adjective",
+          "meaning": "正しい（間違いのない）",
+          "target": true,
+          "category": "from_verb"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 2,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "What does 'correct' mean?",
+    "stem": "correct",
+    "choices": [
+      {
+        "id": "a",
+        "text": "正しくない（誤った）"
+      },
+      {
+        "id": "b",
+        "text": "有効になっている（ONの）"
+      },
+      {
+        "id": "c",
+        "text": "正しい（間違いのない）"
+      },
+      {
+        "id": "d",
+        "text": "無効になっている（OFFの）"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "'correct' means: 正しい（間違いのない）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadjectives_007_w2m_1",
+    "sentenceId": "gitadjectives_007",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "word_to_meaning",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "incorrect",
+          "pos": "adjective",
+          "meaning": "正しくない（誤った）",
+          "target": true,
+          "category": "from_verb"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 2,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "What does 'incorrect' mean?",
+    "stem": "incorrect",
+    "choices": [
+      {
+        "id": "a",
+        "text": "正しい（間違いのない）"
+      },
+      {
+        "id": "b",
+        "text": "正しくない（誤った）"
+      },
+      {
+        "id": "c",
+        "text": "非推奨になった（まだ動くが将来消える）"
+      },
+      {
+        "id": "d",
+        "text": "有効になっている（ONの）"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "'incorrect' means: 正しくない（誤った）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadjectives_008_w2m_1",
+    "sentenceId": "gitadjectives_008",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "word_to_meaning",
+    "tags": {
+      "grammar": [
+        "svo",
+        "participial_adjective"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "deprecated",
+          "pos": "adjective",
+          "meaning": "非推奨になった（まだ動くが将来消える）",
+          "target": true,
+          "category": "from_verb"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 2,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "What does 'deprecated' mean?",
+    "stem": "deprecated",
+    "choices": [
+      {
+        "id": "a",
+        "text": "正しくない（誤った）"
+      },
+      {
+        "id": "b",
+        "text": "非推奨になった（まだ動くが将来消える）"
+      },
+      {
+        "id": "c",
+        "text": "解決されていない（見つからない・決まっていない）"
+      },
+      {
+        "id": "d",
+        "text": "正しい（間違いのない）"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "'deprecated' means: 非推奨になった（まだ動くが将来消える）",
+      "relatedGrammar": [
+        "svo",
+        "participial_adjective"
+      ]
+    }
+  },
+  {
+    "id": "gitadjectives_009_w2m_1",
+    "sentenceId": "gitadjectives_009",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "word_to_meaning",
+    "tags": {
+      "grammar": [
+        "svo",
+        "participial_adjective"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "unresolved",
+          "pos": "adjective",
+          "meaning": "解決されていない（見つからない・決まっていない）",
+          "target": true,
+          "category": "from_verb"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 2,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "What does 'unresolved' mean?",
+    "stem": "unresolved",
+    "choices": [
+      {
+        "id": "a",
+        "text": "非推奨になった（まだ動くが将来消える）"
+      },
+      {
+        "id": "b",
+        "text": "ルールや形式に合っている（有効な）"
+      },
+      {
+        "id": "c",
+        "text": "正しくない（誤った）"
+      },
+      {
+        "id": "d",
+        "text": "解決されていない（見つからない・決まっていない）"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "'unresolved' means: 解決されていない（見つからない・決まっていない）",
+      "relatedGrammar": [
+        "svo",
+        "participial_adjective"
+      ]
+    }
+  },
+  {
+    "id": "gitadjectives_010_w2m_1",
+    "sentenceId": "gitadjectives_010",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "word_to_meaning",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "valid",
+          "pos": "adjective",
+          "meaning": "ルールや形式に合っている（有効な）",
+          "target": true,
+          "category": "from_verb"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 2,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "What does 'valid' mean?",
+    "stem": "valid",
+    "choices": [
+      {
+        "id": "a",
+        "text": "ルールや形式に合っている（有効な）"
+      },
+      {
+        "id": "b",
+        "text": "ルールや形式に合っていない（無効な・不正な）"
+      },
+      {
+        "id": "c",
+        "text": "解決されていない（見つからない・決まっていない）"
+      },
+      {
+        "id": "d",
+        "text": "非推奨になった（まだ動くが将来消える）"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "a"
+      ]
+    },
+    "explanation": {
+      "summary": "'valid' means: ルールや形式に合っている（有効な）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadjectives_011_w2m_1",
+    "sentenceId": "gitadjectives_011",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "word_to_meaning",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "invalid",
+          "pos": "adjective",
+          "meaning": "ルールや形式に合っていない（無効な・不正な）",
+          "target": true,
+          "category": "from_verb"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 2,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "What does 'invalid' mean?",
+    "stem": "invalid",
+    "choices": [
+      {
+        "id": "a",
+        "text": "ルールや形式に合っている（有効な）"
+      },
+      {
+        "id": "b",
+        "text": "対応していない（サポート外の）"
+      },
+      {
+        "id": "c",
+        "text": "解決されていない（見つからない・決まっていない）"
+      },
+      {
+        "id": "d",
+        "text": "ルールや形式に合っていない（無効な・不正な）"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "'invalid' means: ルールや形式に合っていない（無効な・不正な）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadjectives_012_w2m_1",
+    "sentenceId": "gitadjectives_012",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "word_to_meaning",
+    "tags": {
+      "grammar": [
+        "svo",
+        "participial_adjective"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "unsupported",
+          "pos": "adjective",
+          "meaning": "対応していない（サポート外の）",
+          "target": true,
+          "category": "from_verb"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 2,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "What does 'unsupported' mean?",
+    "stem": "unsupported",
+    "choices": [
+      {
+        "id": "a",
+        "text": "ルールや形式に合っていない（無効な・不正な）"
+      },
+      {
+        "id": "b",
+        "text": "対応していない（サポート外の）"
+      },
+      {
+        "id": "c",
+        "text": "入れ子のない（一段の）"
+      },
+      {
+        "id": "d",
+        "text": "ルールや形式に合っている（有効な）"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "'unsupported' means: 対応していない（サポート外の）",
+      "relatedGrammar": [
+        "svo",
+        "participial_adjective"
+      ]
+    }
+  },
+  {
+    "id": "gitadjectives_013_w2m_1",
+    "sentenceId": "gitadjectives_013",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "word_to_meaning",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "flat",
+          "pos": "adjective",
+          "meaning": "入れ子のない（一段の）",
+          "target": true,
+          "category": "from_verb"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 2,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "What does 'flat' mean?",
+    "stem": "flat",
+    "choices": [
+      {
+        "id": "a",
+        "text": "入れ子になった（中にさらにある）"
+      },
+      {
+        "id": "b",
+        "text": "対応していない（サポート外の）"
+      },
+      {
+        "id": "c",
+        "text": "表示されていない（隠れた）"
+      },
+      {
+        "id": "d",
+        "text": "入れ子のない（一段の）"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "'flat' means: 入れ子のない（一段の）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadjectives_014_w2m_1",
+    "sentenceId": "gitadjectives_014",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "word_to_meaning",
+    "tags": {
+      "grammar": [
+        "svo",
+        "participial_adjective"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "hidden",
+          "pos": "adjective",
+          "meaning": "表示されていない（隠れた）",
+          "target": true,
+          "category": "from_verb"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 2,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "What does 'hidden' mean?",
+    "stem": "hidden",
+    "choices": [
+      {
+        "id": "a",
+        "text": "表示されていない（隠れた）"
+      },
+      {
+        "id": "b",
+        "text": "表示されている（見える）"
+      },
+      {
+        "id": "c",
+        "text": "入れ子のない（一段の）"
+      },
+      {
+        "id": "d",
+        "text": "対応していない（サポート外の）"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "a"
+      ]
+    },
+    "explanation": {
+      "summary": "'hidden' means: 表示されていない（隠れた）",
+      "relatedGrammar": [
+        "svo",
+        "participial_adjective"
+      ]
+    }
+  },
+  {
+    "id": "gitadjectives_015_w2m_1",
+    "sentenceId": "gitadjectives_015",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "word_to_meaning",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "empty",
+          "pos": "adjective",
+          "meaning": "中身がない（空の）",
+          "target": true,
+          "category": "state"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 2,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "What does 'empty' mean?",
+    "stem": "empty",
+    "choices": [
+      {
+        "id": "a",
+        "text": "あるべきなのに無い（欠けている）"
+      },
+      {
+        "id": "b",
+        "text": "ほかと重複していて要らない（冗長な）"
+      },
+      {
+        "id": "c",
+        "text": "古くなった（最新ではない）"
+      },
+      {
+        "id": "d",
+        "text": "中身がない（空の）"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "'empty' means: 中身がない（空の）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadjectives_016_w2m_1",
+    "sentenceId": "gitadjectives_016",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "word_to_meaning",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "missing",
+          "pos": "adjective",
+          "meaning": "あるべきなのに無い（欠けている）",
+          "target": true,
+          "category": "state"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 2,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "What does 'missing' mean?",
+    "stem": "missing",
+    "choices": [
+      {
+        "id": "a",
+        "text": "中身がない（空の）"
+      },
+      {
+        "id": "b",
+        "text": "ほかと重複していて要らない（冗長な）"
+      },
+      {
+        "id": "c",
+        "text": "あるべきなのに無い（欠けている）"
+      },
+      {
+        "id": "d",
+        "text": "古くなった（最新ではない）"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "'missing' means: あるべきなのに無い（欠けている）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadjectives_017_w2m_1",
+    "sentenceId": "gitadjectives_017",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "word_to_meaning",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "redundant",
+          "pos": "adjective",
+          "meaning": "ほかと重複していて要らない（冗長な）",
+          "target": true,
+          "category": "state"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 2,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "What does 'redundant' mean?",
+    "stem": "redundant",
+    "choices": [
+      {
+        "id": "a",
+        "text": "あるべきなのに無い（欠けている）"
+      },
+      {
+        "id": "b",
+        "text": "ほかと重複していて要らない（冗長な）"
+      },
+      {
+        "id": "c",
+        "text": "中身がない（空の）"
+      },
+      {
+        "id": "d",
+        "text": "古くなった（最新ではない）"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "'redundant' means: ほかと重複していて要らない（冗長な）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadjectives_018_w2m_1",
+    "sentenceId": "gitadjectives_018",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "word_to_meaning",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "unnecessary",
+          "pos": "adjective",
+          "meaning": "必要のない（なくてもよい）",
+          "target": true,
+          "category": "state"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 2,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "What does 'unnecessary' mean?",
+    "stem": "unnecessary",
+    "choices": [
+      {
+        "id": "a",
+        "text": "必要のない（なくてもよい）"
+      },
+      {
+        "id": "b",
+        "text": "重複した（同じものが2つ以上ある）"
+      },
+      {
+        "id": "c",
+        "text": "あるべきなのに無い（欠けている）"
+      },
+      {
+        "id": "d",
+        "text": "古くなった（最新ではない）"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "a"
+      ]
+    },
+    "explanation": {
+      "summary": "'unnecessary' means: 必要のない（なくてもよい）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadjectives_019_w2m_1",
+    "sentenceId": "gitadjectives_019",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "word_to_meaning",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "duplicate",
+          "pos": "adjective",
+          "meaning": "重複した（同じものが2つ以上ある）",
+          "target": true,
+          "category": "state"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 2,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "What does 'duplicate' mean?",
+    "stem": "duplicate",
+    "choices": [
+      {
+        "id": "a",
+        "text": "必要のない（なくてもよい）"
+      },
+      {
+        "id": "b",
+        "text": "古くなった（最新ではない）"
+      },
+      {
+        "id": "c",
+        "text": "あるべきなのに無い（欠けている）"
+      },
+      {
+        "id": "d",
+        "text": "重複した（同じものが2つ以上ある）"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "'duplicate' means: 重複した（同じものが2つ以上ある）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadjectives_020_w2m_1",
+    "sentenceId": "gitadjectives_020",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "word_to_meaning",
+    "tags": {
+      "grammar": [
+        "svo",
+        "participial_adjective"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "outdated",
+          "pos": "adjective",
+          "meaning": "古くなった（最新ではない）",
+          "target": true,
+          "category": "state"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 2,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "What does 'outdated' mean?",
+    "stem": "outdated",
+    "choices": [
+      {
+        "id": "a",
+        "text": "重複した（同じものが2つ以上ある）"
+      },
+      {
+        "id": "b",
+        "text": "必要のない（なくてもよい）"
+      },
+      {
+        "id": "c",
+        "text": "古くなった（最新ではない）"
+      },
+      {
+        "id": "d",
+        "text": "コードを変えていないのに通ったり落ちたりする（不安定な）"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "'outdated' means: 古くなった（最新ではない）",
+      "relatedGrammar": [
+        "svo",
+        "participial_adjective"
+      ]
+    }
+  },
+  {
+    "id": "gitadjectives_021_w2m_1",
+    "sentenceId": "gitadjectives_021",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "word_to_meaning",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "stale",
+          "pos": "adjective",
+          "meaning": "古いまま残っている（更新されていない）",
+          "target": true,
+          "category": "state"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 2,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "What does 'stale' mean?",
+    "stem": "stale",
+    "choices": [
+      {
+        "id": "a",
+        "text": "コードを変えていないのに通ったり落ちたりする（不安定な）"
+      },
+      {
+        "id": "b",
+        "text": "古いまま残っている（更新されていない）"
+      },
+      {
+        "id": "c",
+        "text": "重複した（同じものが2つ以上ある）"
+      },
+      {
+        "id": "d",
+        "text": "変わらない・壊れにくい（安定した）"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "'stale' means: 古いまま残っている（更新されていない）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadjectives_022_w2m_1",
+    "sentenceId": "gitadjectives_022",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "word_to_meaning",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "flaky",
+          "pos": "adjective",
+          "meaning": "コードを変えていないのに通ったり落ちたりする（不安定な）",
+          "target": true,
+          "category": "state"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 2,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "What does 'flaky' mean?",
+    "stem": "flaky",
+    "choices": [
+      {
+        "id": "a",
+        "text": "変わらない・壊れにくい（安定した）"
+      },
+      {
+        "id": "b",
+        "text": "古いまま残っている（更新されていない）"
+      },
+      {
+        "id": "c",
+        "text": "試験的な（今後変わる可能性がある）"
+      },
+      {
+        "id": "d",
+        "text": "コードを変えていないのに通ったり落ちたりする（不安定な）"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "'flaky' means: コードを変えていないのに通ったり落ちたりする（不安定な）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadjectives_023_w2m_1",
+    "sentenceId": "gitadjectives_023",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "word_to_meaning",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "stable",
+          "pos": "adjective",
+          "meaning": "変わらない・壊れにくい（安定した）",
+          "target": true,
+          "category": "state"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 2,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "What does 'stable' mean?",
+    "stem": "stable",
+    "choices": [
+      {
+        "id": "a",
+        "text": "試験的な（今後変わる可能性がある）"
+      },
+      {
+        "id": "b",
+        "text": "コードを変えていないのに通ったり落ちたりする（不安定な）"
+      },
+      {
+        "id": "c",
+        "text": "古いまま残っている（更新されていない）"
+      },
+      {
+        "id": "d",
+        "text": "変わらない・壊れにくい（安定した）"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "'stable' means: 変わらない・壊れにくい（安定した）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadjectives_024_w2m_1",
+    "sentenceId": "gitadjectives_024",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "word_to_meaning",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "experimental",
+          "pos": "adjective",
+          "meaning": "試験的な（今後変わる可能性がある）",
+          "target": true,
+          "category": "state"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 2,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "What does 'experimental' mean?",
+    "stem": "experimental",
+    "choices": [
+      {
+        "id": "a",
+        "text": "変わらない・壊れにくい（安定した）"
+      },
+      {
+        "id": "b",
+        "text": "壊れている（動かない）"
+      },
+      {
+        "id": "c",
+        "text": "試験的な（今後変わる可能性がある）"
+      },
+      {
+        "id": "d",
+        "text": "コードを変えていないのに通ったり落ちたりする（不安定な）"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "'experimental' means: 試験的な（今後変わる可能性がある）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadjectives_025_w2m_1",
+    "sentenceId": "gitadjectives_025",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "word_to_meaning",
+    "tags": {
+      "grammar": [
+        "svo",
+        "participial_adjective"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "broken",
+          "pos": "adjective",
+          "meaning": "壊れている（動かない）",
+          "target": true,
+          "category": "state"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 2,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "What does 'broken' mean?",
+    "stem": "broken",
+    "choices": [
+      {
+        "id": "a",
+        "text": "試験的な（今後変わる可能性がある）"
+      },
+      {
+        "id": "b",
+        "text": "壊れている（動かない）"
+      },
+      {
+        "id": "c",
+        "text": "（新しいものに置き換わって）もう使われない"
+      },
+      {
+        "id": "d",
+        "text": "変わらない・壊れにくい（安定した）"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "'broken' means: 壊れている（動かない）",
+      "relatedGrammar": [
+        "svo",
+        "participial_adjective"
+      ]
+    }
+  },
+  {
+    "id": "gitadjectives_026_w2m_1",
+    "sentenceId": "gitadjectives_026",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "word_to_meaning",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "obsolete",
+          "pos": "adjective",
+          "meaning": "（新しいものに置き換わって）もう使われない",
+          "target": true,
+          "category": "state"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 2,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "What does 'obsolete' mean?",
+    "stem": "obsolete",
+    "choices": [
+      {
+        "id": "a",
+        "text": "壊れている（動かない）"
+      },
+      {
+        "id": "b",
+        "text": "（新しいものに置き換わって）もう使われない"
+      },
+      {
+        "id": "c",
+        "text": "試験的な（今後変わる可能性がある）"
+      },
+      {
+        "id": "d",
+        "text": "変わらない・壊れにくい（安定した）"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "'obsolete' means: （新しいものに置き換わって）もう使われない",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadjectives_027_w2m_1",
+    "sentenceId": "gitadjectives_027",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "word_to_meaning",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "initial",
+          "pos": "adjective",
+          "meaning": "最初の（初期の）",
+          "target": true,
+          "category": "scope"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 2,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "What does 'initial' mean?",
+    "stem": "initial",
+    "choices": [
+      {
+        "id": "a",
+        "text": "内部の（外から使う前提でない）"
+      },
+      {
+        "id": "b",
+        "text": "外部の（プロジェクトの外の）"
+      },
+      {
+        "id": "c",
+        "text": "最初の（初期の）"
+      },
+      {
+        "id": "d",
+        "text": "手元の・その範囲だけの（ローカルの）"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "'initial' means: 最初の（初期の）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadjectives_028_w2m_1",
+    "sentenceId": "gitadjectives_028",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "word_to_meaning",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "internal",
+          "pos": "adjective",
+          "meaning": "内部の（外から使う前提でない）",
+          "target": true,
+          "category": "scope"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 2,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "What does 'internal' mean?",
+    "stem": "internal",
+    "choices": [
+      {
+        "id": "a",
+        "text": "外部の（プロジェクトの外の）"
+      },
+      {
+        "id": "b",
+        "text": "内部の（外から使う前提でない）"
+      },
+      {
+        "id": "c",
+        "text": "最初の（初期の）"
+      },
+      {
+        "id": "d",
+        "text": "手元の・その範囲だけの（ローカルの）"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "'internal' means: 内部の（外から使う前提でない）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadjectives_029_w2m_1",
+    "sentenceId": "gitadjectives_029",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "word_to_meaning",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "external",
+          "pos": "adjective",
+          "meaning": "外部の（プロジェクトの外の）",
+          "target": true,
+          "category": "scope"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 2,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "What does 'external' mean?",
+    "stem": "external",
+    "choices": [
+      {
+        "id": "a",
+        "text": "内部の（外から使う前提でない）"
+      },
+      {
+        "id": "b",
+        "text": "手元の・その範囲だけの（ローカルの）"
+      },
+      {
+        "id": "c",
+        "text": "最初の（初期の）"
+      },
+      {
+        "id": "d",
+        "text": "外部の（プロジェクトの外の）"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "'external' means: 外部の（プロジェクトの外の）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadjectives_030_w2m_1",
+    "sentenceId": "gitadjectives_030",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "word_to_meaning",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "local",
+          "pos": "adjective",
+          "meaning": "手元の・その範囲だけの（ローカルの）",
+          "target": true,
+          "category": "scope"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 2,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "What does 'local' mean?",
+    "stem": "local",
+    "choices": [
+      {
+        "id": "a",
+        "text": "別のマシン・サーバー上の（リモートの）"
+      },
+      {
+        "id": "b",
+        "text": "外部の（プロジェクトの外の）"
+      },
+      {
+        "id": "c",
+        "text": "内部の（外から使う前提でない）"
+      },
+      {
+        "id": "d",
+        "text": "手元の・その範囲だけの（ローカルの）"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "'local' means: 手元の・その範囲だけの（ローカルの）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadjectives_031_w2m_1",
+    "sentenceId": "gitadjectives_031",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "word_to_meaning",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "remote",
+          "pos": "adjective",
+          "meaning": "別のマシン・サーバー上の（リモートの）",
+          "target": true,
+          "category": "scope"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 2,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "What does 'remote' mean?",
+    "stem": "remote",
+    "choices": [
+      {
+        "id": "a",
+        "text": "別のマシン・サーバー上の（リモートの）"
+      },
+      {
+        "id": "b",
+        "text": "手元の・その範囲だけの（ローカルの）"
+      },
+      {
+        "id": "c",
+        "text": "全体に効く（グローバルな）"
+      },
+      {
+        "id": "d",
+        "text": "外部の（プロジェクトの外の）"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "a"
+      ]
+    },
+    "explanation": {
+      "summary": "'remote' means: 別のマシン・サーバー上の（リモートの）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadjectives_032_w2m_1",
+    "sentenceId": "gitadjectives_032",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "word_to_meaning",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "global",
+          "pos": "adjective",
+          "meaning": "全体に効く（グローバルな）",
+          "target": true,
+          "category": "scope"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 2,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "What does 'global' mean?",
+    "stem": "global",
+    "choices": [
+      {
+        "id": "a",
+        "text": "手元の・その範囲だけの（ローカルの）"
+      },
+      {
+        "id": "b",
+        "text": "全体に効く（グローバルな）"
+      },
+      {
+        "id": "c",
+        "text": "別のマシン・サーバー上の（リモートの）"
+      },
+      {
+        "id": "d",
+        "text": "省略できる（任意の）"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "'global' means: 全体に効く（グローバルな）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadjectives_033_w2m_1",
+    "sentenceId": "gitadjectives_033",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "word_to_meaning",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "optional",
+          "pos": "adjective",
+          "meaning": "省略できる（任意の）",
+          "target": true,
+          "category": "scope"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 2,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "What does 'optional' mean?",
+    "stem": "optional",
+    "choices": [
+      {
+        "id": "a",
+        "text": "必須の（省略できない）"
+      },
+      {
+        "id": "b",
+        "text": "全体に効く（グローバルな）"
+      },
+      {
+        "id": "c",
+        "text": "省略できる（任意の）"
+      },
+      {
+        "id": "d",
+        "text": "明示的な（はっきり書いた）"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "'optional' means: 省略できる（任意の）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadjectives_034_w2m_1",
+    "sentenceId": "gitadjectives_034",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "word_to_meaning",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "explicit",
+          "pos": "adjective",
+          "meaning": "明示的な（はっきり書いた）",
+          "target": true,
+          "category": "scope"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 2,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "What does 'explicit' mean?",
+    "stem": "explicit",
+    "choices": [
+      {
+        "id": "a",
+        "text": "暗黙の（書かなくても自動でそうなる）"
+      },
+      {
+        "id": "b",
+        "text": "省略できる（任意の）"
+      },
+      {
+        "id": "c",
+        "text": "明示的な（はっきり書いた）"
+      },
+      {
+        "id": "d",
+        "text": "全体に効く（グローバルな）"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "'explicit' means: 明示的な（はっきり書いた）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadjectives_035_w2m_1",
+    "sentenceId": "gitadjectives_035",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "word_to_meaning",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "implicit",
+          "pos": "adjective",
+          "meaning": "暗黙の（書かなくても自動でそうなる）",
+          "target": true,
+          "category": "scope"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 2,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "What does 'implicit' mean?",
+    "stem": "implicit",
+    "choices": [
+      {
+        "id": "a",
+        "text": "明示的な（はっきり書いた）"
+      },
+      {
+        "id": "b",
+        "text": "ビルド時に決まる（実行中に変わらない）"
+      },
+      {
+        "id": "c",
+        "text": "省略できる（任意の）"
+      },
+      {
+        "id": "d",
+        "text": "暗黙の（書かなくても自動でそうなる）"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "'implicit' means: 暗黙の（書かなくても自動でそうなる）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadjectives_036_w2m_1",
+    "sentenceId": "gitadjectives_036",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "word_to_meaning",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "static",
+          "pos": "adjective",
+          "meaning": "ビルド時に決まる（実行中に変わらない）",
+          "target": true,
+          "category": "scope"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 2,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "What does 'static' mean?",
+    "stem": "static",
+    "choices": [
+      {
+        "id": "a",
+        "text": "ビルド時に決まる（実行中に変わらない）"
+      },
+      {
+        "id": "b",
+        "text": "実行時に決まる（変わりうる）"
+      },
+      {
+        "id": "c",
+        "text": "暗黙の（書かなくても自動でそうなる）"
+      },
+      {
+        "id": "d",
+        "text": "明示的な（はっきり書いた）"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "a"
+      ]
+    },
+    "explanation": {
+      "summary": "'static' means: ビルド時に決まる（実行中に変わらない）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadjectives_037_w2m_1",
+    "sentenceId": "gitadjectives_037",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "word_to_meaning",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "dynamic",
+          "pos": "adjective",
+          "meaning": "実行時に決まる（変わりうる）",
+          "target": true,
+          "category": "scope"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 2,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "What does 'dynamic' mean?",
+    "stem": "dynamic",
+    "choices": [
+      {
+        "id": "a",
+        "text": "ビルド時に決まる（実行中に変わらない）"
+      },
+      {
+        "id": "b",
+        "text": "実行時に決まる（変わりうる）"
+      },
+      {
+        "id": "c",
+        "text": "今の場所を基準にした（相対の）"
+      },
+      {
+        "id": "d",
+        "text": "暗黙の（書かなくても自動でそうなる）"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "'dynamic' means: 実行時に決まる（変わりうる）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadjectives_038_w2m_1",
+    "sentenceId": "gitadjectives_038",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "word_to_meaning",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "relative",
+          "pos": "adjective",
+          "meaning": "今の場所を基準にした（相対の）",
+          "target": true,
+          "category": "scope"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 2,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "What does 'relative' mean?",
+    "stem": "relative",
+    "choices": [
+      {
+        "id": "a",
+        "text": "今の場所を基準にした（相対の）"
+      },
+      {
+        "id": "b",
+        "text": "基準によらない完全な（絶対の）"
+      },
+      {
+        "id": "c",
+        "text": "実行時に決まる（変わりうる）"
+      },
+      {
+        "id": "d",
+        "text": "ビルド時に決まる（実行中に変わらない）"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "a"
+      ]
+    },
+    "explanation": {
+      "summary": "'relative' means: 今の場所を基準にした（相対の）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadjectives_039_w2m_1",
+    "sentenceId": "gitadjectives_039",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "word_to_meaning",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "absolute",
+          "pos": "adjective",
+          "meaning": "基準によらない完全な（絶対の）",
+          "target": true,
+          "category": "scope"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 2,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "What does 'absolute' mean?",
+    "stem": "absolute",
+    "choices": [
+      {
+        "id": "a",
+        "text": "今の場所を基準にした（相対の）"
+      },
+      {
+        "id": "b",
+        "text": "入れ子になった（中にさらにある）"
+      },
+      {
+        "id": "c",
+        "text": "実行時に決まる（変わりうる）"
+      },
+      {
+        "id": "d",
+        "text": "基準によらない完全な（絶対の）"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "'absolute' means: 基準によらない完全な（絶対の）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadjectives_040_w2m_1",
+    "sentenceId": "gitadjectives_040",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "word_to_meaning",
+    "tags": {
+      "grammar": [
+        "svo",
+        "participial_adjective"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "nested",
+          "pos": "adjective",
+          "meaning": "入れ子になった（中にさらにある）",
+          "target": true,
+          "category": "scope"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 2,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "What does 'nested' mean?",
+    "stem": "nested",
+    "choices": [
+      {
+        "id": "a",
+        "text": "入れ子のない（一段の）"
+      },
+      {
+        "id": "b",
+        "text": "基準によらない完全な（絶対の）"
+      },
+      {
+        "id": "c",
+        "text": "一部の（全部ではない）"
+      },
+      {
+        "id": "d",
+        "text": "入れ子になった（中にさらにある）"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "'nested' means: 入れ子になった（中にさらにある）",
+      "relatedGrammar": [
+        "svo",
+        "participial_adjective"
+      ]
+    }
+  },
+  {
+    "id": "gitadjectives_041_w2m_1",
+    "sentenceId": "gitadjectives_041",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "word_to_meaning",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "partial",
+          "pos": "adjective",
+          "meaning": "一部の（全部ではない）",
+          "target": true,
+          "category": "scope"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 2,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "What does 'partial' mean?",
+    "stem": "partial",
+    "choices": [
+      {
+        "id": "a",
+        "text": "入れ子になった（中にさらにある）"
+      },
+      {
+        "id": "b",
+        "text": "一部の（全部ではない）"
+      },
+      {
+        "id": "c",
+        "text": "単体で動く（ほかに依存しない）"
+      },
+      {
+        "id": "d",
+        "text": "基準によらない完全な（絶対の）"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "'partial' means: 一部の（全部ではない）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadjectives_042_w2m_1",
+    "sentenceId": "gitadjectives_042",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "word_to_meaning",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "standalone",
+          "pos": "adjective",
+          "meaning": "単体で動く（ほかに依存しない）",
+          "target": true,
+          "category": "scope"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 2,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "What does 'standalone' mean?",
+    "stem": "standalone",
+    "choices": [
+      {
+        "id": "a",
+        "text": "一部の（全部ではない）"
+      },
+      {
+        "id": "b",
+        "text": "単体で動く（ほかに依存しない）"
+      },
+      {
+        "id": "c",
+        "text": "入れ子になった（中にさらにある）"
+      },
+      {
+        "id": "d",
+        "text": "基準によらない完全な（絶対の）"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "'standalone' means: 単体で動く（ほかに依存しない）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadjectives_043_w2m_1",
+    "sentenceId": "gitadjectives_043",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "word_to_meaning",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "lazy",
+          "pos": "adjective",
+          "meaning": "必要になるまで行わない（遅延の）",
+          "target": true,
+          "category": "property"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 2,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "What does 'lazy' mean?",
+    "stem": "lazy",
+    "choices": [
+      {
+        "id": "a",
+        "text": "必要になるまで行わない（遅延の）"
+      },
+      {
+        "id": "b",
+        "text": "前もってすぐに行う（先に読み込む）"
+      },
+      {
+        "id": "c",
+        "text": "ほかの場所でも使い回せる（再利用できる）"
+      },
+      {
+        "id": "d",
+        "text": "厳格な（ルールを例外なく守らせる）"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "a"
+      ]
+    },
+    "explanation": {
+      "summary": "'lazy' means: 必要になるまで行わない（遅延の）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadjectives_044_w2m_1",
+    "sentenceId": "gitadjectives_044",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "word_to_meaning",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "reusable",
+          "pos": "adjective",
+          "meaning": "ほかの場所でも使い回せる（再利用できる）",
+          "target": true,
+          "category": "property"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 2,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "What does 'reusable' mean?",
+    "stem": "reusable",
+    "choices": [
+      {
+        "id": "a",
+        "text": "必要になるまで行わない（遅延の）"
+      },
+      {
+        "id": "b",
+        "text": "厳格な（ルールを例外なく守らせる）"
+      },
+      {
+        "id": "c",
+        "text": "どこでも同じ（統一された・ぶれない）"
+      },
+      {
+        "id": "d",
+        "text": "ほかの場所でも使い回せる（再利用できる）"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "'reusable' means: ほかの場所でも使い回せる（再利用できる）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadjectives_045_w2m_1",
+    "sentenceId": "gitadjectives_045",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "word_to_meaning",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "strict",
+          "pos": "adjective",
+          "meaning": "厳格な（ルールを例外なく守らせる）",
+          "target": true,
+          "category": "property"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 2,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "What does 'strict' mean?",
+    "stem": "strict",
+    "choices": [
+      {
+        "id": "a",
+        "text": "ほかの場所でも使い回せる（再利用できる）"
+      },
+      {
+        "id": "b",
+        "text": "厳格な（ルールを例外なく守らせる）"
+      },
+      {
+        "id": "c",
+        "text": "どこでも同じ（統一された・ぶれない）"
+      },
+      {
+        "id": "d",
+        "text": "必要になるまで行わない（遅延の）"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "'strict' means: 厳格な（ルールを例外なく守らせる）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadjectives_046_w2m_1",
+    "sentenceId": "gitadjectives_046",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "word_to_meaning",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "consistent",
+          "pos": "adjective",
+          "meaning": "どこでも同じ（統一された・ぶれない）",
+          "target": true,
+          "category": "property"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 2,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "What does 'consistent' mean?",
+    "stem": "consistent",
+    "choices": [
+      {
+        "id": "a",
+        "text": "厳格な（ルールを例外なく守らせる）"
+      },
+      {
+        "id": "b",
+        "text": "汎用的な・型を引数に取る（ジェネリック）"
+      },
+      {
+        "id": "c",
+        "text": "どこでも同じ（統一された・ぶれない）"
+      },
+      {
+        "id": "d",
+        "text": "ほかの場所でも使い回せる（再利用できる）"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "'consistent' means: どこでも同じ（統一された・ぶれない）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadjectives_047_w2m_1",
+    "sentenceId": "gitadjectives_047",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "word_to_meaning",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "generic",
+          "pos": "adjective",
+          "meaning": "汎用的な・型を引数に取る（ジェネリック）",
+          "target": true,
+          "category": "property"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 2,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "What does 'generic' mean?",
+    "stem": "generic",
+    "choices": [
+      {
+        "id": "a",
+        "text": "どこでも同じ（統一された・ぶれない）"
+      },
+      {
+        "id": "b",
+        "text": "汎用的な・型を引数に取る（ジェネリック）"
+      },
+      {
+        "id": "c",
+        "text": "プラットフォームに元からある（ネイティブの）"
+      },
+      {
+        "id": "d",
+        "text": "厳格な（ルールを例外なく守らせる）"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "'generic' means: 汎用的な・型を引数に取る（ジェネリック）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadjectives_048_w2m_1",
+    "sentenceId": "gitadjectives_048",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "word_to_meaning",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "native",
+          "pos": "adjective",
+          "meaning": "プラットフォームに元からある（ネイティブの）",
+          "target": true,
+          "category": "property"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 2,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "What does 'native' mean?",
+    "stem": "native",
+    "choices": [
+      {
+        "id": "a",
+        "text": "汎用的な・型を引数に取る（ジェネリック）"
+      },
+      {
+        "id": "b",
+        "text": "前もってすぐに行う（先に読み込む）"
+      },
+      {
+        "id": "c",
+        "text": "どこでも同じ（統一された・ぶれない）"
+      },
+      {
+        "id": "d",
+        "text": "プラットフォームに元からある（ネイティブの）"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "d"
+      ]
+    },
+    "explanation": {
+      "summary": "'native' means: プラットフォームに元からある（ネイティブの）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadjectives_049_w2m_1",
+    "sentenceId": "gitadjectives_049",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "word_to_meaning",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "eager",
+          "pos": "adjective",
+          "meaning": "前もってすぐに行う（先に読み込む）",
+          "target": true,
+          "category": "property"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 2,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "What does 'eager' mean?",
+    "stem": "eager",
+    "choices": [
+      {
+        "id": "a",
+        "text": "前もってすぐに行う（先に読み込む）"
+      },
+      {
+        "id": "b",
+        "text": "必要になるまで行わない（遅延の）"
+      },
+      {
+        "id": "c",
+        "text": "プラットフォームに元からある（ネイティブの）"
+      },
+      {
+        "id": "d",
+        "text": "表示されている（見える）"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "a"
+      ]
+    },
+    "explanation": {
+      "summary": "'eager' means: 前もってすぐに行う（先に読み込む）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadjectives_050_w2m_1",
+    "sentenceId": "gitadjectives_050",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "word_to_meaning",
+    "tags": {
+      "grammar": [
+        "svo"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "visible",
+          "pos": "adjective",
+          "meaning": "表示されている（見える）",
+          "target": true,
+          "category": "property"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 2,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "What does 'visible' mean?",
+    "stem": "visible",
+    "choices": [
+      {
+        "id": "a",
+        "text": "表示されていない（隠れた）"
+      },
+      {
+        "id": "b",
+        "text": "前もってすぐに行う（先に読み込む）"
+      },
+      {
+        "id": "c",
+        "text": "表示されている（見える）"
+      },
+      {
+        "id": "d",
+        "text": "必須の（省略できない）"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "c"
+      ]
+    },
+    "explanation": {
+      "summary": "'visible' means: 表示されている（見える）",
+      "relatedGrammar": [
+        "svo"
+      ]
+    }
+  },
+  {
+    "id": "gitadjectives_051_w2m_1",
+    "sentenceId": "gitadjectives_051",
+    "pedagogicalKind": "cloze",
+    "interactionType": "select",
+    "drillMode": "word_to_meaning",
+    "tags": {
+      "grammar": [
+        "svo",
+        "participial_adjective"
+      ],
+      "vocabulary": [
+        {
+          "lemma": "required",
+          "pos": "adjective",
+          "meaning": "必須の（省略できない）",
+          "target": true,
+          "category": "property"
+        }
+      ],
+      "phrases": []
+    },
+    "difficulty": {
+      "level": 2,
+      "factors": {
+        "grammarCount": 1,
+        "structureComplexity": 1,
+        "distractorSimilarity": 3,
+        "rareWordCount": 0
+      }
+    },
+    "prompt": "What does 'required' mean?",
+    "stem": "required",
+    "choices": [
+      {
+        "id": "a",
+        "text": "省略できる（任意の）"
+      },
+      {
+        "id": "b",
+        "text": "必須の（省略できない）"
+      },
+      {
+        "id": "c",
+        "text": "表示されている（見える）"
+      },
+      {
+        "id": "d",
+        "text": "前もってすぐに行う（先に読み込む）"
+      }
+    ],
+    "choiceAnswerSpec": {
+      "mode": "single",
+      "correctChoiceIds": [
+        "b"
+      ]
+    },
+    "explanation": {
+      "summary": "'required' means: 必須の（省略できない）",
+      "relatedGrammar": [
+        "svo",
+        "participial_adjective"
+      ]
+    }
+  }
+]
