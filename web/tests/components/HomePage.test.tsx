@@ -24,7 +24,7 @@ function HomeHarness({
   onStartDrill: (selection: HomeSelection) => void;
 }) {
   const [selection, setSelection] = useState<HomeSelection>({
-    datasetId: 'gitverbs85' satisfies DatasetId,
+    datasetId: 'gitverbs' satisfies DatasetId,
     drillMode: 'word_to_meaning',
     sessionSize: 20,
     sectionId: undefined,
@@ -36,7 +36,7 @@ function HomeHarness({
       datasetOptions={getDatasetOptions()}
       availableModes={getAvailableModesForDataset(selection.datasetId)}
       sections={
-        selection.datasetId === 'gitverbs85'
+        selection.datasetId === 'gitverbs'
           ? [
               {
                 id: 'section-1',
@@ -61,7 +61,7 @@ describe('HomePage', () => {
 
     renderWithProviders(<HomeHarness onStartDrill={onStartDrill} />);
 
-    await user.click(screen.getByRole('radio', { name: /GitVerbs85/i }));
+    await user.click(screen.getByRole('radio', { name: /^>?GitVerbs\(/ }));
 
     expect(screen.getByLabelText(/reibun section/i)).toBeInTheDocument();
     expect(
@@ -70,6 +70,24 @@ describe('HomePage', () => {
     expect(
       screen.getByRole('radio', { name: /word → meaning/i }),
     ).toBeInTheDocument();
+  });
+
+  it('offers the four part-of-speech datasets and not GitVerbs85', () => {
+    renderWithProviders(<HomeHarness onStartDrill={vi.fn()} />);
+
+    for (const name of [
+      'GitVerbs',
+      'GitNouns',
+      'GitAdjectives',
+      'GitAdverbs',
+    ]) {
+      expect(
+        screen.getByRole('radio', { name: new RegExp(`^>?${name}\\(`) }),
+      ).toBeInTheDocument();
+    }
+    expect(
+      screen.queryByRole('radio', { name: /GitVerbs85/i }),
+    ).not.toBeInTheDocument();
   });
 
   it('starts a drill with the current dataset selection', async () => {
@@ -82,7 +100,7 @@ describe('HomePage', () => {
 
     expect(onStartDrill).toHaveBeenCalledWith(
       expect.objectContaining({
-        datasetId: 'gitverbs85',
+        datasetId: 'gitverbs',
         drillMode: 'word_to_meaning',
         sessionSize: 20,
       }),
@@ -95,12 +113,12 @@ describe('HomePage', () => {
     renderWithProviders(
       <HomePage
         selection={{
-          datasetId: 'gitverbs85',
+          datasetId: 'gitverbs',
           drillMode: 'word_to_meaning',
           sessionSize: 20,
         }}
         datasetOptions={getDatasetOptions()}
-        availableModes={getAvailableModesForDataset('gitverbs85')}
+        availableModes={getAvailableModesForDataset('gitverbs')}
         sections={[]}
         problemCount={12}
         previewProblems={[]}

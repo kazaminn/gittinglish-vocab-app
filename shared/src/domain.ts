@@ -66,7 +66,8 @@ export type DrillMode =
   | 'reorder'
   | 'flashcard';
 
-export type DatasetId = 'gitverbs85';
+export type DatasetId =
+  'gitverbs85' | 'gitverbs' | 'gitnouns' | 'gitadjectives' | 'gitadverbs';
 
 export type PartOfSpeech =
   'noun' | 'verb' | 'adjective' | 'adverb' | 'preposition' | 'conjunction';

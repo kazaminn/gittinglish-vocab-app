@@ -69,7 +69,13 @@ export const DrillModeSchema = z.enum([
   'flashcard',
 ]);
 
-export const DatasetIdSchema = z.enum(['gitverbs85']);
+export const DatasetIdSchema = z.enum([
+  'gitverbs85',
+  'gitverbs',
+  'gitnouns',
+  'gitadjectives',
+  'gitadverbs',
+]);
 
 export const PartOfSpeechSchema = z.enum([
   'noun',
